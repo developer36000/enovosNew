@@ -1,0 +1,1 @@
+function r(r,a){for(var n=-1,o=a.length,t=r.length;++n<o;)r[t+n]=a[n];return r}export{r as a}

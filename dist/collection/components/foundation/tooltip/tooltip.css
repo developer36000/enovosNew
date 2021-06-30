@@ -1,0 +1,1039 @@
+[name=tooltip] .tooltip {
+  position: fixed;
+  z-index: 6000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: 0;
+  visibility: hidden;
+  outline: none;
+  transform: scale(0.9);
+  transition: opacity 150ms ease-in, transform 150ms ease-in, visibility 150ms ease-in;
+  -webkit-appearance: none;
+}
+[name=tooltip] .tooltip--active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 75ms ease-out, transform 75ms ease-out, visibility 75ms ease-out;
+}
+[name=tooltip] .tooltip--pointer .tooltip__content__text {
+  position: relative;
+}
+[name=tooltip] .tooltip--pointer .tooltip__content--pointer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin: auto;
+  overflow: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+[name=tooltip] .tooltip[data-placement*=top] {
+  transform: translateY(-50%);
+}
+[name=tooltip] .tooltip[data-placement*=top][data-placement*=left] {
+  transform: translate(-50%, -50%);
+}
+[name=tooltip] .tooltip[data-placement*=top][data-placement*=right] {
+  transform: translate(50%, -50%);
+}
+[name=tooltip] .tooltip[data-placement*=bottom] {
+  transform: translateY(50%);
+}
+[name=tooltip] .tooltip[data-placement*=bottom][data-placement*=left] {
+  transform: translate(-50%, 50%);
+}
+[name=tooltip] .tooltip[data-placement*=bottom][data-placement*=right] {
+  transform: translate(50%, 50%);
+}
+[name=tooltip] .tooltip[data-placement*=left] {
+  transform: translateX(-50%);
+}
+[name=tooltip] .tooltip[data-placement*=right] {
+  transform: translateX(50%);
+}
+[name=tooltip] .tooltip.tooltip {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip] .tooltip.tooltip .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip] .tooltip.tooltip .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip] .tooltip.tooltip[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip] .tooltip.tooltip[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip] .tooltip.tooltip[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip] .tooltip.tooltip[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip] .tooltip.tooltip {
+    max-width: 200px;
+  }
+}
+[name=tooltip] .tooltip.tooltip--lg {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip] .tooltip.tooltip--lg .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg .tooltip__content__text {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=tooltip] .tooltip.tooltip--lg[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--lg[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip] .tooltip.tooltip--lg[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--lg.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip] .tooltip.tooltip--lg {
+    max-width: 200px;
+  }
+}
+[name=tooltip] .tooltip.tooltip--md {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip] .tooltip.tooltip--md .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip] .tooltip.tooltip--md[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--md[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip] .tooltip.tooltip--md[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--md.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip] .tooltip.tooltip--md {
+    max-width: 200px;
+  }
+}
+[name=tooltip] .tooltip.tooltip--sm {
+  max-width: 400px;
+  min-height: 0;
+}
+[name=tooltip] .tooltip.tooltip--sm .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip] .tooltip.tooltip--sm .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip] .tooltip.tooltip--sm[data-placement*=top] {
+  padding-bottom: 5px;
+}
+[name=tooltip] .tooltip.tooltip--sm[data-placement*=bottom] {
+  padding-top: 5px;
+}
+[name=tooltip] .tooltip.tooltip--sm[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--sm[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip] .tooltip.tooltip--sm[data-placement*=left] {
+  padding-right: 5px;
+}
+[name=tooltip] .tooltip.tooltip--sm[data-placement*=right] {
+  padding-left: 5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer .tooltip__content--pointer {
+  width: 5px;
+  height: 5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 13px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 5px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 8px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--sm.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 2.5px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip] .tooltip.tooltip--sm {
+    max-width: 200px;
+  }
+}
+[name=tooltip] .tooltip.tooltip--xs {
+  max-width: 336px;
+  min-height: 0;
+}
+[name=tooltip] .tooltip.tooltip--xs .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip] .tooltip.tooltip--xs .tooltip__content__text {
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=tooltip] .tooltip.tooltip--xs[data-placement*=top] {
+  padding-bottom: 5px;
+}
+[name=tooltip] .tooltip.tooltip--xs[data-placement*=bottom] {
+  padding-top: 5px;
+}
+[name=tooltip] .tooltip.tooltip--xs[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--xs[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip] .tooltip.tooltip--xs[data-placement*=left] {
+  padding-right: 5px;
+}
+[name=tooltip] .tooltip.tooltip--xs[data-placement*=right] {
+  padding-left: 5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer .tooltip__content--pointer {
+  width: 5px;
+  height: 5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 13px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 5px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 8px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip] .tooltip.tooltip--xs.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 2.5px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip] .tooltip.tooltip--xs {
+    max-width: 200px;
+  }
+}
+[name=tooltip] .tooltip.tooltip .tooltip__content {
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=tooltip] .tooltip.tooltip.tooltip--pointer .tooltip__content--pointer {
+  background-color: #FFFFFF;
+}
+[name=tooltip] .tooltip.tooltip--white .tooltip__content {
+  color: #FFFFFF;
+  background-color: #5E5E5E;
+}
+[name=tooltip] .tooltip.tooltip--white.tooltip--pointer .tooltip__content--pointer {
+  background-color: #5E5E5E;
+}
+[name=tooltip] .tooltip.tooltip--tertiary-800 .tooltip__content {
+  color: #FFFFFF;
+  background-color: #004885;
+}
+[name=tooltip] .tooltip.tooltip--tertiary-800.tooltip--pointer .tooltip__content--pointer {
+  background-color: #004885;
+}
+[name=tooltip] .tooltip.tooltip--secondary .tooltip__content {
+  color: #FFFFFF;
+  background-color: #5E5E5E;
+}
+[name=tooltip] .tooltip.tooltip--secondary.tooltip--pointer .tooltip__content--pointer {
+  background-color: #5E5E5E;
+}
+[name=tooltip] .tooltip.tooltip--quaternary .tooltip__content {
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=tooltip] .tooltip.tooltip--quaternary.tooltip--pointer .tooltip__content--pointer {
+  background-color: #C75300;
+}
+
+[name=tooltip].theme--dark .tooltip {
+  position: fixed;
+  z-index: 6000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: inherit;
+  text-transform: inherit;
+  opacity: 0;
+  visibility: hidden;
+  outline: none;
+  transform: scale(0.9);
+  transition: opacity 150ms ease-in, transform 150ms ease-in, visibility 150ms ease-in;
+  -webkit-appearance: none;
+}
+[name=tooltip].theme--dark .tooltip--active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: opacity 75ms ease-out, transform 75ms ease-out, visibility 75ms ease-out;
+}
+[name=tooltip].theme--dark .tooltip--pointer .tooltip__content__text {
+  position: relative;
+}
+[name=tooltip].theme--dark .tooltip--pointer .tooltip__content--pointer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin: auto;
+  overflow: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=top] {
+  transform: translateY(-50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=top][data-placement*=left] {
+  transform: translate(-50%, -50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=top][data-placement*=right] {
+  transform: translate(50%, -50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=bottom] {
+  transform: translateY(50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=bottom][data-placement*=left] {
+  transform: translate(-50%, 50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=bottom][data-placement*=right] {
+  transform: translate(50%, 50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=left] {
+  transform: translateX(-50%);
+}
+[name=tooltip].theme--dark .tooltip[data-placement*=right] {
+  transform: translateX(50%);
+}
+[name=tooltip].theme--dark .tooltip.tooltip {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip].theme--dark .tooltip.tooltip {
+    max-width: 200px;
+  }
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg .tooltip__content__text {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--lg.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip].theme--dark .tooltip.tooltip--lg {
+    max-width: 200px;
+  }
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md {
+  max-width: 464px;
+  min-height: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=top] {
+  padding-bottom: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=bottom] {
+  padding-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=left] {
+  padding-right: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md[data-placement*=right] {
+  padding-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer .tooltip__content--pointer {
+  width: 8px;
+  height: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 16px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 4px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 8px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 16px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--md.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 4px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip].theme--dark .tooltip.tooltip--md {
+    max-width: 200px;
+  }
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm {
+  max-width: 400px;
+  min-height: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm .tooltip__content__text {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=top] {
+  padding-bottom: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=bottom] {
+  padding-top: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=left] {
+  padding-right: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm[data-placement*=right] {
+  padding-left: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer .tooltip__content--pointer {
+  width: 5px;
+  height: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 13px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 5px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 8px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--sm.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 2.5px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip].theme--dark .tooltip.tooltip--sm {
+    max-width: 200px;
+  }
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs {
+  max-width: 336px;
+  min-height: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs .tooltip__content {
+  border-radius: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs .tooltip__content__text {
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=top] {
+  padding-bottom: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=bottom] {
+  padding-top: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=bottom][data-placement*=right] {
+  padding-top: 0;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=left] {
+  padding-right: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs[data-placement*=right] {
+  padding-left: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer .tooltip__content--pointer {
+  width: 5px;
+  height: 5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=middle][data-placement*=center] .tooltip__content--pointer {
+  display: none;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top] {
+  margin-top: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top] .tooltip__content--pointer {
+  bottom: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=top][data-placement*=right] .tooltip__content--pointer {
+  bottom: 13px;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom] {
+  margin-top: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom] .tooltip__content--pointer {
+  top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=left], [name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=right] {
+  margin-top: 2.5px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=left] .tooltip__content--pointer, [name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=bottom][data-placement*=right] .tooltip__content--pointer {
+  top: 5px;
+  bottom: inherit;
+  transform: translateY(0) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=left] {
+  margin-left: -8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=left] .tooltip__content--pointer {
+  left: calc(100% - 8px);
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=right] {
+  margin-left: 8px;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--xs.tooltip--pointer[data-placement*=right] .tooltip__content--pointer {
+  left: 2.5px;
+  right: inherit;
+  bottom: 50%;
+  transform: translateY(50%) rotate(45deg);
+}
+@media (max-width: 639px) {
+  [name=tooltip].theme--dark .tooltip.tooltip--xs {
+    max-width: 200px;
+  }
+}
+[name=tooltip].theme--dark .tooltip.tooltip .tooltip__content {
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=tooltip].theme--dark .tooltip.tooltip.tooltip--pointer .tooltip__content--pointer {
+  background-color: #FFFFFF;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--white .tooltip__content {
+  color: #FFFFFF;
+  background-color: #5E5E5E;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--white.tooltip--pointer .tooltip__content--pointer {
+  background-color: #5E5E5E;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--tertiary-800 .tooltip__content {
+  color: #FFFFFF;
+  background-color: #004885;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--tertiary-800.tooltip--pointer .tooltip__content--pointer {
+  background-color: #004885;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--secondary .tooltip__content {
+  color: #FFFFFF;
+  background-color: #5E5E5E;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--secondary.tooltip--pointer .tooltip__content--pointer {
+  background-color: #5E5E5E;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--quaternary .tooltip__content {
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=tooltip].theme--dark .tooltip.tooltip--quaternary.tooltip--pointer .tooltip__content--pointer {
+  background-color: #C75300;
+}

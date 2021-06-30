@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Enovos-Icons';
+	src: local('Enovos-Icons'),
+	url('../fonts/Enovos-Icons.woff') format('woff'), /* New browsers and IE9+ */
+	url('../fonts/Enovos-Icons.woff2') format('woff2'),  /* Latest browsers */
+	url('../fonts/Enovos-Icons.ttf') format('truetype'); /* OLD Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Light'),
+	url('../fonts/montserrat-0.woff') format('woff'), /* New browsers and IE9+ */
+	url('../fonts/montserrat-0.woff2') format('woff2'),  /* Latest browsers */
+	url('../fonts/montserrat-0.ttf') format('truetype'); /* OLD Safari, Android, iOS */
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap; // optional
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat'),
+	url('../fonts/montserrat-1.woff') format('woff'), /* New browsers and IE9+ */
+	url('../fonts/montserrat-1.woff2') format('woff2'),  /* Latest browsers */
+	url('../fonts/montserrat-1.ttf') format('truetype'); /* OLD Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap; // optional
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat SemiBold'),
+	url('../fonts/montserrat-2.woff') format('woff'), /* New browsers and IE9+ */
+	url('../fonts/montserrat-2.woff2') format('woff2'),  /* Latest browsers */
+	url('../fonts/montserrat-2.ttf') format('truetype'); /* OLD Safari, Android, iOS */
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap; // optional
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Bold'),
+	url('../fonts/montserrat-3.woff') format('woff'), /* New browsers and IE9+ */
+	url('../fonts/montserrat-3.woff2') format('woff2'),  /* Latest browsers */
+	url('../fonts/montserrat-3.ttf') format('truetype'); /* OLD Safari, Android, iOS */
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap; // optional
+}
+
+$montserrat: 'Montserrat', sans-serif;

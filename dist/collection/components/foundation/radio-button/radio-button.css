@@ -1,0 +1,557 @@
+[name=radio-button] .radio-button__shape:after, [name=radio-button] .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 0 solid transparent;
+  background: transparent;
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: all 150ms 0s ease;
+}
+[name=radio-button] .radio-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+[name=radio-button] .radio-button__shape {
+  position: relative;
+  display: block;
+  border-style: solid;
+  transition: background-color 150ms 0s ease;
+  cursor: pointer;
+}
+[name=radio-button] .radio-button__shape__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+[name=radio-button] .radio-button__shape--with-icon .radio-button__shape__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 150ms 0s ease;
+}
+[name=radio-button] .radio-button label {
+  font-family: "Montserrat", sans-serif;
+  transition: font-weight 150ms 0s ease;
+  cursor: pointer;
+}
+[name=radio-button] .radio-button input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+[name=radio-button] .radio-button input:checked + .radio-button__shape--with-icon .radio-button__shape__icon {
+  opacity: 1;
+}
+[name=radio-button] .radio-button.radio-button--disabled {
+  cursor: not-allowed;
+}
+[name=radio-button] .radio-button.radio-button--disabled .radio-button__shape,
+[name=radio-button] .radio-button.radio-button--disabled label,
+[name=radio-button] .radio-button.radio-button--disabled input {
+  pointer-events: none;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):hover .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):hover .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):hover .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):hover input:checked + .radio-button__shape {
+  border-color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):focus .radio-button__shape {
+  border-color: #F76700;
+  background-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):focus .radio-button__shape:after {
+  border-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):focus .radio-button__shape__icon {
+  color: inherit;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):active .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):active .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled):active .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled .radio-button__shape__icon {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button.radio-button--disabled input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):hover .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):hover .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):hover .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):hover input:checked + .radio-button__shape {
+  border-color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):focus .radio-button__shape {
+  border-color: #F76700;
+  background-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):focus .radio-button__shape:after {
+  border-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):focus .radio-button__shape__icon {
+  color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):active .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):active .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled):active .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) input:checked + .radio-button__shape {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) input:checked + .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) input:checked + .radio-button__shape__icon {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  color: #F76700;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled .radio-button__shape__icon {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--primary.radio-button--disabled input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) .radio-button__shape__icon {
+  color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):hover .radio-button__shape {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):hover .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):hover .radio-button__shape__icon {
+  color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):hover input:checked + .radio-button__shape {
+  border-color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):focus .radio-button__shape {
+  border-color: #004885;
+  background-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):focus .radio-button__shape:after {
+  border-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):focus .radio-button__shape__icon {
+  color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):active .radio-button__shape {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):active .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled):active .radio-button__shape__icon {
+  color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) input:checked + .radio-button__shape {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) input:checked + .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) input:checked + .radio-button__shape__icon {
+  color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  color: #004885;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled .radio-button__shape__icon {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--tertiary.radio-button--disabled input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) .radio-button__shape__icon {
+  color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):hover .radio-button__shape {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):hover .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):hover .radio-button__shape__icon {
+  color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):hover input:checked + .radio-button__shape {
+  border-color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):focus .radio-button__shape {
+  border-color: #96C11F;
+  background-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):focus .radio-button__shape:after {
+  border-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):focus .radio-button__shape__icon {
+  color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):active .radio-button__shape {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):active .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled):active .radio-button__shape__icon {
+  color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) input:checked + .radio-button__shape {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) input:checked + .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) input:checked + .radio-button__shape__icon {
+  color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  color: #96C11F;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled .radio-button__shape__icon {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quaternary.radio-button--disabled input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) .radio-button__shape__icon {
+  color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):hover .radio-button__shape {
+  border-color: #EF7B0B;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):hover .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):hover .radio-button__shape__icon {
+  color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):hover input:checked + .radio-button__shape {
+  border-color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):focus .radio-button__shape {
+  border-color: #EF7B0B;
+  background-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):focus .radio-button__shape:after {
+  border-color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):focus .radio-button__shape__icon {
+  color: inherit;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):active .radio-button__shape {
+  border-color: #EF7B0B;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):active .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled):active .radio-button__shape__icon {
+  color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) input:checked + .radio-button__shape {
+  border-color: #EF7B0B;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) input:checked + .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) input:checked + .radio-button__shape__icon {
+  color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  color: #EF7B0B;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled .radio-button__shape {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled .radio-button__shape:after {
+  border-color: transparent;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled .radio-button__shape__icon {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled input:checked + .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  background-color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button--quinary.radio-button--disabled input:checked + .radio-button__shape + label {
+  color: #5E5E5E;
+}
+[name=radio-button] .radio-button.radio-button .radio-button__shape {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button .radio-button__shape:after {
+  width: 20px;
+  height: 20px;
+  border-width: 8px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button .radio-button__shape__icon {
+  font-size: 28px;
+}
+[name=radio-button] .radio-button.radio-button .radio-button__shape--with-icon .radio-button__shape__icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button label {
+  margin: 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=radio-button] .radio-button.radio-button:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  font-weight: 600;
+}
+[name=radio-button] .radio-button.radio-button--md .radio-button__shape {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  border-width: 1px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button--md .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button--md .radio-button__shape:after {
+  width: 20px;
+  height: 20px;
+  border-width: 8px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button--md .radio-button__shape__icon {
+  font-size: 28px;
+}
+[name=radio-button] .radio-button.radio-button--md .radio-button__shape--with-icon .radio-button__shape__icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 20px;
+}
+[name=radio-button] .radio-button.radio-button--md label {
+  margin: 0 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=radio-button] .radio-button.radio-button--md:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  font-weight: 600;
+}
+[name=radio-button] .radio-button.radio-button--sm .radio-button__shape {
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  border-width: 1px;
+  border-radius: 16px;
+}
+[name=radio-button] .radio-button.radio-button--sm .radio-button__shape:not(.radio-button__shape--with-icon):before {
+  width: 8px;
+  height: 8px;
+  border-radius: 16px;
+}
+[name=radio-button] .radio-button.radio-button--sm .radio-button__shape:after {
+  width: 16px;
+  height: 16px;
+  border-width: 4px;
+  border-radius: 16px;
+}
+[name=radio-button] .radio-button.radio-button--sm .radio-button__shape__icon {
+  font-size: 20px;
+}
+[name=radio-button] .radio-button.radio-button--sm .radio-button__shape--with-icon .radio-button__shape__icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 16px;
+}
+[name=radio-button] .radio-button.radio-button--sm label {
+  margin: 0 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=radio-button] .radio-button.radio-button--sm:not(.radio-button--disabled) input:checked + .radio-button__shape + label {
+  font-weight: 600;
+}

@@ -1,0 +1,465 @@
+.font-family-1 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.font-family-2 {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.line-chart {
+  display: block;
+}
+.line-chart__svg-container {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.line-chart__svg-container svg {
+  display: block;
+}
+.line-chart__average-line {
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+.line-chart--has-dot-hovered .line-chart__average-line {
+  opacity: 0.3;
+}
+.line-chart__area {
+  transition: opacity 0.4s;
+}
+.line-chart--has-dot-hovered .line-chart__area {
+  opacity: 0.3;
+}
+.line-chart__line {
+  opacity: 1;
+  transition: opacity 0.4s;
+  stroke-width: 2px;
+}
+.line-chart--has-dot-hovered .line-chart__line {
+  opacity: 0.3;
+}
+.line-chart__line-shadow {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+.line-chart--has-dot-hovered .line-chart__line-shadow {
+  opacity: 0.3;
+}
+.line-chart__dot-circle {
+  pointer-events: none;
+  transform: scale(1);
+  transition: stroke 0.4s;
+  stroke-width: 2px;
+  r: 6px;
+}
+.line-chart__dot-circle--small {
+  r: 2px;
+}
+.line-chart__dot-interactable-area:hover + g .line-chart__dot-circle {
+  transform: scale(1.2);
+  r: 6px;
+  stroke-width: 4px;
+  fill: #FFFFFF !important;
+}
+.line-chart__dot-interactable-area {
+  opacity: 0;
+  cursor: pointer;
+}
+.line-chart__dot-line {
+  display: none;
+  pointer-events: none;
+  stroke-width: 1px;
+}
+.line-chart__dot-interactable-area:hover + g .line-chart__dot-line {
+  display: block;
+}
+.line-chart__tooltip {
+  display: none;
+}
+.line-chart__tooltip--visible {
+  display: block;
+}
+.line-chart__tooltip-shape {
+  stroke-width: 0;
+}
+.line-chart__tooltip-text {
+  font-family: "Montserrat", sans-serif;
+  fill: #5E5E5E;
+}
+.line-chart__tooltip-secondary-text {
+  fill: #5E5E5E;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.line-chart__area-gradient stop:nth-child(1) {
+  stop-opacity: 0.25;
+}
+.line-chart__area-gradient stop:nth-child(2) {
+  stop-opacity: 0;
+}
+.line-chart__legend-icon {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.line-chart__legend-icon--dot:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #000000;
+  content: "";
+}
+.line-chart__legend-icon--dot:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border: solid 2px #000000;
+  border-radius: 9999px;
+  background-color: #FFFFFF;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+.line-chart__legend-icon--line:before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #FFFFFF;
+  content: "";
+}
+.line-chart.line-chart .line-chart__axis text {
+  fill: #A7A7A7;
+}
+.line-chart.line-chart .line-chart__axis-title {
+  fill: #A7A7A7;
+}
+.line-chart.line-chart .line-chart__grid-line--x {
+  stroke: #EEEEEE;
+}
+.line-chart.line-chart .line-chart__grid-line--y {
+  stroke: #EEEEEE;
+}
+.line-chart.line-chart .line-chart__average-line {
+  stroke: #D52B1E;
+}
+.line-chart.line-chart .line-chart__line {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__line-shadow {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--small {
+  fill: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-line {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient stop:nth-child(1) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient stop:nth-child(2) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--average-line:before {
+  background-color: #D52B1E;
+}
+.line-chart.line-chart .line-chart__line--default {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__line-shadow--default {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--default {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--default.line-chart__dot-circle--small {
+  fill: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-line--default {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--default stop:nth-child(1) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--default stop:nth-child(2) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--default:before {
+  background-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--default:after {
+  border-color: #F76700;
+}
+.line-chart.line-chart .line-chart__line--primary {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__line-shadow--primary {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--primary {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--primary.line-chart__dot-circle--small {
+  fill: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-line--primary {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--primary stop:nth-child(1) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--primary stop:nth-child(2) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--primary:before {
+  background-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--primary:after {
+  border-color: #F76700;
+}
+.line-chart.line-chart .line-chart__line--secondary {
+  stroke: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__line-shadow--secondary {
+  stroke: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__dot-circle--secondary {
+  stroke: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__dot-circle--secondary.line-chart__dot-circle--small {
+  fill: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__dot-line--secondary {
+  stroke: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__area-gradient--secondary stop:nth-child(1) {
+  stop-color: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__area-gradient--secondary stop:nth-child(2) {
+  stop-color: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__legend-icon--secondary:before {
+  background-color: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__legend-icon--secondary:after {
+  border-color: #5E5E5E;
+}
+.line-chart.line-chart .line-chart__line--tertiary {
+  stroke: #004885;
+}
+.line-chart.line-chart .line-chart__line-shadow--tertiary {
+  stroke: #004885;
+}
+.line-chart.line-chart .line-chart__dot-circle--tertiary {
+  stroke: #004885;
+}
+.line-chart.line-chart .line-chart__dot-circle--tertiary.line-chart__dot-circle--small {
+  fill: #004885;
+}
+.line-chart.line-chart .line-chart__dot-line--tertiary {
+  stroke: #004885;
+}
+.line-chart.line-chart .line-chart__area-gradient--tertiary stop:nth-child(1) {
+  stop-color: #004885;
+}
+.line-chart.line-chart .line-chart__area-gradient--tertiary stop:nth-child(2) {
+  stop-color: #004885;
+}
+.line-chart.line-chart .line-chart__legend-icon--tertiary:before {
+  background-color: #004885;
+}
+.line-chart.line-chart .line-chart__legend-icon--tertiary:after {
+  border-color: #004885;
+}
+.line-chart.line-chart .line-chart__line--quaternary {
+  stroke: #96C11F;
+}
+.line-chart.line-chart .line-chart__line-shadow--quaternary {
+  stroke: #96C11F;
+}
+.line-chart.line-chart .line-chart__dot-circle--quaternary {
+  stroke: #96C11F;
+}
+.line-chart.line-chart .line-chart__dot-circle--quaternary.line-chart__dot-circle--small {
+  fill: #96C11F;
+}
+.line-chart.line-chart .line-chart__dot-line--quaternary {
+  stroke: #96C11F;
+}
+.line-chart.line-chart .line-chart__area-gradient--quaternary stop:nth-child(1) {
+  stop-color: #96C11F;
+}
+.line-chart.line-chart .line-chart__area-gradient--quaternary stop:nth-child(2) {
+  stop-color: #96C11F;
+}
+.line-chart.line-chart .line-chart__legend-icon--quaternary:before {
+  background-color: #96C11F;
+}
+.line-chart.line-chart .line-chart__legend-icon--quaternary:after {
+  border-color: #96C11F;
+}
+.line-chart.line-chart .line-chart__line--quinary {
+  stroke: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__line-shadow--quinary {
+  stroke: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__dot-circle--quinary {
+  stroke: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__dot-circle--quinary.line-chart__dot-circle--small {
+  fill: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__dot-line--quinary {
+  stroke: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__area-gradient--quinary stop:nth-child(1) {
+  stop-color: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__area-gradient--quinary stop:nth-child(2) {
+  stop-color: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__legend-icon--quinary:before {
+  background-color: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__legend-icon--quinary:after {
+  border-color: #EF7B0B;
+}
+.line-chart.line-chart .line-chart__line--style-1 {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__line-shadow--style-1 {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-1 {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-1.line-chart__dot-circle--small {
+  fill: #F76700;
+}
+.line-chart.line-chart .line-chart__dot-line--style-1 {
+  stroke: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-1 stop:nth-child(1) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-1 stop:nth-child(2) {
+  stop-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-1:before {
+  background-color: #F76700;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-1:after {
+  border-color: #F76700;
+}
+.line-chart.line-chart .line-chart__line--style-2 {
+  stroke: #009FD4;
+}
+.line-chart.line-chart .line-chart__line-shadow--style-2 {
+  stroke: #009FD4;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-2 {
+  stroke: #009FD4;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-2.line-chart__dot-circle--small {
+  fill: #009FD4;
+}
+.line-chart.line-chart .line-chart__dot-line--style-2 {
+  stroke: #009FD4;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-2 stop:nth-child(1) {
+  stop-color: #009FD4;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-2 stop:nth-child(2) {
+  stop-color: #009FD4;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-2:before {
+  background-color: #009FD4;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-2:after {
+  border-color: #009FD4;
+}
+.line-chart.line-chart .line-chart__line--style-3 {
+  stroke: #025874;
+}
+.line-chart.line-chart .line-chart__line-shadow--style-3 {
+  stroke: #025874;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-3 {
+  stroke: #025874;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-3.line-chart__dot-circle--small {
+  fill: #025874;
+}
+.line-chart.line-chart .line-chart__dot-line--style-3 {
+  stroke: #025874;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-3 stop:nth-child(1) {
+  stop-color: #025874;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-3 stop:nth-child(2) {
+  stop-color: #025874;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-3:before {
+  background-color: #025874;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-3:after {
+  border-color: #025874;
+}
+.line-chart.line-chart .line-chart__line--style-4 {
+  stroke: #D52B1E;
+}
+.line-chart.line-chart .line-chart__line-shadow--style-4 {
+  stroke: #D52B1E;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-4 {
+  stroke: #D52B1E;
+}
+.line-chart.line-chart .line-chart__dot-circle--style-4.line-chart__dot-circle--small {
+  fill: #D52B1E;
+}
+.line-chart.line-chart .line-chart__dot-line--style-4 {
+  stroke: #D52B1E;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-4 stop:nth-child(1) {
+  stop-color: #D52B1E;
+}
+.line-chart.line-chart .line-chart__area-gradient--style-4 stop:nth-child(2) {
+  stop-color: #D52B1E;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-4:before {
+  background-color: #D52B1E;
+}
+.line-chart.line-chart .line-chart__legend-icon--style-4:after {
+  border-color: #D52B1E;
+}
+.line-chart.line-chart .line-chart__axis text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.line-chart.line-chart .line-chart__axis-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.line-chart.line-chart .line-chart__tooltip-secondary-text {
+  font-size: 12px;
+}
+.line-chart.line-chart .line-chart__tooltip-text {
+  font-size: 16px;
+}

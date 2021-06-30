@@ -1,0 +1,204 @@
+[name=list] {
+  display: block;
+}
+[name=list] .list {
+  padding: 0;
+  list-style: none;
+}
+[name=list] .list li {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+[name=list] .list li:empty {
+  padding: 0;
+  line-height: normal;
+}
+[name=list] .list li:empty:before {
+  opacity: 0;
+}
+[name=list] .list li:before {
+  display: inline-block;
+  flex-shrink: 0;
+  content: "";
+}
+[name=list] .list li:last-child {
+  padding-bottom: 0 !important;
+}
+[name=list] .list__icon {
+  display: flex;
+  -ms-grid-row-align: center;
+      align-self: center;
+  flex-shrink: 0;
+}
+[name=list] .list--align-right li {
+  flex-direction: row-reverse;
+}
+[name=list] .list--with-icon li:before {
+  display: none;
+}
+[name=list] .list--superhero li {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 96px;
+}
+[name=list] .list--hero li {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 88px;
+}
+[name=list] .list--h1 li {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+}
+[name=list] .list--body-1 li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+}
+[name=list] .list--h2 li {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+[name=list] .list--body-2 li {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=list] .list--h3 li {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 48px;
+}
+[name=list] .list--body-3 li {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=list] .list--h4 li {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 40px;
+}
+[name=list] .list--h5 li {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+[name=list] .list--h6 li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+[name=list] .list--small li {
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=list] .list li {
+  color: #5E5E5E;
+}
+[name=list] .list li:before {
+  background-color: #5E5E5E;
+}
+[name=list] .list__icon {
+  color: #5E5E5E;
+}
+[name=list] .list {
+  margin: 0;
+}
+[name=list] .list li {
+  padding: 0 0 8px 4px;
+}
+[name=list] .list li:before {
+  width: 4px;
+  height: 4px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+[name=list] .list li .list__icon {
+  margin-right: 8px;
+}
+[name=list] .list--superhero li:before {
+  margin-top: 46px;
+}
+[name=list] .list--hero li:before {
+  margin-top: 42px;
+}
+[name=list] .list--h1 li:before {
+  margin-top: 28px;
+}
+[name=list] .list--body-1 li:before {
+  margin-top: 14px;
+}
+[name=list] .list--h2 li:before {
+  margin-top: 14px;
+}
+[name=list] .list--body-2 li:before {
+  margin-top: 6px;
+}
+[name=list] .list--h3 li:before {
+  margin-top: 22px;
+}
+[name=list] .list--body-3 li:before {
+  margin-top: 6px;
+}
+[name=list] .list--h4 li:before {
+  margin-top: 18px;
+}
+[name=list] .list--h5 li:before {
+  margin-top: 14px;
+}
+[name=list] .list--h6 li:before {
+  margin-top: 14px;
+}
+[name=list] .list--small li:before {
+  margin-top: 6px;
+}
+[name=list] .list--align-right li {
+  padding: 0 4px 8px 0;
+}
+[name=list] .list--align-right li:before,
+[name=list] .list--align-right li .list__icon {
+  margin-right: inherit;
+  margin-left: 8px;
+}
+[name=list] .list--with-icon.list--superhero li:before {
+  margin-top: 104px;
+}
+[name=list] .list--with-icon.list--hero li:before {
+  margin-top: 96px;
+}
+[name=list] .list--with-icon.list--h1 li {
+  line-height: 68px;
+}
+[name=list] .list--with-icon.list--body-1 li {
+  line-height: 40px;
+}
+[name=list] .list--with-icon.list--h2 li {
+  line-height: 40px;
+}
+[name=list] .list--with-icon.list--body-2 li {
+  line-height: 24px;
+}
+[name=list] .list--with-icon.list--h3 li {
+  line-height: 56px;
+}
+[name=list] .list--with-icon.list--body-3 li {
+  line-height: 24px;
+}
+[name=list] .list--with-icon.list--h4 li {
+  line-height: 48px;
+}
+[name=list] .list--with-icon.list--h5 li {
+  line-height: 40px;
+}
+[name=list] .list--with-icon.list--h6 li {
+  line-height: 40px;
+}
+[name=list] .list--with-icon.list--small li:before {
+  line-height: 24px;
+}

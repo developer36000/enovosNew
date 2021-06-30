@@ -1,0 +1,112 @@
+// ---------------------------------------------------------------------------------------------------------------------
+/* Utilities */
+// ---------------------------------------------------------------------------------------------------------------------
+[is-hidden],
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s;
+}
+
+[is-visible],
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition: all .2s;
+}
+
+[tabindex] {
+  outline: none !important;
+}
+
+.hidden {
+  display: none !important;
+
+  [hidden-xlg],
+  &-xlg {
+    @media (min-width: $breakpoint-xlg-min) {
+      display: none !important;
+    }
+  }
+
+  [hidden-lg],
+  &-lg {
+    @media (min-width: $breakpoint-lg-min) and (max-width: $breakpoint-lg-max) {
+      display: none !important;
+    }
+  }
+
+  [hidden-md],
+  &-md {
+    @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+      display: none !important;
+    }
+  }
+
+  [hidden-sm],
+  &-sm {
+    @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
+      display: none !important;
+    }
+  }
+
+  [hidden-xs],
+  &-xs {
+    @media (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max) {
+      display: none !important;
+    }
+  }
+
+  [hidden-xxs],
+  &-xxs {
+    @media (max-width: $breakpoint-xxs-max) {
+      display: none !important;
+    }
+  }
+}
+
+.visible {
+  display: block;
+
+  [visible-xlg],
+  &-xlg {
+    @media (min-width: $breakpoint-xlg-min) {
+      display: block !important;
+    }
+  }
+
+  [visible-lg],
+  &-lg {
+    @media (min-width: $breakpoint-lg-min) and (max-width: $breakpoint-lg-max) {
+      display: block !important;
+    }
+  }
+
+  [visible-md],
+  &-md {
+    @media (min-width: $breakpoint-md-min) and (max-width: $breakpoint-md-max) {
+      display: block !important;
+    }
+  }
+
+  [visible-sm],
+  &-sm {
+    @media (min-width: $breakpoint-sm-min) and (max-width: $breakpoint-sm-max) {
+      display: block !important;
+    }
+  }
+
+  [visible-xs],
+  &-xs {
+    @media (min-width: $breakpoint-xs-min) and (max-width: $breakpoint-xs-max) {
+      display: block !important;
+    }
+  }
+
+  [visible-xxs],
+  &-xxs {
+    @media (max-width: $breakpoint-xxs-max) {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,224 @@
+body.sheet--open {
+  overflow: hidden;
+}
+
+[name=sheet] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 6000;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.1s ease;
+}
+[name=sheet]:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  content: "";
+}
+[name=sheet].sheet--open:after {
+  display: block;
+}
+[name=sheet].sheet--on-top .sheet__content {
+  overflow: scroll;
+  pointer-events: inherit;
+}
+[name=sheet].sheet--on-bottom {
+  background-color: transparent;
+}
+[name=sheet].sheet--on-bottom .sheet__bar {
+  opacity: 0;
+  visibility: hidden;
+}
+[name=sheet].sheet--on-bottom .sheet__content {
+  opacity: 0;
+  visibility: hidden;
+}
+[name=sheet].sheet--fit-content {
+  height: auto;
+}
+[name=sheet].sheet--is-swiping {
+  transition: none;
+}
+[name=sheet].sheet--is-swiping:after {
+  display: block;
+}
+[name=sheet].sheet--is-swiping .sheet__content {
+  height: 100vh !important;
+}
+[name=sheet] .sheet__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+[name=sheet] .sheet__bar:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border: none;
+  content: "";
+  outline: none;
+}
+[name=sheet] .sheet__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+[name=sheet] .sheet__content {
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.1s ease;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+[name=sheet] .sheet__backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+[name=sheet] .sheet__backdrop.fade-in {
+  opacity: 0.5;
+}
+@media (min-width : 1440px) {
+  [name=sheet] .sheet__header {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width : 1439px) {
+  [name=sheet] .sheet__header {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width : 1151px) {
+  [name=sheet] .sheet__header {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width : 863px) {
+  [name=sheet] .sheet__header {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width : 639px) {
+  [name=sheet] .sheet__header {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (max-width : 320px) {
+  [name=sheet] .sheet__header {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  [name=sheet] .sheet__content {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+[name=sheet].sheet {
+  border-radius: 24px 24px 0 0;
+}
+[name=sheet].sheet .sheet__bar {
+  height: 4px;
+  border-radius: 24px 24px 0 0;
+}
+[name=sheet].sheet .sheet__bar:before {
+  width: 64px;
+  height: 4px;
+  margin: 14px auto 16px;
+  border-radius: 2px;
+}
+[name=sheet].sheet .sheet__wrapper {
+  padding: 32px 0 0 0;
+}
+[name=sheet].sheet:after {
+  background-color: #FFFFFF;
+}
+[name=sheet].sheet .sheet__bar {
+  background-color: #FFFFFF;
+}
+[name=sheet].sheet .sheet__bar:before {
+  background-color: #5A8D00;
+}
+[name=sheet].sheet .sheet__wrapper {
+  background-color: #FFFFFF;
+}
+[name=sheet].sheet .sheet__backdrop {
+  background-color: #5E5E5E;
+}

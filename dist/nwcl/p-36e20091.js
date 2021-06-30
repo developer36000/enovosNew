@@ -1,0 +1,1 @@
+import{g as t}from"./p-d6177411.js";import{h as s}from"./p-c594624d.js";class r{constructor(t){this.props={content:"string",styles:"object"};for(const s in this.props)this.props.hasOwnProperty(s)&&t[s]&&typeof t[s]===this.props[s]&&(this[s]=t[s])}getProp(s){return t(this,s)||""}hasProp(t){return s(this,t)}}export{r as L}

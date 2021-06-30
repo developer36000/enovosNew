@@ -1,0 +1,26 @@
+.steps-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 70px;
+	@media screen and (max-width: 1024px) {
+		margin-bottom: 60px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.step {
+		border-radius: 4px;
+		background: $grey;
+		width: 16px;
+		height: 5px;
+		transition: all .3s ease-in-out;
+		display: block;
+		&:not(:last-of-type) {
+			margin-right: 4px;
+		}
+		&.active {
+			width: 32px;
+			background: $step-gradient;
+		}
+	}
+}

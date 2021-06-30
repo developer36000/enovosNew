@@ -1,0 +1,19 @@
+[name=fields-group] {
+  display: block;
+}
+[name=fields-group] + [name=fields-group] {
+  margin-top: 16px;
+}
+
+.fields-group__title {
+  border-bottom: solid 1px #EEEEEE;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+}
+.fields-group__tooltip {
+  margin-left: 4px;
+}
+.fields-group__tooltip .icon {
+  display: block;
+}

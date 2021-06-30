@@ -1,0 +1,207 @@
+@mixin text-color-styles($target: "") {
+  // Text Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name} {
+      &--#{'' + $color-name} {
+        color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name} {
+        &--#{'' + $color-name}-#{'' + $variation} {
+          color: $value !important;
+        }
+
+        // contextual classes
+        @if $color-name == 'contextual' {
+          &--#{'' + $variation} {
+            color: $value !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Text Colors Utilities
+  #{$target}.#{$component-name} {
+    &--white-opacity-50 { color: rgba(255,255,255, .5) !important;}
+    &--white { color: $color-white !important;}
+    &--black { color: $color-black !important;}
+  }
+}
+
+@mixin border-color-styles($target: "") {
+  // Text Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name} {
+      &--border--#{'' + $color-name} {
+        border-color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name} {
+        &--border--#{'' + $color-name}-#{'' + $variation} {
+          border-color: $value !important;
+        }
+
+        // contextual classes
+        @if $color-name == 'contextual' {
+          &--border--#{'' + $variation} {
+            border-color: $value !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Text Colors Utilities
+  #{$target}.#{$component-name} {
+    &--border--white-opacity-50 { border-color: rgba(255,255,255, .5) !important;}
+    &--border--white { border-color: $color-white !important;}
+    &--border--black { border-color: $color-black !important;}
+  }
+}
+
+@mixin bg-color-styles($target: "", $item: "", $pseudoElement: "") {
+  // Background Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name}#{$item} {
+      &--bg--#{'' + $color-name}#{$pseudoElement} {
+        background-color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name}#{$item} {
+        &--bg--#{'' + $color-name}-#{'' + $variation}#{$pseudoElement} {
+          background-color: $value !important;
+        }
+      }
+    }
+  }
+
+  // Background Colors Utilities
+  #{$target}.#{$component-name}#{$item} {
+    &--bg--white-opacity-50#{$pseudoElement} { background-color: rgba(255,255,255, .5) !important;}
+    &--bg--white#{$pseudoElement} { background-color: $color-white !important;}
+    &--bg--black#{$pseudoElement} { background-color: $color-black !important;}
+  }
+}
+
+@mixin bg-gradient-color-styles($target: "") {
+  // Gradient
+  @each $gradient-name, $color in map-merge($gradients, $brand-gradients) {
+    @each $variation, $value in $color {
+      @each $direction-name, $direction-value in $gradient-direction {
+
+        #{$target}.#{$component-name} {
+          // Default bg gradient direction is bottom
+          @if $direction-name == 'bottom' {
+            &--bg--gradient-#{$gradient-name}-#{'' + $variation} {
+              background-image: $value !important;
+            }
+          }
+
+          // For each other direction
+          &--bg--gradient-#{$gradient-name}-#{'' + $variation}-#{$direction-name} {
+            background-image: str-replace($value, 'to bottom', $direction-value) !important;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@mixin font-styles() {
+  // Utilities
+  .#{$component-name} {
+    &--left    { text-align: left !important;}
+    &--center  { text-align: center !important;}
+    &--right   { text-align: right !important;}
+
+    &--capitalize { text-transform: capitalize !important; }
+    &--uppercase  { text-transform: uppercase !important; }
+    &--lowercase  { text-transform: lowercase !important; }
+    &--underline { text-decoration: underline !important; }
+
+    &--italic { font-style: italic !important; }
+
+    &--fit-content {
+      height: inherit !important;
+      line-height: unset !important;
+    }
+    &--line-height-body-2 {
+      line-height: $typography-body-2-line-height !important;
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-WEIGHT Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $weight-name, $typography-font-weight in $typography-font-weights {
+      &--weight-#{$weight-name} {
+        font-weight: map-get($typography-font-weights, $weight-name) !important;
+      }
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-STYLE Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $style-name, $typography-font-style in $typography-font-styles {
+      &--style-#{$style-name} {
+        font-style: map-get($typography-font-styles, #{$style-name}) !important;
+      }
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-FAMILY Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $family-name, $typography-font-family in $fonts {
+      &--#{$family-name} {
+        font-family: map-get($fonts, #{$family-name}) !important;
+      }
+    }
+
+  }
+
+}
+
+// Margin as host attribute
+$sides: (top, bottom, left, right);
+@for $space from 0 through 40 {
+  @each $side in $sides {
+    .margin-#{$side}-#{$space},
+    [margin-#{$side}-#{$space}] {
+      margin-#{$side}: #{$space * $gutter-default} !important;
+    }
+    .padding-#{$side}-#{$space},
+    [padding-#{$side}-#{$space}] {
+      padding-#{$side}: #{$space * $gutter-default} !important;
+    }
+  }
+}
+
+@mixin margin-padding-styles() {
+  @for $space from 0 through 40 {
+    @each $side in $sides {
+      .#{$component-name} {
+        &--margin-#{$side}-#{$space},
+        &[margin-#{$side}-#{$space}] {
+          margin-#{$side}: #{$space * $gutter-default} !important;
+        }
+        &--padding-#{$side}-#{$space},
+        &[padding-#{$side}-#{$space}] {
+          padding-#{$side}: #{$space * $gutter-default} !important;
+        }
+      }
+    }
+  }
+}

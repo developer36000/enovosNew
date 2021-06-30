@@ -1,0 +1,33 @@
+.chart-legend {
+  margin-top: 16px;
+}
+@media (min-width: 640px) {
+  .chart-legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.chart-legend__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart-legend__item + .chart-legend__item {
+  margin-top: 8px;
+}
+@media (min-width: 640px) {
+  .chart-legend__item + .chart-legend__item {
+    margin-top: 0;
+    margin-left: 16px;
+  }
+}
+.chart-legend__text {
+  color: #5E5E5E;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.chart-legend__icon + .chart-legend__text {
+  margin-left: 8px;
+}

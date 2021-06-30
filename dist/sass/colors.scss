@@ -1,0 +1,262 @@
+@import "brand/colors";
+@import 'functions/str-replace';
+
+$color-black: if(variable-exists('color-black'), $color-black, transparent);
+
+$gradient-primary-light:          linear-gradient(to bottom, if(variable-exists('color-primary-300'), $color-primary-300, transparent), if(variable-exists('color-primary-500'), $color-primary-500, transparent));
+$gradient-primary-dark:           linear-gradient(to bottom, if(variable-exists('color-primary-500'), $color-primary-500, transparent), if(variable-exists('color-primary-700'), $color-primary-700, transparent));
+$gradient-secondary-light:        linear-gradient(to bottom, if(variable-exists('color-tertiary-700'), $color-tertiary-700, transparent), if(variable-exists('color-secondary-500'), $color-secondary-500, transparent));
+$gradient-secondary-dark:         linear-gradient(to bottom, if(variable-exists('color-secondary-500'), $color-secondary-500, transparent), if(variable-exists('color-black'), $color-black, transparent));
+$gradient-tertiary-light:         linear-gradient(to bottom, if(variable-exists('color-tertiary-400'), $color-tertiary-400, transparent), if(variable-exists('color-tertiary-500'), $color-tertiary-500, transparent));
+$gradient-tertiary-dark:          linear-gradient(to bottom, if(variable-exists('color-tertiary-500'), $color-tertiary-500, transparent), if(variable-exists('color-tertiary-700'), $color-tertiary-700, transparent));
+$gradient-quaternary-light:       linear-gradient(to bottom, if(variable-exists('color-white'), $color-white, transparent), if(variable-exists('color-quaternary-500'), $color-quaternary-500, transparent));
+$gradient-quaternary-medium:      linear-gradient(to bottom, if(variable-exists('color-quaternary-500'), $color-quaternary-500, transparent), if(variable-exists('color-quaternary-700'), $color-quaternary-700, transparent));
+$gradient-quaternary-dark:        linear-gradient(to bottom, if(variable-exists('color-quaternary-500'), $color-quaternary-500, transparent), if(variable-exists('color-tertiary-500'), $color-tertiary-500, transparent));
+$gradient-quinary-light:          linear-gradient(to bottom, if(variable-exists('color-quinary-300'), $color-quinary-300, transparent), if(variable-exists('color-quinary-500'), $color-quinary-500, transparent));
+$gradient-quinary-dark:           linear-gradient(to bottom, if(variable-exists('color-quinary-500'), $color-quinary-500, transparent), if(variable-exists('color-quinary-700'), $color-quinary-700, transparent));
+
+// Contextual
+$gradient-success:                linear-gradient(to bottom, if(variable-exists('color-contextual-success-light'), $color-contextual-success-light, transparent), if(variable-exists('color-contextual-success'), $color-contextual-success, transparent));
+$gradient-info:                   linear-gradient(to bottom, if(variable-exists('color-contextual-info-light'), $color-contextual-info-light, transparent), if(variable-exists('color-contextual-info'), $color-contextual-info, transparent));
+$gradient-warning:                linear-gradient(to bottom, if(variable-exists('color-contextual-warning-light'), $color-contextual-warning-light, transparent), if(variable-exists('color-contextual-warning'), $color-contextual-warning, transparent));
+$gradient-error:                  linear-gradient(to bottom, if(variable-exists('color-contextual-error-light'), $color-contextual-error-light, transparent), if(variable-exists('color-contextual-error'), $color-contextual-error, transparent));
+
+// ** UTILITIES
+$colors-default: (
+  primary: if(variable-exists('color-primary-500'), $color-primary-500, transparent),
+  secondary: if(variable-exists('color-secondary-500'), $color-secondary-500, transparent),
+  tertiary: if(variable-exists('color-tertiary-500'), $color-tertiary-500, transparent),
+  quaternary: if(variable-exists('color-quaternary-500'), $color-quaternary-500, transparent),
+  quinary: if(variable-exists('color-quinary-500'), $color-quinary-500, transparent),
+  senary: if(variable-exists('color-senary-500'), $color-senary-500, transparent),
+  septenary: if(variable-exists('color-septenary-500'), $color-septenary-500, transparent),
+  grey: if(variable-exists('color-grey-500'), $color-grey-500, transparent),
+);
+$colors: (
+  primary: (
+    900: if(variable-exists('color-primary-900'), $color-primary-900, transparent),
+    800: if(variable-exists('color-primary-800'), $color-primary-800, transparent),
+    700: if(variable-exists('color-primary-700'), $color-primary-700, transparent),
+    600: if(variable-exists('color-primary-600'), $color-primary-600, transparent),
+    500: if(variable-exists('color-primary-500'), $color-primary-500, transparent),
+    400: if(variable-exists('color-primary-400'), $color-primary-400, transparent),
+    300: if(variable-exists('color-primary-300'), $color-primary-300, transparent),
+    200: if(variable-exists('color-primary-200'), $color-primary-200, transparent),
+    100: if(variable-exists('color-primary-100'), $color-primary-100, transparent),
+    50: if(variable-exists('color-primary-50'), $color-primary-50, transparent)
+  ),
+  secondary: (
+    900: if(variable-exists('color-secondary-900'), $color-secondary-900, transparent),
+    800: if(variable-exists('color-secondary-800'), $color-secondary-800, transparent),
+    700: if(variable-exists('color-secondary-700'), $color-secondary-700, transparent),
+    600: if(variable-exists('color-secondary-600'), $color-secondary-600, transparent),
+    500: if(variable-exists('color-secondary-500'), $color-secondary-500, transparent),
+    400: if(variable-exists('color-secondary-400'), $color-secondary-400, transparent),
+    300: if(variable-exists('color-secondary-300'), $color-secondary-300, transparent),
+    200: if(variable-exists('color-secondary-200'), $color-secondary-200, transparent),
+    100: if(variable-exists('color-secondary-100'), $color-secondary-100, transparent),
+    50: if(variable-exists('color-secondary-50'), $color-secondary-50, transparent)
+  ),
+  tertiary: (
+    900: if(variable-exists('color-tertiary-900'), $color-tertiary-900, transparent),
+    800: if(variable-exists('color-tertiary-800'), $color-tertiary-800, transparent),
+    700: if(variable-exists('color-tertiary-700'), $color-tertiary-700, transparent),
+    600: if(variable-exists('color-tertiary-600'), $color-tertiary-600, transparent),
+    500: if(variable-exists('color-tertiary-500'), $color-tertiary-500, transparent),
+    400: if(variable-exists('color-tertiary-400'), $color-tertiary-400, transparent),
+    300: if(variable-exists('color-tertiary-300'), $color-tertiary-300, transparent),
+    200: if(variable-exists('color-tertiary-200'), $color-tertiary-200, transparent),
+    100: if(variable-exists('color-tertiary-100'), $color-tertiary-100, transparent),
+    50: if(variable-exists('color-tertiary-50'), $color-tertiary-50, transparent)
+  ),
+  quaternary: (
+    900: if(variable-exists('color-quaternary-900'), $color-quaternary-900, transparent),
+    800: if(variable-exists('color-quaternary-800'), $color-quaternary-800, transparent),
+    700: if(variable-exists('color-quaternary-700'), $color-quaternary-700, transparent),
+    600: if(variable-exists('color-quaternary-600'), $color-quaternary-600, transparent),
+    500: if(variable-exists('color-quaternary-500'), $color-quaternary-500, transparent),
+    400: if(variable-exists('color-quaternary-400'), $color-quaternary-400, transparent),
+    300: if(variable-exists('color-quaternary-300'), $color-quaternary-300, transparent),
+    200: if(variable-exists('color-quaternary-200'), $color-quaternary-200, transparent),
+    100: if(variable-exists('color-quaternary-100'), $color-quaternary-100, transparent),
+    50: if(variable-exists('color-quaternary-50'), $color-quaternary-50, transparent)
+  ),
+  quinary: (
+    900: if(variable-exists('color-quinary-900'), $color-quinary-900, transparent),
+    800: if(variable-exists('color-quinary-800'), $color-quinary-800, transparent),
+    700: if(variable-exists('color-quinary-700'), $color-quinary-700, transparent),
+    600: if(variable-exists('color-quinary-600'), $color-quinary-600, transparent),
+    500: if(variable-exists('color-quinary-500'), $color-quinary-500, transparent),
+    400: if(variable-exists('color-quinary-400'), $color-quinary-400, transparent),
+    300: if(variable-exists('color-quinary-300'), $color-quinary-300, transparent),
+    200: if(variable-exists('color-quinary-200'), $color-quinary-200, transparent),
+    100: if(variable-exists('color-quinary-100'), $color-quinary-100, transparent),
+    50: if(variable-exists('color-quinary-50'), $color-quinary-50, transparent)
+  ),
+  senary: (
+    900: if(variable-exists('color-senary-900'), $color-senary-900, transparent),
+    800: if(variable-exists('color-senary-800'), $color-senary-800, transparent),
+    700: if(variable-exists('color-senary-700'), $color-senary-700, transparent),
+    600: if(variable-exists('color-senary-600'), $color-senary-600, transparent),
+    500: if(variable-exists('color-senary-500'), $color-senary-500, transparent),
+    400: if(variable-exists('color-senary-400'), $color-senary-400, transparent),
+    300: if(variable-exists('color-senary-300'), $color-senary-300, transparent),
+    200: if(variable-exists('color-senary-200'), $color-senary-200, transparent),
+    100: if(variable-exists('color-senary-100'), $color-senary-100, transparent),
+    50: if(variable-exists('color-senary-50'), $color-senary-50, transparent)
+  ),
+  septenary: (
+    900: if(variable-exists('color-septenary-900'), $color-septenary-900, transparent),
+    800: if(variable-exists('color-septenary-800'), $color-septenary-800, transparent),
+    700: if(variable-exists('color-septenary-700'), $color-septenary-700, transparent),
+    600: if(variable-exists('color-septenary-600'), $color-septenary-600, transparent),
+    500: if(variable-exists('color-septenary-500'), $color-septenary-500, transparent),
+    400: if(variable-exists('color-septenary-400'), $color-septenary-400, transparent),
+    300: if(variable-exists('color-septenary-300'), $color-septenary-300, transparent),
+    200: if(variable-exists('color-septenary-200'), $color-septenary-200, transparent),
+    100: if(variable-exists('color-septenary-100'), $color-septenary-100, transparent),
+    50: if(variable-exists('color-septenary-50'), $color-septenary-50, transparent)
+  ),
+  grey: (
+    900: if(variable-exists('color-grey-900'), $color-grey-900, transparent),
+    800: if(variable-exists('color-grey-800'), $color-grey-800, transparent),
+    700: if(variable-exists('color-grey-700'), $color-grey-700, transparent),
+    600: if(variable-exists('color-grey-600'), $color-grey-600, transparent),
+    500: if(variable-exists('color-grey-500'), $color-grey-500, transparent),
+    400: if(variable-exists('color-grey-400'), $color-grey-400, transparent),
+    300: if(variable-exists('color-grey-300'), $color-grey-300, transparent),
+    200: if(variable-exists('color-grey-200'), $color-grey-200, transparent),
+    100: if(variable-exists('color-grey-100'), $color-grey-100, transparent),
+    50: if(variable-exists('color-grey-50'), $color-grey-50, transparent)
+  ),
+  contextual: (
+    success : if(variable-exists('color-contextual-success'), $color-contextual-success, transparent),
+    success-light : if(variable-exists('color-contextual-success-light'), $color-contextual-success-light, transparent),
+    info    : if(variable-exists('color-contextual-info'), $color-contextual-info, transparent),
+    info-light : if(variable-exists('color-contextual-info-light'), $color-contextual-info-light, transparent),
+    warning : if(variable-exists('color-contextual-warning'), $color-contextual-warning, transparent),
+    warning-light : if(variable-exists('color-contextual-warning-light'), $color-contextual-warning-light, transparent),
+    error   : if(variable-exists('color-contextual-error'), $color-contextual-error, transparent),
+    error-light : if(variable-exists('color-contextual-error-light'), $color-contextual-error-light, transparent),
+  ),
+  pfm: (
+    blue      : if(variable-exists('color-brand-pfm-blue'), $color-brand-pfm-blue, transparent),
+    green     : if(variable-exists('color-brand-pfm-green'), $color-brand-pfm-green, transparent),
+    yellow    : if(variable-exists('color-brand-pfm-yellow'), $color-brand-pfm-yellow, transparent),
+    orange    : if(variable-exists('color-brand-pfm-orange'), $color-brand-pfm-orange, transparent),
+    red       : if(variable-exists('color-brand-pfm-red'), $color-brand-pfm-red, transparent),
+  ),
+  external-bank: (
+    ing         : if(variable-exists('color-brand-external-bank-ing'), $color-brand-external-bank-ing, transparent),
+    bil         : if(variable-exists('color-brand-external-bank-bil'), $color-brand-external-bank-bil, transparent),
+    bcee        : if(variable-exists('color-brand-external-bank-bcee'), $color-brand-external-bank-bcee, transparent),
+    post        : if(variable-exists('color-brand-external-bank-post'), $color-brand-external-bank-post, transparent),
+    raiffeisen  : if(variable-exists('color-brand-external-bank-raiffeisen'), $color-brand-external-bank-raiffeisen, transparent),
+    bnp-paribas : if(variable-exists('color-brand-external-bank-bnp-paribas'), $color-brand-external-bank-bnp-paribas, transparent),
+  ),
+  white: (
+    15: if(variable-exists('color-white-15'), $color-white-15, transparent),
+    25: if(variable-exists('color-white-25'), $color-white-25, transparent),
+    50: if(variable-exists('color-white-50'), $color-white-50, transparent),
+  ),
+);
+
+$gradients: (
+  primary: (
+    light : if(variable-exists('gradient-primary-light'), $gradient-primary-light, transparent),
+    dark  : if(variable-exists('gradient-primary-dark'), $gradient-primary-dark, transparent),
+    500   : linear-gradient(to bottom, if(variable-exists('color-gradient-primary-500-1'), $color-gradient-primary-500-1, transparent), if(variable-exists('color-gradient-primary-500-2'), $color-gradient-primary-500-2, transparent)),
+  ),
+  secondary: (
+    light : if(variable-exists('gradient-secondary-light'), $gradient-secondary-light, transparent),
+    dark  : if(variable-exists('gradient-secondary-dark'), $gradient-secondary-dark, transparent),
+    500   : linear-gradient(to bottom, if(variable-exists('color-gradient-secondary-500-1'), $color-gradient-secondary-500-1, transparent), if(variable-exists('color-gradient-secondary-500-2'), $color-gradient-secondary-500-2, transparent)),
+    300   : linear-gradient(to bottom, if(variable-exists('color-gradient-secondary-300-1'), $color-gradient-secondary-300-1, transparent), if(variable-exists('color-gradient-secondary-300-2'), $color-gradient-secondary-300-2, transparent)),
+  ),
+  tertiary: (
+    light : if(variable-exists('gradient-tertiary-light'), $gradient-tertiary-light, transparent),
+    dark  : if(variable-exists('gradient-tertiary-dark'), $gradient-tertiary-dark, transparent),
+  ),
+  quaternary: (
+    light : if(variable-exists('gradient-quaternary-light'), $gradient-quaternary-light, transparent),
+    medium: if(variable-exists('gradient-quaternary-medium'), $gradient-quaternary-medium, transparent),
+    dark  : if(variable-exists('gradient-quaternary-dark'), $gradient-quaternary-dark, transparent),
+  ),
+  quinary: (
+    light : if(variable-exists('gradient-quinary-light'), $gradient-quinary-light, transparent),
+    dark  : if(variable-exists('gradient-quinary-dark'), $gradient-quinary-dark, transparent),
+  ),
+  contextual : (
+    success: if(variable-exists('gradient-success'), $gradient-success, transparent),
+    info   : if(variable-exists('gradient-info'), $gradient-info, transparent),
+    warning: if(variable-exists('gradient-warning'), $gradient-warning, transparent),
+    error  : if(variable-exists('gradient-error'), $gradient-error, transparent),
+  )
+);
+
+$gradient-direction: (
+  left: 'to left',
+  right: 'to right',
+  bottom: 'to bottom',
+  top: 'to top'
+);
+
+$color-states: (
+  primary: (
+    states: (
+      default: (
+        color: if(variable-exists('color-primary-500'), $color-primary-500, transparent),
+      ),
+      disabled: (
+        color: if(variable-exists('color-primary-200'), $color-primary-200, transparent),
+      ),
+      hover: (
+        color: if(variable-exists('color-primary-700'), $color-primary-700, transparent),
+      ),
+      focus: (
+        color: if(variable-exists('color-primary-700'), $color-primary-700, transparent),
+      ),
+      active: (
+        color: if(variable-exists('color-primary-700'), $color-primary-700, transparent),
+      ),
+    )
+  ),
+  senary-800: (
+    states: (
+      default: (
+        color: if(variable-exists('color-senary-800'), $color-senary-800, transparent),
+      ),
+      disabled: (
+        color: if(variable-exists('color-quaternary-700'), $color-quaternary-700, transparent),
+      ),
+      hover: (
+        color: if(variable-exists('color-senary-700'), $color-senary-700, transparent),
+      ),
+      focus: (
+        color: if(variable-exists('color-senary-400'), $color-senary-400, transparent),
+      ),
+      active: (
+        color: if(variable-exists('color-senary-400'), $color-senary-400, transparent),
+      ),
+    )
+  ),
+  brand-expressive-orange-dark: (
+    states: (
+      default: (
+        color: if(variable-exists('color-brand-expressive-orange-dark-variation-500'), $color-brand-expressive-orange-dark-variation-500, transparent),
+      ),
+      disabled: (
+        color: if(variable-exists('color-quaternary-700'), $color-quaternary-700, transparent),
+      ),
+      hover: (
+        color: if(variable-exists('color-brand-expressive-orange-dark-variation-700'), $color-brand-expressive-orange-dark-variation-700, transparent),
+      ),
+      focus: (
+        color: if(variable-exists('color-brand-expressive-orange-dark-variation-700'), $color-brand-expressive-orange-dark-variation-700, transparent),
+      ),
+      active: (
+        color: if(variable-exists('color-brand-expressive-orange-dark-variation-700'), $color-brand-expressive-orange-dark-variation-700, transparent),
+      ),
+    )
+  )
+);

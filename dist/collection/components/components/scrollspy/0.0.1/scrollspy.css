@@ -1,0 +1,193 @@
+[name=scrollspy] {
+  display: flex;
+}
+[name=scrollspy] .scrollspy {
+  position: relative;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 16px;
+}
+[name=scrollspy] .scrollspy:after {
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 4px;
+  height: 32px;
+  content: "";
+  transition: top 300ms ease-in-out;
+}
+[name=scrollspy] .scrollspy__item {
+  height: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: color 300ms ease-in-out;
+  cursor: pointer;
+}
+[name=scrollspy] .scrollspy.scrollspy:after {
+  background: #F76700;
+}
+[name=scrollspy] .scrollspy .scrollspy__item {
+  color: #5E5E5E;
+}
+[name=scrollspy] .scrollspy .scrollspy__item.scrollspy__item--active {
+  color: #F76700;
+}
+[name=scrollspy][current-item="0"] .scrollspy:after {
+  top: 0px;
+}
+[name=scrollspy][current-item="1"] .scrollspy:after {
+  top: 32px;
+}
+[name=scrollspy][current-item="2"] .scrollspy:after {
+  top: 64px;
+}
+[name=scrollspy][current-item="3"] .scrollspy:after {
+  top: 96px;
+}
+[name=scrollspy][current-item="4"] .scrollspy:after {
+  top: 128px;
+}
+[name=scrollspy][current-item="5"] .scrollspy:after {
+  top: 160px;
+}
+[name=scrollspy][current-item="6"] .scrollspy:after {
+  top: 192px;
+}
+[name=scrollspy][current-item="7"] .scrollspy:after {
+  top: 224px;
+}
+[name=scrollspy][current-item="8"] .scrollspy:after {
+  top: 256px;
+}
+[name=scrollspy][current-item="9"] .scrollspy:after {
+  top: 288px;
+}
+[name=scrollspy][current-item="10"] .scrollspy:after {
+  top: 320px;
+}
+[name=scrollspy][current-item="11"] .scrollspy:after {
+  top: 352px;
+}
+[name=scrollspy][current-item="12"] .scrollspy:after {
+  top: 384px;
+}
+[name=scrollspy][current-item="13"] .scrollspy:after {
+  top: 416px;
+}
+[name=scrollspy][current-item="14"] .scrollspy:after {
+  top: 448px;
+}
+[name=scrollspy][current-item="15"] .scrollspy:after {
+  top: 480px;
+}
+[name=scrollspy][current-item="16"] .scrollspy:after {
+  top: 512px;
+}
+[name=scrollspy][current-item="17"] .scrollspy:after {
+  top: 544px;
+}
+[name=scrollspy][current-item="18"] .scrollspy:after {
+  top: 576px;
+}
+[name=scrollspy][current-item="19"] .scrollspy:after {
+  top: 608px;
+}
+[name=scrollspy][current-item="20"] .scrollspy:after {
+  top: 640px;
+}
+[name=scrollspy][current-item="21"] .scrollspy:after {
+  top: 672px;
+}
+[name=scrollspy][current-item="22"] .scrollspy:after {
+  top: 704px;
+}
+[name=scrollspy][current-item="23"] .scrollspy:after {
+  top: 736px;
+}
+[name=scrollspy][current-item="24"] .scrollspy:after {
+  top: 768px;
+}
+[name=scrollspy][current-item="25"] .scrollspy:after {
+  top: 800px;
+}
+[name=scrollspy][current-item="26"] .scrollspy:after {
+  top: 832px;
+}
+[name=scrollspy][current-item="27"] .scrollspy:after {
+  top: 864px;
+}
+[name=scrollspy][current-item="28"] .scrollspy:after {
+  top: 896px;
+}
+[name=scrollspy][current-item="29"] .scrollspy:after {
+  top: 928px;
+}
+[name=scrollspy][current-item="30"] .scrollspy:after {
+  top: 960px;
+}
+[name=scrollspy][current-item="31"] .scrollspy:after {
+  top: 992px;
+}
+[name=scrollspy][current-item="32"] .scrollspy:after {
+  top: 1024px;
+}
+[name=scrollspy][current-item="33"] .scrollspy:after {
+  top: 1056px;
+}
+[name=scrollspy][current-item="34"] .scrollspy:after {
+  top: 1088px;
+}
+[name=scrollspy][current-item="35"] .scrollspy:after {
+  top: 1120px;
+}
+[name=scrollspy][current-item="36"] .scrollspy:after {
+  top: 1152px;
+}
+[name=scrollspy][current-item="37"] .scrollspy:after {
+  top: 1184px;
+}
+[name=scrollspy][current-item="38"] .scrollspy:after {
+  top: 1216px;
+}
+[name=scrollspy][current-item="39"] .scrollspy:after {
+  top: 1248px;
+}
+[name=scrollspy][current-item="40"] .scrollspy:after {
+  top: 1280px;
+}
+[name=scrollspy][current-item="41"] .scrollspy:after {
+  top: 1312px;
+}
+[name=scrollspy][current-item="42"] .scrollspy:after {
+  top: 1344px;
+}
+[name=scrollspy][current-item="43"] .scrollspy:after {
+  top: 1376px;
+}
+[name=scrollspy][current-item="44"] .scrollspy:after {
+  top: 1408px;
+}
+[name=scrollspy][current-item="45"] .scrollspy:after {
+  top: 1440px;
+}
+[name=scrollspy][current-item="46"] .scrollspy:after {
+  top: 1472px;
+}
+[name=scrollspy][current-item="47"] .scrollspy:after {
+  top: 1504px;
+}
+[name=scrollspy][current-item="48"] .scrollspy:after {
+  top: 1536px;
+}
+[name=scrollspy][current-item="49"] .scrollspy:after {
+  top: 1568px;
+}
+[name=scrollspy][current-item="50"] .scrollspy:after {
+  top: 1600px;
+}

@@ -1,0 +1,99 @@
+[name=app-bar] {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+[name=app-bar] .app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
+[name=app-bar] .app-bar__main {
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  flex-grow: 0;
+  text-align: center;
+}
+[name=app-bar] .app-bar__main__slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+[name=app-bar] .app-bar__leading, [name=app-bar] .app-bar__trailing {
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+[name=app-bar] .app-bar__leading__slot, [name=app-bar] .app-bar__trailing__slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+[name=app-bar] .app-bar__leading__slot {
+  justify-content: flex-start;
+}
+[name=app-bar] .app-bar__trailing__slot {
+  justify-content: flex-end;
+}
+[name=app-bar] .app-bar--fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+[name=app-bar] .app-bar {
+  background-color: transparent;
+}
+[name=app-bar] .app-bar .app-bar__leading {
+  min-width: 32px;
+  margin-right: 8px;
+}
+[name=app-bar] .app-bar .app-bar__trailing {
+  min-width: 32px;
+  margin-left: 8px;
+}
+@media (min-width : 1440px) {
+  [name=app-bar] .app-bar {
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width : 1439px) {
+  [name=app-bar] .app-bar {
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width : 1151px) {
+  [name=app-bar] .app-bar {
+    height: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (max-width : 863px) {
+  [name=app-bar] .app-bar {
+    height: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (max-width : 639px) {
+  [name=app-bar] .app-bar {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width : 320px) {
+  [name=app-bar] .app-bar {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

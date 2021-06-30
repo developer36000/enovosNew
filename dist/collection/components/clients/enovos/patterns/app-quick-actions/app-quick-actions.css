@@ -1,0 +1,19 @@
+[name=app-quick-actions] {
+  display: block;
+}
+[name=app-quick-actions]:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+[name=app-quick-actions] .app-quick-actions__card__quick-action__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[name=app-quick-actions] .app-quick-actions__card__quick-action__content__image {
+  flex: 0 1 56px;
+}
+[name=app-quick-actions] .app-quick-actions__card__quick-action__content__text {
+  flex: 1 0 auto;
+  text-align: left;
+  padding-left: 16px;
+}

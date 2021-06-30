@@ -1,0 +1,29 @@
+ul.list{
+
+  padding-left: 4px;
+  margin-left: 16px;
+  font : {
+    family: $typography-font-family-1;
+    size: $typography-body-1-font-size;
+    weight: $typography-body-1-font-weight;
+  }
+  line-height: $typography-body-1-line-height;
+  list-style: initial;
+
+  li {
+    padding: 4px 0;
+  }
+
+  &.no-bullet {
+    list-style: none;
+  }
+
+}
+
+.stripes-grid {
+  background: repeating-linear-gradient(
+    #222,
+    #222 $gutter-default,
+    #333 $gutter-default,
+    #333 $gutter-default * 2 );
+}

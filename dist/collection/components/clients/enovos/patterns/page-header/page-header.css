@@ -1,0 +1,70 @@
+[name=page-header] {
+  display: block;
+  margin: 0 0 32px 0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.page-header--centered {
+  justify-content: center;
+}
+.page-header__title {
+  display: block;
+}
+.page-header__before-title {
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-header__title-text {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  font-family: "Montserrat", sans-serif;
+  color: #5E5E5E;
+}
+@media (min-width: 864px) {
+  .page-header__title-text {
+    display: inline;
+    margin-right: 16px;
+    vertical-align: middle;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+}
+.page-header__after-title {
+  margin-top: 8px;
+}
+@media (min-width: 864px) {
+  .page-header__after-title {
+    margin-top: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.page-header__actions {
+  flex: 1;
+  margin-top: 8px;
+}
+@media (min-width: 864px) {
+  .page-header__actions {
+    margin-top: 0;
+  }
+}
+.page-header__actions > [slot=actions] {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 864px) {
+  .page-header__actions > [slot=actions] {
+    justify-content: flex-end;
+  }
+}
+.page-header__actions > [slot=actions] [name=button] + [name=button] {
+  margin-left: 32px;
+}

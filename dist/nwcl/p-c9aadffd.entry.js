@@ -1,0 +1,1 @@
+import{r as s}from"./p-a84c2a87.js";import{s as e}from"./p-9cd879e2.js";const r=class{constructor(e){s(this,e)}async set(s){e.set("theme",s)}async get(){return e.get("theme")}render(){}};export{r as eds_themes_manager}

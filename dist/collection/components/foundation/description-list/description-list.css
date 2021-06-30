@@ -1,0 +1,103 @@
+[name=description-list] .description-list dl {
+  display: flex;
+}
+[name=description-list] .description-list.description-list--inline .description-list__dd-container {
+  display: flex;
+  align-items: center;
+}
+[name=description-list] .description-list.description-list--horizontal {
+  display: flex;
+}
+[name=description-list] .description-list.description-list--horizontal dl {
+  display: block;
+}
+[name=description-list] .description-list .description-list__dd-container {
+  flex: 1;
+}
+[name=description-list] .description-list.description-list {
+  font-family: "Montserrat", sans-serif;
+}
+[name=description-list] .description-list.description-list [name=paragraph] {
+  color: #96C11F !important;
+}
+[name=description-list] .description-list.description-list dl dt {
+  font-weight: 400;
+  text-align: right;
+}
+[name=description-list] .description-list.description-list dl dd {
+  font-weight: 700;
+  text-align: left;
+}
+[name=description-list] .description-list.description-list--horizontal dl + dl {
+  margin-left: 24px;
+}
+[name=description-list] .description-list.description-list--horizontal dl dt {
+  text-align: left;
+  text-transform: uppercase;
+}
+[name=description-list] .description-list.description-list {
+  font-size: 12px;
+  line-height: 16px;
+}
+[name=description-list] .description-list.description-list dl + dl {
+  margin-top: 4px;
+}
+[name=description-list] .description-list.description-list dl dt {
+  width: 50%;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+[name=description-list] .description-list.description-list dl dd {
+  margin-left: 2px;
+}
+[name=description-list] .description-list.description-list--horizontal dl + dl {
+  margin-top: 0;
+  margin-left: 24px;
+}
+[name=description-list] .description-list.description-list--horizontal dl dt {
+  width: auto;
+  margin-top: 0;
+  margin-right: 0;
+}
+[name=description-list] .description-list.description-list--horizontal dl dd {
+  margin-left: 0;
+}
+[name=description-list] .description-list.description-list--inline .description-list__dd-container dd {
+  margin-right: 4px;
+}
+[name=description-list] .description-list.description-list--inline .description-list__dd-container dd:last-child {
+  margin-right: 0;
+}
+[name=description-list] .description-list.description-list--md {
+  font-size: 14px;
+  line-height: 16px;
+}
+[name=description-list] .description-list.description-list--md dl + dl {
+  margin-top: 4px;
+}
+[name=description-list] .description-list.description-list--md dl dt {
+  width: 50%;
+  margin-top: 4px;
+  margin-right: 2px;
+}
+[name=description-list] .description-list.description-list--md dl dd {
+  margin-left: 2px;
+}
+[name=description-list] .description-list.description-list--md--horizontal dl + dl {
+  margin-top: 0;
+  margin-left: 24px;
+}
+[name=description-list] .description-list.description-list--md--horizontal dl dt {
+  width: auto;
+  margin-top: 0;
+  margin-right: 0;
+}
+[name=description-list] .description-list.description-list--md--horizontal dl dd {
+  margin-left: 0;
+}
+[name=description-list] .description-list.description-list--md--inline .description-list__dd-container dd {
+  margin-right: 16px;
+}
+[name=description-list] .description-list.description-list--md--inline .description-list__dd-container dd:last-child {
+  margin-right: 0;
+}

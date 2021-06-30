@@ -1,0 +1,93 @@
+body.side-sheet--open {
+  overflow: hidden;
+}
+
+[name=side-sheet] {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 6002;
+  display: block;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+[name=side-sheet].side-sheet--open {
+  opacity: 1;
+  visibility: visible;
+}
+[name=side-sheet].side-sheet--on-right {
+  right: -100%;
+}
+[name=side-sheet].side-sheet--on-right.side-sheet--open {
+  right: 0;
+}
+[name=side-sheet].side-sheet--on-right.side-sheet--on-bottom {
+  right: 0;
+  top: inherit;
+  bottom: -100%;
+}
+[name=side-sheet].side-sheet--on-right.side-sheet--on-bottom.side-sheet--open {
+  bottom: 0;
+}
+[name=side-sheet].side-sheet--on-left {
+  left: -100%;
+}
+[name=side-sheet].side-sheet--on-left.side-sheet--open {
+  left: 0;
+}
+[name=side-sheet] .side-sheet__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  line-height: initial;
+}
+[name=side-sheet] .side-sheet__content {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+[name=side-sheet] .side-sheet__backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+[name=side-sheet] .side-sheet__backdrop.fade-in {
+  opacity: 0.5;
+}
+
+[name=side-sheet].side-sheet:after {
+  background-color: #FFFFFF;
+}
+[name=side-sheet].side-sheet .side-sheet__wrapper {
+  background-color: #FFFFFF;
+}
+[name=side-sheet].side-sheet .side-sheet__backdrop {
+  background-color: #6D7278;
+}
+
+[name=side-sheet].theme--dark.side-sheet:after {
+  background-color: #FFFFFF;
+}
+[name=side-sheet].theme--dark.side-sheet .side-sheet__wrapper {
+  background-color: #FFFFFF;
+}
+[name=side-sheet].theme--dark.side-sheet .side-sheet__backdrop {
+  background-color: #6D7278;
+}

@@ -1,0 +1,22 @@
+// Margin as host attribute
+$sides: (top, bottom, left, right);
+@for $space from 0 through 40 {
+  .margin-#{$space},
+  [margin-#{$space}] {
+    margin: #{$space * $gutter-default} !important;
+  }
+  .padding-#{$space},
+  [padding-#{$space}] {
+    padding: #{$space * $gutter-default} !important;
+  }
+  @each $side in $sides {
+    .margin-#{$side}-#{$space},
+    [margin-#{$side}-#{$space}] {
+      margin-#{$side}: #{$space * $gutter-default} !important;
+    }
+    .padding-#{$side}-#{$space},
+    [padding-#{$side}-#{$space}] {
+      padding-#{$side}: #{$space * $gutter-default} !important;
+    }
+  }
+}

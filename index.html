@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENOVOS List</title>
+  
+  <link rel="stylesheet" href="dist/nwcl/nwcl.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  
+  <style>
+    .link-list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: stretch;
+      flex-direction: column;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      border-radius: 10px;
+      background: #f1f1f1;
+    }
+    .link-list a {
+      margin-bottom: 10px;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <main>
+    <section class="link-list">
+      <h1 style="margin-bottom: 35px;">List of new Enovos Pages</h1>
+      
+      <eds-link content="Step1 Who" icon-position="right" url="step1_who.html" target="_blank">
+        <eds-icon slot="icon" icon="arrow-right"></eds-icon>
+      </eds-link>
+  
+      <eds-link content="Step1 Client" icon-position="right" url="step1_client.html" target="_blank">
+        <eds-icon slot="icon" icon="arrow-right"></eds-icon>
+      </eds-link>
+  
+      <eds-link content="Step1 Why" icon-position="right" url="step1_why.html" target="_blank">
+        <eds-icon slot="icon" icon="arrow-right"></eds-icon>
+      </eds-link>
+      
+      <eds-link content="Step1 Energy" icon-position="right" url="step1_energy.html" target="_blank">
+        <eds-icon slot="icon" icon="arrow-right"></eds-icon>
+      </eds-link>
+      
+    </section>
+    
+    
+  </main>
+
+  <footer>
+    <eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+  </footer>
+
+  <script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+  <script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+@mixin font-styles() {
+  // Utilities
+  .#{$component-name} {
+    &--left    { text-align: left !important;}
+    &--center  { text-align: center !important;}
+    &--right   { text-align: right !important;}
+
+    &--capitalize { text-transform: capitalize !important; }
+    &--uppercase  { text-transform: uppercase !important; }
+    &--lowercase  { text-transform: lowercase !important; }
+    &--underline { text-decoration: underline !important; }
+
+    &--italic { font-style: italic !important; }
+
+    &--fit-content {
+      height: inherit !important;
+      line-height: unset !important;
+    }
+    &--line-height-body-2 {
+      line-height: $typography-body-2-line-height !important;
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-WEIGHT Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $weight-name, $typography-font-weight in $typography-font-weights {
+      &--weight-#{$weight-name} {
+        font-weight: map-get($typography-font-weights, $weight-name) !important;
+      }
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-STYLE Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $style-name, $typography-font-style in $typography-font-styles {
+      &--style-#{$style-name} {
+        font-style: map-get($typography-font-styles, #{$style-name}) !important;
+      }
+    }
+
+    // ------------------------------------------------------------------------------------------------------------------ //
+    //          FONTS-FAMILY Utilities
+    // ------------------------------------------------------------------------------------------------------------------ //
+    @each $family-name, $typography-font-family in $fonts {
+      &--#{$family-name} {
+        font-family: map-get($fonts, #{$family-name}) !important;
+      }
+    }
+
+  }
+
+}

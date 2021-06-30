@@ -1,0 +1,1469 @@
+/* Input & Textarea */
+.input-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  outline: 0;
+  -webkit-appearance: none;
+}
+.input-textarea.disabled, .input-textarea.disabled:hover, .input-textarea:disabled, .input-textarea:disabled:hover {
+  cursor: not-allowed;
+}
+.input-textarea::-ms-clear, .input-textarea::-ms-reveal {
+  display: none;
+}
+.input-textarea.textarea {
+  resize: vertical;
+}
+.input-textarea--readonly, .input-textarea[readonly], .input-textarea[read-only] {
+  cursor: pointer;
+}
+.input-textarea[type=file] {
+  position: relative;
+  cursor: text;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+}
+.input-textarea[type=file]::-webkit-file-upload-button {
+  width: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+.input-textarea--has-ellipsis {
+  text-overflow: ellipsis;
+}
+
+[name=input-textarea] .input-textarea.input-textarea {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:focus::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled, [name=input-textarea] .input-textarea.input-textarea.disabled:hover, [name=input-textarea] .input-textarea.input-textarea:disabled, [name=input-textarea] .input-textarea.input-textarea:disabled:hover {
+  color: #A7A7A7;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea.disabled:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.disabled:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.disabled:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.disabled:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:hover:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.disabled:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:disabled:hover::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:-moz-read-only, [name=input-textarea] .input-textarea.input-textarea:-moz-read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly, [name=input-textarea] .input-textarea.input-textarea.readonly:hover, [name=input-textarea] .input-textarea.input-textarea:read-only, [name=input-textarea] .input-textarea.input-textarea:read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea:-moz-read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea:-moz-read-only:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly.placeholder, [name=input-textarea] .input-textarea.input-textarea.readonly:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:-moz-read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:-moz-read-only:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.readonly:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea:-moz-read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:-moz-read-only:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.readonly:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.readonly:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:hover:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.readonly::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.readonly:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea:read-only:hover::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent {
+  color: #FFFFFF;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:-moz-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent::-moz-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent::-webkit-input-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]), [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]) {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus {
+  color: #00856A;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus:-ms-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:focus::-webkit-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover, [name=input-textarea] .input-textarea.input-textarea--success:disabled, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover {
+  color: #E5F2F0;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover.placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover:-moz-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover::-moz-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover:-ms-input-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.disabled:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:disabled:hover::-webkit-input-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only, [name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only:hover {
+  color: #00856A;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover, [name=input-textarea] .input-textarea.input-textarea--success:read-only, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover {
+  color: #00856A;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only:hover.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly.placeholder, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only:hover:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:-moz-read-only:hover::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover:-ms-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.readonly::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.readonly:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success:read-only:hover::-webkit-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus {
+  color: #F76700;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus:-ms-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:focus::-webkit-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover, [name=input-textarea] .input-textarea.input-textarea--warning:disabled, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover {
+  color: #FFF1E5;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover.placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover:-moz-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover::-moz-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover:-ms-input-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.disabled:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:disabled:hover::-webkit-input-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only, [name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only:hover {
+  color: #F76700;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover, [name=input-textarea] .input-textarea.input-textarea--warning:read-only, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover {
+  color: #F76700;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only:hover.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only:hover:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:-moz-read-only:hover::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover:-ms-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.readonly::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.readonly:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning:read-only:hover::-webkit-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus {
+  color: #EB0000;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus:-ms-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:focus::-webkit-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover, [name=input-textarea] .input-textarea.input-textarea--error:disabled, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover {
+  color: #FDE5E5;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover.placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover:-moz-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover::-moz-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover:-ms-input-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.disabled:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:disabled:hover::-webkit-input-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only, [name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only:hover {
+  color: #EB0000;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover, [name=input-textarea] .input-textarea.input-textarea--error:read-only, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover {
+  color: #EB0000;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only:hover.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly.placeholder, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only:hover:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:-moz-read-only:hover::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover:-ms-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.readonly::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.readonly:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error:read-only:hover::-webkit-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500 {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus {
+  color: #C75300;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:focus::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover {
+  color: #5A8D00;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover.placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover:-moz-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover::-moz-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover:-ms-input-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.disabled:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:disabled:hover::-webkit-input-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only, [name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only:hover.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only.placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only:hover:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:-moz-read-only:hover::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.readonly:hover::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500:read-only:hover::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea] .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea] .input-textarea.input-textarea {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=input-textarea] .input-textarea.input-textarea.textarea {
+  height: 60px;
+  min-height: 60px;
+  padding: 16px;
+  line-height: 16px;
+}
+[name=input-textarea] .input-textarea.input-textarea--md {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=input-textarea] .input-textarea.input-textarea--md.textarea {
+  height: 60px;
+  min-height: 60px;
+  padding: 16px;
+  line-height: 16px;
+}
+
+[name=input-textarea].theme--dark .input-textarea.input-textarea {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:focus::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover {
+  color: #A7A7A7;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.disabled:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:disabled:hover::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover.placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover:-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:-moz-read-only:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover::-moz-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover:-ms-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.readonly::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.readonly:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea:read-only:hover::-webkit-input-placeholder {
+  color: #A7A7A7 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent {
+  color: #FFFFFF;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:-moz-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent::-moz-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:-ms-input-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent::-webkit-input-placeholder {
+  color: #FFFFFF !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]) {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus {
+  color: #00856A;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus:-ms-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:focus::-webkit-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover {
+  color: #E5F2F0;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover.placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover:-moz-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover::-moz-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover:-ms-input-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.disabled:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:disabled:hover::-webkit-input-placeholder {
+  color: #E5F2F0 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only:hover {
+  color: #00856A;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover {
+  color: #00856A;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only:hover.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover.placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only:hover:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover:-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:-moz-read-only:hover::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover::-moz-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover:-ms-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.readonly:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success:read-only:hover::-webkit-input-placeholder {
+  color: #00856A !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--success.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus {
+  color: #F76700;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus:-ms-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:focus::-webkit-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover {
+  color: #FFF1E5;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover.placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover:-moz-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover::-moz-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover:-ms-input-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.disabled:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:disabled:hover::-webkit-input-placeholder {
+  color: #FFF1E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only:hover {
+  color: #F76700;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover {
+  color: #F76700;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only:hover.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover.placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only:hover:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover:-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:-moz-read-only:hover::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover::-moz-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover:-ms-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.readonly:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning:read-only:hover::-webkit-input-placeholder {
+  color: #F76700 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--warning.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error::-moz-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-ms-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error::-webkit-input-placeholder {
+  color: #5E5E5E !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus {
+  color: #EB0000;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus:-ms-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:focus::-webkit-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover {
+  color: #FDE5E5;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover.placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover:-moz-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover::-moz-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover:-ms-input-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.disabled:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:disabled:hover::-webkit-input-placeholder {
+  color: #FDE5E5 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only:hover {
+  color: #EB0000;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover {
+  color: #EB0000;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only:hover.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover.placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only:hover:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover:-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:-moz-read-only:hover::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover::-moz-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover:-ms-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.readonly:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error:read-only:hover::-webkit-input-placeholder {
+  color: #EB0000 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--error.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500 {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus {
+  color: #C75300;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:focus::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover {
+  color: #5A8D00;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover.placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover:-moz-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover::-moz-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover:-ms-input-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.disabled:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:disabled:hover::-webkit-input-placeholder {
+  color: #5A8D00 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover {
+  color: #5E5E5E;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only:hover.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only.placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover.placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only:hover:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover:-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:-moz-read-only:hover::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover::-moz-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover:-ms-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.readonly:hover::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500:read-only:hover::-webkit-input-placeholder {
+  color: #004885 !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent:focus:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]), [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]) {
+  color: false;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]).placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]).placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]):-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]):-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled])::-moz-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only])::-moz-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled]):-ms-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only]):-ms-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([disabled])::-webkit-input-placeholder, [name=input-textarea].theme--dark .input-textarea.input-textarea--secondary-500.input-textarea--transparent.input-textarea--filled:not([read-only])::-webkit-input-placeholder {
+  color: inherit !important;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea.textarea {
+  height: 60px;
+  min-height: 60px;
+  padding: 16px;
+  line-height: 16px;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--md {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=input-textarea].theme--dark .input-textarea.input-textarea--md.textarea {
+  height: 60px;
+  min-height: 60px;
+  padding: 16px;
+  line-height: 16px;
+}

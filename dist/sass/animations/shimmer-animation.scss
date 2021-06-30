@@ -1,0 +1,25 @@
+@mixin setShimmerAnimation($duration: 1s, $background: '') {
+  background: {
+    position: 0 0;
+    size: 200% 100%;
+    repeat: no-repeat;
+    image: linear-gradient(
+      110deg,
+      rgba(white, 0) 10%,
+      #{$background} 50%,
+      rgba(white, 0) 80%
+    );
+  }
+  animation: {
+    name: shimmer-animation;
+    timing-function: ease;
+    duration: $duration;
+    fill-mode: forwards;
+    iteration-count: infinite;
+  }
+  @keyframes shimmer-animation {
+    from { background-position: -100% 0 }
+    to { background-position: 160% 0 }
+  }
+}
+

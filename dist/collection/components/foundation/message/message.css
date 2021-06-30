@@ -1,0 +1,2063 @@
+[name=message] {
+  width: 100%;
+}
+@media (min-width : 1440px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1440px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 1439px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1152px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1439px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 1151px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-5 .message {
+    width: calc( ((5 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-6 .message {
+    width: calc( ((6 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-7 .message {
+    width: calc( ((7 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-8 .message {
+    width: calc( ((8 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-9 .message {
+    width: calc( ((9 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-10 .message {
+    width: calc( ((10 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-11 .message {
+    width: calc( ((11 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 864px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-12 .message {
+    width: calc( ((12 / 12) * 100%) - ( 2 * 16px) );
+    max-width: 1151px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 863px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-5 .message {
+    width: calc( ((5 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-5 .message {
+    width: calc( ((5 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-6 .message {
+    width: calc( ((6 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-6 .message {
+    width: calc( ((6 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-7 .message {
+    width: calc( ((7 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-7 .message {
+    width: calc( ((7 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-8 .message {
+    width: calc( ((8 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 640px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-8 .message {
+    width: calc( ((8 / 8) * 100%) - ( 2 * 12px) );
+    max-width: 863px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 639px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 321px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 639px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 321px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 639px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 321px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 639px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 321px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 639px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 321px;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 639px;
+    margin: 0 auto;
+  }
+}
+@media (max-width : 320px) {
+  [name=message].message--cols-0 .message {
+    width: calc( ((0 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 0;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-0 .message {
+    width: calc( ((0 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-1 .message {
+    width: calc( ((1 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 0;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-1 .message {
+    width: calc( ((1 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-2 .message {
+    width: calc( ((2 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 0;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-2 .message {
+    width: calc( ((2 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-3 .message {
+    width: calc( ((3 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 0;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-3 .message {
+    width: calc( ((3 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  [name=message].message--cols-4 .message {
+    width: calc( ((4 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 0;
+    margin: auto;
+  }
+  [name=message].message--cols-fluid-4 .message {
+    width: calc( ((4 / 4) * 100%) - ( 2 * 24px) );
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.message {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+.message [name=paragraph] .message--primary {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--secondary {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--tertiary {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--quaternary {
+  color: #96C11F !important;
+}
+.message [name=paragraph] .message--quinary {
+  color: #EF7B0B !important;
+}
+.message [name=paragraph] .message--senary {
+  color: #CAA08D !important;
+}
+.message [name=paragraph] .message--septenary {
+  color: #6C887A !important;
+}
+.message [name=paragraph] .message--grey {
+  color: #757575 !important;
+}
+.message [name=paragraph] .message--primary-900 {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--primary-800 {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--primary-700 {
+  color: #D52B1E !important;
+}
+.message [name=paragraph] .message--primary-600 {
+  color: #C75300 !important;
+}
+.message [name=paragraph] .message--primary-500 {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--primary-400 {
+  color: #FFA14C !important;
+}
+.message [name=paragraph] .message--primary-300 {
+  color: #FFB673 !important;
+}
+.message [name=paragraph] .message--primary-200 {
+  color: #FFDDBF !important;
+}
+.message [name=paragraph] .message--primary-100 {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--primary-50 {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--secondary-900 {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--secondary-800 {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--secondary-700 {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--secondary-600 {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--secondary-500 {
+  color: #5E5E5E !important;
+}
+.message [name=paragraph] .message--secondary-400 {
+  color: #8E8E8E !important;
+}
+.message [name=paragraph] .message--secondary-300 {
+  color: #A7A7A7 !important;
+}
+.message [name=paragraph] .message--secondary-200 {
+  color: #D7D7D7 !important;
+}
+.message [name=paragraph] .message--secondary-100 {
+  color: #EEEEEE !important;
+}
+.message [name=paragraph] .message--secondary-50 {
+  color: #EEEEEE !important;
+}
+.message [name=paragraph] .message--tertiary-900 {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--tertiary-800 {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--tertiary-700 {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--tertiary-600 {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--tertiary-500 {
+  color: #004885 !important;
+}
+.message [name=paragraph] .message--tertiary-400 {
+  color: #5C8AB1 !important;
+}
+.message [name=paragraph] .message--tertiary-300 {
+  color: #85A8C5 !important;
+}
+.message [name=paragraph] .message--tertiary-200 {
+  color: #C2D3E2 !important;
+}
+.message [name=paragraph] .message--tertiary-100 {
+  color: #EBF1F6 !important;
+}
+.message [name=paragraph] .message--tertiary-50 {
+  color: #EBF1F6 !important;
+}
+.message [name=paragraph] .message--quaternary-900 {
+  color: #5A8D00 !important;
+}
+.message [name=paragraph] .message--quaternary-800 {
+  color: #5A8D00 !important;
+}
+.message [name=paragraph] .message--quaternary-700 {
+  color: #5A8D00 !important;
+}
+.message [name=paragraph] .message--quaternary-600 {
+  color: #5A8D00 !important;
+}
+.message [name=paragraph] .message--quaternary-500 {
+  color: #96C11F !important;
+}
+.message [name=paragraph] .message--quaternary-400 {
+  color: #BCD870 !important;
+}
+.message [name=paragraph] .message--quaternary-300 {
+  color: #CDE294 !important;
+}
+.message [name=paragraph] .message--quaternary-200 {
+  color: #E6F0C9 !important;
+}
+.message [name=paragraph] .message--quaternary-100 {
+  color: #F7FAED !important;
+}
+.message [name=paragraph] .message--quaternary-50 {
+  color: #F7FAED !important;
+}
+.message [name=paragraph] .message--quinary-900 {
+  color: #C75300 !important;
+}
+.message [name=paragraph] .message--quinary-800 {
+  color: #C75300 !important;
+}
+.message [name=paragraph] .message--quinary-700 {
+  color: #C75300 !important;
+}
+.message [name=paragraph] .message--quinary-600 {
+  color: #C75300 !important;
+}
+.message [name=paragraph] .message--quinary-500 {
+  color: #EF7B0B !important;
+}
+.message [name=paragraph] .message--quinary-400 {
+  color: #FFA14C !important;
+}
+.message [name=paragraph] .message--quinary-300 {
+  color: #FFB673 !important;
+}
+.message [name=paragraph] .message--quinary-200 {
+  color: #FFDDBF !important;
+}
+.message [name=paragraph] .message--quinary-100 {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--quinary-50 {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--senary-900 {
+  color: #602A10 !important;
+}
+.message [name=paragraph] .message--senary-800 {
+  color: #95431D !important;
+}
+.message [name=paragraph] .message--senary-700 {
+  color: #B66E4D !important;
+}
+.message [name=paragraph] .message--senary-600 {
+  color: #B78670 !important;
+}
+.message [name=paragraph] .message--senary-500 {
+  color: #CAA08D !important;
+}
+.message [name=paragraph] .message--senary-400 {
+  color: #DEAE98 !important;
+}
+.message [name=paragraph] .message--senary-300 {
+  color: #EEC3AF !important;
+}
+.message [name=paragraph] .message--senary-200 {
+  color: #FAD5C5 !important;
+}
+.message [name=paragraph] .message--senary-100 {
+  color: #FFE9DF !important;
+}
+.message [name=paragraph] .message--senary-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-900 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-800 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-700 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-600 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-500 {
+  color: #6C887A !important;
+}
+.message [name=paragraph] .message--septenary-400 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-300 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-200 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-100 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--septenary-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--grey-900 {
+  color: #1D1D1D !important;
+}
+.message [name=paragraph] .message--grey-800 {
+  color: #333333 !important;
+}
+.message [name=paragraph] .message--grey-700 {
+  color: #4D4D4D !important;
+}
+.message [name=paragraph] .message--grey-600 {
+  color: #666666 !important;
+}
+.message [name=paragraph] .message--grey-500 {
+  color: #757575 !important;
+}
+.message [name=paragraph] .message--grey-400 {
+  color: #999999 !important;
+}
+.message [name=paragraph] .message--grey-300 {
+  color: #B3B3B3 !important;
+}
+.message [name=paragraph] .message--grey-200 {
+  color: #CCCCCC !important;
+}
+.message [name=paragraph] .message--grey-100 {
+  color: #E6E6E6 !important;
+}
+.message [name=paragraph] .message--grey-50 {
+  color: #F8F8F8 !important;
+}
+.message [name=paragraph] .message--contextual-success {
+  color: #00856A !important;
+}
+.message [name=paragraph] .message--success {
+  color: #00856A !important;
+}
+.message [name=paragraph] .message--contextual-success-light {
+  color: #E5F2F0 !important;
+}
+.message [name=paragraph] .message--success-light {
+  color: #E5F2F0 !important;
+}
+.message [name=paragraph] .message--contextual-info {
+  color: #2899A8 !important;
+}
+.message [name=paragraph] .message--info {
+  color: #2899A8 !important;
+}
+.message [name=paragraph] .message--contextual-info-light {
+  color: #DBF6FF !important;
+}
+.message [name=paragraph] .message--info-light {
+  color: #DBF6FF !important;
+}
+.message [name=paragraph] .message--contextual-warning {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--warning {
+  color: #F76700 !important;
+}
+.message [name=paragraph] .message--contextual-warning-light {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--warning-light {
+  color: #FFF1E5 !important;
+}
+.message [name=paragraph] .message--contextual-error {
+  color: #EB0000 !important;
+}
+.message [name=paragraph] .message--error {
+  color: #EB0000 !important;
+}
+.message [name=paragraph] .message--contextual-error-light {
+  color: #FDE5E5 !important;
+}
+.message [name=paragraph] .message--error-light {
+  color: #FDE5E5 !important;
+}
+.message [name=paragraph] .message--pfm-blue {
+  color: #55A1D3 !important;
+}
+.message [name=paragraph] .message--pfm-green {
+  color: #8DDE54 !important;
+}
+.message [name=paragraph] .message--pfm-yellow {
+  color: #FFC600 !important;
+}
+.message [name=paragraph] .message--pfm-orange {
+  color: #FC912E !important;
+}
+.message [name=paragraph] .message--pfm-red {
+  color: #DF5036 !important;
+}
+.message [name=paragraph] .message--external-bank-ing {
+  color: #F58220 !important;
+}
+.message [name=paragraph] .message--external-bank-bil {
+  color: #71308B !important;
+}
+.message [name=paragraph] .message--external-bank-bcee {
+  color: #144093 !important;
+}
+.message [name=paragraph] .message--external-bank-post {
+  color: #FABC0B !important;
+}
+.message [name=paragraph] .message--external-bank-raiffeisen {
+  color: #112242 !important;
+}
+.message [name=paragraph] .message--external-bank-bnp-paribas {
+  color: #00915A !important;
+}
+.message [name=paragraph] .message--white-15 {
+  color: rgba(255, 255, 255, 0.15) !important;
+}
+.message [name=paragraph] .message--white-25 {
+  color: rgba(255, 255, 255, 0.25) !important;
+}
+.message [name=paragraph] .message--white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.message [name=paragraph] .message--brand-pfm-blue {
+  color: #55A1D3 !important;
+}
+.message [name=paragraph] .message--brand-pfm-green {
+  color: #8DDE54 !important;
+}
+.message [name=paragraph] .message--brand-pfm-yellow {
+  color: #FFC600 !important;
+}
+.message [name=paragraph] .message--brand-pfm-orange {
+  color: #FC912E !important;
+}
+.message [name=paragraph] .message--brand-pfm-red {
+  color: #DF5036 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light {
+  color: #4FB482 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-dark {
+  color: #133B2C !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light {
+  color: #1B8DC0 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-dark {
+  color: #0A324B !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light {
+  color: #F0BE21 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark {
+  color: #B77918 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-light {
+  color: #F3B969 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark {
+  color: #EF7D00 !important;
+}
+.message [name=paragraph] .message--brand-expressive-pink-light {
+  color: #C03152 !important;
+}
+.message [name=paragraph] .message--brand-expressive-pink-dark {
+  color: #4F0F15 !important;
+}
+.message [name=paragraph] .message--brand-expressive-red-light {
+  color: #F7B7AF !important;
+}
+.message [name=paragraph] .message--brand-expressive-red-dark {
+  color: #E62D32 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-900 {
+  color: #4D2800 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-800 {
+  color: #804200 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-700 {
+  color: #B35C00 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-600 {
+  color: #CC6A00 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-500 {
+  color: #EF7D00 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-400 {
+  color: #FC8823 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-300 {
+  color: #FC9E4C !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-200 {
+  color: #FFB675 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-100 {
+  color: #FFD1A8 !important;
+}
+.message [name=paragraph] .message--brand-expressive-orange-dark-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-900 {
+  color: #0C4159 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-800 {
+  color: #105373 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-700 {
+  color: #14668C !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-600 {
+  color: #1779A6 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-500 {
+  color: #1B8DC0 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-400 {
+  color: #1D9AD1 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-300 {
+  color: #2AAEEB !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-200 {
+  color: #56BFF0 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-100 {
+  color: #7FCFF5 !important;
+}
+.message [name=paragraph] .message--brand-expressive-blue-light-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-900 {
+  color: #224D37 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-800 {
+  color: #2D6649 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-700 {
+  color: #39805C !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-600 {
+  color: #43996E !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-500 {
+  color: #4FB482 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-400 {
+  color: #55C28C !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-300 {
+  color: #60D199 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-200 {
+  color: #69DBA2 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-100 {
+  color: #85E6B5 !important;
+}
+.message [name=paragraph] .message--brand-expressive-green-light-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-900 {
+  color: #6B550F !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-800 {
+  color: #8F7214 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-700 {
+  color: #AD8B19 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-600 {
+  color: #D1A71D !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-500 {
+  color: #F0BE21 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-400 {
+  color: #FCCA23 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-300 {
+  color: #FCD742 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-200 {
+  color: #FCDD60 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-100 {
+  color: #FCE483 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-light-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-900 {
+  color: #52360B !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-800 {
+  color: #6B470E !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-700 {
+  color: #855811 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-600 {
+  color: #9E6915 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-500 {
+  color: #B77918 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-400 {
+  color: #D18A1B !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-300 {
+  color: #EB9B1F !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-200 {
+  color: #FAAA2D !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-100 {
+  color: #FABA55 !important;
+}
+.message [name=paragraph] .message--brand-expressive-yellow-dark-50 {
+  color: transparent !important;
+}
+.message [name=paragraph] .message--white-opacity-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.message [name=paragraph] .message--white {
+  color: #FFFFFF !important;
+}
+.message [name=paragraph] .message--black {
+  color: #000000 !important;
+}
+.message__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.message__icon {
+  align-self: flex-start;
+}
+.message__icon .message--primary {
+  color: #F76700 !important;
+}
+.message__icon .message--secondary {
+  color: #5E5E5E !important;
+}
+.message__icon .message--tertiary {
+  color: #004885 !important;
+}
+.message__icon .message--quaternary {
+  color: #96C11F !important;
+}
+.message__icon .message--quinary {
+  color: #EF7B0B !important;
+}
+.message__icon .message--senary {
+  color: #CAA08D !important;
+}
+.message__icon .message--septenary {
+  color: #6C887A !important;
+}
+.message__icon .message--grey {
+  color: #757575 !important;
+}
+.message__icon .message--primary-900 {
+  color: #F76700 !important;
+}
+.message__icon .message--primary-800 {
+  color: #F76700 !important;
+}
+.message__icon .message--primary-700 {
+  color: #D52B1E !important;
+}
+.message__icon .message--primary-600 {
+  color: #C75300 !important;
+}
+.message__icon .message--primary-500 {
+  color: #F76700 !important;
+}
+.message__icon .message--primary-400 {
+  color: #FFA14C !important;
+}
+.message__icon .message--primary-300 {
+  color: #FFB673 !important;
+}
+.message__icon .message--primary-200 {
+  color: #FFDDBF !important;
+}
+.message__icon .message--primary-100 {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--primary-50 {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--secondary-900 {
+  color: #5E5E5E !important;
+}
+.message__icon .message--secondary-800 {
+  color: #5E5E5E !important;
+}
+.message__icon .message--secondary-700 {
+  color: #5E5E5E !important;
+}
+.message__icon .message--secondary-600 {
+  color: #5E5E5E !important;
+}
+.message__icon .message--secondary-500 {
+  color: #5E5E5E !important;
+}
+.message__icon .message--secondary-400 {
+  color: #8E8E8E !important;
+}
+.message__icon .message--secondary-300 {
+  color: #A7A7A7 !important;
+}
+.message__icon .message--secondary-200 {
+  color: #D7D7D7 !important;
+}
+.message__icon .message--secondary-100 {
+  color: #EEEEEE !important;
+}
+.message__icon .message--secondary-50 {
+  color: #EEEEEE !important;
+}
+.message__icon .message--tertiary-900 {
+  color: #004885 !important;
+}
+.message__icon .message--tertiary-800 {
+  color: #004885 !important;
+}
+.message__icon .message--tertiary-700 {
+  color: #004885 !important;
+}
+.message__icon .message--tertiary-600 {
+  color: #004885 !important;
+}
+.message__icon .message--tertiary-500 {
+  color: #004885 !important;
+}
+.message__icon .message--tertiary-400 {
+  color: #5C8AB1 !important;
+}
+.message__icon .message--tertiary-300 {
+  color: #85A8C5 !important;
+}
+.message__icon .message--tertiary-200 {
+  color: #C2D3E2 !important;
+}
+.message__icon .message--tertiary-100 {
+  color: #EBF1F6 !important;
+}
+.message__icon .message--tertiary-50 {
+  color: #EBF1F6 !important;
+}
+.message__icon .message--quaternary-900 {
+  color: #5A8D00 !important;
+}
+.message__icon .message--quaternary-800 {
+  color: #5A8D00 !important;
+}
+.message__icon .message--quaternary-700 {
+  color: #5A8D00 !important;
+}
+.message__icon .message--quaternary-600 {
+  color: #5A8D00 !important;
+}
+.message__icon .message--quaternary-500 {
+  color: #96C11F !important;
+}
+.message__icon .message--quaternary-400 {
+  color: #BCD870 !important;
+}
+.message__icon .message--quaternary-300 {
+  color: #CDE294 !important;
+}
+.message__icon .message--quaternary-200 {
+  color: #E6F0C9 !important;
+}
+.message__icon .message--quaternary-100 {
+  color: #F7FAED !important;
+}
+.message__icon .message--quaternary-50 {
+  color: #F7FAED !important;
+}
+.message__icon .message--quinary-900 {
+  color: #C75300 !important;
+}
+.message__icon .message--quinary-800 {
+  color: #C75300 !important;
+}
+.message__icon .message--quinary-700 {
+  color: #C75300 !important;
+}
+.message__icon .message--quinary-600 {
+  color: #C75300 !important;
+}
+.message__icon .message--quinary-500 {
+  color: #EF7B0B !important;
+}
+.message__icon .message--quinary-400 {
+  color: #FFA14C !important;
+}
+.message__icon .message--quinary-300 {
+  color: #FFB673 !important;
+}
+.message__icon .message--quinary-200 {
+  color: #FFDDBF !important;
+}
+.message__icon .message--quinary-100 {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--quinary-50 {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--senary-900 {
+  color: #602A10 !important;
+}
+.message__icon .message--senary-800 {
+  color: #95431D !important;
+}
+.message__icon .message--senary-700 {
+  color: #B66E4D !important;
+}
+.message__icon .message--senary-600 {
+  color: #B78670 !important;
+}
+.message__icon .message--senary-500 {
+  color: #CAA08D !important;
+}
+.message__icon .message--senary-400 {
+  color: #DEAE98 !important;
+}
+.message__icon .message--senary-300 {
+  color: #EEC3AF !important;
+}
+.message__icon .message--senary-200 {
+  color: #FAD5C5 !important;
+}
+.message__icon .message--senary-100 {
+  color: #FFE9DF !important;
+}
+.message__icon .message--senary-50 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-900 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-800 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-700 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-600 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-500 {
+  color: #6C887A !important;
+}
+.message__icon .message--septenary-400 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-300 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-200 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-100 {
+  color: transparent !important;
+}
+.message__icon .message--septenary-50 {
+  color: transparent !important;
+}
+.message__icon .message--grey-900 {
+  color: #1D1D1D !important;
+}
+.message__icon .message--grey-800 {
+  color: #333333 !important;
+}
+.message__icon .message--grey-700 {
+  color: #4D4D4D !important;
+}
+.message__icon .message--grey-600 {
+  color: #666666 !important;
+}
+.message__icon .message--grey-500 {
+  color: #757575 !important;
+}
+.message__icon .message--grey-400 {
+  color: #999999 !important;
+}
+.message__icon .message--grey-300 {
+  color: #B3B3B3 !important;
+}
+.message__icon .message--grey-200 {
+  color: #CCCCCC !important;
+}
+.message__icon .message--grey-100 {
+  color: #E6E6E6 !important;
+}
+.message__icon .message--grey-50 {
+  color: #F8F8F8 !important;
+}
+.message__icon .message--contextual-success {
+  color: #00856A !important;
+}
+.message__icon .message--success {
+  color: #00856A !important;
+}
+.message__icon .message--contextual-success-light {
+  color: #E5F2F0 !important;
+}
+.message__icon .message--success-light {
+  color: #E5F2F0 !important;
+}
+.message__icon .message--contextual-info {
+  color: #2899A8 !important;
+}
+.message__icon .message--info {
+  color: #2899A8 !important;
+}
+.message__icon .message--contextual-info-light {
+  color: #DBF6FF !important;
+}
+.message__icon .message--info-light {
+  color: #DBF6FF !important;
+}
+.message__icon .message--contextual-warning {
+  color: #F76700 !important;
+}
+.message__icon .message--warning {
+  color: #F76700 !important;
+}
+.message__icon .message--contextual-warning-light {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--warning-light {
+  color: #FFF1E5 !important;
+}
+.message__icon .message--contextual-error {
+  color: #EB0000 !important;
+}
+.message__icon .message--error {
+  color: #EB0000 !important;
+}
+.message__icon .message--contextual-error-light {
+  color: #FDE5E5 !important;
+}
+.message__icon .message--error-light {
+  color: #FDE5E5 !important;
+}
+.message__icon .message--pfm-blue {
+  color: #55A1D3 !important;
+}
+.message__icon .message--pfm-green {
+  color: #8DDE54 !important;
+}
+.message__icon .message--pfm-yellow {
+  color: #FFC600 !important;
+}
+.message__icon .message--pfm-orange {
+  color: #FC912E !important;
+}
+.message__icon .message--pfm-red {
+  color: #DF5036 !important;
+}
+.message__icon .message--external-bank-ing {
+  color: #F58220 !important;
+}
+.message__icon .message--external-bank-bil {
+  color: #71308B !important;
+}
+.message__icon .message--external-bank-bcee {
+  color: #144093 !important;
+}
+.message__icon .message--external-bank-post {
+  color: #FABC0B !important;
+}
+.message__icon .message--external-bank-raiffeisen {
+  color: #112242 !important;
+}
+.message__icon .message--external-bank-bnp-paribas {
+  color: #00915A !important;
+}
+.message__icon .message--white-15 {
+  color: rgba(255, 255, 255, 0.15) !important;
+}
+.message__icon .message--white-25 {
+  color: rgba(255, 255, 255, 0.25) !important;
+}
+.message__icon .message--white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.message__icon .message--brand-pfm-blue {
+  color: #55A1D3 !important;
+}
+.message__icon .message--brand-pfm-green {
+  color: #8DDE54 !important;
+}
+.message__icon .message--brand-pfm-yellow {
+  color: #FFC600 !important;
+}
+.message__icon .message--brand-pfm-orange {
+  color: #FC912E !important;
+}
+.message__icon .message--brand-pfm-red {
+  color: #DF5036 !important;
+}
+.message__icon .message--brand-expressive-green-light {
+  color: #4FB482 !important;
+}
+.message__icon .message--brand-expressive-green-dark {
+  color: #133B2C !important;
+}
+.message__icon .message--brand-expressive-blue-light {
+  color: #1B8DC0 !important;
+}
+.message__icon .message--brand-expressive-blue-dark {
+  color: #0A324B !important;
+}
+.message__icon .message--brand-expressive-yellow-light {
+  color: #F0BE21 !important;
+}
+.message__icon .message--brand-expressive-yellow-dark {
+  color: #B77918 !important;
+}
+.message__icon .message--brand-expressive-orange-light {
+  color: #F3B969 !important;
+}
+.message__icon .message--brand-expressive-orange-dark {
+  color: #EF7D00 !important;
+}
+.message__icon .message--brand-expressive-pink-light {
+  color: #C03152 !important;
+}
+.message__icon .message--brand-expressive-pink-dark {
+  color: #4F0F15 !important;
+}
+.message__icon .message--brand-expressive-red-light {
+  color: #F7B7AF !important;
+}
+.message__icon .message--brand-expressive-red-dark {
+  color: #E62D32 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-900 {
+  color: #4D2800 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-800 {
+  color: #804200 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-700 {
+  color: #B35C00 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-600 {
+  color: #CC6A00 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-500 {
+  color: #EF7D00 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-400 {
+  color: #FC8823 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-300 {
+  color: #FC9E4C !important;
+}
+.message__icon .message--brand-expressive-orange-dark-200 {
+  color: #FFB675 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-100 {
+  color: #FFD1A8 !important;
+}
+.message__icon .message--brand-expressive-orange-dark-50 {
+  color: transparent !important;
+}
+.message__icon .message--brand-expressive-blue-light-900 {
+  color: #0C4159 !important;
+}
+.message__icon .message--brand-expressive-blue-light-800 {
+  color: #105373 !important;
+}
+.message__icon .message--brand-expressive-blue-light-700 {
+  color: #14668C !important;
+}
+.message__icon .message--brand-expressive-blue-light-600 {
+  color: #1779A6 !important;
+}
+.message__icon .message--brand-expressive-blue-light-500 {
+  color: #1B8DC0 !important;
+}
+.message__icon .message--brand-expressive-blue-light-400 {
+  color: #1D9AD1 !important;
+}
+.message__icon .message--brand-expressive-blue-light-300 {
+  color: #2AAEEB !important;
+}
+.message__icon .message--brand-expressive-blue-light-200 {
+  color: #56BFF0 !important;
+}
+.message__icon .message--brand-expressive-blue-light-100 {
+  color: #7FCFF5 !important;
+}
+.message__icon .message--brand-expressive-blue-light-50 {
+  color: transparent !important;
+}
+.message__icon .message--brand-expressive-green-light-900 {
+  color: #224D37 !important;
+}
+.message__icon .message--brand-expressive-green-light-800 {
+  color: #2D6649 !important;
+}
+.message__icon .message--brand-expressive-green-light-700 {
+  color: #39805C !important;
+}
+.message__icon .message--brand-expressive-green-light-600 {
+  color: #43996E !important;
+}
+.message__icon .message--brand-expressive-green-light-500 {
+  color: #4FB482 !important;
+}
+.message__icon .message--brand-expressive-green-light-400 {
+  color: #55C28C !important;
+}
+.message__icon .message--brand-expressive-green-light-300 {
+  color: #60D199 !important;
+}
+.message__icon .message--brand-expressive-green-light-200 {
+  color: #69DBA2 !important;
+}
+.message__icon .message--brand-expressive-green-light-100 {
+  color: #85E6B5 !important;
+}
+.message__icon .message--brand-expressive-green-light-50 {
+  color: transparent !important;
+}
+.message__icon .message--brand-expressive-yellow-light-900 {
+  color: #6B550F !important;
+}
+.message__icon .message--brand-expressive-yellow-light-800 {
+  color: #8F7214 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-700 {
+  color: #AD8B19 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-600 {
+  color: #D1A71D !important;
+}
+.message__icon .message--brand-expressive-yellow-light-500 {
+  color: #F0BE21 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-400 {
+  color: #FCCA23 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-300 {
+  color: #FCD742 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-200 {
+  color: #FCDD60 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-100 {
+  color: #FCE483 !important;
+}
+.message__icon .message--brand-expressive-yellow-light-50 {
+  color: transparent !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-900 {
+  color: #52360B !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-800 {
+  color: #6B470E !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-700 {
+  color: #855811 !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-600 {
+  color: #9E6915 !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-500 {
+  color: #B77918 !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-400 {
+  color: #D18A1B !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-300 {
+  color: #EB9B1F !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-200 {
+  color: #FAAA2D !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-100 {
+  color: #FABA55 !important;
+}
+.message__icon .message--brand-expressive-yellow-dark-50 {
+  color: transparent !important;
+}
+.message__icon .message--white-opacity-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.message__icon .message--white {
+  color: #FFFFFF !important;
+}
+.message__icon .message--black {
+  color: #000000 !important;
+}
+.message__icon--leading {
+  position: absolute;
+}
+.message__text {
+  flex: 1 1 auto;
+}
+.message__buttons {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 24px;
+}
+.message__buttons > *:not(:last-child) {
+  margin-right: 4px;
+}
+.message__buttons > *:not(:first-child) {
+  margin-left: 4px;
+}
+.message .message__icon--cleaning {
+  display: none;
+}
+.message--with-cleaning-icon .message__icon--cleaning {
+  z-index: 2;
+  display: block;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  margin-top: 1px;
+  pointer-events: initial;
+  cursor: pointer;
+}
+.message--clickable:hover {
+  cursor: pointer;
+}
+.message.message {
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+.message.message .message__icon {
+  color: #5E5E5E;
+}
+.message.message.message--with-cleaning-icon .message__icon--cleaning {
+  color: #5E5E5E;
+}
+.message.message [name=paragraph] {
+  color: #5E5E5E !important;
+}
+.message.message [name=paragraph] > * {
+  color: #5E5E5E !important;
+}
+.message.message:hover {
+  background-color: #96C11F;
+}
+.message.message--inline {
+  background-color: transparent !important;
+}
+.message.message--inline:hover {
+  background-color: transparent;
+}
+.message.message--success {
+  color: #FFFFFF;
+  background-color: #00856A;
+}
+.message.message--success .message__icon {
+  color: #FFFFFF;
+}
+.message.message--success.message--with-cleaning-icon .message__icon--cleaning {
+  color: #FFFFFF;
+}
+.message.message--success [name=paragraph] {
+  color: #FFFFFF !important;
+}
+.message.message--success [name=paragraph] > * {
+  color: #FFFFFF !important;
+}
+.message.message--success:hover {
+  background-color: #133B2C;
+}
+.message.message--success--inline {
+  background-color: transparent !important;
+}
+.message.message--success--inline:hover {
+  background-color: transparent;
+}
+.message.message--info {
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+.message.message--info .message__icon {
+  color: #FFFFFF;
+}
+.message.message--info.message--with-cleaning-icon .message__icon--cleaning {
+  color: #FFFFFF;
+}
+.message.message--info [name=paragraph] {
+  color: #FFFFFF !important;
+}
+.message.message--info [name=paragraph] > * {
+  color: #FFFFFF !important;
+}
+.message.message--info:hover {
+  background-color: #0A324B;
+}
+.message.message--info--inline {
+  background-color: transparent !important;
+}
+.message.message--info--inline:hover {
+  background-color: transparent;
+}
+.message.message--warning {
+  color: #FFFFFF;
+  background-color: #F76700;
+}
+.message.message--warning .message__icon {
+  color: #FFFFFF;
+}
+.message.message--warning.message--with-cleaning-icon .message__icon--cleaning {
+  color: #FFFFFF;
+}
+.message.message--warning [name=paragraph] {
+  color: #FFFFFF !important;
+}
+.message.message--warning [name=paragraph] > * {
+  color: #FFFFFF !important;
+}
+.message.message--warning:hover {
+  background-color: #EF7D00;
+}
+.message.message--warning--inline {
+  background-color: transparent !important;
+}
+.message.message--warning--inline:hover {
+  background-color: transparent;
+}
+.message.message--error {
+  color: #FFFFFF;
+  background-color: #EB0000;
+}
+.message.message--error .message__icon {
+  color: #FFFFFF;
+}
+.message.message--error.message--with-cleaning-icon .message__icon--cleaning {
+  color: #FFFFFF;
+}
+.message.message--error [name=paragraph] {
+  color: #FFFFFF !important;
+}
+.message.message--error [name=paragraph] > * {
+  color: #FFFFFF !important;
+}
+.message.message--error:hover {
+  background-color: #E62D32;
+}
+.message.message--error--inline {
+  background-color: transparent !important;
+}
+.message.message--error--inline:hover {
+  background-color: transparent;
+}
+.message.message {
+  padding: 12px 8px;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.message.message .message__icon {
+  width: 24px;
+  font-size: 24px;
+}
+.message.message .message__icon--leading {
+  top: 8px;
+  margin-right: 8px;
+}
+.message.message.message--with-leading-icon .message__text {
+  padding-left: 24px;
+}
+.message.message.message--with-cleaning-icon .message__icon--cleaning {
+  width: 16px;
+  margin-left: 8px;
+  font-size: 16px;
+}
+.message.message--inline {
+  padding: 4px 4px 4px 0px;
+}
+.message.message--inline .message__icon--leading {
+  top: 0;
+}
+.message--text {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.message--text .message__text {
+  font-weight: 600;
+}
+.message--text.message {
+  color: #5E5E5E;
+  background-color: transparent;
+}
+.message--text.message .message__icon {
+  color: #5E5E5E;
+}
+.message--text.message.message--with-cleaning-icon .message__icon--cleaning {
+  color: #5E5E5E;
+}
+.message--text.message [name=paragraph] {
+  color: #5E5E5E !important;
+}
+.message--text.message [name=paragraph] > * {
+  color: #5E5E5E !important;
+}
+.message--text.message:hover {
+  background-color: transparent;
+}
+.message--text.message--inline {
+  background-color: transparent !important;
+}
+.message--text.message--inline:hover {
+  background-color: transparent;
+}
+.message--text.message--success {
+  color: #00856A;
+  background-color: transparent;
+}
+.message--text.message--success .message__icon {
+  color: #00856A;
+}
+.message--text.message--success.message--with-cleaning-icon .message__icon--cleaning {
+  color: #00856A;
+}
+.message--text.message--success [name=paragraph] {
+  color: #00856A !important;
+}
+.message--text.message--success [name=paragraph] > * {
+  color: #00856A !important;
+}
+.message--text.message--success:hover {
+  background-color: transparent;
+}
+.message--text.message--success--inline {
+  background-color: transparent !important;
+}
+.message--text.message--success--inline:hover {
+  background-color: transparent;
+}
+.message--text.message--info {
+  color: #2899A8;
+  background-color: transparent;
+}
+.message--text.message--info .message__icon {
+  color: #2899A8;
+}
+.message--text.message--info.message--with-cleaning-icon .message__icon--cleaning {
+  color: #2899A8;
+}
+.message--text.message--info [name=paragraph] {
+  color: #2899A8 !important;
+}
+.message--text.message--info [name=paragraph] > * {
+  color: #2899A8 !important;
+}
+.message--text.message--info:hover {
+  background-color: transparent;
+}
+.message--text.message--info--inline {
+  background-color: transparent !important;
+}
+.message--text.message--info--inline:hover {
+  background-color: transparent;
+}
+.message--text.message--warning {
+  color: #F76700;
+  background-color: transparent;
+}
+.message--text.message--warning .message__icon {
+  color: #F76700;
+}
+.message--text.message--warning.message--with-cleaning-icon .message__icon--cleaning {
+  color: #F76700;
+}
+.message--text.message--warning [name=paragraph] {
+  color: #F76700 !important;
+}
+.message--text.message--warning [name=paragraph] > * {
+  color: #F76700 !important;
+}
+.message--text.message--warning:hover {
+  background-color: transparent;
+}
+.message--text.message--warning--inline {
+  background-color: transparent !important;
+}
+.message--text.message--warning--inline:hover {
+  background-color: transparent;
+}
+.message--text.message--error {
+  color: #EB0000;
+  background-color: transparent;
+}
+.message--text.message--error .message__icon {
+  color: #EB0000;
+}
+.message--text.message--error.message--with-cleaning-icon .message__icon--cleaning {
+  color: #EB0000;
+}
+.message--text.message--error [name=paragraph] {
+  color: #EB0000 !important;
+}
+.message--text.message--error [name=paragraph] > * {
+  color: #EB0000 !important;
+}
+.message--text.message--error:hover {
+  background-color: transparent;
+}
+.message--text.message--error--inline {
+  background-color: transparent !important;
+}
+.message--text.message--error--inline:hover {
+  background-color: transparent;
+}

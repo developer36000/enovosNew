@@ -1,0 +1,39 @@
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__body__fields {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__body__fields > * {
+  display: block;
+  width: 100%;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__body__fields > *:not(:first-child) {
+  margin-left: 8px;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__body__fields > *:not(:last-child) {
+  margin-right: 8px;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__body__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__footer__text {
+  flex: 1 0 auto;
+  margin: 0 16px;
+}
+[name=app-dialog-consumption-download] .app-dialog-consumption-download__dialog__footer__button {
+  -ms-grid-row-align: center;
+      align-self: center;
+}

@@ -1,0 +1,23 @@
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card {
+  overflow: hidden;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__content {
+  padding: 8px;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__content__field {
+  margin-bottom: 16px;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__content__field:first-of-type {
+  margin-top: 32px;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__content__field > *:first-child {
+  margin-bottom: 4px;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__content__button {
+  text-align: right;
+}
+[name=view-app-enovos-section-contract-details] .view-app-enovos-section-contract-details__card__map {
+  width: calc(100% + 26px);
+  height: calc(100% + 26px);
+  margin: -13px;
+}

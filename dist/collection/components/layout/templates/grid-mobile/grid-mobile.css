@@ -1,0 +1,39 @@
+.grid-mobile {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-size: cover;
+}
+.grid-mobile video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #D52B1E;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid-mobile .header-wrapper,
+.grid-mobile .main-wrapper,
+.grid-mobile .footer-wrapper {
+  width: 100%;
+  text-align: center;
+}
+.grid-mobile .main-wrapper {
+  transform: translateY(50%);
+}
+.grid-mobile__area--hidden {
+  display: none !important;
+}
+.grid-mobile__area--full {
+  align-items: flex-start !important;
+}
+.grid-mobile__area--full .main-wrapper {
+  height: 100%;
+  transform: none !important;
+}
+.grid-mobile__area--full .main-wrapper .grid-mobile__area--main {
+  height: 100%;
+}

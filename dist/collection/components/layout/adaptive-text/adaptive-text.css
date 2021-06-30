@@ -1,0 +1,15 @@
+[name=adaptive-text] {
+  position: relative;
+  display: flex;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+[name=adaptive-text] .adaptive-text__content {
+  opacity: 0;
+  transition: opacity 0 ease-in;
+}
+[name=adaptive-text] .adaptive-text__content--visible {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}

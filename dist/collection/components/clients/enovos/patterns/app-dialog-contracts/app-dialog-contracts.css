@@ -1,0 +1,53 @@
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts .dialog__dialog__content__header {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
+  min-height: 136px;
+}
+@media (max-width: 1151px) {
+  [name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts .dialog__dialog__content__header {
+    min-height: 200px;
+  }
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts .dialog__dialog__content__body {
+  margin-bottom: 16px;
+  padding-bottom: 0 !important;
+  overflow-y: auto;
+}
+@media (max-width: 639px) {
+  [name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__header > div:first-child {
+    height: 32px;
+    display: flex;
+    align-items: center;
+  }
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__header .grid-layout {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__close-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__body__card:not(:last-child) {
+  margin-bottom: 8px;
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__body__card__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+[name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__body__card__content > div + div {
+  margin-left: 16px;
+}
+@media (max-width: 1151px) {
+  [name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__header {
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  [name=app-dialog-contracts] .app-dialog-contracts__dialog__contracts__header__field {
+    flex: none;
+    order: 2;
+    margin-top: 8px;
+  }
+}

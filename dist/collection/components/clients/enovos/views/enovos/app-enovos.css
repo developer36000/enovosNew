@@ -1,0 +1,102 @@
+body {
+  height: auto !important;
+}
+body.scroll-disabled {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+[name=view-app-enovos] .view-app-enovos__navigation_area {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__navigation_area {
+    flex-wrap: wrap;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__navigation_area__navigation {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__navigation_area__navigation {
+    order: 2;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__navigation_area__navigation [name=navigation] {
+  height: 64px;
+}
+[name=view-app-enovos] .view-app-enovos__navigation_area__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__navigation_area__buttons {
+    margin-top: 16px;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__navigation_area__buttons > *:not(:first-child) {
+  margin-left: 16px;
+}
+[name=view-app-enovos] .view-app-enovos__footer {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__footer {
+    display: block;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__footer__link:not(:first-child) {
+  margin-left: 24px;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__footer__link {
+    margin: 0 8px !important;
+  }
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__footer-left {
+    text-align: center;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 863px) {
+  [name=view-app-enovos] .view-app-enovos__footer-right {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+  }
+}
+[name=view-app-enovos] .view-app-enovos__comparison_profile__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+[name=view-app-enovos] .view-app-enovos__comparison_profile__header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+[name=view-app-enovos] .view-app-enovos__comparison_profile__header__buttons > *:not(:last-child) {
+  margin-right: 8px;
+}
+[name=view-app-enovos] .view-app-enovos__comparison_profile__datalist {
+  margin-top: 16px;
+}
+[name=view-app-enovos] .view-app-enovos__chart-description-list {
+  display: flex;
+}
+[name=view-app-enovos] .view-app-enovos__chart-description-list > span + span {
+  margin-left: 16px;
+}

@@ -1,0 +1,27 @@
+.view-app-enovos-section-consumption__chart__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.view-app-enovos-section-consumption__chart__buttons > *:not(:first-child) {
+  margin-left: 8px;
+}
+.view-app-enovos-section-consumption__chart-description-list {
+  display: flex;
+  margin-bottom: 8px;
+}
+.view-app-enovos-section-consumption__chart-description-list > span + span {
+  margin-left: 16px;
+}
+.view-app-enovos-section-consumption__comparison_profile__datalist [name=datalist-item] .datalist-item {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+}
+.view-app-enovos-section-consumption__comparison_profile__datalist [name=datalist-item] .datalist-item:not(.datalist-item--heading) {
+  background-color: transparent !important;
+  border-bottom: solid 1px #EEEEEE;
+}
+.view-app-enovos-section-consumption__comparison_profile__datalist [name=datalist-item] .datalist-item__column__body__text .heading--primary-500 {
+  color: #5E5E5E !important;
+  font-weight: 700 !important;
+}

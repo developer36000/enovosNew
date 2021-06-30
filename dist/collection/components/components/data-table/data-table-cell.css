@@ -1,0 +1,260 @@
+[name=data-table-cell] {
+  display: flex;
+  align-items: baseline;
+  height: 100%;
+  text-align: left;
+}
+[name=data-table-cell] .data-table-cell--left {
+  text-align: left !important;
+}
+[name=data-table-cell] .data-table-cell--center {
+  text-align: center !important;
+}
+[name=data-table-cell] .data-table-cell--right {
+  text-align: right !important;
+}
+[name=data-table-cell] .data-table-cell--capitalize {
+  text-transform: capitalize !important;
+}
+[name=data-table-cell] .data-table-cell--uppercase {
+  text-transform: uppercase !important;
+}
+[name=data-table-cell] .data-table-cell--lowercase {
+  text-transform: lowercase !important;
+}
+[name=data-table-cell] .data-table-cell--underline {
+  text-decoration: underline !important;
+}
+[name=data-table-cell] .data-table-cell--italic {
+  font-style: italic !important;
+}
+[name=data-table-cell] .data-table-cell--fit-content {
+  height: inherit !important;
+  line-height: unset !important;
+}
+[name=data-table-cell] .data-table-cell--line-height-body-2 {
+  line-height: 16px !important;
+}
+[name=data-table-cell] .data-table-cell--weight-100 {
+  font-weight: 100 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-200 {
+  font-weight: 200 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-300 {
+  font-weight: 300 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-400 {
+  font-weight: 400 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-500 {
+  font-weight: 500 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-600 {
+  font-weight: 600 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-700 {
+  font-weight: 700 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-800 {
+  font-weight: 800 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-900 {
+  font-weight: 900 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-thin {
+  font-weight: 100 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-extra-light {
+  font-weight: 200 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-light {
+  font-weight: 300 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-regular {
+  font-weight: 400 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-medium {
+  font-weight: 500 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-semi-bold {
+  font-weight: 600 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-bold {
+  font-weight: 700 !important;
+}
+[name=data-table-cell] .data-table-cell--weight-extra-bold {
+  font-weight: 800 !important;
+}
+[name=data-table-cell] .data-table-cell--style-normal {
+  font-style: normal !important;
+}
+[name=data-table-cell] .data-table-cell--style-italic {
+  font-style: italic !important;
+}
+[name=data-table-cell] .data-table-cell--style-oblique {
+  font-style: oblique !important;
+}
+[name=data-table-cell] .data-table-cell--font-family-1 {
+  font-family: "Montserrat", sans-serif !important;
+}
+[name=data-table-cell] .data-table-cell--font-family-2 {
+  font-family: "Montserrat", sans-serif !important;
+}
+[name=data-table-cell] .data-table-cell {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: inherit;
+  padding: 4px 0;
+  min-height: inherit;
+  padding: 16px 0;
+}
+[name=data-table-cell] .data-table-cell--numerical, [name=data-table-cell] .data-table-cell--right {
+  justify-content: flex-end;
+}
+[name=data-table-cell] .data-table-cell--center {
+  justify-content: center;
+}
+[name=data-table-cell] .data-table-cell--is-action {
+  overflow: visible;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+[name=data-table-cell] .data-table-cell--is-icon {
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+[name=data-table-cell] .data-table-cell--is-ellipsis {
+  cursor: pointer;
+}
+[name=data-table-cell] .data-table-cell:not(.data-table-cell--is-ellipsis) .data-table-cell__tooltip {
+  display: none;
+}
+[name=data-table-cell] .data-table-cell__tooltip__icon {
+  vertical-align: sub;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell.data-table-cell--first {
+  font-size: 14px;
+  font-weight: 400;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell.data-table-cell--is-icon {
+  font-size: 24px;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell.data-table-cell--is-action {
+  font-size: 24px;
+}
+[name=data-table-cell] .data-table-cell .data-table-cell__tooltip__icon {
+  font-size: 24px;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--lg {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--lg.data-table-cell--first {
+  font-size: 14px;
+  font-weight: false;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--lg.data-table-cell--is-icon {
+  font-size: 14px;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--lg.data-table-cell--is-action {
+  font-size: 14px;
+}
+[name=data-table-cell] .data-table-cell .data-table-cell__tooltip__icon {
+  font-size: "auto";
+}
+[name=data-table-cell] .data-table-cell.data-table-cell {
+  color: #5E5E5E;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--is-icon {
+  color: #5E5E5E;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--is-action {
+  color: #5E5E5E;
+}
+@media (hover: hover) {
+  [name=data-table-cell] .data-table-cell.data-table-cell--is-icon:not([disabled]):hover, [name=data-table-cell] .data-table-cell.data-table-cell--is-action:not([disabled]):hover {
+    color: #F76700;
+  }
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--is-icon:not([disabled]):focus, [name=data-table-cell] .data-table-cell.data-table-cell--is-action:not([disabled]):focus {
+  color: #F76700;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--is-icon:not([disabled]):active, [name=data-table-cell] .data-table-cell.data-table-cell--is-action:not([disabled]):active {
+  color: #F76700;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--blue {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--blue--is-icon {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--blue--is-action {
+  color: #000000;
+}
+@media (hover: hover) {
+  [name=data-table-cell] .data-table-cell.data-table-cell--blue--is-icon:not([disabled]):hover, [name=data-table-cell] .data-table-cell.data-table-cell--blue--is-action:not([disabled]):hover {
+    color: #000000;
+  }
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--blue--is-icon:not([disabled]):focus, [name=data-table-cell] .data-table-cell.data-table-cell--blue--is-action:not([disabled]):focus {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--blue--is-icon:not([disabled]):active, [name=data-table-cell] .data-table-cell.data-table-cell--blue--is-action:not([disabled]):active {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--primary {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--primary--is-icon {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--primary--is-action {
+  color: #000000;
+}
+@media (hover: hover) {
+  [name=data-table-cell] .data-table-cell.data-table-cell--primary--is-icon:not([disabled]):hover, [name=data-table-cell] .data-table-cell.data-table-cell--primary--is-action:not([disabled]):hover {
+    color: #000000;
+  }
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--primary--is-icon:not([disabled]):focus, [name=data-table-cell] .data-table-cell.data-table-cell--primary--is-action:not([disabled]):focus {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--primary--is-icon:not([disabled]):active, [name=data-table-cell] .data-table-cell.data-table-cell--primary--is-action:not([disabled]):active {
+  color: #000000;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark {
+  color: #5E5E5E;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-icon {
+  color: #004885;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-action {
+  color: #004885;
+}
+@media (hover: hover) {
+  [name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-icon:not([disabled]):hover, [name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-action:not([disabled]):hover {
+    color: #004885;
+  }
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-icon:not([disabled]):focus, [name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-action:not([disabled]):focus {
+  color: #004885;
+}
+[name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-icon:not([disabled]):active, [name=data-table-cell] .data-table-cell.data-table-cell--brand-expressive-orange-dark--is-action:not([disabled]):active {
+  color: #004885;
+}

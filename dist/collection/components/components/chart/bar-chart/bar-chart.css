@@ -1,0 +1,44 @@
+.bar-chart {
+  position: relative;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.bar-chart svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bar-chart.bar-chart .bar-chart__axis text {
+  fill: #A7A7A7;
+}
+.bar-chart.bar-chart .bar-chart__grid-line--x {
+  stroke: #EEEEEE;
+}
+.bar-chart.bar-chart .bar-chart__grid-line--y {
+  stroke: #EEEEEE;
+}
+.bar-chart.bar-chart .bar-chart__bar--default {
+  fill: #F76700;
+}
+.bar-chart.bar-chart .bar-chart__bar--primary {
+  fill: #F76700;
+}
+.bar-chart.bar-chart .bar-chart__bar--secondary {
+  fill: #5E5E5E;
+}
+.bar-chart.bar-chart .bar-chart__bar--tertiary {
+  fill: #004885;
+}
+.bar-chart.bar-chart .bar-chart__bar--quaternary {
+  fill: #96C11F;
+}
+.bar-chart.bar-chart .bar-chart__bar--quinary {
+  fill: #EF7B0B;
+}
+.bar-chart.bar-chart .bar-chart__axis text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}

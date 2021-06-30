@@ -1,0 +1,71 @@
+.text {
+  &--left    { text-align: left !important;}
+  &--center  { text-align: center !important;}
+  &--right   { text-align: right !important;}
+
+  &--capitalize { text-transform: capitalize !important; }
+  &--uppercase  { text-transform: uppercase !important; }
+  &--lowercase  { text-transform: lowercase !important; }
+
+  &--italic { font-style: italic !important; }
+
+  &--fit-content {
+    height: inherit !important;
+    line-height: unset !important;
+  }
+  &--line-height-body-2 {
+    line-height: $typography-body-2-line-height !important;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------ //
+//          FONTS-WEIGHT Utilities
+// ------------------------------------------------------------------------------------------------------------------ //
+@each $weight-name, $typography-font-weight in $typography-font-weights {
+  .text--weight-#{$weight-name} {
+    font-weight: map-get($typography-font-weights, $weight-name) !important;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------ //
+//          FONTS-STYLE Utilities
+// ------------------------------------------------------------------------------------------------------------------ //
+@each $style-name, $typography-font-style in $typography-font-styles {
+  .text--style-#{$style-name} {
+    font-style: map-get($typography-font-styles, #{$style-name}) !important;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------ //
+//          FONTS-FAMILY Utilities
+// ------------------------------------------------------------------------------------------------------------------ //
+@each $family-name, $typography-font-family in $fonts {
+  .#{$family-name} {
+    font-family: map-get($fonts, #{$family-name}) !important;
+  }
+}
+
+// ------------------------------------------------------------------------------------------------------------------ //
+//          FONTS-SIZE Utilities
+// ------------------------------------------------------------------------------------------------------------------ //
+@for $i from 1 through 6 {
+  .text--size-h#{$i} {
+    font : {
+      family: $typography-font-family-base !important;
+      size: map-get(map-get($typography-sizes, h#{$i}), 'font-size') !important;
+      weight: map-get(map-get($typography-sizes, h#{$i}), 'font-weight') !important;
+    }
+    line-height: map-get(map-get($typography-sizes, h#{$i}), 'line-height') !important;
+  }
+}
+
+@for $i from 1 through 3 {
+  .text--size-body#{$i} {
+    font : {
+      family: $typography-font-family-base !important;
+      size: map-get(map-get($typography-sizes, body#{$i}), 'font-size') !important;
+      weight: map-get(map-get($typography-sizes, body#{$i}), 'font-weight') !important;
+    }
+    line-height: map-get(map-get($typography-sizes, body#{$i}), 'line-height') !important;
+  }
+}

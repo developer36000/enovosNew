@@ -1,0 +1,64 @@
+[name=data-table__heading] {
+  display: block;
+  width: 100%;
+}
+[name=data-table__heading] .data-table__heading__slot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+[name=data-table__heading] .data-table__heading__checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[name=data-table__heading] .data-table__heading__checkboxes__actions {
+  display: flex;
+  align-items: center;
+}
+[name=data-table__heading] .data-table__heading__checkboxes__actions__slot {
+  display: block;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading {
+  min-height: 72px;
+  padding: 16px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading .data-table__heading__checkboxes__actions__slot {
+  margin-left: 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading .data-table__heading__checkboxes__actions__slot > *:not(:last-child) {
+  margin-right: 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--lg {
+  min-height: 72px;
+  padding: 16px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-radius: 4px 4px 0 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--lg .data-table__heading__checkboxes__actions__slot {
+  margin-left: 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--lg .data-table__heading__checkboxes__actions__slot > *:not(:last-child) {
+  margin-right: 0;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading {
+  background: #FFFFFF;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--blue {
+  background: #FFFFFF;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--primary {
+  background: #FFFFFF;
+}
+[name=data-table__heading] .data-table__heading.data-table__heading--brand-expressive-orange-dark {
+  background: #FFFFFF;
+}

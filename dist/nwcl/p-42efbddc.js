@@ -1,0 +1,1 @@
+function r(r,a,n){var o=-1,t=r.length;a<0&&(a=-a>t?0:t+a),(n=n>t?t:n)<0&&(n+=t),t=a>n?0:n-a>>>0,a>>>=0;for(var e=Array(t);++o<t;)e[o]=r[o+a];return e}export{r as b}

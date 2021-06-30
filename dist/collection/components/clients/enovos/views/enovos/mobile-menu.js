@@ -1,0 +1,18 @@
+import { h } from '@stencil/core';
+export const MobileMenu = ({ baseClassName, id }) => (h("eds-side-sheet", { class: `${baseClassName}__mobile-menu`, id: id, position: "right" },
+  h("div", { class: `${baseClassName}__mobile-menu-header` },
+    h("div", { class: `${baseClassName}__mobile-menu-title` },
+      h("eds-heading", { content: "Menu", "font-weight": "bold", type: "h2", styles: "secondary" })),
+    h("div", { class: `${baseClassName}__mobile-menu-btn-close` },
+      h("eds-button", { id: "mobile-menu-btn-close", styles: "secondary", "text-only": true },
+        h("eds-icon", { slot: "icon", icon: "times" }))),
+    h("div", { class: `${baseClassName}__mobile-menu-subtitle` },
+      h("eds-heading", { content: "Hello, <strong>Gilles Hermes</strong>", type: "h6", styles: "secondary" }))),
+  h("div", { class: `${baseClassName}__mobile-menu-body` },
+    h("div", { class: `${baseClassName}__mobile-menu-item` },
+      h("eds-link", { size: "md", content: "My account" })),
+    h("div", { class: `${baseClassName}__mobile-menu-item` },
+      h("eds-link", { size: "md", content: "I am moving" }))),
+  h("div", { class: `${baseClassName}__mobile-menu-footer` },
+    h("div", { class: `${baseClassName}__mobile-menu-item` },
+      h("eds-link", { size: "md", content: "Log out" })))));

@@ -1,0 +1,67 @@
+// TODO create the table component (Temporary)
+table {
+  width: 100%;
+  margin-bottom: 24px;
+  border-spacing: 0;
+  color: $color-secondary-500;
+
+  thead,
+  tbody {
+    th, td {
+      // Create the .col-XXpx class
+      $i: 0;
+      @while $i < 800 {
+        &.col-#{$i}px {
+          width: #{$i}px;
+          max-width: #{$i}px;
+          min-width: #{$i}px;
+        }
+        $i: $i + 10;
+      }
+
+      padding: $padding-xs;
+      font : {
+        family: $typography-font-family-1;
+        size: $typography-body-1-font-size;
+        weight: $typography-body-1-font-weight;
+      }
+      text-align: left;
+      line-height: $typography-body-1-line-height;
+      &.yes-no {
+        text-align: center;
+      }
+    }
+  }
+
+  thead {
+    th {
+      font-weight: $typography-font-weight-bold;
+    }
+  }
+
+  tbody{
+    tr {
+      border-bottom: 1px solid $color-brand-expressive-green-light;
+      td {
+        &.highlight{
+          color: $color-tertiary-500;
+          font : {
+            family: $typography-font-family-1;
+            size: $typography-body-1-font-size;
+            weight: $typography-font-weight-extra-bold;
+          }
+          line-height: $typography-body-1-line-height;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    word-break: initial;
+  }
+}

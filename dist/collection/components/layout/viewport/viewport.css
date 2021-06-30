@@ -1,0 +1,29 @@
+[name=viewport]::before {
+  display: none;
+  content: "xxs";
+}
+@media screen and (min-width: 100%) {
+  [name=viewport]::before {
+    content: "xs";
+  }
+}
+@media screen and (min-width: 640px) {
+  [name=viewport]::before {
+    content: "sm";
+  }
+}
+@media screen and (min-width: 864px) {
+  [name=viewport]::before {
+    content: "md";
+  }
+}
+@media screen and (min-width: 100%) {
+  [name=viewport]::before {
+    content: "lg";
+  }
+}
+@media screen and (min-width: 1440px) {
+  [name=viewport]::before {
+    content: "xlg";
+  }
+}

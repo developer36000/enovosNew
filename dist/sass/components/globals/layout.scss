@@ -1,0 +1,31 @@
+// Margin as host attribute
+$sides: (top, bottom, left, right);
+@for $space from 0 through 40 {
+  @each $side in $sides {
+    .margin-#{$side}-#{$space},
+    [margin-#{$side}-#{$space}] {
+      margin-#{$side}: #{$space * $gutter-default} !important;
+    }
+    .padding-#{$side}-#{$space},
+    [padding-#{$side}-#{$space}] {
+      padding-#{$side}: #{$space * $gutter-default} !important;
+    }
+  }
+}
+
+@mixin margin-padding-styles() {
+  @for $space from 0 through 40 {
+    @each $side in $sides {
+      .#{$component-name} {
+        &--margin-#{$side}-#{$space},
+        &[margin-#{$side}-#{$space}] {
+          margin-#{$side}: #{$space * $gutter-default} !important;
+        }
+        &--padding-#{$side}-#{$space},
+        &[padding-#{$side}-#{$space}] {
+          padding-#{$side}: #{$space * $gutter-default} !important;
+        }
+      }
+    }
+  }
+}

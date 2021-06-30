@@ -1,0 +1,32 @@
+@media (min-width: 640px) {
+  [name=app-periodic-consumption] .app-periodic-consumption__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 640px) {
+  [name=app-periodic-consumption] .app-periodic-consumption__body__text {
+    flex: 0 0 50%;
+  }
+}
+[name=app-periodic-consumption] .app-periodic-consumption__body__text > div:not(:last-child) {
+  margin-bottom: 8px;
+}
+[name=app-periodic-consumption] .app-periodic-consumption__body__text__value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+[name=app-periodic-consumption] .app-periodic-consumption__body__text__value > *:not(:first-child) {
+  margin-left: 8px;
+}
+[name=app-periodic-consumption] .app-periodic-consumption__body__chart {
+  flex: 0 0 50%;
+  margin-top: 24px;
+}
+@media (min-width: 640px) {
+  [name=app-periodic-consumption] .app-periodic-consumption__body__chart {
+    margin-top: 0;
+  }
+}

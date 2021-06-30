@@ -1,0 +1,38 @@
+// Ripple element
+@mixin setRippleAnimation($animation-speed, $height: 100%) {
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 30;
+    display: block;
+    width: 100%;
+    height: $height;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    content: "";
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &:focus {
+    &::before {
+      visibility: visible;
+    }
+    &:not(:active)::before {
+      animation: ripple-animation $animation-speed ease-out 0s;
+    }
+  }
+}
+
+@keyframes ripple-animation {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

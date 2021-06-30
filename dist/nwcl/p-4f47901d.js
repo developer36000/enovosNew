@@ -1,0 +1,1 @@
+import{i as r}from"./p-9e96164e.js";import{c as o}from"./p-07b360f8.js";import{a}from"./p-2015608a.js";import{b as f}from"./p-12645def.js";function p(){var p=arguments.length;if(!p)return[];for(var s=Array(p-1),m=arguments[0],t=p;t--;)s[t-1]=arguments[t];return a(r(m)?o(m):[m],f(s,1))}export{p as c}

@@ -1,0 +1,19 @@
+$orange: #F76700;
+$mandarin: #D52B1E;
+$grey: #D7D7D7;
+$light-sky: #E5F2F0;
+$color-new-grey: #2D2828;
+$success: #00856A;
+$step-gradient: linear-gradient(90deg, #FF7900 0%, #D52B1E 100%);
+
+/*
+* Colors
+*/
+.color-new-grey {
+	color: $color-new-grey;
+	*,
+	.link.link,
+	.heading {
+		color: inherit !important;
+	}
+}

@@ -1,0 +1,2583 @@
+@charset "UTF-8";
+@-webkit-keyframes ripple-animation {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes ripple-animation {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+[name=chip] {
+  display: inline-block;
+}
+[name=chip] .chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out, border-width 0 ease-in-out, opacity 150ms ease-in-out;
+  cursor: pointer;
+}
+[name=chip] .chip label {
+  white-space: nowrap;
+  transition: color 150ms ease-in-out;
+  cursor: inherit;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+[name=chip] .chip__icon {
+  transition: color 150ms ease-in-out;
+}
+[name=chip] .chip__avatar {
+  transition: opacity 150ms ease-in-out;
+}
+[name=chip] .chip__radio {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  border-style: solid;
+  transition: all 150ms ease-in-out;
+}
+[name=chip] .chip__radio:before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: "Enovos-Icons";
+  text-align: center;
+  vertical-align: middle;
+  content: "";
+  transform: translate(-50%, -50%);
+}
+[name=chip] .chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only)::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 30;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  content: "";
+  visibility: hidden;
+  transform: translate(-50%, -50%) scale(0);
+}
+[name=chip] .chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus::before {
+  visibility: visible;
+}
+[name=chip] .chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus:not(:active)::before {
+  -webkit-animation: ripple-animation 0.4s ease-out 0s;
+          animation: ripple-animation 0.4s ease-out 0s;
+}
+[name=chip] .chip.chip--motionless {
+  cursor: default !important;
+}
+[name=chip] .chip.chip--read-only {
+  cursor: text !important;
+}
+[name=chip] .chip.chip--disabled {
+  cursor: not-allowed;
+}
+[name=chip] .chip.chip--disabled .chip__avatar {
+  opacity: 0.5;
+}
+[name=chip] .chip.chip:not(.chip--disabled) {
+  border-color: #5A8D00;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #5A8D00;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip.chip--read-only {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip.chip--disabled {
+  border-color: #5A8D00;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled) {
+  border-color: #5A8D00;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #5A8D00;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary.chip--read-only {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--tertiary.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--tertiary.chip--disabled {
+  border-color: #5A8D00;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--tertiary.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--tertiary.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--tertiary.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled) {
+  border-color: #FFA14C;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #C75300;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #FFB673;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #C75300;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400.chip--read-only {
+  border-color: #C75300;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--primary-400.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--primary-400.chip--disabled {
+  border-color: #FFDDBF;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--primary-400.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--primary-400.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--primary-400.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled) {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled) .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled)::before {
+  background-color: #C75300;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #C75300;
+    color: #FFFFFF;
+    background-color: #C75300;
+  }
+  [name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #FFFFFF;
+    background-color: #C75300;
+  }
+  [name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--read-only {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--read-only .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] .chip.chip--quinary.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--disabled {
+  border-color: #5A8D00;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--quinary.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--quinary.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--quinary.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled) {
+  border-color: #5A8D00;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #5A8D00;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--read-only {
+  border-color: #5A8D00;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--disabled {
+  border-color: #5A8D00;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-orange-dark.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled) {
+  border-color: #1B8DC0;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #14668C;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #1D9AD1;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #14668C;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--read-only {
+  border-color: #14668C;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--disabled {
+  border-color: #7FCFF5;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-blue-light.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled) {
+  border-color: #4FB482;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #39805C;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #55C28C;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #39805C;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--read-only {
+  border-color: #39805C;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--disabled {
+  border-color: #85E6B5;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-green-light.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled) {
+  border-color: #F0BE21;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #AD8B19;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #FCCA23;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #AD8B19;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--read-only {
+  border-color: #AD8B19;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--disabled {
+  border-color: #FCE483;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-light.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled) {
+  border-color: #B77918;
+  color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #855811;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #D18A1B;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #855811;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--read-only {
+  border-color: #855811;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--disabled {
+  border-color: #FABA55;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--brand-expressive-yellow-dark.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled) {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled) .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled) .chip__radio:before {
+  color: #5E5E5E;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled)::before {
+  background-color: #5A8D00;
+}
+@media (hover: hover) {
+  [name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #2899A8;
+    color: #004885;
+    background-color: #BCD870;
+  }
+  [name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #004885;
+  }
+  [name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #004885;
+    background-color: #FFFFFF;
+  }
+  [name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #004885;
+  }
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #2899A8;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #2899A8;
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info.chip--read-only {
+  border-color: #2899A8;
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=chip] .chip.chip--contextual-info.chip--read-only .chip__icon.chip--leading__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info.chip--read-only .chip__icon.chip--trailing__element {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info.chip--read-only .chip__radio {
+  border-color: #004885;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info.chip--read-only .chip__radio:before {
+  color: #004885;
+}
+[name=chip] .chip.chip--contextual-info.chip--disabled {
+  border-color: #2899A8;
+  color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info.chip--disabled .chip__icon.chip--leading__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--contextual-info.chip--disabled .chip__icon.chip--trailing__element {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip--contextual-info.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=chip] .chip.chip--contextual-info.chip--disabled .chip__radio:before {
+  color: #5A8D00;
+}
+[name=chip] .chip.chip {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=chip] .chip.chip label {
+  margin: 0 8px;
+}
+[name=chip] .chip.chip .chip__icon {
+  width: 24px;
+  font-size: 24px;
+}
+[name=chip] .chip.chip .chip__radio {
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+[name=chip] .chip.chip .chip__radio:before {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+[name=chip] .chip.chip.chip--has-avatar {
+  height: 72px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip.chip--has-icon {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip.chip--has-icon .chip__icon {
+  margin-right: 0;
+}
+[name=chip] .chip.chip.chip--has-badge {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip.chip--has-badge .chip__badge {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--lg {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: regular;
+  line-height: 16px;
+}
+[name=chip] .chip.chip--lg label {
+  margin: 0 8px;
+}
+[name=chip] .chip.chip--lg .chip__icon {
+  width: 24px;
+  font-size: 24px;
+}
+[name=chip] .chip.chip--lg .chip__radio {
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+[name=chip] .chip.chip--lg .chip__radio:before {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+[name=chip] .chip.chip--lg.chip--has-avatar {
+  height: 72px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--lg.chip--has-icon {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--lg.chip--has-icon .chip__icon {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--lg.chip--has-badge {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--lg.chip--has-badge .chip__badge {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--md {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=chip] .chip.chip--md label {
+  margin: 0 8px;
+}
+[name=chip] .chip.chip--md .chip__icon {
+  width: 24px;
+  font-size: 24px;
+}
+[name=chip] .chip.chip--md .chip__radio {
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+[name=chip] .chip.chip--md .chip__radio:before {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+[name=chip] .chip.chip--md.chip--has-avatar {
+  height: 72px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--md.chip--has-icon {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--md.chip--has-icon .chip__icon {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--md.chip--has-badge {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--md.chip--has-badge .chip__badge {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--sm {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-width: 1px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=chip] .chip.chip--sm label {
+  margin: 0 8px;
+}
+[name=chip] .chip.chip--sm .chip__icon {
+  width: 16px;
+  font-size: 16px;
+}
+[name=chip] .chip.chip--sm .chip__radio {
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+  border-width: 1px;
+  border-radius: 50%;
+}
+[name=chip] .chip.chip--sm .chip__radio:before {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+}
+[name=chip] .chip.chip--sm.chip--has-avatar {
+  height: 48px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--sm.chip--has-icon {
+  height: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--sm.chip--has-icon .chip__icon {
+  margin-right: 0;
+}
+[name=chip] .chip.chip--sm.chip--has-badge {
+  height: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+[name=chip] .chip.chip--sm.chip--has-badge .chip__badge {
+  margin-right: 0;
+}
+[name=chip] input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable) .chip__radio:before {
+  content: "";
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled) {
+  border-color: #00856A;
+  color: #FFFFFF;
+  background-color: #00856A;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled) .chip__radio {
+  border-color: #00856A;
+  background-color: #00856A;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled)::before {
+  background-color: #133B2C;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #4FB482;
+    color: #FFFFFF;
+    background-color: #4FB482;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #4FB482;
+    background-color: #4FB482;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #E5F2F0;
+  color: #FFFFFF;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #E5F2F0;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #E5F2F0;
+  color: #FFFFFF;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #E5F2F0;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--read-only {
+  border-color: #4FB482;
+  color: #FFFFFF;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--read-only .chip__radio {
+  border-color: #4FB482;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--disabled {
+  border-color: #5A8D00;
+  color: #FFFFFF;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled) {
+  border-color: #00856A;
+  color: #FFFFFF;
+  background-color: #00856A;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled) .chip__radio {
+  border-color: #00856A;
+  background-color: #00856A;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled)::before {
+  background-color: #133B2C;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #4FB482;
+    color: #FFFFFF;
+    background-color: #4FB482;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #4FB482;
+    background-color: #4FB482;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #E5F2F0;
+  color: #FFFFFF;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #E5F2F0;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #E5F2F0;
+  color: #FFFFFF;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #E5F2F0;
+  background-color: #E5F2F0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--read-only {
+  border-color: #4FB482;
+  color: #FFFFFF;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--read-only .chip__radio {
+  border-color: #4FB482;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--disabled {
+  border-color: #5A8D00;
+  color: #FFFFFF;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--tertiary.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled) {
+  border-color: #FFA14C;
+  color: #FFFFFF;
+  background-color: #FFA14C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled) .chip__radio {
+  border-color: #FFA14C;
+  background-color: #FFA14C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled)::before {
+  background-color: #D52B1E;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #C75300;
+    color: #FFFFFF;
+    background-color: #C75300;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #C75300;
+    background-color: #C75300;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #FFB673;
+  color: #FFFFFF;
+  background-color: #FFB673;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #FFB673;
+  background-color: #FFB673;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #FFB673;
+  color: #FFFFFF;
+  background-color: #FFB673;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #FFB673;
+  background-color: #FFB673;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--read-only {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--read-only .chip__radio {
+  border-color: #C75300;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--disabled {
+  border-color: #FFDDBF;
+  color: #FFFFFF;
+  background-color: #FFDDBF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--primary-400.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled) {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled) .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled)::before {
+  background-color: #C75300;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #C75300;
+    color: #FFFFFF;
+    background-color: #C75300;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #FFFFFF;
+    background-color: #C75300;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--read-only {
+  border-color: #C75300;
+  color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--read-only .chip__radio {
+  border-color: #FFFFFF;
+  background-color: #C75300;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--disabled {
+  border-color: #5A8D00;
+  color: #FFFFFF;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--quinary.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled) {
+  border-color: #EF7D00;
+  color: #FFFFFF;
+  background-color: #EF7D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__radio {
+  border-color: #EF7D00;
+  background-color: #EF7D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled)::before {
+  background-color: #804200;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #B35C00;
+    color: #FFFFFF;
+    background-color: #B35C00;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #B35C00;
+    background-color: #B35C00;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #FC8823;
+  color: #FFFFFF;
+  background-color: #FC8823;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #FC8823;
+  background-color: #FC8823;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #B35C00;
+  color: #FFFFFF;
+  background-color: #B35C00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #B35C00;
+  background-color: #B35C00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--read-only {
+  border-color: #B35C00;
+  color: #FFFFFF;
+  background-color: #B35C00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--read-only .chip__radio {
+  border-color: #B35C00;
+  background-color: #B35C00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--disabled {
+  border-color: #5A8D00;
+  color: #FFFFFF;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--disabled .chip__radio {
+  border-color: #5A8D00;
+  background-color: #5A8D00;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-orange-dark.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled) {
+  border-color: #1B8DC0;
+  color: #FFFFFF;
+  background-color: #1B8DC0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled) .chip__radio {
+  border-color: #1B8DC0;
+  background-color: #1B8DC0;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled)::before {
+  background-color: #105373;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #14668C;
+    color: #FFFFFF;
+    background-color: #14668C;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #14668C;
+    background-color: #14668C;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #1D9AD1;
+  color: #FFFFFF;
+  background-color: #1D9AD1;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #1D9AD1;
+  background-color: #1D9AD1;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #14668C;
+  color: #FFFFFF;
+  background-color: #14668C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #14668C;
+  background-color: #14668C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--read-only {
+  border-color: #14668C;
+  color: #FFFFFF;
+  background-color: #14668C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--read-only .chip__radio {
+  border-color: #14668C;
+  background-color: #14668C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--disabled {
+  border-color: #7FCFF5;
+  color: #FFFFFF;
+  background-color: #7FCFF5;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--disabled .chip__radio {
+  border-color: #7FCFF5;
+  background-color: #7FCFF5;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-blue-light.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled) {
+  border-color: #4FB482;
+  color: #FFFFFF;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled) .chip__radio {
+  border-color: #4FB482;
+  background-color: #4FB482;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled)::before {
+  background-color: #2D6649;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #39805C;
+    color: #FFFFFF;
+    background-color: #39805C;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #39805C;
+    background-color: #39805C;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #55C28C;
+  color: #FFFFFF;
+  background-color: #55C28C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #55C28C;
+  background-color: #55C28C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #39805C;
+  color: #FFFFFF;
+  background-color: #39805C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #39805C;
+  background-color: #39805C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--read-only {
+  border-color: #39805C;
+  color: #FFFFFF;
+  background-color: #39805C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--read-only .chip__radio {
+  border-color: #39805C;
+  background-color: #39805C;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--disabled {
+  border-color: #85E6B5;
+  color: #FFFFFF;
+  background-color: #85E6B5;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--disabled .chip__radio {
+  border-color: #85E6B5;
+  background-color: #85E6B5;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-green-light.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled) {
+  border-color: #F0BE21;
+  color: #FFFFFF;
+  background-color: #F0BE21;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__radio {
+  border-color: #F0BE21;
+  background-color: #F0BE21;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled)::before {
+  background-color: #8F7214;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #AD8B19;
+    color: #FFFFFF;
+    background-color: #AD8B19;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #AD8B19;
+    background-color: #AD8B19;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #FCCA23;
+  color: #FFFFFF;
+  background-color: #FCCA23;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #FCCA23;
+  background-color: #FCCA23;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #AD8B19;
+  color: #FFFFFF;
+  background-color: #AD8B19;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #AD8B19;
+  background-color: #AD8B19;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--read-only {
+  border-color: #AD8B19;
+  color: #FFFFFF;
+  background-color: #AD8B19;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--read-only .chip__radio {
+  border-color: #AD8B19;
+  background-color: #AD8B19;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--disabled {
+  border-color: #FCE483;
+  color: #FFFFFF;
+  background-color: #FCE483;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--disabled .chip__radio {
+  border-color: #FCE483;
+  background-color: #FCE483;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-light.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled) {
+  border-color: #B77918;
+  color: #FFFFFF;
+  background-color: #B77918;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__radio {
+  border-color: #B77918;
+  background-color: #B77918;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled)::before {
+  background-color: #6B470E;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #855811;
+    color: #FFFFFF;
+    background-color: #855811;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #855811;
+    background-color: #855811;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #D18A1B;
+  color: #FFFFFF;
+  background-color: #D18A1B;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #D18A1B;
+  background-color: #D18A1B;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #855811;
+  color: #FFFFFF;
+  background-color: #855811;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #855811;
+  background-color: #855811;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--read-only {
+  border-color: #855811;
+  color: #FFFFFF;
+  background-color: #855811;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--read-only .chip__radio {
+  border-color: #855811;
+  background-color: #855811;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--disabled {
+  border-color: #FABA55;
+  color: #FFFFFF;
+  background-color: #FABA55;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--disabled .chip__radio {
+  border-color: #FABA55;
+  background-color: #FABA55;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--brand-expressive-yellow-dark.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled) {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled) .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled) .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled) .chip__radio {
+  border-color: #2899A8;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled) .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled)::before {
+  background-color: #2899A8;
+}
+@media (hover: hover) {
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover {
+    border-color: #2899A8;
+    color: #FFFFFF;
+    background-color: #2899A8;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--leading__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__icon.chip--trailing__element {
+    color: #FFFFFF;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio {
+    border-color: #2899A8;
+    background-color: #2899A8;
+  }
+  [name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):hover .chip__radio:before {
+    color: #FFFFFF;
+  }
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio {
+  border-color: #2899A8;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):focus .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio {
+  border-color: #2899A8;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info:not(.chip--disabled):not(.chip--motionless):not(.chip--read-only):active .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--read-only {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--read-only .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--read-only .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--read-only .chip__radio {
+  border-color: #2899A8;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--read-only .chip__radio:before {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--disabled {
+  border-color: #2899A8;
+  color: #FFFFFF;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--disabled .chip__icon.chip--leading__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--disabled .chip__icon.chip--trailing__element {
+  color: #FFFFFF;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--disabled .chip__radio {
+  border-color: #2899A8;
+  background-color: #2899A8;
+}
+[name=chip] input:checked + .chip:not(.chip--unselectable).chip--contextual-info.chip--disabled .chip__radio:before {
+  color: #FFFFFF;
+}

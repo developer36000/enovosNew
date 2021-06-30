@@ -1,0 +1,1 @@
+import{t as r}from"./p-53f148d3.js";function t(t){var n=function(t){return t?1/0===(t=r(t))||-1/0===t?17976931348623157e292*(t<0?-1:1):t==t?t:0:0===t?t:0}(t),o=n%1;return n==n?o?n-o:n:0}export{t}

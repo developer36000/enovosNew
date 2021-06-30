@@ -1,0 +1,123 @@
+@mixin text-color-styles($target: "") {
+  // Text Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name} {
+      &--#{'' + $color-name} {
+        color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name} {
+        &--#{'' + $color-name}-#{'' + $variation} {
+          color: $value !important;
+        }
+
+        // contextual classes
+        @if $color-name == 'contextual' {
+          &--#{'' + $variation} {
+            color: $value !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Text Colors Utilities
+  #{$target}.#{$component-name} {
+    &--white-opacity-50 { color: rgba(255,255,255, .5) !important;}
+    &--white { color: $color-white !important;}
+    &--black { color: $color-black !important;}
+  }
+}
+
+@mixin border-color-styles($target: "") {
+  // Text Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name} {
+      &--border--#{'' + $color-name} {
+        border-color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name} {
+        &--border--#{'' + $color-name}-#{'' + $variation} {
+          border-color: $value !important;
+        }
+
+        // contextual classes
+        @if $color-name == 'contextual' {
+          &--border--#{'' + $variation} {
+            border-color: $value !important;
+          }
+        }
+      }
+    }
+  }
+
+  // Text Colors Utilities
+  #{$target}.#{$component-name} {
+    &--border--white-opacity-50 { border-color: rgba(255,255,255, .5) !important;}
+    &--border--white { border-color: $color-white !important;}
+    &--border--black { border-color: $color-black !important;}
+  }
+}
+
+@mixin bg-color-styles($target: "", $item: "", $pseudoElement: "") {
+  // Background Colors
+  @each $color-name, $color in $colors-default {
+    #{$target}.#{$component-name}#{$item} {
+      &--bg--#{'' + $color-name}#{$pseudoElement} {
+        background-color: $color !important;
+      }
+    }
+  }
+
+  @each $color-name, $color in map-merge($colors, $brand-colors) {
+    @each $variation, $value in $color {
+      #{$target}.#{$component-name}#{$item} {
+        &--bg--#{'' + $color-name}-#{'' + $variation}#{$pseudoElement} {
+          background-color: $value !important;
+        }
+      }
+    }
+  }
+
+  // Background Colors Utilities
+  #{$target}.#{$component-name}#{$item} {
+    &--bg--white-opacity-50#{$pseudoElement} { background-color: rgba(255,255,255, .5) !important;}
+    &--bg--white#{$pseudoElement} { background-color: $color-white !important;}
+    &--bg--black#{$pseudoElement} { background-color: $color-black !important;}
+    &--bg--transparent#{$pseudoElement} { background-color: $color-transparent !important;}
+  }
+}
+
+@mixin bg-gradient-color-styles($target: "") {
+  // Gradient
+  @each $gradient-name, $color in map-merge($gradients, $brand-gradients) {
+    @each $variation, $value in $color {
+      @each $direction-name, $direction-value in $gradient-direction {
+
+        #{$target}.#{$component-name} {
+          // Default bg gradient direction is bottom
+          @if $direction-name == 'bottom' {
+            &--bg--gradient-#{$gradient-name}-#{'' + $variation} {
+              background-image: $value !important;
+            }
+          }
+
+          // For each other direction
+          &--bg--gradient-#{$gradient-name}-#{'' + $variation}-#{$direction-name} {
+            background-image: str-replace($value, 'to bottom', $direction-value) !important;
+          }
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,263 @@
+@import "variables";
+@import "colors";
+
+$empty-content: '';
+$background-color: $color-primary-500;
+$background-container-color: $color-white;
+
+// Fonts
+$typography-font-primary: $typography-font-family-1;
+$typography-font-secondary: $typography-font-family-2;
+
+$typography-font-color-default: $color-secondary-500;
+$typography-font-family-base: $typography-font-primary;
+$typography-font-family-mobile: $typography-font-primary;
+$typography-font-weight-base: $typography-font-weight-regular;
+$typography-font-weight-body-2: $typography-font-weight-regular;
+$typography-font-weight-body-3: $typography-font-weight-regular;
+$typography-font-weight-small: $typography-font-weight-regular;
+
+// Headings
+$typography-font-weight-hero: $typography-font-weight-regular;
+$typography-font-weight-h1: $typography-font-weight-regular;
+$typography-font-weight-h2: $typography-font-weight-regular;
+$typography-font-weight-h3: $typography-font-weight-regular;
+$typography-font-weight-h4: $typography-font-weight-regular;
+$typography-font-weight-h5: $typography-font-weight-regular;
+$typography-font-weight-h6: $typography-font-weight-regular;
+
+$fonts: (
+  font-family-1: $typography-font-family-1,
+  font-family-2: $typography-font-family-2
+);
+
+$typography-font-weights: (
+  100: $typography-font-weight-thin,
+  200: $typography-font-weight-extra-light,
+  300: $typography-font-weight-light,
+  400: $typography-font-weight-regular,
+  500: $typography-font-weight-medium,
+  600: $typography-font-weight-semi-bold,
+  700: $typography-font-weight-bold,
+  800: $typography-font-weight-extra-bold,
+  900: $typography-font-weight-black,
+  thin: $typography-font-weight-thin,
+  extra-light: $typography-font-weight-extra-light,
+  light: $typography-font-weight-light,
+  regular: $typography-font-weight-regular,
+  medium: $typography-font-weight-medium,
+  semi-bold: $typography-font-weight-semi-bold,
+  bold: $typography-font-weight-bold,
+  extra-bold: $typography-font-weight-extra-bold,
+);
+
+$typography-font-styles: (
+  normal: $typography-font-style-normal,
+  italic: $typography-font-style-italic,
+  oblique: $typography-font-style-oblique
+);
+
+$typography-sizes: (
+  superhero: (
+    font-size: $typography-superhero-font-size,
+    line-height: $typography-superhero-line-height,
+    font-weight: $typography-superhero-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  hero: (
+    font-size: $typography-hero-font-size,
+    line-height: $typography-hero-line-height,
+    font-weight: $typography-hero-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h1: (
+    font-size: $typography-h1-font-size,
+    line-height: $typography-h1-line-height,
+    font-weight: $typography-h1-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h2: (
+    font-size: $typography-h2-font-size,
+    line-height: $typography-h2-line-height,
+    font-weight: $typography-h2-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h3: (
+    font-size: $typography-h3-font-size,
+    line-height: $typography-h3-line-height,
+    font-weight: $typography-h3-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h4: (
+    font-size: $typography-h4-font-size,
+    line-height: $typography-h4-line-height,
+    font-weight: $typography-h4-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h5: (
+    font-size: $typography-h5-font-size,
+    line-height: $typography-h5-line-height,
+    font-weight: $typography-h5-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  h6: (
+    font-size: $typography-h6-font-size,
+    line-height: $typography-h6-line-height,
+    font-weight: $typography-h6-font-weight,
+    components: (
+      list: (
+        line-height: $typography-h6-components-list-line-height
+      )
+    )
+  ),
+  body1: (
+    font-size: $typography-body-1-font-size,
+    line-height: $typography-body-1-line-height,
+    font-weight: $typography-body-1-font-weight,
+    components: (
+      list: (
+        line-height: $typography-body-1-components-list-line-height
+      )
+    )
+  ),
+  body2: (
+    font-size: $typography-body-2-font-size,
+    line-height: $typography-body-2-line-height,
+    font-weight: $typography-body-2-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  body3: (
+    font-size: $typography-body-3-font-size,
+    line-height: $typography-body-3-line-height,
+    font-weight: $typography-body-3-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+  small: (
+    font-size: $typography-small-font-size,
+    line-height: $typography-small-line-height,
+    font-weight: $typography-small-font-weight,
+    components: (
+      list: ()
+    )
+  ),
+);
+
+$border-radius-sizes: (
+  sm: (
+    border-radius: $border-radius-sm
+  ),
+  md: (
+    border-radius: $border-radius-md
+  ),
+  lg: (
+    border-radius: $border-radius-lg
+  )
+);
+
+$grid-sizes: (
+  xxs: $grid-size-xxs,
+  xs: $grid-size-xs,
+  sm: $grid-size-sm,
+  md: $grid-size-md,
+  lg: $grid-size-lg,
+  xlg: $grid-size-xlg
+);
+
+$grid-css: (
+  xlg: (
+    columns: $grid-size-xlg,
+    min: $breakpoint-xlg-min,
+    max: $breakpoint-xlg-max,
+    grid: (
+      size: $grid-size-xlg,
+      gutter: (
+        outside: $gutter-outside-xlg,
+        width: $gutter-width-xlg,
+        height: $gutter-height-xlg
+      )
+    )
+  ),
+  lg: (
+    columns: $grid-size-lg,
+    min: $breakpoint-lg-min,
+    max: $breakpoint-lg-max,
+    grid: (
+      size: $grid-size-lg,
+      gutter: (
+        outside: $gutter-outside-lg,
+        width: $gutter-width-lg,
+        height: $gutter-height-lg
+      )
+    )
+  ),
+  md: (
+    columns: $grid-size-md,
+    min: $breakpoint-md-min,
+    max: $breakpoint-md-max,
+    grid: (
+      size: $grid-size-md,
+      gutter: (
+        outside: $gutter-outside-md,
+        width: $gutter-width-md,
+        height: $gutter-height-md
+      )
+    )
+  ),
+  sm: (
+    columns: $grid-size-sm,
+    min: $breakpoint-sm-min,
+    max: $breakpoint-sm-max,
+    grid: (
+      size: $grid-size-sm,
+      gutter: (
+        outside: $gutter-outside-sm,
+        width: $gutter-width-sm,
+        height: $gutter-height-sm
+      )
+    )
+  ),
+  xs: (
+    columns: $grid-size-xs,
+    min: $breakpoint-xs-min,
+    max: $breakpoint-xs-max,
+    grid: (
+      size: $grid-size-xs,
+      gutter: (
+        outside: $gutter-outside-xs,
+        width: $gutter-width-xs,
+        height: $gutter-height-xs
+      )
+    )
+  ),
+  xxs: (
+    columns: $grid-size-xxs,
+    min: 0,
+    max: $breakpoint-xxs-max,
+    grid: (
+      size: $grid-size-xxs,
+      gutter: (
+        outside: $gutter-outside-xxs,
+        width: $gutter-width-xxs,
+        height: $gutter-height-xxs
+      )
+    )
+  )
+);

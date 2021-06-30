@@ -1,0 +1,1 @@
+function r(r){for(var n=-1,a=null==r?0:r.length,o=0,t=[];++n<a;){var u=r[n];u&&(t[o++]=u)}return t}export{r as c}

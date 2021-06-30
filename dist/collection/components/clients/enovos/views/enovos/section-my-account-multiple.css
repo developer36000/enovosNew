@@ -1,0 +1,23 @@
+[name=view-app-enovos-section-my-account-multiple] .view-app-enovos-section-my-account-multiple__card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 24px;
+}
+[name=view-app-enovos-section-my-account-multiple] .view-app-enovos-section-my-account-multiple__card--billing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+[name=view-app-enovos-section-my-account-multiple] .view-app-enovos-section-my-account-multiple__dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[name=view-app-enovos-section-my-account-multiple] .view-app-enovos-section-my-account-multiple__dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

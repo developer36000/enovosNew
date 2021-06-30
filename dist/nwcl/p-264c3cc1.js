@@ -1,0 +1,1 @@
+import{b as r}from"./p-0a7ed1dd.js";function o(o,t){return r(o,t)}export{o as i}

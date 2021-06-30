@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Enovos-Icons';
+  src:  url('../assets/fonts/Enovos-Icons.woff2?smg3ui') format('woff2'),
+    url('../assets/fonts/Enovos-Icons.woff?smg3ui') format('woff'),
+    url('../assets/fonts/Enovos-Icons.svg?smg3ui#Enovos-Icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+};
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/montserrat-0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/montserrat-1.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/montserrat-2.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/montserrat-3.ttf') format('truetype');
+}

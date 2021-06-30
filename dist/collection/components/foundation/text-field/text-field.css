@@ -1,0 +1,2679 @@
+::-webkit-input-placeholder {
+  font-weight: 400;
+}
+
+::-moz-placeholder {
+  font-weight: 400;
+}
+
+:-ms-input-placeholder {
+  font-weight: 400;
+}
+
+:-moz-placeholder {
+  font-weight: 400;
+}
+
+[name=text-field] {
+  display: block;
+  width: 100%;
+}
+[name=text-field] .text-field__icon, [name=text-field] .text-field__button {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  pointer-events: none;
+  outline: 0 !important;
+  transform: translateY(-50%);
+  cursor: default;
+  -webkit-tap-highlight-color: transparent;
+}
+[name=text-field] .inline-text-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+[name=text-field] .text-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+[name=text-field] .text-field__button--trailing {
+  z-index: 1;
+  pointer-events: inherit !important;
+  cursor: pointer;
+}
+[name=text-field] .text-field__icon--leading {
+  z-index: 1;
+  pointer-events: inherit !important;
+  cursor: pointer;
+}
+[name=text-field] .text-field__icon--trailing {
+  z-index: 1;
+  pointer-events: inherit !important;
+  cursor: pointer;
+}
+[name=text-field] .text-field__icon--show-hide {
+  z-index: 1;
+  pointer-events: inherit !important;
+}
+[name=text-field] .text-field__icon--cleaning {
+  z-index: 2 !important;
+  pointer-events: inherit !important;
+  opacity: 1;
+  transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+[name=text-field] .text-field__field {
+  width: 100%;
+  border-style: solid;
+}
+[name=text-field] .text-field__field__container {
+  position: relative;
+  height: 100%;
+}
+[name=text-field] .text-field__field__component {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+[name=text-field] .text-field__link {
+  position: absolute;
+  right: 16px;
+  top: calc(50%);
+  transform: translateY(-50%);
+}
+[name=text-field] .text-field__info {
+  position: absolute;
+  right: 8px;
+  z-index: 1;
+}
+[name=text-field] .text-field--transparent[disabled] {
+  cursor: not-allowed;
+}
+[name=text-field] .text-field--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+[name=text-field] .text-field--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+}
+[name=text-field] .text-field--has-label-inside .text-field__label {
+  position: absolute;
+  width: 100%;
+}
+[name=text-field] .text-field--has-label-inside .text-field__label > * {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+}
+[name=text-field] .text-field--has-label-inside .text-field__info, [name=text-field] .text-field--no-label .text-field__info {
+  top: -50% !important;
+  padding: 0 4px;
+}
+[name=text-field] .text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field--no-label .text-field__info:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: -1;
+  width: 100%;
+  content: "";
+}
+[name=text-field] .text-field--with-chips .text-field__field__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scrollbar-width: none;
+  /* Firefox 64 */
+}
+[name=text-field] .text-field--with-chips .text-field__field__container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+}
+[name=text-field] .text-field--with-chips .text-field__field__container .text-field__field__component {
+  flex: 1 0 auto;
+}
+[name=text-field] .text-field--with-chips .text-field__field__container .text-field__field__component[read-only] {
+  flex: 0 0 0;
+}
+[name=text-field] .text-field--with-chips.text-field--stacked .text-field__field__container {
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+[name=text-field] .text-field--with-chips.text-field--stacked .text-field__field__component {
+  flex-basis: 0%;
+  flex-shrink: 1;
+  height: auto !important;
+  margin-left: 0;
+}
+
+[name=text-field] .text-field .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field .text-field__field {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--focus .text-field__field {
+  border-color: #A7A7A7;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--active .text-field__field {
+  border-color: #A7A7A7;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--disabled .text-field__field {
+  border-color: #EEEEEE;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--disabled .text-field__field, [name=text-field] .text-field.text-field--disabled .text-field__field:hover {
+  border-color: #EEEEEE;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__field {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__field, [name=text-field] .text-field.text-field--readonly .text-field__field:hover {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--transparent {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+[name=text-field] .text-field.text-field--transparent .text-field__field {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+[name=text-field] .text-field.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field] .text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success .text-field__icon {
+  color: #00856A;
+}
+[name=text-field] .text-field--success .text-field__icon--leading {
+  color: #00856A;
+}
+[name=text-field] .text-field--success .text-field__icon--trailing {
+  color: #00856A;
+}
+[name=text-field] .text-field--success .text-field__field {
+  border-color: #00856A;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field--success.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success.text-field--disabled .text-field__field, [name=text-field] .text-field--success.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--success.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--success.text-field--readonly .text-field__field {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field] .text-field--success.text-field--readonly .text-field__field, [name=text-field] .text-field--success.text-field--readonly .text-field__field:hover {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field] .text-field--success.text-field--transparent {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field] .text-field--success.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--success.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--success.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--success--has-label-inside .text-field__info:after, [name=text-field] .text-field--success--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info .text-field__icon {
+  color: #2899A8;
+}
+[name=text-field] .text-field--info .text-field__icon--leading {
+  color: #2899A8;
+}
+[name=text-field] .text-field--info .text-field__icon--trailing {
+  color: #2899A8;
+}
+[name=text-field] .text-field--info .text-field__field {
+  border-color: #2899A8;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field--info.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info.text-field--disabled .text-field__field, [name=text-field] .text-field--info.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--info.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--info.text-field--readonly .text-field__field {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field] .text-field--info.text-field--readonly .text-field__field, [name=text-field] .text-field--info.text-field--readonly .text-field__field:hover {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field] .text-field--info.text-field--transparent {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field] .text-field--info.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--info.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--info.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--info--has-label-inside .text-field__info:after, [name=text-field] .text-field--info--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning .text-field__field {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field--warning.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--warning.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning.text-field--disabled .text-field__field, [name=text-field] .text-field--warning.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--warning.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--readonly .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning.text-field--readonly .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning.text-field--readonly .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--warning.text-field--readonly .text-field__field {
+  border-color: #F76700;
+  background-color: #EEEEEE;
+}
+[name=text-field] .text-field--warning.text-field--readonly .text-field__field, [name=text-field] .text-field--warning.text-field--readonly .text-field__field:hover {
+  border-color: #F76700;
+  background-color: #EEEEEE;
+}
+[name=text-field] .text-field--warning.text-field--transparent {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field] .text-field--warning.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--warning.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--warning.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--warning--has-label-inside .text-field__info:after, [name=text-field] .text-field--warning--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--focus .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--focus .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--focus .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--focus .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--active .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--active .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--active .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--active .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field--error.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--error.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--error.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field] .text-field--error.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--disabled .text-field__field, [name=text-field] .text-field--error.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--readonly .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--readonly .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--readonly .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field] .text-field--error.text-field--readonly .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--readonly .text-field__field, [name=text-field] .text-field--error.text-field--readonly .text-field__field:hover {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--error.text-field--transparent {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field] .text-field--error.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--error.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field] .text-field--error.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field] .text-field--error--has-label-inside .text-field__info:after, [name=text-field] .text-field--error--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500 .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500 .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500 .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500 .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--focus {
+  background-color: false;
+}
+[name=text-field] .text-field--secondary-500.text-field--focus .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--focus .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--focus .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--focus .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--active {
+  background-color: false;
+}
+[name=text-field] .text-field--secondary-500.text-field--active .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--active .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--active .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--active .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled {
+  background-color: false;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled .text-field__field {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--disabled .text-field__field, [name=text-field] .text-field--secondary-500.text-field--disabled .text-field__field:hover {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly {
+  background-color: false;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly .text-field__icon {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly .text-field__field {
+  border-color: #BCD870;
+  background-color: #BCD870;
+}
+[name=text-field] .text-field--secondary-500.text-field--readonly .text-field__field, [name=text-field] .text-field--secondary-500.text-field--readonly .text-field__field:hover {
+  border-color: #BCD870;
+  background-color: #BCD870;
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent .text-field__field {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field] .text-field--secondary-500--has-label-inside .text-field__info:after, [name=text-field] .text-field--secondary-500--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field] .text-field--lg {
+  height: 0;
+  border-radius: 0;
+}
+[name=text-field] .text-field--lg .text-field__button--trailing {
+  right: 16px;
+  top: calc(50% - 1px);
+}
+[name=text-field] .text-field--lg .text-field__icon {
+  top: calc(50% + 1px);
+  width: 0;
+  font-size: 0;
+}
+[name=text-field] .text-field--lg .text-field__icon--leading {
+  left: 8px;
+}
+[name=text-field] .text-field--lg .text-field__icon--trailing {
+  right: 8px;
+}
+[name=text-field] .text-field--lg .text-field__icon--show-hide {
+  right: 16px;
+  margin-top: -1px;
+}
+[name=text-field] .text-field--lg .text-field__icon--cleaning {
+  right: 8px;
+}
+[name=text-field] .text-field--lg .text-field__field {
+  height: 0;
+  padding: 0;
+  border-width: 1px;
+  border-radius: 0;
+}
+[name=text-field] .text-field--lg .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field] .text-field--lg .text-field__tabs.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field] .text-field--lg .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field] .text-field--lg.text-field--has-tabs {
+  border-radius: 0 0 0 0;
+}
+[name=text-field] .text-field--lg.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 0 0;
+}
+[name=text-field] .text-field--lg.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field] .text-field--lg.text-field--readonly .text-field__field {
+  padding-left: 0;
+}
+[name=text-field] .text-field--lg.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 16px;
+}
+[name=text-field] .text-field--lg.text-field--has-assistive-text {
+  margin-bottom: 0;
+}
+[name=text-field] .text-field--lg.text-field--has-label-inside .text-field__label {
+  left: 16px;
+  top: 8px;
+}
+[name=text-field] .text-field--lg.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 16px;
+}
+[name=text-field] .text-field--lg.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field] .text-field--lg.text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field--lg.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field] .text-field--lg.text-field__textarea {
+  height: auto;
+}
+[name=text-field] .text-field--lg.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: -2px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: -2px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field] .text-field--lg.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: -2px;
+  transform: translateY(2px);
+}
+[name=text-field] .text-field--lg.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(0 + 8px + 8px);
+}
+[name=text-field] .text-field--lg.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(0 + 8px + 8px) !important;
+}
+[name=text-field] .text-field--lg.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(0 + (8px * 2) + (8px * 2) ) !important;
+}
+[name=text-field] .text-field--lg.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field] .text-field--lg.text-field--rounded .text-field__field {
+  border-radius: 0;
+}
+[name=text-field] .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field] .text-field {
+  height: 48px;
+  border-radius: 8px;
+}
+[name=text-field] .text-field .text-field__button--trailing {
+  right: 32px;
+  top: calc(50% - 1px);
+}
+[name=text-field] .text-field .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field] .text-field .text-field__icon--leading {
+  left: 16px;
+}
+[name=text-field] .text-field .text-field__icon--trailing {
+  right: 16px;
+}
+[name=text-field] .text-field .text-field__icon--show-hide {
+  right: 32px;
+  margin-top: -1px;
+}
+[name=text-field] .text-field .text-field__icon--cleaning {
+  right: 16px;
+}
+[name=text-field] .text-field .text-field__field {
+  height: 48px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+[name=text-field] .text-field .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field] .text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field] .text-field.text-field--has-tabs {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field] .text-field.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field] .text-field.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field.text-field--readonly .text-field__field {
+  padding-left: 16px;
+}
+[name=text-field] .text-field.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 0;
+}
+[name=text-field] .text-field.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field.text-field--has-label-inside .text-field__label {
+  left: 0;
+  top: 8px;
+}
+[name=text-field] .text-field.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 0;
+}
+[name=text-field] .text-field.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field] .text-field.text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field] .text-field.text-field__textarea {
+  height: auto;
+}
+[name=text-field] .text-field.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field] .text-field.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field] .text-field.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field] .text-field.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 48px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 46px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 46px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field] .text-field.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 22px;
+  transform: translateY(-10px);
+}
+[name=text-field] .text-field.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 16px + 16px);
+}
+[name=text-field] .text-field.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 16px + 16px) !important;
+}
+[name=text-field] .text-field.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (16px * 2) + (16px * 2) ) !important;
+}
+[name=text-field] .text-field.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field] .text-field.text-field--rounded .text-field__field {
+  border-radius: 96px;
+}
+[name=text-field] .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--md {
+  height: 48px;
+  border-radius: 4px;
+}
+[name=text-field] .text-field--md .text-field__button--trailing {
+  right: 16px;
+  top: calc(50% - 1px);
+}
+[name=text-field] .text-field--md .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field] .text-field--md .text-field__icon--leading {
+  left: 8px;
+}
+[name=text-field] .text-field--md .text-field__icon--trailing {
+  right: 8px;
+}
+[name=text-field] .text-field--md .text-field__icon--show-hide {
+  right: 16px;
+  margin-top: -1px;
+}
+[name=text-field] .text-field--md .text-field__icon--cleaning {
+  right: 8px;
+}
+[name=text-field] .text-field--md .text-field__field {
+  height: 48px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+[name=text-field] .text-field--md .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field] .text-field--md .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--md .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field] .text-field--md.text-field--has-tabs {
+  border-radius: 0 0 4px 4px;
+}
+[name=text-field] .text-field--md.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 4px 4px;
+}
+[name=text-field] .text-field--md.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--md.text-field--readonly .text-field__field {
+  padding-left: 0;
+}
+[name=text-field] .text-field--md.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 0;
+}
+[name=text-field] .text-field--md.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--md.text-field--has-label-inside .text-field__label {
+  left: 0;
+  top: 8px;
+}
+[name=text-field] .text-field--md.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 0;
+}
+[name=text-field] .text-field--md.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field] .text-field--md.text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field--md.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field] .text-field--md.text-field__textarea {
+  height: auto;
+}
+[name=text-field] .text-field--md.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field] .text-field--md.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 48px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 46px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 46px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field] .text-field--md.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 22px;
+  transform: translateY(-10px);
+}
+[name=text-field] .text-field--md.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 8px + 8px);
+}
+[name=text-field] .text-field--md.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 8px + 8px) !important;
+}
+[name=text-field] .text-field--md.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (8px * 2) + (8px * 2) ) !important;
+}
+[name=text-field] .text-field--md.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field] .text-field--md.text-field--rounded .text-field__field {
+  border-radius: 96px;
+}
+[name=text-field] .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--sm {
+  height: 40px;
+  border-radius: 8px;
+}
+[name=text-field] .text-field--sm .text-field__button--trailing {
+  right: 32px;
+  top: calc(50% - false);
+}
+[name=text-field] .text-field--sm .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field] .text-field--sm .text-field__icon--leading {
+  left: 16px;
+}
+[name=text-field] .text-field--sm .text-field__icon--trailing {
+  right: 16px;
+}
+[name=text-field] .text-field--sm .text-field__icon--show-hide {
+  right: 32px;
+  margin-top: -1px;
+}
+[name=text-field] .text-field--sm .text-field__icon--cleaning {
+  right: 16px;
+}
+[name=text-field] .text-field--sm .text-field__field {
+  height: 40px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+[name=text-field] .text-field--sm .text-field__field__component {
+  height: calc(100% - false);
+}
+[name=text-field] .text-field--sm .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--sm .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field] .text-field--sm.text-field--has-tabs {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field] .text-field--sm.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field] .text-field--sm.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field] .text-field--sm.text-field--readonly .text-field__field {
+  padding-left: 16px;
+}
+[name=text-field] .text-field--sm.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: false;
+}
+[name=text-field] .text-field--sm.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--sm.text-field--has-label-inside .text-field__label {
+  left: false;
+  top: false;
+}
+[name=text-field] .text-field--sm.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: false;
+}
+[name=text-field] .text-field--sm.text-field--has-label-inside .text-field__field__component {
+  padding-top: false;
+}
+[name=text-field] .text-field--sm.text-field--has-label-inside .text-field__info:after, [name=text-field] .text-field--sm.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field] .text-field--sm.text-field__textarea {
+  height: auto;
+}
+[name=text-field] .text-field--sm.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field] .text-field--sm.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 40px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 40px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 38px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 40px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 38px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field] .text-field--sm.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 18px;
+  transform: translateY(-8px);
+}
+[name=text-field] .text-field--sm.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 16px + 16px);
+}
+[name=text-field] .text-field--sm.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 16px + 16px) !important;
+}
+[name=text-field] .text-field--sm.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (16px * 2) + (16px * 2) ) !important;
+}
+[name=text-field] .text-field--sm.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field] .text-field--sm.text-field--rounded .text-field__field {
+  border-radius: 80px;
+}
+[name=text-field] .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+
+[name=text-field].theme--dark .text-field .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field .text-field__field {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--focus .text-field__field {
+  border-color: #A7A7A7;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--active .text-field__field {
+  border-color: #A7A7A7;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled .text-field__field {
+  border-color: #EEEEEE;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field.text-field--disabled .text-field__field:hover {
+  border-color: #EEEEEE;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__field {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field.text-field--readonly .text-field__field:hover {
+  border-color: #D7D7D7;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--transparent {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+[name=text-field].theme--dark .text-field.text-field--transparent .text-field__field {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success .text-field__icon {
+  color: #00856A;
+}
+[name=text-field].theme--dark .text-field--success .text-field__icon--leading {
+  color: #00856A;
+}
+[name=text-field].theme--dark .text-field--success .text-field__icon--trailing {
+  color: #00856A;
+}
+[name=text-field].theme--dark .text-field--success .text-field__field {
+  border-color: #00856A;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field--success.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__field {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field--success.text-field--readonly .text-field__field:hover {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--success.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--success--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--success--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info .text-field__icon {
+  color: #2899A8;
+}
+[name=text-field].theme--dark .text-field--info .text-field__icon--leading {
+  color: #2899A8;
+}
+[name=text-field].theme--dark .text-field--info .text-field__icon--trailing {
+  color: #2899A8;
+}
+[name=text-field].theme--dark .text-field--info .text-field__field {
+  border-color: #2899A8;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field--info.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__field {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field--info.text-field--readonly .text-field__field:hover {
+  border-color: #8E8E8E;
+  background-color: #8E8E8E;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--info.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--info--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--info--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning .text-field__field {
+  border-color: #F76700;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--focus .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--focus .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--focus .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--focus .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field--warning.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__field {
+  border-color: #F76700;
+  background-color: #EEEEEE;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field--warning.text-field--readonly .text-field__field:hover {
+  border-color: #F76700;
+  background-color: #EEEEEE;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--warning.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--warning--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--warning--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--focus .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--focus .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--focus .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--focus .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__icon {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__icon--leading {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__icon--trailing {
+  color: #5E5E5E;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__field {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field--error.text-field--disabled .text-field__field:hover {
+  border-color: #5E5E5E;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__icon {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__icon--leading {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__icon--trailing {
+  color: #EB0000;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__field {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field--error.text-field--readonly .text-field__field:hover {
+  border-color: #EB0000;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent .text-field__field {
+  border-color: false;
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--error.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: false;
+}
+[name=text-field].theme--dark .text-field--error--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--error--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500 .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500 .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500 .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500 .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--focus {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--focus .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--focus .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--focus .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--focus .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active .text-field__field {
+  border-color: #5A8D00;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--active .text-field__icon--cleaning {
+  pointer-events: inherit;
+  opacity: 1;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__field {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__field, [name=text-field].theme--dark .text-field--secondary-500.text-field--disabled .text-field__field:hover {
+  border-color: #96C11F;
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly {
+  background-color: false;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__icon {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__icon--leading {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__icon--trailing {
+  color: #F76700;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__field {
+  border-color: #BCD870;
+  background-color: #BCD870;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__field, [name=text-field].theme--dark .text-field--secondary-500.text-field--readonly .text-field__field:hover {
+  border-color: #BCD870;
+  background-color: #BCD870;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent .text-field__field {
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent.text-field--focus:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent.text-field--focus:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent.text-field--active:not([disabled]) {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500.text-field--transparent.text-field--active:not([disabled]) .text-field__field {
+  border-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--secondary-500--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--secondary-500--no-label .text-field__info:after {
+  background-color: #FFFFFF;
+}
+[name=text-field].theme--dark .text-field--lg {
+  height: 0;
+  border-radius: 0;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__button--trailing {
+  right: 16px;
+  top: calc(50% - 1px);
+}
+[name=text-field].theme--dark .text-field--lg .text-field__icon {
+  top: calc(50% + 1px);
+  width: 0;
+  font-size: 0;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__icon--leading {
+  left: 8px;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__icon--trailing {
+  right: 8px;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__icon--show-hide {
+  right: 16px;
+  margin-top: -1px;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__icon--cleaning {
+  right: 8px;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__field {
+  height: 0;
+  padding: 0;
+  border-width: 1px;
+  border-radius: 0;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field].theme--dark .text-field--lg .text-field__tabs.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--lg .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-tabs {
+  border-radius: 0 0 0 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 0 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--readonly .text-field__field {
+  padding-left: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 16px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-assistive-text {
+  margin-bottom: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-label-inside .text-field__label {
+  left: 16px;
+  top: 8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 16px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--lg.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field__textarea {
+  height: auto;
+}
+[name=text-field].theme--dark .text-field--lg.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: -2px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: -2px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field].theme--dark .text-field--lg.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: -2px;
+  transform: translateY(2px);
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(0 + 8px + 8px);
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(0 + 8px + 8px) !important;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(0 + (8px * 2) + (8px * 2) ) !important;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field].theme--dark .text-field--lg.text-field--rounded .text-field__field {
+  border-radius: 0;
+}
+[name=text-field].theme--dark .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field {
+  height: 48px;
+  border-radius: 8px;
+}
+[name=text-field].theme--dark .text-field .text-field__button--trailing {
+  right: 32px;
+  top: calc(50% - 1px);
+}
+[name=text-field].theme--dark .text-field .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--leading {
+  left: 16px;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--trailing {
+  right: 16px;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--show-hide {
+  right: 32px;
+  margin-top: -1px;
+}
+[name=text-field].theme--dark .text-field .text-field__icon--cleaning {
+  right: 16px;
+}
+[name=text-field].theme--dark .text-field .text-field__field {
+  height: 48px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+[name=text-field].theme--dark .text-field .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field].theme--dark .text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field].theme--dark .text-field.text-field--has-tabs {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly .text-field__field {
+  padding-left: 16px;
+}
+[name=text-field].theme--dark .text-field.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--has-label-inside .text-field__label {
+  left: 0;
+  top: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field].theme--dark .text-field.text-field--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field].theme--dark .text-field.text-field__textarea {
+  height: auto;
+}
+[name=text-field].theme--dark .text-field.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 46px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 46px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field].theme--dark .text-field.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 22px;
+  transform: translateY(-10px);
+}
+[name=text-field].theme--dark .text-field.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 16px + 16px);
+}
+[name=text-field].theme--dark .text-field.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 16px + 16px) !important;
+}
+[name=text-field].theme--dark .text-field.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (16px * 2) + (16px * 2) ) !important;
+}
+[name=text-field].theme--dark .text-field.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field].theme--dark .text-field.text-field--rounded .text-field__field {
+  border-radius: 96px;
+}
+[name=text-field].theme--dark .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--md {
+  height: 48px;
+  border-radius: 4px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__button--trailing {
+  right: 16px;
+  top: calc(50% - 1px);
+}
+[name=text-field].theme--dark .text-field--md .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__icon--leading {
+  left: 8px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__icon--trailing {
+  right: 8px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__icon--show-hide {
+  right: 16px;
+  margin-top: -1px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__icon--cleaning {
+  right: 8px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__field {
+  height: 48px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 4px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__field__component {
+  height: calc(100% - 1px);
+}
+[name=text-field].theme--dark .text-field--md .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--md .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-tabs {
+  border-radius: 0 0 4px 4px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 4px 4px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--readonly .text-field__field {
+  padding-left: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-label-inside .text-field__label {
+  left: 0;
+  top: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-label-inside .text-field__field__component {
+  padding-top: 16px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--md.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field].theme--dark .text-field--md.text-field__textarea {
+  height: auto;
+}
+[name=text-field].theme--dark .text-field--md.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 46px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 48px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 46px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field].theme--dark .text-field--md.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 22px;
+  transform: translateY(-10px);
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 8px + 8px);
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 8px + 8px) !important;
+}
+[name=text-field].theme--dark .text-field--md.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (8px * 2) + (8px * 2) ) !important;
+}
+[name=text-field].theme--dark .text-field--md.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field].theme--dark .text-field--md.text-field--rounded .text-field__field {
+  border-radius: 96px;
+}
+[name=text-field].theme--dark .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--sm {
+  height: 40px;
+  border-radius: 8px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__button--trailing {
+  right: 32px;
+  top: calc(50% - false);
+}
+[name=text-field].theme--dark .text-field--sm .text-field__icon {
+  top: calc(50% + 1px);
+  width: 24px;
+  font-size: 24px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__icon--leading {
+  left: 16px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__icon--trailing {
+  right: 16px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__icon--show-hide {
+  right: 32px;
+  margin-top: -1px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__icon--cleaning {
+  right: 16px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__field {
+  height: 40px;
+  padding: 0 16px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__field__component {
+  height: calc(100% - false);
+}
+[name=text-field].theme--dark .text-field--sm .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--sm .text-field__info {
+  top: calc(-100% + 2px);
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-tabs {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-tabs .text-field__field {
+  border-radius: 0 0 8px 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-label {
+  margin-top: 16px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--readonly .text-field__field {
+  padding-left: 16px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--readonly.text-field--has-label-inside .text-field__label {
+  left: false;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-assistive-text {
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-label-inside .text-field__label {
+  left: false;
+  top: false;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-label-inside.text-field--with-icon--leading .text-field__label {
+  left: false;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-label-inside .text-field__field__component {
+  padding-top: false;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--has-label-inside .text-field__info:after, [name=text-field].theme--dark .text-field--sm.text-field--no-label .text-field__info:after {
+  height: 1px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field__textarea {
+  height: auto;
+}
+[name=text-field].theme--dark .text-field--sm.text-field__textarea .text-field__field {
+  height: 100%;
+  padding: 0;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips .text-field__field__container {
+  margin-left: -8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips .text-field__field__container .text-field__chip:not(:last-child) {
+  margin-right: 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips .text-field--with-icon--leading .text-field__field__container {
+  margin-left: 0;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline {
+  height: auto;
+  min-height: 40px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field {
+  height: 100%;
+  min-height: 40px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container {
+  min-height: 38px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field--multiline .text-field__field__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test {
+  height: 100%;
+  min-height: 40px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container {
+  min-height: 38px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) {
+  margin-top: 0;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__field-test__container .text-field__chip:not([input-line="1"]) + .text-field__field__component {
+  margin-top: -8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__icon--leading, [name=text-field].theme--dark .text-field--sm.text-field--with-chips.text-field--stacked .text-field__icon--trailing {
+  top: 18px;
+  transform: translateY(-8px);
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-icon--leading .text-field__field {
+  padding-left: calc(24px + 16px + 16px);
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-icon--trailing .text-field__field {
+  padding-right: calc(24px + 16px + 16px) !important;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--with-icon--show-hide .text-field__field {
+  padding-right: calc(24px + (16px * 2) + (16px * 2) ) !important;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--without-icon--cleaning .text-field__field {
+  padding-right: 8px;
+}
+[name=text-field].theme--dark .text-field--sm.text-field--rounded .text-field__field {
+  border-radius: 80px;
+}
+[name=text-field].theme--dark .inline-text-field .text-field__tabs.text-field--has-label {
+  margin-top: 16px;
+}

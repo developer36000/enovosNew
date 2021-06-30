@@ -1,0 +1,31 @@
+[name=upload-dragger] {
+  display: block;
+}
+
+.upload-dragger {
+  text-align: center;
+  border: dashed 1px #D7D7D7;
+  border-radius: 8px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+.upload-dragger__content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+.upload-dragger__content strong {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.upload-dragger--primary .upload-dragger__content strong {
+  color: #F76700;
+}
+.upload-dragger--tertiary .upload-dragger__content strong {
+  color: #004885;
+}
+.upload-dragger--quaternary .upload-dragger__content strong {
+  color: #96C11F;
+}
+.upload-dragger--quinary .upload-dragger__content strong {
+  color: #EF7B0B;
+}

@@ -1,0 +1,20 @@
+[name=app-data-block] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+[name=app-data-block]:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+[name=app-data-block] .app-data-block__field__value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4px;
+}
+[name=app-data-block] .app-data-block__field__value__tooltip {
+  margin-left: 8px;
+}
+[name=app-data-block] .app-data-block__button {
+  flex-shrink: 1;
+}

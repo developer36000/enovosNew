@@ -1,0 +1,146 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 24px 0;
+}
+@media (min-width: 1152px) {
+  .app-header {
+    padding: 0;
+    height: 80px;
+    flex-wrap: nowrap;
+  }
+}
+.app-header--back-btn-only {
+  padding: 8px 0;
+}
+.app-header__logo {
+  flex: 1;
+}
+.app-header--back-btn-only .app-header__logo {
+  display: none;
+}
+@media (min-width: 1152px) {
+  .app-header__logo {
+    flex: none;
+    order: 1;
+    margin-right: 48px;
+  }
+  .app-header--back-btn-only .app-header__logo {
+    display: block;
+    flex: 1;
+  }
+}
+.app-header__logo svg,
+.app-header__logo img {
+  display: block;
+  height: 48px;
+}
+@media (min-width: 1152px) {
+  .app-header__logo svg,
+.app-header__logo img {
+    height: 56px;
+  }
+}
+.app-header__main {
+  width: 100%;
+  margin-top: 24px;
+}
+@media (min-width: 1152px) {
+  .app-header__main {
+    flex: 1;
+    order: 2;
+    width: auto;
+    margin-top: 0;
+  }
+}
+.app-header__main [slot=main-section] {
+  display: flex;
+  align-items: center;
+}
+.app-header__main [slot=main-section] [name=text-field] {
+  width: 100%;
+  flex: 1;
+}
+@media (min-width: 1152px) {
+  .app-header__main [slot=main-section] [name=text-field] {
+    width: 400px;
+    flex: none;
+  }
+}
+@media (min-width: 1440px) {
+  .app-header__main [slot=main-section] [name=text-field] {
+    width: 500px;
+  }
+}
+.app-header--back-btn-only .app-header__main {
+  display: none;
+}
+.app-header__user-menu {
+  display: none;
+}
+.app-header__user-menu .heading {
+  white-space: nowrap;
+}
+.app-header__user-menu .dropdown__selector__slot > * {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.app-header__user-menu .dropdown__selector__slot > * > * {
+  margin-left: 8px;
+}
+@media (min-width: 1152px) {
+  .app-header__user-menu {
+    display: block;
+    order: 3;
+  }
+}
+.app-header--back-btn-only .app-header__user-menu {
+  display: none;
+}
+@media (min-width: 1152px) {
+  .app-header__user-menu-mobile {
+    display: none;
+  }
+}
+.app-header--back-btn-only .app-header__user-menu-mobile {
+  display: none;
+}
+.app-header__back-btn {
+  display: none;
+}
+.app-header--back-btn-only .app-header__back-btn {
+  display: block;
+}
+@media (min-width: 1152px) {
+  .app-header__back-btn {
+    order: 2;
+  }
+}
+.app-header__language-selector {
+  display: none;
+}
+@media (min-width: 1152px) {
+  .app-header__language-selector {
+    display: block;
+  }
+}
+.app-header__language-selector .heading {
+  white-space: nowrap;
+}
+.app-header__language-selector .dropdown__selector__slot > * {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.app-header__language-selector .dropdown__selector__slot > * > * {
+  margin-left: 8px;
+}
+@media (min-width: 1152px) {
+  .app-header__language-selector {
+    order: 4;
+    margin-left: 32px;
+  }
+}

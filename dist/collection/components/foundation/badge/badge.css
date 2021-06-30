@@ -1,0 +1,310 @@
+[name=badge] {
+  display: inline-block;
+}
+[name=badge] .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: inherit;
+  text-transform: inherit;
+  outline: none;
+}
+[name=badge] .badge > div {
+  outline: none;
+}
+[name=badge] .badge.badge {
+  height: 24px;
+  min-width: 24px;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=badge] .badge.badge.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge.badge--with-media .badge__media {
+  height: 16px;
+}
+[name=badge] .badge.badge.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 4px !important;
+}
+[name=badge] .badge.badge.badge--with-media.badge--no-text .badge__media {
+  width: 16px;
+  height: 16px;
+}
+[name=badge] .badge.badge.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge--lg {
+  height: 32px;
+  min-width: 32px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+[name=badge] .badge.badge--lg.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge--lg.badge--with-media .badge__media {
+  height: 20px;
+}
+[name=badge] .badge.badge--lg.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge--lg.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 4px !important;
+}
+[name=badge] .badge.badge--lg.badge--with-media.badge--no-text .badge__media {
+  width: 20px;
+  height: 20px;
+}
+[name=badge] .badge.badge--lg.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--lg.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge--md {
+  height: 24px;
+  min-width: 24px;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=badge] .badge.badge--md.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge--md.badge--with-media .badge__media {
+  height: 8px;
+}
+[name=badge] .badge.badge--md.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge--md.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 4px !important;
+}
+[name=badge] .badge.badge--md.badge--with-media.badge--no-text .badge__media {
+  width: 8px;
+  height: 8px;
+}
+[name=badge] .badge.badge--md.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--md.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge--sm {
+  height: 16px;
+  min-width: 16px;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+}
+[name=badge] .badge.badge--sm.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge--sm.badge--with-media .badge__media {
+  height: 8px;
+}
+[name=badge] .badge.badge--sm.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge--sm.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 4px !important;
+}
+[name=badge] .badge.badge--sm.badge--with-media.badge--no-text .badge__media {
+  width: 8px;
+  height: 8px;
+}
+[name=badge] .badge.badge--sm.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--sm.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge--xs {
+  height: 12px;
+  min-width: 12px;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=badge] .badge.badge--xs.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge--xs.badge--with-media .badge__media {
+  height: 8px;
+}
+[name=badge] .badge.badge--xs.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge--xs.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 4px !important;
+}
+[name=badge] .badge.badge--xs.badge--with-media.badge--no-text .badge__media {
+  width: 8px;
+  height: 8px;
+}
+[name=badge] .badge.badge--xs.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--xs.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge--xxs {
+  height: 8px;
+  min-width: 8px;
+  padding: 0;
+  border-radius: 100%;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 16px;
+}
+[name=badge] .badge.badge--xxs.badge--with-media {
+  padding: 0 8px;
+}
+[name=badge] .badge.badge--xxs.badge--with-media .badge__media {
+  height: 8px;
+}
+[name=badge] .badge.badge--xxs.badge--with-media .badge__media + .badge__text {
+  margin-left: 12px;
+}
+[name=badge] .badge.badge--xxs.badge--with-media.badge--no-text {
+  padding: 0 8px;
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--xxs.badge--with-media.badge--no-text .badge__media {
+  width: 8px;
+  height: 8px;
+}
+[name=badge] .badge.badge--xxs.badge--no-text {
+  border-radius: 100% !important;
+}
+[name=badge] .badge.badge--xxs.badge--rounded {
+  padding-left: 0;
+  padding-right: 0;
+}
+[name=badge] .badge.badge {
+  color: #FFFFFF;
+  background-color: #F76700;
+}
+[name=badge] .badge.badge--success {
+  color: #00856A;
+  background-color: #E5F2F0;
+}
+[name=badge] .badge.badge--info {
+  color: #2899A8;
+  background-color: #DBF6FF;
+}
+[name=badge] .badge.badge--warning {
+  color: #F76700;
+  background-color: #FFF1E5;
+}
+[name=badge] .badge.badge--error {
+  color: #EB0000;
+  background-color: #FDE5E5;
+}
+[name=badge] .badge.badge--primary {
+  color: #FFFFFF;
+  background-color: #F76700;
+}
+[name=badge] .badge.badge--primary-300 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--brand-expressive-yellow-light {
+  color: #FFFFFF;
+  background-color: #F0BE21;
+}
+[name=badge] .badge.badge--brand-expressive-yellow-dark {
+  color: #FFFFFF;
+  background-color: #B77918;
+}
+[name=badge] .badge.badge--brand-expressive-green-light {
+  color: #FFFFFF;
+  background-color: #4FB482;
+}
+[name=badge] .badge.badge--brand-expressive-blue-light {
+  color: #FFFFFF;
+  background-color: #1B8DC0;
+}
+[name=badge] .badge.badge--quaternary-400 {
+  color: #004885;
+  background-color: #BCD870;
+}
+[name=badge] .badge.badge--quaternary-600 {
+  color: #004885;
+  background-color: #5A8D00;
+}
+[name=badge] .badge.badge--primary-50 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--primary-700 {
+  color: #FFFFFF;
+  background-color: #D52B1E;
+}
+[name=badge] .badge.badge--primary-900 {
+  color: #FFFFFF;
+  background-color: #F76700;
+}
+[name=badge] .badge.badge--tertiary {
+  color: #FFFFFF;
+  background-color: #004885;
+}
+[name=badge] .badge.badge--tertiary-300 {
+  color: #004885;
+  background-color: #85A8C5;
+}
+[name=badge] .badge.badge--tertiary-400 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--tertiary-600 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--tertiary-800 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--white {
+  color: #004885;
+  background-color: #FFFFFF;
+}
+[name=badge] .badge.badge--grey-50 {
+  color: "";
+  background-color: "";
+}
+[name=badge] .badge.badge--grey-200 {
+  color: "";
+  background-color: "";
+}

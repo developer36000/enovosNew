@@ -1,0 +1,1 @@
+class t{static filterStyles(t){const e=t.split(" "),s=new RegExp(""+["(margin-.*)"].join("|")),r=[];return e.forEach(t=>{s.test(t)&&r.push(t)}),r}static getStyles(t,e){return this.filterStyles(""+t).map(t=>e?`${e}--${t}`:""+t).join(" ")}}export{t as L}

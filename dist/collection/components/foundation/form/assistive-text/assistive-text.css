@@ -1,0 +1,51 @@
+.assistive-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+.assistive-text__icon {
+  pointer-events: none;
+}
+.assistive-text.assistive-text {
+  color: #5E5E5E;
+}
+.assistive-text.assistive-text .assistive-text__icon {
+  color: #5E5E5E;
+}
+.assistive-text.assistive-text--success {
+  color: #00856A;
+}
+.assistive-text.assistive-text--success .assistive-text__icon {
+  color: #00856A;
+}
+.assistive-text.assistive-text--warning {
+  color: #F76700;
+}
+.assistive-text.assistive-text--warning .assistive-text__icon {
+  color: #F76700;
+}
+.assistive-text.assistive-text--error {
+  color: #EB0000;
+}
+.assistive-text.assistive-text--error .assistive-text__icon {
+  color: #EB0000;
+}
+.assistive-text.assistive-text--info {
+  color: #2899A8;
+}
+.assistive-text.assistive-text--info .assistive-text__icon {
+  color: #2899A8;
+}
+.assistive-text.assistive-text {
+  padding: 0 8px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.assistive-text.assistive-text .assistive-text__icon {
+  width: 24px;
+  margin-right: 8px;
+  font-size: 24px;
+}

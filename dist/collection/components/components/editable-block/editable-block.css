@@ -1,0 +1,167 @@
+[name=editable-block] {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+[name=editable-block] .editable-block__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+[name=editable-block] .editable-block__icon--leading {
+  left: 8px;
+}
+[name=editable-block] .editable-block__icon--trailing {
+  right: 8px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+[name=editable-block] .editable-block__icon--top {
+  top: 8px;
+  transform: none;
+}
+[name=editable-block] .editable-block__card {
+  position: absolute;
+  z-index: 7000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s, visibility 0s;
+}
+[name=editable-block] .editable-block__card--visible {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+[name=editable-block] .editable-block__card__container {
+  margin: -4px;
+}
+[name=editable-block] .editable-block__card__icon {
+  color: #5E5E5E;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+[name=editable-block] .editable-block__card__icon:hover {
+  color: #004885;
+}
+[name=editable-block] .editable-block__card__icon--active {
+  color: #F76700;
+}
+[name=editable-block] .editable-block__card__components {
+  left: 8px;
+  display: inline-block;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+[name=editable-block] .editable-block__card__components .editable-block__card__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transform: none;
+}
+[name=editable-block] .editable-block__card__components .editable-block__card__container .editable-block__card__icon:not(:first-child) {
+  margin-left: 8px;
+}
+[name=editable-block] .editable-block__card__actions {
+  right: 8px;
+  top: -16px;
+  transform: translateY(-50%);
+}
+[name=editable-block] .editable-block__card__actions .editable-block__card__container__icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+[name=editable-block] .editable-block__card__actions .editable-block__card__container__icons:not(:last-child) {
+  margin-bottom: 8px;
+}
+[name=editable-block] .editable-block__card__actions .editable-block__card__container__icons:not(:last-child):after {
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #5A8D00;
+  content: "";
+}
+[name=editable-block] .editable-block__card__actions .editable-block__card__container__icons .editable-block__card__icon:not(:last-child) {
+  margin-right: 8px;
+}
+[name=editable-block] .editable-block__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding-left: 16px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+[name=editable-block] .editable-block__container--columns {
+  flex-direction: column;
+}
+[name=editable-block] .editable-block__container__editor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+[name=editable-block] .editable-block__container__editor:not(:first-child) {
+  padding-top: 8px;
+  margin-top: 8px;
+}
+[name=editable-block] .editable-block__container__image {
+  align-self: flex-start;
+  height: 0;
+  background-color: #FFDDBF;
+}
+[name=editable-block] .editable-block__container__image__label {
+  align-self: flex-start;
+}
+[name=editable-block] .editable-block__container__image--visible {
+  height: 100%;
+  margin-top: 8px;
+}
+[name=editable-block] .editable-block__container__caption {
+  display: none;
+  width: 100%;
+  margin-top: 8px;
+}
+[name=editable-block] .editable-block__container__caption__label {
+  align-self: flex-start;
+}
+[name=editable-block] .editable-block__container__caption .editable-block__container__editor {
+  padding: 8px;
+  border: 1px solid #5A8D00;
+  border-radius: 4px;
+}
+[name=editable-block] .editable-block__container__caption--visible {
+  display: block;
+}
+[name=editable-block] .editable-block__container--undefined {
+  padding-left: 40px;
+}
+[name=editable-block] .editable-block__image {
+  padding: 8px;
+  border: 1px solid #5A8D00;
+  border-radius: 4px;
+}
+[name=editable-block]:hover .editable-block__icon--trailing {
+  opacity: 1;
+}
+[name=editable-block] [contenteditable=true] {
+  position: relative;
+}
+[name=editable-block] [contenteditable=true]:not(:focus):before {
+  position: absolute;
+  top: 50%;
+  min-height: 24px;
+  color: #004885;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  content: attr(data-placeholder);
+  transform: translateY(-50%);
+}

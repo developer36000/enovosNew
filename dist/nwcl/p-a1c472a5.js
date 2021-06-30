@@ -1,0 +1,1 @@
+import{i as r,k as t}from"./p-0a7ed1dd.js";import{b as n}from"./p-e2889571.js";function o(o){return function(a,i,e){var f=Object(a);if(!r(a)){var s=n(i);a=t(a),i=function(r){return s(f[r],r,f)}}var u=o(a,i,e);return u>-1?f[s?a[u]:u]:void 0}}export{o as c}

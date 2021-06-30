@@ -1,0 +1,19 @@
+// Colors
+@each $color-name, $color in map-merge($colors, $brand-colors) {
+  @each $variation, $value in $color {
+    .bg--#{'' + $color-name}-#{'' + $variation} {
+      background-color: $value !important;
+    }
+
+    .text--#{'' + $color-name}-#{'' + $variation} {
+      color: $value !important;
+    }
+
+    // contextual classes
+    @if $color-name == 'contextual' {
+      .text--#{'' + $variation} {
+        color: $value !important;
+      }
+    }
+  }
+}

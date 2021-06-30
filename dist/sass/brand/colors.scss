@@ -1,0 +1,117 @@
+//Brand gradients
+$gradient-brand-expressive-green: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-green-light'), $color-brand-expressive-green-light, transparent), if(variable-exists('color-brand-expressive-green-dark'), $color-brand-expressive-green-dark, transparent));
+$gradient-brand-expressive-blue: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-blue-light'), $color-brand-expressive-blue-light, transparent), if(variable-exists('color-brand-expressive-blue-dark'), $color-brand-expressive-blue-dark, transparent));
+$gradient-brand-expressive-yellow: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-yellow-light'), $color-brand-expressive-yellow-light, transparent), if(variable-exists('color-brand-expressive-yellow-dark'), $color-brand-expressive-yellow-dark, transparent));
+$gradient-brand-expressive-orange: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-orange-light'), $color-brand-expressive-orange-light, transparent), if(variable-exists('color-brand-expressive-orange-dark'), $color-brand-expressive-orange-dark, transparent));
+$gradient-brand-expressive-pink: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-pink-light'), $color-brand-expressive-pink-light, transparent), if(variable-exists('color-brand-expressive-pink-dark'), $color-brand-expressive-pink-dark, transparent));
+$gradient-brand-expressive-red: linear-gradient(to bottom, if(variable-exists('color-brand-expressive-red-light'), $color-brand-expressive-red-light, transparent), if(variable-exists('color-brand-expressive-red-dark'), $color-brand-expressive-red-dark, transparent));
+
+//PFM Gradients
+$gradient-pfm-blue: linear-gradient(to bottom, #96D9FF, if(variable-exists('color-brand-pfm-blue'), $color-brand-pfm-blue, transparent));
+$gradient-pfm-green: linear-gradient(to bottom, if(variable-exists('color-brand-pfm-green'), $color-brand-pfm-green, transparent), #16A085);
+$gradient-pfm-yellow: linear-gradient(to bottom, #FFE13D, if(variable-exists('color-brand-pfm-yellow'), $color-brand-pfm-yellow, transparent));
+$gradient-pfm-orange: linear-gradient(to bottom, #FFB74D, if(variable-exists('color-brand-pfm-orange'), $color-brand-pfm-orange, transparent));
+$gradient-pfm-red: linear-gradient(to bottom, if(variable-exists('color-brand-pfm-red'), $color-brand-pfm-red, transparent), #B93C25);
+
+//Brand colors
+$brand-colors: (
+  brand-pfm: (
+    blue : if(variable-exists('color-brand-pfm-blue'), $color-brand-pfm-blue, transparent),
+    green : if(variable-exists('color-brand-pfm-green'), $color-brand-pfm-green, transparent),
+    yellow: if(variable-exists('color-brand-pfm-yellow'), $color-brand-pfm-yellow, transparent),
+    orange: if(variable-exists('color-brand-pfm-orange'), $color-brand-pfm-orange, transparent),
+    red : if(variable-exists('color-brand-pfm-red'), $color-brand-pfm-red, transparent)
+  ),
+  brand-expressive: (
+    green-light : if(variable-exists('color-brand-expressive-green-light'), $color-brand-expressive-green-light, transparent),
+    green-dark : if(variable-exists('color-brand-expressive-green-dark'), $color-brand-expressive-green-dark, transparent),
+    blue-light : if(variable-exists('color-brand-expressive-blue-light'), $color-brand-expressive-blue-light, transparent),
+    blue-dark : if(variable-exists('color-brand-expressive-blue-dark'), $color-brand-expressive-blue-dark, transparent),
+    yellow-light: if(variable-exists('color-brand-expressive-yellow-light'), $color-brand-expressive-yellow-light, transparent),
+    yellow-dark : if(variable-exists('color-brand-expressive-yellow-dark'), $color-brand-expressive-yellow-dark, transparent),
+    orange-light: if(variable-exists('color-brand-expressive-orange-light'), $color-brand-expressive-orange-light, transparent),
+    orange-dark : if(variable-exists('color-brand-expressive-orange-dark'), $color-brand-expressive-orange-dark, transparent),
+    pink-light : if(variable-exists('color-brand-expressive-pink-light'), $color-brand-expressive-pink-light, transparent),
+    pink-dark : if(variable-exists('color-brand-expressive-pink-dark'), $color-brand-expressive-pink-dark, transparent),
+    red-light : if(variable-exists('color-brand-expressive-red-light'), $color-brand-expressive-red-light, transparent),
+    red-dark : if(variable-exists('color-brand-expressive-red-dark'), $color-brand-expressive-red-dark, transparent)
+  ),
+  brand-expressive-orange-dark: (
+    900: if(variable-exists('color-brand-expressive-orange-dark-variation-900'), $color-brand-expressive-orange-dark-variation-900, transparent),
+    800: if(variable-exists('color-brand-expressive-orange-dark-variation-800'), $color-brand-expressive-orange-dark-variation-800, transparent),
+    700: if(variable-exists('color-brand-expressive-orange-dark-variation-700'), $color-brand-expressive-orange-dark-variation-700, transparent),
+    600: if(variable-exists('color-brand-expressive-orange-dark-variation-600'), $color-brand-expressive-orange-dark-variation-600, transparent),
+    500: if(variable-exists('color-brand-expressive-orange-dark-variation-500'), $color-brand-expressive-orange-dark-variation-500, transparent),
+    400: if(variable-exists('color-brand-expressive-orange-dark-variation-400'), $color-brand-expressive-orange-dark-variation-400, transparent),
+    300: if(variable-exists('color-brand-expressive-orange-dark-variation-300'), $color-brand-expressive-orange-dark-variation-300, transparent),
+    200: if(variable-exists('color-brand-expressive-orange-dark-variation-200'), $color-brand-expressive-orange-dark-variation-200, transparent),
+    100: if(variable-exists('color-brand-expressive-orange-dark-variation-100'), $color-brand-expressive-orange-dark-variation-100, transparent),
+    50: if(variable-exists('color-brand-expressive-orange-dark-variation-50'), $color-brand-expressive-orange-dark-variation-50, transparent)
+  ),
+  brand-expressive-blue-light: (
+    900: if(variable-exists('color-brand-expressive-blue-light-variation-900'), $color-brand-expressive-blue-light-variation-900, transparent),
+    800: if(variable-exists('color-brand-expressive-blue-light-variation-800'), $color-brand-expressive-blue-light-variation-800, transparent),
+    700: if(variable-exists('color-brand-expressive-blue-light-variation-700'), $color-brand-expressive-blue-light-variation-700, transparent),
+    600: if(variable-exists('color-brand-expressive-blue-light-variation-600'), $color-brand-expressive-blue-light-variation-600, transparent),
+    500: if(variable-exists('color-brand-expressive-blue-light-variation-500'), $color-brand-expressive-blue-light-variation-500, transparent),
+    400: if(variable-exists('color-brand-expressive-blue-light-variation-400'), $color-brand-expressive-blue-light-variation-400, transparent),
+    300: if(variable-exists('color-brand-expressive-blue-light-variation-300'), $color-brand-expressive-blue-light-variation-300, transparent),
+    200: if(variable-exists('color-brand-expressive-blue-light-variation-200'), $color-brand-expressive-blue-light-variation-200, transparent),
+    100: if(variable-exists('color-brand-expressive-blue-light-variation-100'), $color-brand-expressive-blue-light-variation-100, transparent),
+    50: if(variable-exists('color-brand-expressive-blue-light-variation-50'), $color-brand-expressive-blue-light-variation-50, transparent)
+  ),
+  brand-expressive-green-light: (
+    900: if(variable-exists('color-brand-expressive-green-light-variation-900'), $color-brand-expressive-green-light-variation-900, transparent),
+    800: if(variable-exists('color-brand-expressive-green-light-variation-800'), $color-brand-expressive-green-light-variation-800, transparent),
+    700: if(variable-exists('color-brand-expressive-green-light-variation-700'), $color-brand-expressive-green-light-variation-700, transparent),
+    600: if(variable-exists('color-brand-expressive-green-light-variation-600'), $color-brand-expressive-green-light-variation-600, transparent),
+    500: if(variable-exists('color-brand-expressive-green-light-variation-500'), $color-brand-expressive-green-light-variation-500, transparent),
+    400: if(variable-exists('color-brand-expressive-green-light-variation-400'), $color-brand-expressive-green-light-variation-400, transparent),
+    300: if(variable-exists('color-brand-expressive-green-light-variation-300'), $color-brand-expressive-green-light-variation-300, transparent),
+    200: if(variable-exists('color-brand-expressive-green-light-variation-200'), $color-brand-expressive-green-light-variation-200, transparent),
+    100: if(variable-exists('color-brand-expressive-green-light-variation-100'), $color-brand-expressive-green-light-variation-100, transparent),
+    50: if(variable-exists('color-brand-expressive-green-light-variation-50'), $color-brand-expressive-green-light-variation-50, transparent)
+  ),
+  brand-expressive-yellow-light: (
+    900: if(variable-exists('color-brand-expressive-yellow-light-variation-900'), $color-brand-expressive-yellow-light-variation-900, transparent),
+    800: if(variable-exists('color-brand-expressive-yellow-light-variation-800'), $color-brand-expressive-yellow-light-variation-800, transparent),
+    700: if(variable-exists('color-brand-expressive-yellow-light-variation-700'), $color-brand-expressive-yellow-light-variation-700, transparent),
+    600: if(variable-exists('color-brand-expressive-yellow-light-variation-600'), $color-brand-expressive-yellow-light-variation-600, transparent),
+    500: if(variable-exists('color-brand-expressive-yellow-light-variation-500'), $color-brand-expressive-yellow-light-variation-500, transparent),
+    400: if(variable-exists('color-brand-expressive-yellow-light-variation-400'), $color-brand-expressive-yellow-light-variation-400, transparent),
+    300: if(variable-exists('color-brand-expressive-yellow-light-variation-300'), $color-brand-expressive-yellow-light-variation-300, transparent),
+    200: if(variable-exists('color-brand-expressive-yellow-light-variation-200'), $color-brand-expressive-yellow-light-variation-200, transparent),
+    100: if(variable-exists('color-brand-expressive-yellow-light-variation-100'), $color-brand-expressive-yellow-light-variation-100, transparent),
+    50: if(variable-exists('color-brand-expressive-yellow-light-variation-50'), $color-brand-expressive-yellow-light-variation-50, transparent)
+  ),
+  brand-expressive-yellow-dark: (
+    900: if(variable-exists('color-brand-expressive-yellow-dark-variation-900'), $color-brand-expressive-yellow-dark-variation-900, transparent),
+    800: if(variable-exists('color-brand-expressive-yellow-dark-variation-800'), $color-brand-expressive-yellow-dark-variation-800, transparent),
+    700: if(variable-exists('color-brand-expressive-yellow-dark-variation-700'), $color-brand-expressive-yellow-dark-variation-700, transparent),
+    600: if(variable-exists('color-brand-expressive-yellow-dark-variation-600'), $color-brand-expressive-yellow-dark-variation-600, transparent),
+    500: if(variable-exists('color-brand-expressive-yellow-dark-variation-500'), $color-brand-expressive-yellow-dark-variation-500, transparent),
+    400: if(variable-exists('color-brand-expressive-yellow-dark-variation-400'), $color-brand-expressive-yellow-dark-variation-400, transparent),
+    300: if(variable-exists('color-brand-expressive-yellow-dark-variation-300'), $color-brand-expressive-yellow-dark-variation-300, transparent),
+    200: if(variable-exists('color-brand-expressive-yellow-dark-variation-200'), $color-brand-expressive-yellow-dark-variation-200, transparent),
+    100: if(variable-exists('color-brand-expressive-yellow-dark-variation-100'), $color-brand-expressive-yellow-dark-variation-100, transparent),
+    50: if(variable-exists('color-brand-expressive-yellow-dark-variation-50'), $color-brand-expressive-yellow-dark-variation-50, transparent)
+  )
+);
+
+$brand-gradients: (
+  brand-expressive: (
+    green : if(variable-exists('gradient-brand-expressive-green'), $gradient-brand-expressive-green, transparent),
+    blue : if(variable-exists('gradient-brand-expressive-blue'), $gradient-brand-expressive-blue, transparent),
+    yellow: if(variable-exists('gradient-brand-expressive-yellow'), $gradient-brand-expressive-yellow, transparent),
+    orange: if(variable-exists('gradient-brand-expressive-orange'), $gradient-brand-expressive-orange, transparent),
+    pink: if(variable-exists('gradient-brand-expressive-pink'), $gradient-brand-expressive-pink, transparent),
+    red : if(variable-exists('gradient-brand-expressive-red'), $gradient-brand-expressive-red, transparent)
+  ),
+  brand-pfm: (
+    blue : if(variable-exists('gradient-pfm-blue'), $gradient-pfm-blue, transparent),
+    green : if(variable-exists('gradient-pfm-green'), $gradient-pfm-green, transparent),
+    yellow: if(variable-exists('gradient-pfm-yellow'), $gradient-pfm-yellow, transparent),
+    orange: if(variable-exists('gradient-pfm-orange'), $gradient-pfm-orange, transparent),
+    red : if(variable-exists('gradient-pfm-red'), $gradient-pfm-red, transparent)
+  )
+);

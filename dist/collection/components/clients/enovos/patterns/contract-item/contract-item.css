@@ -1,0 +1,46 @@
+[name=contract-item] {
+  display: block;
+}
+[name=contract-item] + [name=contract-item] {
+  margin-top: 8px;
+}
+
+.contract-item__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+@media (min-width: 640px) {
+  .contract-item__before-text {
+    display: flex;
+  }
+}
+.contract-item__before-text > div + div {
+  margin-top: 8px;
+}
+@media (min-width: 640px) {
+  .contract-item__before-text > div + div {
+    margin-left: 16px;
+    margin-top: 0;
+  }
+}
+.contract-item__before-text + .contract-item__text {
+  margin-left: 16px;
+}
+.contract-item__customer, .contract-item__contract {
+  color: #5E5E5E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+.contract-item__customer {
+  font-weight: 700;
+}
+.contract-item__contract {
+  margin-left: 8px;
+}
+.contract-item__checkbox {
+  overflow: hidden;
+}

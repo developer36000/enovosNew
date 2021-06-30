@@ -1,0 +1,1 @@
+function r(r,n){for(var a=-1,o=null==r?0:r.length;++a<o&&!1!==n(r[a],a,r););return r}export{r as a}

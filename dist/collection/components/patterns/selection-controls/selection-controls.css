@@ -1,0 +1,47 @@
+[name=selection-controls] .selection-controls__item {
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+[name=selection-controls] .selection-controls__item:not(.selection-controls__switch) {
+  display: block;
+}
+[name=selection-controls] .selection-controls__item:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+}
+[name=selection-controls] .selection-controls .selection-controls__item {
+  padding: 0;
+  margin: 16px 8px;
+}
+[name=selection-controls] .selection-controls .selection-controls__item:before {
+  border-left-width: 2px;
+}
+[name=selection-controls] .selection-controls.selection-controls--indented {
+  margin-left: 32px;
+}
+[name=selection-controls] .selection-controls.selection-controls--indented .selection-controls__item {
+  padding: 0;
+}
+[name=selection-controls] .selection-controls .selection-controls__item {
+  background-color: transparent;
+}
+[name=selection-controls] .selection-controls .selection-controls__item:before {
+  border-left-color: transparent;
+  border-left-style: solid;
+}
+@media (hover: hover) {
+  [name=selection-controls] .selection-controls .selection-controls__item:hover {
+    border-left-color: transparent;
+    background-color: transparent;
+  }
+}
+[name=selection-controls] .selection-controls .selection-controls__item--selected, [name=selection-controls] .selection-controls .selection-controls__item--indeterminate {
+  background-color: transparent;
+}
+[name=selection-controls] .selection-controls .selection-controls__item--selected:before, [name=selection-controls] .selection-controls .selection-controls__item--indeterminate:before {
+  border-left-color: transparent;
+}

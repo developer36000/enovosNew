@@ -1,0 +1,58 @@
+$sidebar-menu-list: (
+  item: (
+    background: $color-white,
+  ),
+  link: (
+    color: $color-secondary-500,
+    font-size: 16px,
+    font-weight: $typography-font-weight-bold,
+    font-style: $typography-font-style-normal,
+
+    state: (
+      hover: (
+        color: $color-brand-expressive-green-light,
+        font-weight: $typography-font-weight-bold,
+        font-style: $typography-font-style-normal,
+      ),
+      focus: (
+        color: $color-brand-expressive-green-dark,
+        font-weight: $typography-font-weight-bold,
+        font-style: $typography-font-style-normal,
+      ),
+      active: (
+        color: $color-brand-expressive-green-light,
+        font-weight: $typography-font-weight-bold,
+        font-style: $typography-font-style-normal,
+      )
+    )
+  ),
+  nested: (
+    item: (
+      background: $color-white,
+    ),
+    link: (
+      color: $color-secondary-500,
+      font-size: 14px,
+      font-weight: $typography-font-weight-regular,
+      font-style: $typography-font-style-normal,
+
+      state: (
+        hover: (
+          color: $color-brand-expressive-green-light,
+          font-weight: $typography-font-weight-regular,
+          font-style: $typography-font-style-normal,
+        ),
+        focus: (
+          color: $color-brand-expressive-green-dark,
+          font-weight: $typography-font-weight-regular,
+          font-style: $typography-font-style-normal,
+        ),
+        active: (
+          color: $color-brand-expressive-green-light,
+          font-weight: $typography-font-weight-regular,
+          font-style: $typography-font-style-normal,
+        )
+      )
+    ),
+  )
+);

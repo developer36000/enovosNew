@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step1 Why</title>
+	
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Font Awesome CDN -->
+	<script src="https://kit.fontawesome.com/bc61bd21a9.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1 active" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+			             content="Why are you here today ?" />
+		</div>
+		
+		<div class="step-card-wrapper">
+			<div class="step-card">
+				<eds-image id="fruit-top-icon" alt="fruit-top-icon"
+				           src="assets/images/fruit-top-icon.svg"></eds-image>
+				
+				<div class="step-options">
+					<div class="step-option radio bottom">
+						<label for="step3-option1" class="step-option__title">
+							<input type="radio" id="step3-option1" name="step3-option" value="Moving" />
+							Moving
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+					<div class="step-option radio bottom">
+						<label for="step3-option2" class="step-option__title">
+							<input type="radio" id="step3-option2" name="step3-option" value="Changing supplier" />
+							Changing supplier
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+					<div class="step-option radio bottom">
+						<label for="step3-option3" class="step-option__title">
+							<input type="radio" id="step3-option3" name="step3-option" value="Other" />
+							Other
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+				</div>
+			
+			</div>
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="step1_client.html"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step1_energy.html"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

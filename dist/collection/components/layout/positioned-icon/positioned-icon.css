@@ -1,0 +1,1244 @@
+[name=positioned-icon] .positioned-icon {
+  position: relative;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary {
+  background-color: #F76700 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary {
+  background-color: #96C11F !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary {
+  background-color: #EF7B0B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary {
+  background-color: #CAA08D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary {
+  background-color: #6C887A !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey {
+  background-color: #757575 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-900 {
+  background-color: #F76700 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-800 {
+  background-color: #F76700 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-700 {
+  background-color: #D52B1E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-600 {
+  background-color: #C75300 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-500 {
+  background-color: #F76700 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-400 {
+  background-color: #FFA14C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-300 {
+  background-color: #FFB673 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-200 {
+  background-color: #FFDDBF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-100 {
+  background-color: #FFF1E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--primary-50 {
+  background-color: #FFF1E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-900 {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-800 {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-700 {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-600 {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-500 {
+  background-color: #5E5E5E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-400 {
+  background-color: #8E8E8E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-300 {
+  background-color: #A7A7A7 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-200 {
+  background-color: #D7D7D7 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-100 {
+  background-color: #EEEEEE !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--secondary-50 {
+  background-color: #EEEEEE !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-900 {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-800 {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-700 {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-600 {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-500 {
+  background-color: #004885 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-400 {
+  background-color: #5C8AB1 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-300 {
+  background-color: #85A8C5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-200 {
+  background-color: #C2D3E2 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-100 {
+  background-color: #EBF1F6 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--tertiary-50 {
+  background-color: #EBF1F6 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-900 {
+  background-color: #5A8D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-800 {
+  background-color: #5A8D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-700 {
+  background-color: #5A8D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-600 {
+  background-color: #5A8D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-500 {
+  background-color: #96C11F !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-400 {
+  background-color: #BCD870 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-300 {
+  background-color: #CDE294 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-200 {
+  background-color: #E6F0C9 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-100 {
+  background-color: #F7FAED !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quaternary-50 {
+  background-color: #F7FAED !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-900 {
+  background-color: #C75300 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-800 {
+  background-color: #C75300 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-700 {
+  background-color: #C75300 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-600 {
+  background-color: #C75300 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-500 {
+  background-color: #EF7B0B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-400 {
+  background-color: #FFA14C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-300 {
+  background-color: #FFB673 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-200 {
+  background-color: #FFDDBF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-100 {
+  background-color: #FFF1E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--quinary-50 {
+  background-color: #FFF1E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-900 {
+  background-color: #602A10 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-800 {
+  background-color: #95431D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-700 {
+  background-color: #B66E4D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-600 {
+  background-color: #B78670 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-500 {
+  background-color: #CAA08D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-400 {
+  background-color: #DEAE98 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-300 {
+  background-color: #EEC3AF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-200 {
+  background-color: #FAD5C5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-100 {
+  background-color: #FFE9DF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--senary-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-900 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-800 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-700 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-600 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-500 {
+  background-color: #6C887A !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-400 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-300 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-200 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-100 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--septenary-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-900 {
+  background-color: #1D1D1D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-800 {
+  background-color: #333333 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-700 {
+  background-color: #4D4D4D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-600 {
+  background-color: #666666 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-500 {
+  background-color: #757575 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-400 {
+  background-color: #999999 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-300 {
+  background-color: #B3B3B3 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-200 {
+  background-color: #CCCCCC !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-100 {
+  background-color: #E6E6E6 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--grey-50 {
+  background-color: #F8F8F8 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-success {
+  background-color: #00856A !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-success-light {
+  background-color: #E5F2F0 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-info {
+  background-color: #2899A8 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-info-light {
+  background-color: #DBF6FF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-warning {
+  background-color: #F76700 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-warning-light {
+  background-color: #FFF1E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-error {
+  background-color: #EB0000 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--contextual-error-light {
+  background-color: #FDE5E5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--pfm-blue {
+  background-color: #55A1D3 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--pfm-green {
+  background-color: #8DDE54 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--pfm-yellow {
+  background-color: #FFC600 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--pfm-orange {
+  background-color: #FC912E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--pfm-red {
+  background-color: #DF5036 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-ing {
+  background-color: #F58220 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-bil {
+  background-color: #71308B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-bcee {
+  background-color: #144093 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-post {
+  background-color: #FABC0B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-raiffeisen {
+  background-color: #112242 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--external-bank-bnp-paribas {
+  background-color: #00915A !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--white-15 {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--white-25 {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--white-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-pfm-blue {
+  background-color: #55A1D3 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-pfm-green {
+  background-color: #8DDE54 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-pfm-yellow {
+  background-color: #FFC600 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-pfm-orange {
+  background-color: #FC912E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-pfm-red {
+  background-color: #DF5036 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light {
+  background-color: #4FB482 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-dark {
+  background-color: #133B2C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light {
+  background-color: #1B8DC0 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-dark {
+  background-color: #0A324B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light {
+  background-color: #F0BE21 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark {
+  background-color: #B77918 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-light {
+  background-color: #F3B969 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark {
+  background-color: #EF7D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-pink-light {
+  background-color: #C03152 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-pink-dark {
+  background-color: #4F0F15 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-red-light {
+  background-color: #F7B7AF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-red-dark {
+  background-color: #E62D32 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-900 {
+  background-color: #4D2800 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-800 {
+  background-color: #804200 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-700 {
+  background-color: #B35C00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-600 {
+  background-color: #CC6A00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-500 {
+  background-color: #EF7D00 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-400 {
+  background-color: #FC8823 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-300 {
+  background-color: #FC9E4C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-200 {
+  background-color: #FFB675 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-100 {
+  background-color: #FFD1A8 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-orange-dark-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-900 {
+  background-color: #0C4159 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-800 {
+  background-color: #105373 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-700 {
+  background-color: #14668C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-600 {
+  background-color: #1779A6 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-500 {
+  background-color: #1B8DC0 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-400 {
+  background-color: #1D9AD1 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-300 {
+  background-color: #2AAEEB !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-200 {
+  background-color: #56BFF0 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-100 {
+  background-color: #7FCFF5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-blue-light-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-900 {
+  background-color: #224D37 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-800 {
+  background-color: #2D6649 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-700 {
+  background-color: #39805C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-600 {
+  background-color: #43996E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-500 {
+  background-color: #4FB482 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-400 {
+  background-color: #55C28C !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-300 {
+  background-color: #60D199 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-200 {
+  background-color: #69DBA2 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-100 {
+  background-color: #85E6B5 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-green-light-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-900 {
+  background-color: #6B550F !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-800 {
+  background-color: #8F7214 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-700 {
+  background-color: #AD8B19 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-600 {
+  background-color: #D1A71D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-500 {
+  background-color: #F0BE21 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-400 {
+  background-color: #FCCA23 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-300 {
+  background-color: #FCD742 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-200 {
+  background-color: #FCDD60 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-100 {
+  background-color: #FCE483 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-light-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-900 {
+  background-color: #52360B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-800 {
+  background-color: #6B470E !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-700 {
+  background-color: #855811 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-600 {
+  background-color: #9E6915 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-500 {
+  background-color: #B77918 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-400 {
+  background-color: #D18A1B !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-300 {
+  background-color: #EB9B1F !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-200 {
+  background-color: #FAAA2D !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-100 {
+  background-color: #FABA55 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--brand-expressive-yellow-dark-50 {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--white-opacity-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--white {
+  background-color: #FFFFFF !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--black {
+  background-color: #000000 !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon--bg--transparent {
+  background-color: transparent !important;
+}
+[name=positioned-icon] .positioned-icon--has-background-color .positioned-icon__icon {
+  border-radius: 50%;
+  text-align: center;
+}
+[name=positioned-icon] .positioned-icon .positioned-icon__icon {
+  position: absolute;
+  z-index: 1;
+}
+[name=positioned-icon] .positioned-icon--on-top .positioned-icon__icon {
+  top: 0;
+}
+[name=positioned-icon] .positioned-icon--on-middle .positioned-icon__icon {
+  top: 50%;
+}
+[name=positioned-icon] .positioned-icon--on-bottom .positioned-icon__icon {
+  top: 100%;
+}
+[name=positioned-icon] .positioned-icon--on-left .positioned-icon__icon {
+  left: 0;
+}
+[name=positioned-icon] .positioned-icon--on-center .positioned-icon__icon {
+  left: 50%;
+}
+[name=positioned-icon] .positioned-icon--on-right .positioned-icon__icon {
+  left: 100%;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: -8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: -16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: -24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: -32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: -40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: -48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: -56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: -64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: -72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: -80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: -88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: -96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: -104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: -112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: -120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: -128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-top: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-top: -8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-top: -16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-top: -24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-top: -32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-top: -40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-top: -48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-top: -56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-top: -64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-top: -72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-top: -80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-top: -88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-top: -96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-top: -104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-top: -112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-top: -120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-top: -128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: 8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: 16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: 24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: 32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: 40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: 48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: 56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: 64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: 72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: 80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: 88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: 96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: 104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: 112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: 120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: 128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(0, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: -8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: -16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: -24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: -32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: -40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: -48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: -56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: -64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: -72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: -80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: -88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: -96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: -104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: -112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: -120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: -128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: 8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: 16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: 24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: 32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: 40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: 48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: 56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: 64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: 72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: 80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: 88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: 96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: 104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: 112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: 120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: 128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(0, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: -8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: -16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: -24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: -32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: -40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: -48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: -56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: -64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: -72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: -80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: -88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: -96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: -104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: -112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: -120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: -128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-top: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-top: 8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-top: 16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-top: 24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-top: 32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-top: 40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-top: 48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-top: 56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-top: 64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-top: 72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-top: 80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-top: 88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-top: 96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-top: 104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-top: 112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-top: 120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-top: 128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-left: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-left: 8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-left: 16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-left: 24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-left: 32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-left: 40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-left: 48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-left: 56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-left: 64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-left: 72px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-left: 80px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-left: 88px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-left: 96px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-left: 104px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-left: 112px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-left: 120px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-left: 128px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(0, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-outside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, 0);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-centered.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(0%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-top: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-top: -4px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-top: -8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-top: -12px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-top: -16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-top: -20px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-top: -24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-top: -28px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-top: -32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-top: -36px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-top: -40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-top: -44px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-top: -48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-top: -52px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-top: -56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-top: -60px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-top: -64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-100%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-top.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, 0%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(0%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-middle.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-left .positioned-icon__icon {
+  transform: translate(0%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-left.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(0%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--0 .positioned-icon__icon {
+  margin-top: 0px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--1 .positioned-icon__icon {
+  margin-top: 4px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--2 .positioned-icon__icon {
+  margin-top: 8px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--3 .positioned-icon__icon {
+  margin-top: 12px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--4 .positioned-icon__icon {
+  margin-top: 16px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--5 .positioned-icon__icon {
+  margin-top: 20px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--6 .positioned-icon__icon {
+  margin-top: 24px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--7 .positioned-icon__icon {
+  margin-top: 28px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--8 .positioned-icon__icon {
+  margin-top: 32px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--9 .positioned-icon__icon {
+  margin-top: 36px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--10 .positioned-icon__icon {
+  margin-top: 40px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--11 .positioned-icon__icon {
+  margin-top: 44px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--12 .positioned-icon__icon {
+  margin-top: 48px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--13 .positioned-icon__icon {
+  margin-top: 52px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--14 .positioned-icon__icon {
+  margin-top: 56px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--15 .positioned-icon__icon {
+  margin-top: 60px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--margin--16 .positioned-icon__icon {
+  margin-top: 64px;
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-center.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-right .positioned-icon__icon {
+  transform: translate(-100%, -100%);
+}
+[name=positioned-icon] .positioned-icon.positioned-icon--on-inside.positioned-icon--on-bottom.positioned-icon--on-right.positioned-icon--corner .positioned-icon__icon {
+  transform: translate(-100%, -100%);
+}

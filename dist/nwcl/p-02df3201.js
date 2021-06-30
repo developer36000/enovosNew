@@ -1,0 +1,1 @@
+import{t as r}from"./p-9e96164e.js";var t=0;function a(a){var e=++t;return r(a)+e}export{a as u}

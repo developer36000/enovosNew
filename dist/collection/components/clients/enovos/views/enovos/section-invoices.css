@@ -1,0 +1,26 @@
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__chart__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__chart__buttons > *:not(:first-child) {
+  margin-left: 8px;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__icon-text {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__icon-text .icon {
+  display: block;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__icon-text > * {
+  display: block;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__icon-text > * + * {
+  margin-left: 8px;
+}
+[name=view-app-enovos-section-invoices] .view-app-enovos-section-invoices__sepa-btn {
+  display: inline-block;
+  margin-left: 8px;
+}

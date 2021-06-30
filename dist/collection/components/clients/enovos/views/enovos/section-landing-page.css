@@ -1,0 +1,13 @@
+[name=view-app-enovos-landing-page] .view-app-enovos-landing-page__list > li {
+  display: flex;
+  align-items: center;
+}
+[name=view-app-enovos-landing-page] .view-app-enovos-landing-page__list > li:before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: #F76700;
+  border-radius: 8px;
+}

@@ -1,0 +1,59 @@
+body {
+	font-family: $montserrat;
+	height: 100%;
+}
+
+main {
+	padding-top: 70px;
+	min-height: calc(100vh - 154px);
+	display: block;
+}
+
+strong, b {
+	font-weight: 600;
+}
+
+
+
+/*                         552
+* Other
+*/
+.container {
+	max-width: 552px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	padding-left: 24px;
+	padding-right: 24px;
+	@media screen and (max-width: 560px) {
+		max-width: 100%;
+	}
+}
+
+.page-heading {
+	margin-bottom: 24px;
+	display: block;
+}
+
+.size-icon-23 {
+	.icon {
+		font-size: 23px;
+	}
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.custom-paragraph {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color-new-grey;
+	* {
+		color: inherit;
+		font-weight: inherit;
+		font-size: inherit;
+		line-height: inherit;
+	}
+}

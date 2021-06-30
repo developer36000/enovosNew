@@ -1,0 +1,57 @@
+[name=expandable-card] {
+  display: block;
+}
+[name=expandable-card] + [name=expandable-card] {
+  margin-top: 16px;
+}
+
+.expandable-card__card {
+  position: relative;
+}
+.expandable-card__card [name=checkbox]:after,
+.expandable-card__card [name=radio-button]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.expandable-card__checkbox {
+  margin: 0 0 0 8px;
+}
+.expandable-card--disabled .expandable-card__checkbox {
+  opacity: 0.5;
+}
+.expandable-card__main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: normal;
+}
+.expandable-card--disabled .expandable-card__main-content {
+  opacity: 0.5;
+}
+.expandable-card__leading-icon {
+  width: 48px !important;
+  margin-left: 8px;
+}
+.expandable-card--disabled .expandable-card__leading-icon {
+  opacity: 0.5;
+}
+.expandable-card__text {
+  flex: 1;
+  text-align: left;
+  padding-left: 16px;
+}
+.expandable-card__expandable-content {
+  border-top: solid 1px #D7D7D7;
+  margin-top: 16px;
+  padding-top: 16px;
+  line-height: normal;
+}
+.expandable-card--content-hidden .expandable-card__expandable-content {
+  display: none;
+}

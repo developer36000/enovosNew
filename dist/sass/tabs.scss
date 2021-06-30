@@ -1,0 +1,31 @@
+$tabs: (
+  color: $color-tertiary-500,
+  background: transparent,
+
+  states: (
+    visited: (
+      color: $color-brand-expressive-red-dark,
+      background: transparent,
+    ),
+    hover: (
+      color: $color-brand-expressive-green-dark,
+      background: transparent,
+    ),
+    pressed: (
+      color: $color-brand-expressive-green-light,
+      background: transparent,
+    ),
+    focus: (
+      color: $color-brand-expressive-blue-dark,
+      background: transparent,
+    ),
+    disabled : (
+      color: lightgray,
+      background: transparent,
+    ),
+    active: (
+      color: $color-brand-expressive-green-light,
+      background: transparent,
+    )
+  ),
+);

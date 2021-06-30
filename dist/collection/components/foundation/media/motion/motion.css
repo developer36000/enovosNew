@@ -1,0 +1,412 @@
+[name=motion] {
+  display: block;
+  width: 100%;
+}
+[name=motion] .motion {
+  width: 100%;
+  height: 100%;
+}
+[name=motion] .motion--0 {
+  height: 0px !important;
+  margin: auto;
+}
+[name=motion] .motion--1 {
+  height: 8px !important;
+  margin: auto;
+}
+[name=motion] .motion--2 {
+  height: 16px !important;
+  margin: auto;
+}
+[name=motion] .motion--3 {
+  height: 24px !important;
+  margin: auto;
+}
+[name=motion] .motion--4 {
+  height: 32px !important;
+  margin: auto;
+}
+[name=motion] .motion--5 {
+  height: 40px !important;
+  margin: auto;
+}
+[name=motion] .motion--6 {
+  height: 48px !important;
+  margin: auto;
+}
+[name=motion] .motion--7 {
+  height: 56px !important;
+  margin: auto;
+}
+[name=motion] .motion--8 {
+  height: 64px !important;
+  margin: auto;
+}
+[name=motion] .motion--9 {
+  height: 72px !important;
+  margin: auto;
+}
+[name=motion] .motion--10 {
+  height: 80px !important;
+  margin: auto;
+}
+[name=motion] .motion--11 {
+  height: 88px !important;
+  margin: auto;
+}
+[name=motion] .motion--12 {
+  height: 96px !important;
+  margin: auto;
+}
+[name=motion] .motion--13 {
+  height: 104px !important;
+  margin: auto;
+}
+[name=motion] .motion--14 {
+  height: 112px !important;
+  margin: auto;
+}
+[name=motion] .motion--15 {
+  height: 120px !important;
+  margin: auto;
+}
+[name=motion] .motion--16 {
+  height: 128px !important;
+  margin: auto;
+}
+[name=motion] .motion--17 {
+  height: 136px !important;
+  margin: auto;
+}
+[name=motion] .motion--18 {
+  height: 144px !important;
+  margin: auto;
+}
+[name=motion] .motion--19 {
+  height: 152px !important;
+  margin: auto;
+}
+[name=motion] .motion--20 {
+  height: 160px !important;
+  margin: auto;
+}
+[name=motion] .motion--21 {
+  height: 168px !important;
+  margin: auto;
+}
+[name=motion] .motion--22 {
+  height: 176px !important;
+  margin: auto;
+}
+[name=motion] .motion--23 {
+  height: 184px !important;
+  margin: auto;
+}
+[name=motion] .motion--24 {
+  height: 192px !important;
+  margin: auto;
+}
+[name=motion] .motion--25 {
+  height: 200px !important;
+  margin: auto;
+}
+[name=motion] .motion--26 {
+  height: 208px !important;
+  margin: auto;
+}
+[name=motion] .motion--27 {
+  height: 216px !important;
+  margin: auto;
+}
+[name=motion] .motion--28 {
+  height: 224px !important;
+  margin: auto;
+}
+[name=motion] .motion--29 {
+  height: 232px !important;
+  margin: auto;
+}
+[name=motion] .motion--30 {
+  height: 240px !important;
+  margin: auto;
+}
+[name=motion] .motion--31 {
+  height: 248px !important;
+  margin: auto;
+}
+[name=motion] .motion--32 {
+  height: 256px !important;
+  margin: auto;
+}
+[name=motion] .motion--33 {
+  height: 264px !important;
+  margin: auto;
+}
+[name=motion] .motion--34 {
+  height: 272px !important;
+  margin: auto;
+}
+[name=motion] .motion--35 {
+  height: 280px !important;
+  margin: auto;
+}
+[name=motion] .motion--36 {
+  height: 288px !important;
+  margin: auto;
+}
+[name=motion] .motion--37 {
+  height: 296px !important;
+  margin: auto;
+}
+[name=motion] .motion--38 {
+  height: 304px !important;
+  margin: auto;
+}
+[name=motion] .motion--39 {
+  height: 312px !important;
+  margin: auto;
+}
+[name=motion] .motion--40 {
+  height: 320px !important;
+  margin: auto;
+}
+[name=motion] .motion--41 {
+  height: 328px !important;
+  margin: auto;
+}
+[name=motion] .motion--42 {
+  height: 336px !important;
+  margin: auto;
+}
+[name=motion] .motion--43 {
+  height: 344px !important;
+  margin: auto;
+}
+[name=motion] .motion--44 {
+  height: 352px !important;
+  margin: auto;
+}
+[name=motion] .motion--45 {
+  height: 360px !important;
+  margin: auto;
+}
+[name=motion] .motion--46 {
+  height: 368px !important;
+  margin: auto;
+}
+[name=motion] .motion--47 {
+  height: 376px !important;
+  margin: auto;
+}
+[name=motion] .motion--48 {
+  height: 384px !important;
+  margin: auto;
+}
+[name=motion] .motion--49 {
+  height: 392px !important;
+  margin: auto;
+}
+[name=motion] .motion--50 {
+  height: 400px !important;
+  margin: auto;
+}
+[name=motion] .motion--51 {
+  height: 408px !important;
+  margin: auto;
+}
+[name=motion] .motion--52 {
+  height: 416px !important;
+  margin: auto;
+}
+[name=motion] .motion--53 {
+  height: 424px !important;
+  margin: auto;
+}
+[name=motion] .motion--54 {
+  height: 432px !important;
+  margin: auto;
+}
+[name=motion] .motion--55 {
+  height: 440px !important;
+  margin: auto;
+}
+[name=motion] .motion--56 {
+  height: 448px !important;
+  margin: auto;
+}
+[name=motion] .motion--57 {
+  height: 456px !important;
+  margin: auto;
+}
+[name=motion] .motion--58 {
+  height: 464px !important;
+  margin: auto;
+}
+[name=motion] .motion--59 {
+  height: 472px !important;
+  margin: auto;
+}
+[name=motion] .motion--60 {
+  height: 480px !important;
+  margin: auto;
+}
+[name=motion] .motion--61 {
+  height: 488px !important;
+  margin: auto;
+}
+[name=motion] .motion--62 {
+  height: 496px !important;
+  margin: auto;
+}
+[name=motion] .motion--63 {
+  height: 504px !important;
+  margin: auto;
+}
+[name=motion] .motion--64 {
+  height: 512px !important;
+  margin: auto;
+}
+[name=motion] .motion--65 {
+  height: 520px !important;
+  margin: auto;
+}
+[name=motion] .motion--66 {
+  height: 528px !important;
+  margin: auto;
+}
+[name=motion] .motion--67 {
+  height: 536px !important;
+  margin: auto;
+}
+[name=motion] .motion--68 {
+  height: 544px !important;
+  margin: auto;
+}
+[name=motion] .motion--69 {
+  height: 552px !important;
+  margin: auto;
+}
+[name=motion] .motion--70 {
+  height: 560px !important;
+  margin: auto;
+}
+[name=motion] .motion--71 {
+  height: 568px !important;
+  margin: auto;
+}
+[name=motion] .motion--72 {
+  height: 576px !important;
+  margin: auto;
+}
+[name=motion] .motion--73 {
+  height: 584px !important;
+  margin: auto;
+}
+[name=motion] .motion--74 {
+  height: 592px !important;
+  margin: auto;
+}
+[name=motion] .motion--75 {
+  height: 600px !important;
+  margin: auto;
+}
+[name=motion] .motion--76 {
+  height: 608px !important;
+  margin: auto;
+}
+[name=motion] .motion--77 {
+  height: 616px !important;
+  margin: auto;
+}
+[name=motion] .motion--78 {
+  height: 624px !important;
+  margin: auto;
+}
+[name=motion] .motion--79 {
+  height: 632px !important;
+  margin: auto;
+}
+[name=motion] .motion--80 {
+  height: 640px !important;
+  margin: auto;
+}
+[name=motion] .motion--81 {
+  height: 648px !important;
+  margin: auto;
+}
+[name=motion] .motion--82 {
+  height: 656px !important;
+  margin: auto;
+}
+[name=motion] .motion--83 {
+  height: 664px !important;
+  margin: auto;
+}
+[name=motion] .motion--84 {
+  height: 672px !important;
+  margin: auto;
+}
+[name=motion] .motion--85 {
+  height: 680px !important;
+  margin: auto;
+}
+[name=motion] .motion--86 {
+  height: 688px !important;
+  margin: auto;
+}
+[name=motion] .motion--87 {
+  height: 696px !important;
+  margin: auto;
+}
+[name=motion] .motion--88 {
+  height: 704px !important;
+  margin: auto;
+}
+[name=motion] .motion--89 {
+  height: 712px !important;
+  margin: auto;
+}
+[name=motion] .motion--90 {
+  height: 720px !important;
+  margin: auto;
+}
+[name=motion] .motion--91 {
+  height: 728px !important;
+  margin: auto;
+}
+[name=motion] .motion--92 {
+  height: 736px !important;
+  margin: auto;
+}
+[name=motion] .motion--93 {
+  height: 744px !important;
+  margin: auto;
+}
+[name=motion] .motion--94 {
+  height: 752px !important;
+  margin: auto;
+}
+[name=motion] .motion--95 {
+  height: 760px !important;
+  margin: auto;
+}
+[name=motion] .motion--96 {
+  height: 768px !important;
+  margin: auto;
+}
+[name=motion] .motion--97 {
+  height: 776px !important;
+  margin: auto;
+}
+[name=motion] .motion--98 {
+  height: 784px !important;
+  margin: auto;
+}
+[name=motion] .motion--99 {
+  height: 792px !important;
+  margin: auto;
+}
+[name=motion] .motion--100 {
+  height: 800px !important;
+  margin: auto;
+}

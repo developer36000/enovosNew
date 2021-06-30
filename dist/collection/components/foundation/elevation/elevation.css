@@ -1,0 +1,76 @@
+[name=elevation] {
+  display: block;
+  height: inherit;
+}
+[name=elevation] .elevation.elevation--0 {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+[name=elevation] .elevation.elevation--0.elevation--reverse {
+  box-shadow: 0 -0 0 0 rgba(0, 0, 0, 0) !important;
+}
+[name=elevation] .elevation.elevation--1 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--1.elevation--reverse {
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--2 {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--2.elevation--reverse {
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--3.elevation--reverse {
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--4 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--4.elevation--reverse {
+  box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--5 {
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--5.elevation--reverse {
+  box-shadow: 0 -16px 24px 0 rgba(0, 0, 0, 0.1) !important;
+}
+[name=elevation] .elevation.elevation--dark--0 {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+[name=elevation] .elevation.elevation--dark--0.elevation--reverse {
+  box-shadow: 0 -0 0 0 rgba(0, 0, 0, 0) !important;
+}
+[name=elevation] .elevation.elevation--dark--1 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--1.elevation--reverse {
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--2 {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--2.elevation--reverse {
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--3.elevation--reverse {
+  box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--4 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--4.elevation--reverse {
+  box-shadow: 0 -8px 16px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--5 {
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.25) !important;
+}
+[name=elevation] .elevation.elevation--dark--5.elevation--reverse {
+  box-shadow: 0 -16px 24px 0 rgba(0, 0, 0, 0.25) !important;
+}

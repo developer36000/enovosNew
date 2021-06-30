@@ -1,0 +1,218 @@
+.mobile-data-table__filters-dropdown {
+  display: flex;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.mobile-data-table__filters-dropdown .icon {
+  margin-left: 8px;
+}
+.mobile-data-table__group {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  border-top: solid 1px #EEEEEE;
+}
+.mobile-data-table__group:first-child {
+  border-top: none;
+}
+.mobile-data-table__item {
+  padding: 8px 8px 8px 0;
+  width: 100%;
+}
+@media (min-width: 321px) {
+  .mobile-data-table--columns-count-xs-1 .mobile-data-table__item {
+    width: 100%;
+  }
+  .mobile-data-table--columns-count-xs-2 .mobile-data-table__item {
+    width: 50%;
+  }
+  .mobile-data-table--columns-count-xs-3 .mobile-data-table__item {
+    width: 33.3333333333%;
+  }
+  .mobile-data-table--columns-count-xs-4 .mobile-data-table__item {
+    width: 25%;
+  }
+  .mobile-data-table--columns-count-xs-5 .mobile-data-table__item {
+    width: 20%;
+  }
+  .mobile-data-table--columns-count-xs-6 .mobile-data-table__item {
+    width: 16.6666666667%;
+  }
+  .mobile-data-table--columns-count-xs-7 .mobile-data-table__item {
+    width: 14.2857142857%;
+  }
+  .mobile-data-table--columns-count-xs-8 .mobile-data-table__item {
+    width: 12.5%;
+  }
+  .mobile-data-table--columns-count-xs-9 .mobile-data-table__item {
+    width: 11.1111111111%;
+  }
+  .mobile-data-table--columns-count-xs-10 .mobile-data-table__item {
+    width: 10%;
+  }
+  .mobile-data-table--columns-count-xs-11 .mobile-data-table__item {
+    width: 9.0909090909%;
+  }
+  .mobile-data-table--columns-count-xs-12 .mobile-data-table__item {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 640px) {
+  .mobile-data-table--columns-count-sm-1 .mobile-data-table__item {
+    width: 100%;
+  }
+  .mobile-data-table--columns-count-sm-2 .mobile-data-table__item {
+    width: 50%;
+  }
+  .mobile-data-table--columns-count-sm-3 .mobile-data-table__item {
+    width: 33.3333333333%;
+  }
+  .mobile-data-table--columns-count-sm-4 .mobile-data-table__item {
+    width: 25%;
+  }
+  .mobile-data-table--columns-count-sm-5 .mobile-data-table__item {
+    width: 20%;
+  }
+  .mobile-data-table--columns-count-sm-6 .mobile-data-table__item {
+    width: 16.6666666667%;
+  }
+  .mobile-data-table--columns-count-sm-7 .mobile-data-table__item {
+    width: 14.2857142857%;
+  }
+  .mobile-data-table--columns-count-sm-8 .mobile-data-table__item {
+    width: 12.5%;
+  }
+  .mobile-data-table--columns-count-sm-9 .mobile-data-table__item {
+    width: 11.1111111111%;
+  }
+  .mobile-data-table--columns-count-sm-10 .mobile-data-table__item {
+    width: 10%;
+  }
+  .mobile-data-table--columns-count-sm-11 .mobile-data-table__item {
+    width: 9.0909090909%;
+  }
+  .mobile-data-table--columns-count-sm-12 .mobile-data-table__item {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 864px) {
+  .mobile-data-table--columns-count-md-1 .mobile-data-table__item {
+    width: 100%;
+  }
+  .mobile-data-table--columns-count-md-2 .mobile-data-table__item {
+    width: 50%;
+  }
+  .mobile-data-table--columns-count-md-3 .mobile-data-table__item {
+    width: 33.3333333333%;
+  }
+  .mobile-data-table--columns-count-md-4 .mobile-data-table__item {
+    width: 25%;
+  }
+  .mobile-data-table--columns-count-md-5 .mobile-data-table__item {
+    width: 20%;
+  }
+  .mobile-data-table--columns-count-md-6 .mobile-data-table__item {
+    width: 16.6666666667%;
+  }
+  .mobile-data-table--columns-count-md-7 .mobile-data-table__item {
+    width: 14.2857142857%;
+  }
+  .mobile-data-table--columns-count-md-8 .mobile-data-table__item {
+    width: 12.5%;
+  }
+  .mobile-data-table--columns-count-md-9 .mobile-data-table__item {
+    width: 11.1111111111%;
+  }
+  .mobile-data-table--columns-count-md-10 .mobile-data-table__item {
+    width: 10%;
+  }
+  .mobile-data-table--columns-count-md-11 .mobile-data-table__item {
+    width: 9.0909090909%;
+  }
+  .mobile-data-table--columns-count-md-12 .mobile-data-table__item {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1152px) {
+  .mobile-data-table--columns-count-lg-1 .mobile-data-table__item {
+    width: 100%;
+  }
+  .mobile-data-table--columns-count-lg-2 .mobile-data-table__item {
+    width: 50%;
+  }
+  .mobile-data-table--columns-count-lg-3 .mobile-data-table__item {
+    width: 33.3333333333%;
+  }
+  .mobile-data-table--columns-count-lg-4 .mobile-data-table__item {
+    width: 25%;
+  }
+  .mobile-data-table--columns-count-lg-5 .mobile-data-table__item {
+    width: 20%;
+  }
+  .mobile-data-table--columns-count-lg-6 .mobile-data-table__item {
+    width: 16.6666666667%;
+  }
+  .mobile-data-table--columns-count-lg-7 .mobile-data-table__item {
+    width: 14.2857142857%;
+  }
+  .mobile-data-table--columns-count-lg-8 .mobile-data-table__item {
+    width: 12.5%;
+  }
+  .mobile-data-table--columns-count-lg-9 .mobile-data-table__item {
+    width: 11.1111111111%;
+  }
+  .mobile-data-table--columns-count-lg-10 .mobile-data-table__item {
+    width: 10%;
+  }
+  .mobile-data-table--columns-count-lg-11 .mobile-data-table__item {
+    width: 9.0909090909%;
+  }
+  .mobile-data-table--columns-count-lg-12 .mobile-data-table__item {
+    width: 8.3333333333%;
+  }
+}
+@media (min-width: 1440px) {
+  .mobile-data-table--columns-count-xlg-1 .mobile-data-table__item {
+    width: 100%;
+  }
+  .mobile-data-table--columns-count-xlg-2 .mobile-data-table__item {
+    width: 50%;
+  }
+  .mobile-data-table--columns-count-xlg-3 .mobile-data-table__item {
+    width: 33.3333333333%;
+  }
+  .mobile-data-table--columns-count-xlg-4 .mobile-data-table__item {
+    width: 25%;
+  }
+  .mobile-data-table--columns-count-xlg-5 .mobile-data-table__item {
+    width: 20%;
+  }
+  .mobile-data-table--columns-count-xlg-6 .mobile-data-table__item {
+    width: 16.6666666667%;
+  }
+  .mobile-data-table--columns-count-xlg-7 .mobile-data-table__item {
+    width: 14.2857142857%;
+  }
+  .mobile-data-table--columns-count-xlg-8 .mobile-data-table__item {
+    width: 12.5%;
+  }
+  .mobile-data-table--columns-count-xlg-9 .mobile-data-table__item {
+    width: 11.1111111111%;
+  }
+  .mobile-data-table--columns-count-xlg-10 .mobile-data-table__item {
+    width: 10%;
+  }
+  .mobile-data-table--columns-count-xlg-11 .mobile-data-table__item {
+    width: 9.0909090909%;
+  }
+  .mobile-data-table--columns-count-xlg-12 .mobile-data-table__item {
+    width: 8.3333333333%;
+  }
+}
+.mobile-data-table__item .heading {
+  word-wrap: break-word;
+}
+.mobile-data-table__item--button {
+  padding: 0;
+}

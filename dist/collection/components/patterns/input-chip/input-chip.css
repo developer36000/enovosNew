@@ -1,0 +1,14 @@
+[name=input-chip] .input-chip {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+[name=input-chip] .input-chip__item:not(:last-child) {
+  margin-right: 8px;
+}
+[name=input-chip] .input-chip--stacked {
+  flex-wrap: wrap;
+}
+[name=input-chip] .input-chip--stacked .input-chip__item {
+  margin-bottom: calc(4px + 1px);
+}

@@ -1,0 +1,1 @@
+import{i as r}from"./p-0a7ed1dd.js";import{b as o}from"./p-e51cf53b.js";function a(a,t){var f=-1,i=r(a)?Array(a.length):[];return o(a,(function(r,o,a){i[++f]=t(r,o,a)})),i}export{a as b}

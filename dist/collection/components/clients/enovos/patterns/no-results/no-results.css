@@ -1,0 +1,12 @@
+.no-results {
+  text-align: center;
+}
+.no-results__image {
+  margin-bottom: 24px;
+}
+.no-results__image img {
+  max-width: 100%;
+}
+.no-results__actions {
+  margin-top: 24px;
+}

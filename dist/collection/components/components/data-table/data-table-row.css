@@ -1,0 +1,217 @@
+[name=data-table-row] {
+  display: table-row;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out;
+}
+[name=data-table-row].data-table-row--sticky {
+  display: flex;
+  width: 100%;
+}
+[name=data-table-row].data-table-row--sticky .data-table-row__cell {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  flex-grow: 2;
+}
+[name=data-table-row].data-table-row--sticky .data-table-row__cell--checkbox {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: auto;
+}
+[name=data-table-row].data-table-row--sticky .data-table-row__cell--expandable {
+  flex-basis: 40px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+[name=data-table-row].data-table-row--is-open .data-table-row__cell {
+  position: relative;
+}
+[name=data-table-row].data-table-row--is-open .data-table-row__cell:first-child:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  content: "";
+  transition: opacity 0.2s ease-in-out;
+}
+[name=data-table-row]:not(:last-of-type).data-table-row--is-open .data-table-row__cell {
+  border-bottom: none;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-style: solid;
+}
+[name=data-table-row] .data-table-row__cell {
+  vertical-align: middle;
+}
+[name=data-table-row] .data-table-row__cell--interactive {
+  cursor: pointer;
+}
+[name=data-table-row] .data-table-row__cell--fitted {
+  padding-right: 8px !important;
+  padding-left: 8px !important;
+}
+[name=data-table-row] .data-table-row__cell--checkbox {
+  vertical-align: middle;
+}
+[name=data-table-row] .data-table-row__cell--checkbox + .data-table-row__cell {
+  padding-left: 0;
+}
+[name=data-table-row] .data-table-row__cell--expandable {
+  vertical-align: middle;
+}
+[name=data-table-row] .data-table-row__cell--expandable + .data-table-row__cell {
+  padding-left: 0;
+}
+[name=data-table-row] .data-table-row__cell--fixed-size {
+  white-space: normal;
+}
+[name=data-table-row] .data-table-row__cell__icon--expandable {
+  display: block;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-width: 1px;
+}
+[name=data-table-row].data-table-row--is-open .data-table-row__cell:first-child:before {
+  width: 4px;
+}
+[name=data-table-row].data-table-row--sticky .data-table-row__cell--expandable + .data-table-row__cell--checkbox {
+  padding-left: 80px;
+}
+[name=data-table-row].data-table-row .data-table-row__cell {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+[name=data-table-row].data-table-row .data-table-row__cell--checkbox {
+  padding-right: 16px;
+}
+[name=data-table-row].data-table-row .data-table-row__cell--expandable {
+  padding-right: 8px;
+}
+[name=data-table-row].data-table-row .data-table-row__cell--expandable + .data-table-row__cell--checkbox {
+  padding-left: 56px;
+}
+[name=data-table-row].data-table-row .data-table-row__cell__icon--expandable {
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-width: 1px;
+}
+[name=data-table-row].data-table-row--is-open .data-table-row__cell:first-child:before {
+  width: 1px;
+}
+[name=data-table-row].data-table-row--sticky .data-table-row__cell--expandable + .data-table-row__cell--checkbox {
+  padding-left: 56px;
+}
+[name=data-table-row].data-table-row--lg .data-table-row__cell {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+[name=data-table-row].data-table-row--lg .data-table-row__cell--checkbox {
+  padding-right: 16px;
+}
+[name=data-table-row].data-table-row--lg .data-table-row__cell--expandable {
+  padding-right: 8px;
+}
+[name=data-table-row].data-table-row--lg .data-table-row__cell--expandable + .data-table-row__cell--checkbox {
+  padding-left: 32px;
+}
+[name=data-table-row].data-table-row--lg .data-table-row__cell__icon--expandable {
+  height: "auto";
+  font-size: "auto";
+  line-height: "auto";
+}
+[name=data-table-row].data-table-row {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row:hover {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row.data-table-row--is-open {
+  color: #5E5E5E;
+  background-color: #EEEEEE;
+}
+[name=data-table-row].data-table-row.data-table-row--is-open .data-table-row__cell:first-child:before {
+  background-color: #F76700;
+}
+[name=data-table-row].data-table-row.data-table-row--is-checked {
+  color: #5E5E5E;
+  background-color: #FFF1E5;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-color: #EEEEEE;
+}
+[name=data-table-row].data-table-row .data-table-row__cell--is-open {
+  color: #F76700;
+}
+[name=data-table-row].data-table-row--blue {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--blue:hover {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--blue.data-table-row--is-open {
+  color: #000000;
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--blue.data-table-row--is-open .data-table-row__cell:first-child:before {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--blue.data-table-row--is-checked {
+  color: #000000;
+  background-color: transparent;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-color: transparent;
+}
+[name=data-table-row].data-table-row--blue .data-table-row__cell--is-open {
+  color: #000000;
+}
+[name=data-table-row].data-table-row--primary {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--primary:hover {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--primary.data-table-row--is-open {
+  color: #000000;
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--primary.data-table-row--is-open .data-table-row__cell:first-child:before {
+  background-color: transparent;
+}
+[name=data-table-row].data-table-row--primary.data-table-row--is-checked {
+  color: #000000;
+  background-color: transparent;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-color: transparent;
+}
+[name=data-table-row].data-table-row--primary .data-table-row__cell--is-open {
+  color: #000000;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark {
+  background-color: #FFFFFF;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark:hover {
+  background-color: #BCD870;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark.data-table-row--is-open {
+  color: #5E5E5E;
+  background-color: #CDE294;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark.data-table-row--is-open .data-table-row__cell:first-child:before {
+  background-color: #EF7D00;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark.data-table-row--is-checked {
+  color: #5E5E5E;
+  background-color: #5C8AB1;
+}
+[name=data-table-row]:not(:last-of-type) .data-table-row__cell {
+  border-bottom-color: #EEEEEE;
+}
+[name=data-table-row].data-table-row--brand-expressive-orange-dark .data-table-row__cell--is-open {
+  color: #EF7D00;
+}

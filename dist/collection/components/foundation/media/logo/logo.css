@@ -1,0 +1,20 @@
+.logo-bdl .logo-bdl__icon {
+  fill: #F76700;
+}
+.logo-bdl .logo-bdl__bank-letter,
+.logo-bdl .logo-bdl__design-system__letter {
+  fill: #5E5E5E;
+}
+.logo-bdl__bank-letter {
+  opacity: 1;
+  transition: 0.2s all;
+}
+.logo-bdl--white .logo-bdl__icon,
+.logo-bdl--white .logo-bdl__bank-letter,
+.logo-bdl--white .logo-bdl__design-system__letter {
+  fill: #FFFFFF;
+}
+.logo-bdl--icon .logo-bdl__bank-letter,
+.logo-bdl--icon .logo-bdl__design-system__letter {
+  opacity: 0;
+}

@@ -1,0 +1,1804 @@
+[name=grid-style-two] {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+[name=grid-style-two] .grid-style-two__mq:before {
+  position: fixed;
+  z-index: 10000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  width: 2rem;
+  height: 2rem;
+  content: "XLG";
+  background-color: red;
+}
+@media (max-width: 1439px) {
+  [name=grid-style-two] .grid-style-two__mq:before {
+    content: "LG";
+    background-color: orange;
+  }
+}
+@media (max-width: 1151px) {
+  [name=grid-style-two] .grid-style-two__mq:before {
+    content: "MD";
+    background-color: purple;
+  }
+}
+@media (max-width: 863px) {
+  [name=grid-style-two] .grid-style-two__mq:before {
+    content: "SM";
+    background-color: blue;
+  }
+}
+@media (max-width: 639px) {
+  [name=grid-style-two] .grid-style-two__mq:before {
+    content: "XS";
+    background-color: green;
+  }
+}
+[name=grid-style-two] .grid-style-two__header, [name=grid-style-two] .grid-style-two__navigation, [name=grid-style-two] .grid-style-two__body, [name=grid-style-two] .grid-style-two__body__footer, [name=grid-style-two] .grid-style-two__footer {
+  width: 100%;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary {
+  background-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary {
+  background-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary {
+  background-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary {
+  background-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary {
+  background-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey {
+  background-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-900 {
+  background-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-800 {
+  background-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-700 {
+  background-color: #D52B1E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-600 {
+  background-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-500 {
+  background-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-400 {
+  background-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-300 {
+  background-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-200 {
+  background-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-100 {
+  background-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--primary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--primary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--primary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--primary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--primary-50 {
+  background-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-900 {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-800 {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-700 {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-600 {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-500 {
+  background-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-400 {
+  background-color: #8E8E8E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-300 {
+  background-color: #A7A7A7 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-200 {
+  background-color: #D7D7D7 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-100 {
+  background-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--secondary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--secondary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--secondary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--secondary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--secondary-50 {
+  background-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-900 {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-800 {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-700 {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-600 {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-500 {
+  background-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-400 {
+  background-color: #5C8AB1 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-300 {
+  background-color: #85A8C5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-200 {
+  background-color: #C2D3E2 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-100 {
+  background-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--tertiary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--tertiary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--tertiary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--tertiary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--tertiary-50 {
+  background-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-900 {
+  background-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-800 {
+  background-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-700 {
+  background-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-600 {
+  background-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-500 {
+  background-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-400 {
+  background-color: #BCD870 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-300 {
+  background-color: #CDE294 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-200 {
+  background-color: #E6F0C9 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-100 {
+  background-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quaternary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quaternary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quaternary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quaternary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quaternary-50 {
+  background-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-900 {
+  background-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-800 {
+  background-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-700 {
+  background-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-600 {
+  background-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-500 {
+  background-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-400 {
+  background-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-300 {
+  background-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-200 {
+  background-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-100 {
+  background-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--quinary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--quinary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--quinary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--quinary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--quinary-50 {
+  background-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-900 {
+  background-color: #602A10 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-800 {
+  background-color: #95431D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-700 {
+  background-color: #B66E4D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-600 {
+  background-color: #B78670 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-500 {
+  background-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-400 {
+  background-color: #DEAE98 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-300 {
+  background-color: #EEC3AF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-200 {
+  background-color: #FAD5C5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-100 {
+  background-color: #FFE9DF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--senary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--senary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--senary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--senary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--senary-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-900 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-800 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-700 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-600 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-500 {
+  background-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-400 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-300 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-200 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-100 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--septenary-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--septenary-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--septenary-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--septenary-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--septenary-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-900 {
+  background-color: #1D1D1D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-800 {
+  background-color: #333333 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-700 {
+  background-color: #4D4D4D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-600 {
+  background-color: #666666 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-500 {
+  background-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-400 {
+  background-color: #999999 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-300 {
+  background-color: #B3B3B3 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-200 {
+  background-color: #CCCCCC !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-100 {
+  background-color: #E6E6E6 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--grey-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--grey-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--grey-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--grey-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--grey-50 {
+  background-color: #F8F8F8 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-success, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-success, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-success, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-success, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-success {
+  background-color: #00856A !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-success-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-success-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-success-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-success-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-success-light {
+  background-color: #E5F2F0 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-info, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-info, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-info, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-info, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-info {
+  background-color: #2899A8 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-info-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-info-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-info-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-info-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-info-light {
+  background-color: #DBF6FF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-warning, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-warning, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-warning, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-warning, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-warning {
+  background-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-warning-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-warning-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-warning-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-warning-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-warning-light {
+  background-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-error, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-error, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-error, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-error, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-error {
+  background-color: #EB0000 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--contextual-error-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--contextual-error-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--contextual-error-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--contextual-error-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--contextual-error-light {
+  background-color: #FDE5E5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--pfm-blue, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--pfm-blue, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--pfm-blue, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--pfm-blue, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--pfm-blue {
+  background-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--pfm-green, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--pfm-green, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--pfm-green, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--pfm-green, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--pfm-green {
+  background-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--pfm-yellow, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--pfm-yellow, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--pfm-yellow, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--pfm-yellow, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--pfm-yellow {
+  background-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--pfm-orange, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--pfm-orange, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--pfm-orange, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--pfm-orange, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--pfm-orange {
+  background-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--pfm-red, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--pfm-red, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--pfm-red, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--pfm-red, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--pfm-red {
+  background-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-ing, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-ing, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-ing, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-ing, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-ing {
+  background-color: #F58220 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-bil, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-bil, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-bil, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-bil, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-bil {
+  background-color: #71308B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-bcee, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-bcee, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-bcee, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-bcee, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-bcee {
+  background-color: #144093 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-post, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-post, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-post, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-post, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-post {
+  background-color: #FABC0B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-raiffeisen, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-raiffeisen, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-raiffeisen, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-raiffeisen, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-raiffeisen {
+  background-color: #112242 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--external-bank-bnp-paribas, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--external-bank-bnp-paribas, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--external-bank-bnp-paribas, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--external-bank-bnp-paribas, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--external-bank-bnp-paribas {
+  background-color: #00915A !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--white-15, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--white-15, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--white-15, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--white-15, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--white-15 {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--white-25, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--white-25, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--white-25, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--white-25, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--white-25 {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--white-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--white-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--white-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--white-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--white-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-pfm-blue, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-pfm-blue, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-pfm-blue, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-pfm-blue, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-pfm-blue {
+  background-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-pfm-green, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-pfm-green, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-pfm-green, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-pfm-green, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-pfm-green {
+  background-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-pfm-yellow, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-pfm-yellow, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-pfm-yellow, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-pfm-yellow, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-pfm-yellow {
+  background-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-pfm-orange, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-pfm-orange, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-pfm-orange, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-pfm-orange, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-pfm-orange {
+  background-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-pfm-red, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-pfm-red, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-pfm-red, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-pfm-red, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-pfm-red {
+  background-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light {
+  background-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-dark {
+  background-color: #133B2C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light {
+  background-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-dark {
+  background-color: #0A324B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light {
+  background-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark {
+  background-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-light {
+  background-color: #F3B969 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark {
+  background-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-pink-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-pink-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-pink-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-pink-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-pink-light {
+  background-color: #C03152 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-pink-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-pink-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-pink-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-pink-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-pink-dark {
+  background-color: #4F0F15 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-red-light, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-red-light, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-red-light, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-red-light, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-red-light {
+  background-color: #F7B7AF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-red-dark, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-red-dark, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-red-dark, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-red-dark, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-red-dark {
+  background-color: #E62D32 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-900 {
+  background-color: #4D2800 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-800 {
+  background-color: #804200 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-700 {
+  background-color: #B35C00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-600 {
+  background-color: #CC6A00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-500 {
+  background-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-400 {
+  background-color: #FC8823 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-300 {
+  background-color: #FC9E4C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-200 {
+  background-color: #FFB675 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-100 {
+  background-color: #FFD1A8 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-orange-dark-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-orange-dark-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-orange-dark-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-orange-dark-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-orange-dark-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-900 {
+  background-color: #0C4159 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-800 {
+  background-color: #105373 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-700 {
+  background-color: #14668C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-600 {
+  background-color: #1779A6 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-500 {
+  background-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-400 {
+  background-color: #1D9AD1 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-300 {
+  background-color: #2AAEEB !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-200 {
+  background-color: #56BFF0 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-100 {
+  background-color: #7FCFF5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-blue-light-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-blue-light-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-blue-light-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-blue-light-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-blue-light-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-900 {
+  background-color: #224D37 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-800 {
+  background-color: #2D6649 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-700 {
+  background-color: #39805C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-600 {
+  background-color: #43996E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-500 {
+  background-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-400 {
+  background-color: #55C28C !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-300 {
+  background-color: #60D199 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-200 {
+  background-color: #69DBA2 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-100 {
+  background-color: #85E6B5 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-green-light-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-green-light-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-green-light-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-green-light-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-green-light-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-900 {
+  background-color: #6B550F !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-800 {
+  background-color: #8F7214 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-700 {
+  background-color: #AD8B19 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-600 {
+  background-color: #D1A71D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-500 {
+  background-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-400 {
+  background-color: #FCCA23 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-300 {
+  background-color: #FCD742 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-200 {
+  background-color: #FCDD60 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-100 {
+  background-color: #FCE483 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-light-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-light-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-light-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-light-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-light-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-900, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-900, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-900, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-900, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-900 {
+  background-color: #52360B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-800, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-800, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-800, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-800, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-800 {
+  background-color: #6B470E !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-700, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-700, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-700, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-700, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-700 {
+  background-color: #855811 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-600, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-600, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-600, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-600, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-600 {
+  background-color: #9E6915 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-500, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-500, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-500, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-500, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-500 {
+  background-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-400, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-400, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-400, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-400, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-400 {
+  background-color: #D18A1B !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-300, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-300, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-300, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-300, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-300 {
+  background-color: #EB9B1F !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-200, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-200, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-200, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-200, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-200 {
+  background-color: #FAAA2D !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-100, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-100, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-100, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-100, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-100 {
+  background-color: #FABA55 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--brand-expressive-yellow-dark-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--brand-expressive-yellow-dark-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--brand-expressive-yellow-dark-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--brand-expressive-yellow-dark-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--brand-expressive-yellow-dark-50 {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--white-opacity-50, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--white-opacity-50, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--white-opacity-50, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--white-opacity-50, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--white-opacity-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--white, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--white, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--white, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--white, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--white {
+  background-color: #FFFFFF !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--black, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--black, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--black, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--black, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--black {
+  background-color: #000000 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--transparent, [name=grid-style-two] .grid-style-two__navigation.grid-style-two--bg--transparent, [name=grid-style-two] .grid-style-two__body.grid-style-two--bg--transparent, [name=grid-style-two] .grid-style-two__body__footer.grid-style-two--bg--transparent, [name=grid-style-two] .grid-style-two__footer.grid-style-two--bg--transparent {
+  background-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__body {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+[name=grid-style-two] .grid-style-two__body--centered {
+  display: flex;
+  align-items: center;
+}
+[name=grid-style-two] .grid-style-two__navigation {
+  position: relative;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary {
+  border-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary {
+  border-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary {
+  border-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary {
+  border-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey {
+  border-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-900 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-800 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-700 {
+  border-color: #D52B1E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-600 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-500 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-400 {
+  border-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-300 {
+  border-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-200 {
+  border-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-100 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--primary-50 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-900 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-800 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-700 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-600 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-500 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-400 {
+  border-color: #8E8E8E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-300 {
+  border-color: #A7A7A7 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-200 {
+  border-color: #D7D7D7 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-100 {
+  border-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--secondary-50 {
+  border-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-900 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-800 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-700 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-600 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-500 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-400 {
+  border-color: #5C8AB1 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-300 {
+  border-color: #85A8C5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-200 {
+  border-color: #C2D3E2 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-100 {
+  border-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--tertiary-50 {
+  border-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-900 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-800 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-700 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-600 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-500 {
+  border-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-400 {
+  border-color: #BCD870 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-300 {
+  border-color: #CDE294 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-200 {
+  border-color: #E6F0C9 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-100 {
+  border-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quaternary-50 {
+  border-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-900 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-800 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-700 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-600 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-500 {
+  border-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-400 {
+  border-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-300 {
+  border-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-200 {
+  border-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-100 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--quinary-50 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-900 {
+  border-color: #602A10 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-800 {
+  border-color: #95431D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-700 {
+  border-color: #B66E4D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-600 {
+  border-color: #B78670 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-500 {
+  border-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-400 {
+  border-color: #DEAE98 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-300 {
+  border-color: #EEC3AF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-200 {
+  border-color: #FAD5C5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-100 {
+  border-color: #FFE9DF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--senary-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-900 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-800 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-700 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-600 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-500 {
+  border-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-400 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-300 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-200 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-100 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--septenary-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-900 {
+  border-color: #1D1D1D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-800 {
+  border-color: #333333 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-700 {
+  border-color: #4D4D4D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-600 {
+  border-color: #666666 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-500 {
+  border-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-400 {
+  border-color: #999999 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-300 {
+  border-color: #B3B3B3 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-200 {
+  border-color: #CCCCCC !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-100 {
+  border-color: #E6E6E6 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--grey-50 {
+  border-color: #F8F8F8 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-success {
+  border-color: #00856A !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--success {
+  border-color: #00856A !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-success-light {
+  border-color: #E5F2F0 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--success-light {
+  border-color: #E5F2F0 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-info {
+  border-color: #2899A8 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--info {
+  border-color: #2899A8 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-info-light {
+  border-color: #DBF6FF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--info-light {
+  border-color: #DBF6FF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-warning {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--warning {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-warning-light {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--warning-light {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-error {
+  border-color: #EB0000 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--error {
+  border-color: #EB0000 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--contextual-error-light {
+  border-color: #FDE5E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--error-light {
+  border-color: #FDE5E5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--pfm-blue {
+  border-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--pfm-green {
+  border-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--pfm-yellow {
+  border-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--pfm-orange {
+  border-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--pfm-red {
+  border-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-ing {
+  border-color: #F58220 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-bil {
+  border-color: #71308B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-bcee {
+  border-color: #144093 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-post {
+  border-color: #FABC0B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-raiffeisen {
+  border-color: #112242 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--external-bank-bnp-paribas {
+  border-color: #00915A !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--white-15 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--white-25 {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--white-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-pfm-blue {
+  border-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-pfm-green {
+  border-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-pfm-yellow {
+  border-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-pfm-orange {
+  border-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-pfm-red {
+  border-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light {
+  border-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-dark {
+  border-color: #133B2C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light {
+  border-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-dark {
+  border-color: #0A324B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light {
+  border-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark {
+  border-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-light {
+  border-color: #F3B969 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark {
+  border-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-pink-light {
+  border-color: #C03152 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-pink-dark {
+  border-color: #4F0F15 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-red-light {
+  border-color: #F7B7AF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-red-dark {
+  border-color: #E62D32 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-900 {
+  border-color: #4D2800 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-800 {
+  border-color: #804200 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-700 {
+  border-color: #B35C00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-600 {
+  border-color: #CC6A00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-500 {
+  border-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-400 {
+  border-color: #FC8823 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-300 {
+  border-color: #FC9E4C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-200 {
+  border-color: #FFB675 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-100 {
+  border-color: #FFD1A8 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-orange-dark-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-900 {
+  border-color: #0C4159 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-800 {
+  border-color: #105373 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-700 {
+  border-color: #14668C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-600 {
+  border-color: #1779A6 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-500 {
+  border-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-400 {
+  border-color: #1D9AD1 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-300 {
+  border-color: #2AAEEB !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-200 {
+  border-color: #56BFF0 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-100 {
+  border-color: #7FCFF5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-blue-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-900 {
+  border-color: #224D37 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-800 {
+  border-color: #2D6649 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-700 {
+  border-color: #39805C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-600 {
+  border-color: #43996E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-500 {
+  border-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-400 {
+  border-color: #55C28C !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-300 {
+  border-color: #60D199 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-200 {
+  border-color: #69DBA2 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-100 {
+  border-color: #85E6B5 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-green-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-900 {
+  border-color: #6B550F !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-800 {
+  border-color: #8F7214 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-700 {
+  border-color: #AD8B19 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-600 {
+  border-color: #D1A71D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-500 {
+  border-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-400 {
+  border-color: #FCCA23 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-300 {
+  border-color: #FCD742 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-200 {
+  border-color: #FCDD60 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-100 {
+  border-color: #FCE483 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-900 {
+  border-color: #52360B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-800 {
+  border-color: #6B470E !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-700 {
+  border-color: #855811 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-600 {
+  border-color: #9E6915 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-500 {
+  border-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-400 {
+  border-color: #D18A1B !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-300 {
+  border-color: #EB9B1F !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-200 {
+  border-color: #FAAA2D !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-100 {
+  border-color: #FABA55 !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--brand-expressive-yellow-dark-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--white-opacity-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--white {
+  border-color: #FFFFFF !important;
+}
+[name=grid-style-two] .grid-style-two__navigation.grid-style-two--border--black {
+  border-color: #000000 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary {
+  border-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary {
+  border-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary {
+  border-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary {
+  border-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey {
+  border-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-900 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-800 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-700 {
+  border-color: #D52B1E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-600 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-500 {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-400 {
+  border-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-300 {
+  border-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-200 {
+  border-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-100 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--primary-50 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-900 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-800 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-700 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-600 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-500 {
+  border-color: #5E5E5E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-400 {
+  border-color: #8E8E8E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-300 {
+  border-color: #A7A7A7 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-200 {
+  border-color: #D7D7D7 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-100 {
+  border-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--secondary-50 {
+  border-color: #EEEEEE !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-900 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-800 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-700 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-600 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-500 {
+  border-color: #004885 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-400 {
+  border-color: #5C8AB1 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-300 {
+  border-color: #85A8C5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-200 {
+  border-color: #C2D3E2 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-100 {
+  border-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--tertiary-50 {
+  border-color: #EBF1F6 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-900 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-800 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-700 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-600 {
+  border-color: #5A8D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-500 {
+  border-color: #96C11F !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-400 {
+  border-color: #BCD870 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-300 {
+  border-color: #CDE294 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-200 {
+  border-color: #E6F0C9 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-100 {
+  border-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quaternary-50 {
+  border-color: #F7FAED !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-900 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-800 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-700 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-600 {
+  border-color: #C75300 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-500 {
+  border-color: #EF7B0B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-400 {
+  border-color: #FFA14C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-300 {
+  border-color: #FFB673 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-200 {
+  border-color: #FFDDBF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-100 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--quinary-50 {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-900 {
+  border-color: #602A10 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-800 {
+  border-color: #95431D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-700 {
+  border-color: #B66E4D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-600 {
+  border-color: #B78670 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-500 {
+  border-color: #CAA08D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-400 {
+  border-color: #DEAE98 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-300 {
+  border-color: #EEC3AF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-200 {
+  border-color: #FAD5C5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-100 {
+  border-color: #FFE9DF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--senary-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-900 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-800 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-700 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-600 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-500 {
+  border-color: #6C887A !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-400 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-300 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-200 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-100 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--septenary-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-900 {
+  border-color: #1D1D1D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-800 {
+  border-color: #333333 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-700 {
+  border-color: #4D4D4D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-600 {
+  border-color: #666666 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-500 {
+  border-color: #757575 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-400 {
+  border-color: #999999 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-300 {
+  border-color: #B3B3B3 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-200 {
+  border-color: #CCCCCC !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-100 {
+  border-color: #E6E6E6 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--grey-50 {
+  border-color: #F8F8F8 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-success {
+  border-color: #00856A !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--success {
+  border-color: #00856A !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-success-light {
+  border-color: #E5F2F0 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--success-light {
+  border-color: #E5F2F0 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-info {
+  border-color: #2899A8 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--info {
+  border-color: #2899A8 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-info-light {
+  border-color: #DBF6FF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--info-light {
+  border-color: #DBF6FF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-warning {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--warning {
+  border-color: #F76700 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-warning-light {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--warning-light {
+  border-color: #FFF1E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-error {
+  border-color: #EB0000 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--error {
+  border-color: #EB0000 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--contextual-error-light {
+  border-color: #FDE5E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--error-light {
+  border-color: #FDE5E5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--pfm-blue {
+  border-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--pfm-green {
+  border-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--pfm-yellow {
+  border-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--pfm-orange {
+  border-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--pfm-red {
+  border-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-ing {
+  border-color: #F58220 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-bil {
+  border-color: #71308B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-bcee {
+  border-color: #144093 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-post {
+  border-color: #FABC0B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-raiffeisen {
+  border-color: #112242 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--external-bank-bnp-paribas {
+  border-color: #00915A !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--white-15 {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--white-25 {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--white-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-pfm-blue {
+  border-color: #55A1D3 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-pfm-green {
+  border-color: #8DDE54 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-pfm-yellow {
+  border-color: #FFC600 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-pfm-orange {
+  border-color: #FC912E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-pfm-red {
+  border-color: #DF5036 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light {
+  border-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-dark {
+  border-color: #133B2C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light {
+  border-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-dark {
+  border-color: #0A324B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light {
+  border-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark {
+  border-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-light {
+  border-color: #F3B969 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark {
+  border-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-pink-light {
+  border-color: #C03152 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-pink-dark {
+  border-color: #4F0F15 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-red-light {
+  border-color: #F7B7AF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-red-dark {
+  border-color: #E62D32 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-900 {
+  border-color: #4D2800 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-800 {
+  border-color: #804200 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-700 {
+  border-color: #B35C00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-600 {
+  border-color: #CC6A00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-500 {
+  border-color: #EF7D00 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-400 {
+  border-color: #FC8823 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-300 {
+  border-color: #FC9E4C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-200 {
+  border-color: #FFB675 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-100 {
+  border-color: #FFD1A8 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-orange-dark-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-900 {
+  border-color: #0C4159 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-800 {
+  border-color: #105373 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-700 {
+  border-color: #14668C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-600 {
+  border-color: #1779A6 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-500 {
+  border-color: #1B8DC0 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-400 {
+  border-color: #1D9AD1 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-300 {
+  border-color: #2AAEEB !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-200 {
+  border-color: #56BFF0 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-100 {
+  border-color: #7FCFF5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-blue-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-900 {
+  border-color: #224D37 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-800 {
+  border-color: #2D6649 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-700 {
+  border-color: #39805C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-600 {
+  border-color: #43996E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-500 {
+  border-color: #4FB482 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-400 {
+  border-color: #55C28C !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-300 {
+  border-color: #60D199 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-200 {
+  border-color: #69DBA2 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-100 {
+  border-color: #85E6B5 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-green-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-900 {
+  border-color: #6B550F !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-800 {
+  border-color: #8F7214 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-700 {
+  border-color: #AD8B19 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-600 {
+  border-color: #D1A71D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-500 {
+  border-color: #F0BE21 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-400 {
+  border-color: #FCCA23 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-300 {
+  border-color: #FCD742 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-200 {
+  border-color: #FCDD60 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-100 {
+  border-color: #FCE483 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-light-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-900 {
+  border-color: #52360B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-800 {
+  border-color: #6B470E !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-700 {
+  border-color: #855811 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-600 {
+  border-color: #9E6915 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-500 {
+  border-color: #B77918 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-400 {
+  border-color: #D18A1B !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-300 {
+  border-color: #EB9B1F !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-200 {
+  border-color: #FAAA2D !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-100 {
+  border-color: #FABA55 !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--brand-expressive-yellow-dark-50 {
+  border-color: transparent !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--white-opacity-50 {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--white {
+  border-color: #FFFFFF !important;
+}
+[name=grid-style-two] .grid-style-two__footer.grid-style-two--border--black {
+  border-color: #000000 !important;
+}
+[name=grid-style-two] .grid-style-two__slot {
+  height: 100%;
+}
+[name=grid-style-two] .grid-style-two__header {
+  z-index: 3000;
+  flex: 0 0 auto;
+  background-color: #5E5E5E;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--hidden + .grid-style-two__navigation.grid-style-two--hidden + .grid-style-two__body {
+  margin-top: 0 !important;
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--gradient-primary-dark-bottom {
+  background-image: linear-gradient(#F76700, #D52B1E);
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--gradient-tertiary-dark-bottom {
+  background-image: linear-gradient(#004885, #004885);
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--gradient-quaternary-dark-bottom {
+  background-image: linear-gradient(#96C11F, #5A8D00);
+}
+[name=grid-style-two] .grid-style-two__header.grid-style-two--bg--gradient-quinary-dark-bottom {
+  background-image: linear-gradient(#EF7B0B, #C75300);
+}
+[name=grid-style-two] .grid-style-two__navigation {
+  z-index: 2900;
+  display: block;
+  flex: 0 0 auto;
+  padding-top: 48px;
+  border-bottom: 1px solid #D7D7D7;
+  background-color: #FFFFFF;
+  transition: top 300ms cubic-bezier(0.31, 0.53, 0.51, 0.71);
+}
+@media (max-width: 863px) {
+  [name=grid-style-two] .grid-style-two__navigation {
+    padding-top: 24px;
+  }
+}
+[name=grid-style-two] .grid-style-two__navigation [name=page-header] {
+  margin-bottom: 0;
+}
+[name=grid-style-two] .grid-style-two__navigation .navigation__item {
+  display: block !important;
+}
+[name=grid-style-two] .grid-style-two__body {
+  flex: 1 1 auto;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+@media (max-width: 863px) {
+  [name=grid-style-two] .grid-style-two__body {
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+}
+[name=grid-style-two] .grid-style-two__body__footer {
+  flex: 1 1 auto;
+  padding: 48px 0;
+}
+[name=grid-style-two] .grid-style-two__footer {
+  z-index: 3000;
+  flex: 0 0 auto;
+  min-height: 56px;
+}
+@media (max-width: 1151px) {
+  [name=grid-style-two] .grid-style-two__footer {
+    padding-bottom: 32px;
+  }
+}
+[name=grid-style-two] .grid-style-two__footer > [name=grid-layout] {
+  height: 100%;
+}
+[name=grid-style-two] .grid-style-two--hidden {
+  display: none;
+}

@@ -1,0 +1,83 @@
+[name=datalist] {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity 0.2s ease-in-out 0s;
+}
+[name=datalist] .datalist {
+  transition: opacity 0.2s ease-in-out 0s;
+}
+[name=datalist] .datalist__item {
+  position: relative;
+}
+[name=datalist] .datalist__item--indent::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  height: 100%;
+  content: "";
+}
+[name=datalist] .datalist__item__children {
+  position: relative;
+  max-height: 500em;
+  opacity: 1;
+  transition: max-height 1.2s ease-in-out 0.1s, opacity 0.6s ease-in-out 0.1s;
+}
+[name=datalist] .datalist__item__children--collapsed {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease-in-out 0s, opacity 0.6s ease-in-out 0s;
+}
+[name=datalist] .datalist__item__children--accordion::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  height: 100%;
+  content: "";
+}
+[name=datalist] .datalist .datalist__item--indent::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist .datalist__item__children--accordion::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist--primary .datalist__item--indent::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist--primary .datalist__item__children--accordion::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist--success .datalist__item--indent::before {
+  background-color: #00856A;
+}
+[name=datalist] .datalist--success .datalist__item__children--accordion::before {
+  background-color: #00856A;
+}
+[name=datalist] .datalist--info .datalist__item--indent::before {
+  background-color: #2899A8;
+}
+[name=datalist] .datalist--info .datalist__item__children--accordion::before {
+  background-color: #2899A8;
+}
+[name=datalist] .datalist--warning .datalist__item--indent::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist--warning .datalist__item__children--accordion::before {
+  background-color: #F76700;
+}
+[name=datalist] .datalist--error .datalist__item--indent::before {
+  background-color: #EB0000;
+}
+[name=datalist] .datalist--error .datalist__item__children--accordion::before {
+  background-color: #EB0000;
+}
+[name=datalist] .datalist .datalist__item--indent::before {
+  width: 0;
+}
+[name=datalist] .datalist .datalist__item__children--accordion::before {
+  width: 0;
+}

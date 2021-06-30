@@ -1,0 +1,20 @@
+// Gradient
+@each $gradient-name, $color in map-merge($gradients, $brand-gradients) {
+  @each $variation, $value in $color {
+    @each $direction-name, $direction-value in $gradient-direction {
+
+      // Default bg gradient direction is bottom
+      @if $direction-name == 'bottom' {
+        .bg--gradient-#{$gradient-name}-#{'' + $variation} {
+          background-image: $value !important;
+        }
+      }
+
+      // For each other direction
+      .bg--gradient-#{$gradient-name}-#{'' + $variation}-#{$direction-name} {
+        background-image: str-replace($value, 'to bottom', $direction-value) !important;
+      }
+
+    }
+  }
+}

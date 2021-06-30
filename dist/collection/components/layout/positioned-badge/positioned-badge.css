@@ -1,0 +1,697 @@
+[name=positioned-badge] .positioned-badge {
+  position: relative;
+}
+[name=positioned-badge] .positioned-badge .positioned-badge__badge {
+  position: absolute;
+  z-index: 1;
+}
+[name=positioned-badge] .positioned-badge--on-top .positioned-badge__badge {
+  top: 0;
+}
+[name=positioned-badge] .positioned-badge--on-middle .positioned-badge__badge {
+  top: 50%;
+}
+[name=positioned-badge] .positioned-badge--on-bottom .positioned-badge__badge {
+  top: 100%;
+}
+[name=positioned-badge] .positioned-badge--on-left .positioned-badge__badge {
+  left: 0;
+}
+[name=positioned-badge] .positioned-badge--on-center .positioned-badge__badge {
+  left: 50%;
+}
+[name=positioned-badge] .positioned-badge--on-right .positioned-badge__badge {
+  left: 100%;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: -8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: -16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: -24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: -32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: -40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: -48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: -56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: -64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: -72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: -80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: -88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: -96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: -104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: -112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: -120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: -128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-top: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-top: -8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-top: -16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-top: -24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-top: -32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-top: -40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-top: -48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-top: -56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-top: -64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-top: -72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-top: -80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-top: -88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-top: -96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-top: -104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-top: -112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-top: -120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-top: -128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: 8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: 16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: 24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: 32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: 40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: 48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: 56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: 64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: 72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: 80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: 88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: 96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: 104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: 112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: 120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: 128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(0, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: -8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: -16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: -24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: -32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: -40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: -48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: -56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: -64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: -72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: -80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: -88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: -96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: -104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: -112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: -120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: -128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: 8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: 16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: 24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: 32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: 40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: 48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: 56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: 64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: 72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: 80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: 88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: 96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: 104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: 112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: 120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: 128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(0, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: -8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: -16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: -24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: -32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: -40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: -48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: -56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: -64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: -72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: -80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: -88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: -96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: -104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: -112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: -120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: -128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-top: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-top: 8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-top: 16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-top: 24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-top: 32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-top: 40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-top: 48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-top: 56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-top: 64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-top: 72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-top: 80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-top: 88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-top: 96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-top: 104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-top: 112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-top: 120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-top: 128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-left: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-left: 8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-left: 16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-left: 24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-left: 32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-left: 40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-left: 48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-left: 56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-left: 64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-left: 72px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-left: 80px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-left: 88px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-left: 96px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-left: 104px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-left: 112px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-left: 120px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-left: 128px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(0, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-outside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, 0);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-centered.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(0%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-top: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-top: -4px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-top: -8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-top: -12px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-top: -16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-top: -20px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-top: -24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-top: -28px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-top: -32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-top: -36px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-top: -40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-top: -44px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-top: -48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-top: -52px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-top: -56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-top: -60px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-top: -64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-100%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-top.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, 0%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(0%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-middle.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, -50%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-left .positioned-badge__badge {
+  transform: translate(0%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-left.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(0%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--0 .positioned-badge__badge {
+  margin-top: 0px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--1 .positioned-badge__badge {
+  margin-top: 4px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--2 .positioned-badge__badge {
+  margin-top: 8px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--3 .positioned-badge__badge {
+  margin-top: 12px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--4 .positioned-badge__badge {
+  margin-top: 16px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--5 .positioned-badge__badge {
+  margin-top: 20px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--6 .positioned-badge__badge {
+  margin-top: 24px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--7 .positioned-badge__badge {
+  margin-top: 28px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--8 .positioned-badge__badge {
+  margin-top: 32px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--9 .positioned-badge__badge {
+  margin-top: 36px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--10 .positioned-badge__badge {
+  margin-top: 40px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--11 .positioned-badge__badge {
+  margin-top: 44px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--12 .positioned-badge__badge {
+  margin-top: 48px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--13 .positioned-badge__badge {
+  margin-top: 52px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--14 .positioned-badge__badge {
+  margin-top: 56px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--15 .positioned-badge__badge {
+  margin-top: 60px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--margin--16 .positioned-badge__badge {
+  margin-top: 64px;
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-center.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-50%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-right .positioned-badge__badge {
+  transform: translate(-100%, -100%);
+}
+[name=positioned-badge] .positioned-badge.positioned-badge--on-inside.positioned-badge--on-bottom.positioned-badge--on-right.positioned-badge--corner .positioned-badge__badge {
+  transform: translate(-100%, -100%);
+}
