@@ -30,6 +30,20 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  src: local("Font Awesome 5 Pro Regular"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.ttf") format("truetype");
+  /* OLD Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  src: local("Font Awesome 5 Pro Solid"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.ttf") format("truetype");
+  /* OLD Safari, Android, iOS */
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap; }
 /*
 * Colors
 */
