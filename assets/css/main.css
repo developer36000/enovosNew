@@ -406,6 +406,9 @@ footer {
   .close-dialog.disable {
     pointer-events: none;
     opacity: 0; }
+  .close-dialog .btn__content {
+    padding: 0 !important;
+    height: auto !important; }
 
 .modal-dialog {
   background: #FFF1E5; }
@@ -421,6 +424,25 @@ footer {
         pointer-events: auto; }
         .modal-dialog.fade-in .dialog__dialog.dialog__dialog--centered {
           transform: translateY(0); } }
+  .modal-dialog .dialog__dialog__content__header {
+    padding-bottom: 0; }
+    .modal-dialog .dialog__dialog__content__header [name=heading] {
+      margin-bottom: 12px !important;
+      line-height: 29px;
+      color: #2D2828 !important; }
+      .modal-dialog .dialog__dialog__content__header [name=heading] * {
+        line-height: 29px;
+        color: #2D2828 !important; }
+    .modal-dialog .dialog__dialog__content__header [name=paragraph] {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #2D2828; }
+      .modal-dialog .dialog__dialog__content__header [name=paragraph] * {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2D2828; }
   .modal-dialog .dialog__dialog__content {
     background: #FFF1E5 !important;
     width: 100% !important;
