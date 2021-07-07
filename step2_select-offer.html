@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Step1 Energy</title>
+	<title>Step2 Select Offer</title>
 	
 	<!--load Design System styles -->
 	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
@@ -20,43 +20,35 @@
 	<div class="container">
 		
 		<div class="steps-navigation">
-			<span class="step step-1 active" data-step="1"></span>
-			<span class="step step-2" data-step="2"></span>
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2 active" data-step="2"></span>
 			<span class="step step-3" data-step="3"></span>
 			<span class="step step-4" data-step="4"></span>
 			<span class="step step-5" data-step="5"></span>
 		</div>
 		
 		<div class="page-heading">
-			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
-			             content="What energy type do you need ?"></eds-heading>
-			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
-			               content="You can choose more than one option."></eds-paragraph>
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+			             content="Would you prefer a quick offer or more personalised offer based on your potential energy consumption?" />
 		</div>
 		
 		<div class="step-card-wrapper">
-			<div class="step-card">
-				<eds-image id="fruit-top-icon" alt="fruit-top-icon"
-				           src="assets/images/fruit-top-icon.svg"></eds-image>
+			<div class="step-card orange">
+				<eds-image id="lamp-top-icon" alt="lamp-top-icon"
+				           src="assets/images/lamp.svg"></eds-image>
 				
 				<div class="step-options">
-					<div class="step-option checkbox">
-						<div class="step-option__image">
-							<span class="custom-icon"><i class="fal fa-burn"></i></span>
-						</div>
-						<label for="step4-option1" class="step-option__title">
-							<input type="checkbox" id="step4-option1" name="step4-option" value="Gas" />
-							Gas
+					<div class="step-option radio centered orange">
+						<label for="step2-option1" class="step-option__title">
+							<input type="radio" id="step2-option1" name="step2-option" value="Quick" />
+							Quick
 						</label>
 						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 					</div>
-					<div class="step-option checkbox">
-						<div class="step-option__image">
-							<span class="custom-icon"><i class="fal fa-bolt"></i></span>
-						</div>
-						<label for="step4-option2" class="step-option__title">
-							<input type="checkbox" id="step4-option2" name="step4-option" value="Electricity" />
-							Electricity
+					<div class="step-option radio centered orange">
+						<label for="step2-option2" class="step-option__title">
+							<input type="radio" id="step2-option2" name="step2-option" value="Personalised" />
+							Personalised
 						</label>
 						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 					</div>
@@ -64,10 +56,11 @@
 			
 			</div>
 			<div class="step-card-nav">
-				<eds-link content="Previous" size="md" url="step1_why.html"
+				<eds-link content="Previous" size="md" url="step1_energy.html"
 				          class="color-new-grey step-card-previous"></eds-link>
-				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step2_select-offer.html"
-				          class="color-new-grey size-icon-23 step-card-next">
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="step2_offer-details.html"
+				          class="color-new-grey size-icon-23 step-card-next ">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>
 			</div>

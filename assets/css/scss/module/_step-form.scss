@@ -1,0 +1,65 @@
+.step-form-wrapper {
+	max-width: 395px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.step-form {
+	background: transparent;
+	border-radius: 8px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	padding: 0 0 12px;
+	min-height: initial;
+	margin: 0 auto;
+}
+
+.form-options {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.form-option {
+	margin-bottom: 8px;
+	width: 100%;
+	.text-field {
+		min-height: 61px;
+		height: auto;
+		border-radius: 12px;
+		&.text-field--focus {
+			.text-field__field {
+				border-color: $orange;
+				.label.label {
+					color: $color-new-grey !important;
+				}
+			}
+		}
+		.text-field__field {
+			height: inherit;
+			min-height: inherit;
+			border-radius: inherit;
+			border-color: $orange;
+			transition: all .3s ease-in-out;
+			.label.label {
+				white-space: pre-line;
+				font-weight: 600;
+				font-size: 14px;
+				line-height: 16px;
+				padding: 0;
+				transition: color .3s ease-in-out;
+			}
+		}
+		&.text-field--has-label-inside {
+			.text-field__field__component {
+				padding-top: 30px;
+			}
+		}
+	}
+}
