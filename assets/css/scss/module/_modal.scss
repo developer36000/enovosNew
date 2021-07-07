@@ -1,0 +1,55 @@
+// Modals
+.modal-button {
+	margin-bottom: 8px;
+	height: auto;
+	width: 100%;
+	.btn {
+		width: 100%;
+	}
+	.btn__content {
+		background: transparent !important;
+		border-radius: 12px !important;
+		height: 61px !important;
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 100%;
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 20px;
+		justify-content: space-between;
+		.slot-icon {
+			color: #5E5E5E;
+		}
+		.text {
+			color: #5E5E5E;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+
+.close-dialog {
+	margin-left: auto;
+	max-width: max-content;
+	pointer-events: auto;
+	opacity: 1;
+	transition: all .3s ease-in-out;
+	&.disable {
+		pointer-events: none;
+		opacity: 0;
+	}
+}
+
+.modal-dialog {
+	background: $pink;
+	.dialog__dialog__content {
+		background: $pink !important;
+		width: 100% !important;
+		max-width: 560px !important;
+	}
+	.step-card {
+		max-width: max-content;
+		margin: 0 auto;
+	}
+}

@@ -10,12 +10,18 @@
 		
 		 if (type === 'change' && target.parentNode.classList.contains('step-option__title')) {
 			 const stepOption = target.parentNode.parentNode.classList,
-				 allInput = target.closest('.step-options').querySelectorAll(`input[name="${target.name}"]`);
-			
+				 allInput = target.closest('.step-options').querySelectorAll(`input[name="${target.name}"]`),
+				 allInputChecked = Array.from(allInput).filter(el => el.checked),
+				 dialogModal = target.closest('.modal-dialog') !== null && target.closest('.modal-dialog'),
+				 dialogId = dialogModal && dialogModal.nextSibling.previousElementSibling.attributes[0].nodeValue,
+				 dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`);
+			 
 			 if ( stepOption.contains('step-option') && stepOption.contains('checkbox')  ) {
 				 target.checked ? stepOption.add('active') : stepOption.remove('active');
+				 allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
 			 } else if (stepOption.contains('step-option') && stepOption.contains('radio') ) {
 				 target.checked && stepOption.add('active');
+				 allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
 				 allInput.forEach(el => {
 					 el.id !== target.id && el.closest('.step-option').classList.remove('active')
 				 });
@@ -64,6 +70,60 @@
 				}
 			}
 		}
+		
+	});
+	//********
+	
+	
+	/**
+	 * Check if all inputs is empty in the step
+	 * module: step-form
+	 */
+	const formOptions = document.querySelectorAll(`.form-options .form-option`);
+	formOptions.forEach((el, i) => {
+		el.addEventListener("typingField", (e) => {
+			const target = e.target;
+			if ( target.classList.contains('hydrated') ) {
+				const isFormOption = target.nextSibling.parentNode.classList.contains('.form-options');
+				const wrapper = document.querySelector(`.step-card-action`);
+				if (  isFormOption !== null && formOptions.length-1 === i ) {
+					const nextBtn = document.querySelector('.step-card-next');
+					if ( e.detail.length > 0 ) {
+						nextBtn.classList.remove('disable');
+						wrapper.classList.add('show');
+					} else {
+						nextBtn.classList.add('disable');
+						wrapper.classList.remove('show');
+					}
+				}
+			}
+		});
+	});
+	//********
+	
+	/**
+	 * Add Action for Dialog
+	 * module: step-form
+	 */
+	const dialogBtns = document.querySelectorAll(".modal-button");
+	dialogBtns.forEach((el, i) => {
+		
+		el.addEventListener("clickButton", function() {
+			let id = el.attributes[0].nodeValue,
+				dialogEl = document.querySelector(`#dialog-${id}`),
+				dialogElClose = document.querySelector(`#dialog-${id} .close-dialog`);
+			
+			dialogEl.open();
+			
+			dialogEl.addEventListener("clickBackdropHandler", function(e) {
+				dialogEl.close();
+			}, false);
+			
+			dialogElClose.addEventListener("click", function(e) {
+				dialogEl.close();
+			}, false);
+			
+		});
 		
 	});
 	//********

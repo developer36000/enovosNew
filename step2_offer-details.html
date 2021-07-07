@@ -1,0 +1,256 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step2 Select Offer Details</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="../designsystem-master/src/components/layout/grid-layout/grid-layout.tsx"></script>
+
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2 active" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+			             content="Estimate your consumption" />
+		</div>
+		
+		<div class="step-form-wrapper">
+			<div class="step-form">
+				
+				<div class="form-options">
+					<eds-text-field class="form-option text-field"
+					                label-inside="Number of people living in your home"
+					                type="text" placeholder="4 people" info-styles="primary-500"></eds-text-field>
+					<eds-text-field class="form-option text-field" label-inside="Living area"
+					                type="text" placeholder="150 m2" info-styles="primary-500"></eds-text-field>
+				</div>
+			
+			</div>
+			<div id="refine-results" class="step-card-action transparent full-width">
+				<eds-heading type="h6" font-weight="bold" class="color-new-grey"
+				             content="Refine the results by completing this information (optional)"></eds-heading>
+				
+				<eds-button id="home_type" class="modal-button" icon-position="right" styles="primary" outlined content="Home type">
+					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				</eds-button>
+				<eds-button id="date_construction" class="modal-button" icon-position="right" styles="primary" outlined
+				            content="Date of construction">
+					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				</eds-button>
+				<eds-button id="heating_type" class="modal-button" icon-position="right" styles="primary" outlined content="Heating type">
+					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				</eds-button>
+				<eds-button id="particular_installations" class="modal-button" icon-position="right" styles="primary" outlined
+				            content="Particular installations">
+					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				</eds-button>
+			</div>
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="step1_who.html"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step1_why.html"
+				          class="color-new-grey size-icon-23 step-card-next disable">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+		<!-- Modals -->
+			
+			<eds-dialog id="dialog-home_type" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Home type"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the type of your home.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="step-card orange">
+						
+						<div class="step-options">
+							<div class="step-option radio bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-home"></i></span>
+								</div>
+								<label for="step2-option2" class="step-option__title">
+									<input type="radio" id="step2-option2" name="step4-option" value="Gas" />
+									New
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option radio bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-home"></i></span>
+								</div>
+								<label for="step2-option3" class="step-option__title">
+									<input type="radio" id="step2-option3" name="step4-option" value="Gas" />
+									Old home
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option radio bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-building"></i></span>
+								</div>
+								<label for="step2-option4" class="step-option__title">
+									<input type="radio" id="step2-option4" name="step4-option" value="Gas" />
+									Building
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="dialog-date_construction" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Date of construction"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the date of construction of your building.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<select name="yearpicker" id="yearpicker"></select>
+					
+					<script type="text/javascript"
+					        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+					</script>
+					<script type="text/javascript">
+						let startYear = 1800;
+						let endYear = new Date().getFullYear();
+						for (i = endYear; i > startYear; i--)
+						{
+							$('#yearpicker').append($('<option />').val(i).html(i));
+						}
+					</script>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="dialog-heating_type" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Heating type"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your heating system. You can select more than one.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="step-card orange">
+						
+						<div class="step-options">
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-burn"></i></span>
+								</div>
+								<label for="step2-option5" class="step-option__title">
+									<input type="checkbox" id="step2-option5" name="step4-option" value="Gas" />
+									Gas
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-solar-panel"></i></span>
+								</div>
+								<label for="step2-option6" class="step-option__title">
+									<input type="checkbox" id="step2-option6" name="step4-option" value="Gas" />
+									Solar
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-bolt"></i></span>
+								</div>
+								<label for="step2-option7" class="step-option__title">
+									<input type="checkbox" id="step2-option7" name="step4-option" value="Gas" />
+									Electricity
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="dialog-particular_installations" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Particular installations"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the particluar installation you have.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="step-card orange">
+						
+						<div class="step-options">
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-swimmer"></i></span>
+								</div>
+								<label for="step2-option8" class="step-option__title">
+									<input type="checkbox" id="step2-option8" name="step4-option" value="Gas" />
+									Pool
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-hot-tub"></i></span>
+								</div>
+								<label for="step2-option9" class="step-option__title">
+									<input type="checkbox" id="step2-option9" name="step4-option" value="Gas" />
+									Jaccuzi
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</eds-dialog>
+			
+			
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
