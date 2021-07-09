@@ -54,10 +54,64 @@
 	//********
 	
 	/**
+	 * If the user clicks on "Moving" or "Other",
+	 * client has a message saying that he has to login
+	 * module: step-card
+	 */
+	const step1_why_options = document.querySelectorAll('[name="step1_why-option"]');
+	step1_why_options.forEach((el, i) => {
+		el.addEventListener("change", (e) => {
+			const target = e.target;
+			if (target.parentNode.classList.contains('step-option__title')) {
+				const isLogin = target.closest('.step-options').classList.contains('show-login-msg');
+				if ( isLogin ) {
+					const wrapper = document.querySelector(`.step-card-action`),
+						nextBtn = document.querySelector('.step-card-next');
+					if ( target.value === 'Moving' || target.value === 'Other' ) {
+						wrapper.classList.add('show');
+						nextBtn.classList.add('disable');
+					} else {
+						wrapper.classList.remove('show');
+						nextBtn.classList.remove('disable');
+					}
+				}
+			}
+		});
+	});
+	//********
+	
+	/**
+	 * If the user clicks on "Professional",
+	 * client has a message saying that he has to login
+	 * module: step-card
+	 */
+	const step1_who_options = document.querySelectorAll('[name="step1_who-option"]');
+	step1_who_options.forEach((el, i) => {
+		el.addEventListener("change", (e) => {
+			const target = e.target;
+			if (target.parentNode.classList.contains('step-option__title')) {
+				const isLogin = target.closest('.step-options').classList.contains('show-login-msg');
+				if ( isLogin ) {
+					const wrapper = document.querySelector(`.step-card-action`),
+						nextBtn = document.querySelector('.step-card-next');
+					if ( target.value === 'Professional' ) {
+						wrapper.classList.add('show');
+						nextBtn.classList.add('disable');
+					} else {
+						wrapper.classList.remove('show');
+						nextBtn.classList.remove('disable');
+					}
+				}
+			}
+		});
+	});
+	//********
+	
+	/**
 	* Check if client number is empty in the step1_client
 	* module: step-card
 	*/
-	document.addEventListener("input", (e) => {
+	/*document.addEventListener("input", (e) => {
 		const {target, type } = e;
 		if ( type === 'input' && target.parentNode.classList.contains('hydrated') ) {
 			const clientNumber = target.closest('.client-number');
@@ -71,7 +125,7 @@
 			}
 		}
 		
-	});
+	});*/
 	//********
 	
 	

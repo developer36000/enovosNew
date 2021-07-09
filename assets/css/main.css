@@ -189,7 +189,10 @@ footer {
   margin-left: 10px;
   margin-bottom: 20px; }
   .step-option.centered {
-    justify-content: center; }
+    justify-content: center;
+    padding: 10px 15px; }
+    .step-option.centered .step-option__image {
+      margin-bottom: 8px; }
   .step-option.bottom {
     justify-content: flex-end; }
   .step-option__image {
