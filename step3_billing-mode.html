@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step3 Billing Mode</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3 active" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="Please select your preferred billing mode"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
+			               content="Do you prefer pay as you go (based on what you really consume) OR make fix and advanced payment and regulate end of the year ?"></eds-paragraph>
+		</div>
+	
+		<div class="step-card-wrapper">
+		    <div class="step-card red">
+			    <eds-image id="graph" alt="Graph"
+			               src="assets/images/graph.svg"></eds-image>
+			    
+			    <div class="step-options">
+				    <div class="step-option radio centered red">
+					    <label for="step3_billing_mode-option1" class="step-option__title">
+						    <input type="radio" id="step3_billing_mode-option1" name="step3_billing_mode-option" value="Pay as you go" />
+						    Pay as you go
+					    </label>
+					    <eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+				    </div>
+				    <div class="step-option radio centered red">
+					    <label for="step3_billing_mode-option2" class="step-option__title">
+						    <input type="radio" id="step3_billing_mode-option2" name="step3_billing_mode-option"
+						           value="Advanced payments" />
+						    Advanced payments
+					    </label>
+					    <eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+				    </div>
+			    </div>
+			   
+		    </div>
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="step3_date-of-supply.html"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="step3_billing-address.html"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

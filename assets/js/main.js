@@ -182,5 +182,26 @@
 	});
 	//********
 	
+	/**
+	 * Date Picker
+	 * module: step-form
+	 */
+	const datePicker = document.querySelector(".form-option.date-picker");
+	const textFieldDatePicker = document.querySelector("#field-date-picker");
+	datePicker.addEventListener("clickDatePicker", function(e) {
+		const nextBtn = document.querySelector('.step-card-next');
+		textFieldDatePicker.dataValue = e.detail.formatted;
+		textFieldDatePicker.clearButton = true;
+		textFieldDatePicker.iconLeading = undefined;
+		nextBtn.classList.remove('disable');
+	}, false);
+	textFieldDatePicker.addEventListener("cleaningField", function(e) {
+		const nextBtn = document.querySelector('.step-card-next');
+		textFieldDatePicker.clearButton = false;
+		textFieldDatePicker.iconLeading = "calendar-alt";
+		datePicker.reset();
+		nextBtn.classList.add('disable');
+	}, false);
+	//********
 	
 })();

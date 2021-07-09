@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step3 Date Of Supply</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="../designsystem-master/src/components/layout/grid-layout/grid-layout.tsx"></script>
+
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3 active" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+			             content="Please select your preferred date of supply" />
+		</div>
+		
+		<div class="step-form-wrapper date-select">
+			<div class="step-form">
+				
+				<div class="form-options">
+					
+					<eds-date-picker id="date-picker" class="form-option date-picker">
+						<div slot="selector">
+							<eds-text-field
+									id="field-date-picker"
+									debounce="300"
+									icon-leading="calendar-alt"
+									label="" type="text"
+									placeholder="Select one date">
+							</eds-text-field>
+						</div>
+					</eds-date-picker>
+					
+				</div>
+			
+			</div>
+			
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="step3_billing-mode.html"
+				          class="color-new-grey size-icon-23 step-card-next disable">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+			
+			
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

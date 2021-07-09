@@ -83,6 +83,10 @@ strong, b {
 .page-heading {
   margin-bottom: 24px;
   display: block; }
+  @media screen and (max-width: 560px) {
+    .page-heading .heading,
+    .page-heading .paragraph {
+      text-align: left !important; } }
 
 .size-icon-23 .icon {
   font-size: 23px; }
@@ -158,6 +162,10 @@ footer {
   .step-card .image {
     max-height: 120px;
     object-fit: contain; }
+  .step-card.mandarin {
+    background: #FDE5E5; }
+  .step-card.red {
+    background: #FDE5E5; }
 
 .step-options {
   display: flex;
@@ -190,7 +198,7 @@ footer {
   margin-bottom: 20px; }
   .step-option.centered {
     justify-content: center;
-    padding: 10px 15px; }
+    padding: 10px; }
     .step-option.centered .step-option__image {
       margin-bottom: 8px; }
   .step-option.bottom {
@@ -236,20 +244,20 @@ footer {
     pointer-events: auto;
     background: #FFFFFF;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: -10px;
+    right: -16px;
     left: initial;
     top: initial;
-    bottom: -10px;
+    bottom: -16px;
     color: #00856A;
     padding: 4px;
-    font-size: 18px;
+    font-size: 27px;
     transition: opacity .3s ease-in-out; }
     .step-option.checkbox .active-icon > .icon, .step-option.radio .active-icon > .icon {
       display: flex;
@@ -264,6 +272,18 @@ footer {
     color: #FFFFFF; }
   .step-option.orange.checkbox .active-icon, .step-option.orange.radio .active-icon {
     color: #F76700; }
+  .step-option.red.active {
+    background: #EB0000;
+    border-color: #EB0000;
+    color: #FFFFFF; }
+  .step-option.red.checkbox .active-icon, .step-option.red.radio .active-icon {
+    color: #EB0000; }
+  .step-option.mandarin.active {
+    background: #D52B1E;
+    border-color: #D52B1E;
+    color: #FFFFFF; }
+  .step-option.mandarin.checkbox .active-icon, .step-option.mandarin.radio .active-icon {
+    color: #D52B1E; }
 
 .step-card-action {
   opacity: 0;
@@ -328,6 +348,8 @@ footer {
   width: 100%;
   display: block;
   margin: 0 auto; }
+  .step-form-wrapper.date-select {
+    max-width: 327px; }
 
 .step-form {
   background: transparent;
@@ -374,6 +396,20 @@ footer {
         transition: color .3s ease-in-out; }
     .form-option .text-field.text-field--has-label-inside .text-field__field__component {
       padding-top: 30px; }
+  .form-option.date-picker {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    max-width: 100%; }
+    .form-option.date-picker .date-picker__selector__slot {
+      width: 100%; }
+    .form-option.date-picker .text-field {
+      min-height: 48px; }
+      .form-option.date-picker .text-field .text-field__field {
+        display: flex;
+        align-items: center; }
+    .form-option.date-picker .date-picker--has-selector {
+      position: relative !important;
+      top: 12px !important; }
 
 .modal-button {
   margin-bottom: 8px;

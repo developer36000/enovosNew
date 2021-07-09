@@ -33,6 +33,12 @@ strong, b {
 .page-heading {
 	margin-bottom: 24px;
 	display: block;
+	@media screen and (max-width: 560px) {
+		.heading,
+		.paragraph {
+			text-align: left !important;
+		}
+	}
 }
 
 .size-icon-23 {
