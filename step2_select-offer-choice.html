@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step2 Select Offer Choice</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2 active" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading offer">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+			             content="Select your electricity offer" style="margin-bottom: 50px;"></eds-heading>
+			<eds-heading type="h5" font-weight="thin" styles="center" class="color-new-grey"
+			             content="3 offers" style="margin-bottom: 8px;"></eds-heading>
+			<eds-paragraph styles="center" font-weight="thin" class="color-new-grey custom-paragraph"
+			               content="Select an offer to see the details.
+Choose your prefered one."></eds-paragraph>
+		</div>
+		
+		
+		<div class="step-offer-wrapper">
+			<div class="step-offer orange">
+				
+				<div class="offer-options">
+					<div class="offer-option checkbox orange">
+						<label for="step2_select_offer-choice1" class="offer-option__title">
+							<input type="checkbox" id="step2_select_offer-choice1" name="step2_select_offer-choice" value="naturstroum_dialog" />
+							<span class="offer-option__sub-title">Naturstroum</span>
+							<span class="offer-option__description">100% green electricity with flexible price.</span>
+							<span class="offer-option__action">
+								<span class="price">68,79 € / month</span>
+								<i class="fal fa-long-arrow-right"></i>
+							</span>
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+					<div class="offer-option checkbox orange">
+						<label for="step2_select_offer-choice2" class="offer-option__title">
+							<input type="checkbox" id="step2_select_offer-choice2" name="step2_select_offer-choice" value="nova_naturstroum_doalog" />
+							<span class="offer-option__sub-title">Nova naturstroum</span>
+							<span class="offer-option__description">100% green electricity from Luxembourg.</span>
+							<span class="offer-option__action">
+								<span class="price">70,05 € / month</span>
+								<i class="fal fa-long-arrow-right"></i>
+							</span>
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+					<div class="offer-option checkbox orange">
+						<label for="step2_select_offer-choice3" class="offer-option__title">
+							<input type="checkbox" id="step2_select_offer-choice3" name="step2_select_offer-choice" value="fix_naturstroum_dialog" />
+							<span class="offer-option__sub-title">FIX naturstroum</span>
+							<span class="offer-option__description">100% green electricity with stable price.</span>
+							<span class="offer-option__action">
+								<span class="price">64,58 € / month</span>
+								<i class="fal fa-long-arrow-right"></i>
+							</span>
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+				</div>
+				
+				<input type="hidden" id="selected_offer" name="selected_offer" value="" />
+			</div>
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="step2_offer-details.html"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="step3_date-of-supply.html" class="color-new-grey size-icon-23 step-card-next disable">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+		<!-- Modals -->
+			
+			<eds-dialog id="naturstroum_dialog" size="md" class="offer-dialog">
+				<div slot="dialog-header">
+					<eds-image id="lamp-modal-icon" alt="lamp-modal-icon"
+					           src="assets/images/lamp.svg"></eds-image>
+					<eds-button class="close-dialog" content="Close" styles="right"><i class="fal fa-times"></i></eds-button>
+				</div>
+				<div slot="dialog-body">
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Naturstroum"></eds-heading>
+					<div class="offer-content">
+						<ul>
+							<li>Regional green electricity.</li>
+							<li>Support renewable energy in Luxembourg.</li>
+							<li>100% green</li>
+							<li>Audited by an independent institute.</li>
+							<li>More than 50% produced in regional power plants.</li>
+							<li>From solar, wind, hydro and biomass.</li>
+						</ul>
+						<div class="offer-price">
+							<span class="price">68,79 € / month</span>
+							<span class="price-description">Meaning 825,48 € /year</span>
+						</div>
+						<eds-button content="Select this offer" styles="primary" class="offer-button" ></eds-button>
+					</div>
+				
+					<footer class="offer-footer">
+						<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+					</footer>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="nova_naturstroum_doalog" size="md" class="offer-dialog">
+				<div slot="dialog-header">
+					<eds-image id="lamp-modal-icon" alt="lamp-modal-icon"
+					           src="assets/images/lamp.svg"></eds-image>
+					<eds-button class="close-dialog" content="Close" styles="right"><i class="fal fa-times"></i></eds-button>
+				</div>
+				<div slot="dialog-body">
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="NOVA naturstroum"></eds-heading>
+					<div class="offer-content">
+						<ul>
+							<li>Regional green electricity.</li>
+							<li>Support renewable energy in Luxembourg.</li>
+							<li>100% green</li>
+							<li>Audited by an independent institute.</li>
+							<li>More than 50% produced in regional power plants.</li>
+							<li>From solar, wind, hydro and biomass.</li>
+						</ul>
+						<div class="offer-price">
+							<span class="price">70,05 € / month</span>
+							<span class="price-description">Meaning 840,60 € /year</span>
+						</div>
+						<eds-button content="Select this offer" styles="primary" class="offer-button" ></eds-button>
+					</div>
+					
+					<footer class="offer-footer">
+						<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+					</footer>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="fix_naturstroum_dialog" size="md" class="offer-dialog">
+				<div slot="dialog-header">
+					<eds-image id="lamp-modal-icon" alt="lamp-modal-icon"
+					           src="assets/images/lamp.svg"></eds-image>
+					<eds-button class="close-dialog" content="Close" styles="right"><i class="fal fa-times"></i></eds-button>
+				</div>
+				<div slot="dialog-body">
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="FIX naturstroum"></eds-heading>
+					<div class="offer-content">
+						<ul>
+							<li>Regional green electricity.</li>
+							<li>Support renewable energy in Luxembourg.</li>
+							<li>100% green</li>
+							<li>Audited by an independent institute.</li>
+							<li>More than 50% produced in regional power plants.</li>
+							<li>From solar, wind, hydro and biomass.</li>
+						</ul>
+						<div class="offer-price">
+							<span class="price">64,58 € / month</span>
+							<span class="price-description">Meaning 774,96 € /year</span>
+						</div>
+						<eds-button content="Select this offer" styles="primary" class="offer-button" ></eds-button>
+					</div>
+					
+					<footer class="offer-footer">
+						<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+					</footer>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

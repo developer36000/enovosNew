@@ -188,20 +188,111 @@
 	 */
 	const datePicker = document.querySelector(".form-option.date-picker");
 	const textFieldDatePicker = document.querySelector("#field-date-picker");
-	datePicker.addEventListener("clickDatePicker", function(e) {
+	datePicker && datePicker.addEventListener("clickDatePicker", function(e) {
 		const nextBtn = document.querySelector('.step-card-next');
 		textFieldDatePicker.dataValue = e.detail.formatted;
 		textFieldDatePicker.clearButton = true;
 		textFieldDatePicker.iconLeading = undefined;
 		nextBtn.classList.remove('disable');
 	}, false);
-	textFieldDatePicker.addEventListener("cleaningField", function(e) {
+	textFieldDatePicker && textFieldDatePicker.addEventListener("cleaningField", function(e) {
 		const nextBtn = document.querySelector('.step-card-next');
 		textFieldDatePicker.clearButton = false;
 		textFieldDatePicker.iconLeading = "calendar-alt";
 		datePicker.reset();
 		nextBtn.classList.add('disable');
 	}, false);
+	
 	//********
+	
+	
+	/**
+	 * Add Action for Offer Dialog
+	 * module: step-form
+	 */
+	const offerCheckbox = document.querySelectorAll(".offer-option input");
+	offerCheckbox && offerCheckbox.forEach((el, i) => {
+		el.addEventListener("change", function(e) {
+			const { target } = e;
+			
+			const offerOption = target.closest('.offer-option').classList,
+				allInput = target.closest('.offer-options').querySelectorAll(`input[name="${target.name}"]`),
+				allInputChecked = Array.from(allInput).filter(el => el.checked),
+				isDialogModal = document.querySelector('.offer-dialog') !== null,
+				dialogId = isDialogModal && target.value,
+				dialogModal = dialogId && document.querySelector(`#${dialogId}`),
+				dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`),
+				dialogElSelect = dialogModal && document.querySelector(`#${dialogId} .offer-button`);
+			
+		/*	if ( offerOption.contains('offer-option') && offerOption.contains('checkbox')  ) {
+				target.checked ? offerOption.add('active') : offerOption.remove('active');
+				allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
+			} else if (offerOption.contains('offer-option') && offerOption.contains('radio') ) {
+				target.checked && offerOption.add('active');
+				allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
+				allInput.forEach(el => {
+					el.id !== target.id && el.closest('.offer-option').classList.remove('active')
+				});
+			}*/
+			
+			dialogModal.open();
+			dialogModal.addEventListener("clickBackdropHandler", function(e) {
+				dialogModal.close();
+			}, false);
+			
+			dialogElClose.addEventListener("click", function(e) {
+				dialogModal.close();
+			}, false);
+			
+			dialogElSelect.addEventListener("click", function(e) {
+				const target_btn = e.target,
+					btn = target_btn.closest('.offer-button'),
+					targetId = target_btn.closest('.offer-dialog').id;
+				
+				triggerEvent(el, 'change');
+				
+				if ( allInputChecked.length > 0 ) {
+					const allBtns = document.querySelectorAll(`.offer-dialog .offer-button`);
+					allInput.forEach(el => {
+						el.id !== target.id && el.closest('.offer-option').classList.remove('active');
+					});
+					allBtns.forEach(el => {
+						if ( el.closest('.offer-dialog').id !== targetId ) {
+							el.classList.remove('active');
+							//console.log(el.children[0].children[0].children[0].innerText);
+							el.children[0].children[0].children[0].innerText = 'Select this offer';
+						}
+					});
+				}
+				
+				if ( btn.classList.contains('active') ) {
+					btn.classList.remove('active');
+					target_btn.innerText = 'Select this offer';
+					offerOption.remove('active');
+					//target.checked = true;
+					dialogModal.close();
+				} else {
+					btn.classList.add('active');
+					target_btn.innerText = 'Unselect this offer';
+					offerOption.add('active');
+					//target.checked = false;
+					dialogModal.close();
+				}
+				
+				
+				
+				
+			}, false);
+		
+			
+		});
+		
+	});
+	//********
+	
+	function triggerEvent (element, eventName) {
+		let event = new Event(eventName);
+		element.dispatchEvent(event);
+	}
 	
 })();

@@ -115,3 +115,119 @@
 	}
 	
 }
+
+.offer-dialog {
+	background: #ffffff;
+
+	.close-dialog {
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: center;
+		height: auto;
+		min-height: initial;
+		* {
+			color: #2D2828;
+			font-weight: bold;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		i.fal {
+			margin-left: 12px;
+			font-size: 22px;
+			font-weight: 300;
+		}
+		.btn__content {
+			background: transparent !important;
+			border: none;
+		}
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+	}
+	#lamp-modal-icon {
+		position: relative;
+		top: -16px;
+		max-width: max-content;
+		left: 72px;
+	}
+	.dialog__dialog__content__header {
+		padding-bottom: 0;
+		> div {
+			display: flex;
+			align-items: flex-start;
+		}
+		img {
+			max-height: 120px;
+		}
+		[name=heading] {
+			margin-bottom: 12px !important;
+			line-height: 29px;
+			color: #2D2828 !important;
+			* {
+				line-height: 29px;
+				color: #2D2828 !important;
+			}
+		}
+		[name=paragraph] {
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+			color: #2D2828;
+			* {
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 20px;
+				color: #2D2828;
+			}
+		}
+	}
+	.dialog__dialog__content {
+		background: #fff !important;
+		width: 100% !important;
+		max-width: 560px !important;
+		border-radius: 30px !important;
+		@media screen and (max-width: 560px) {
+			margin: 0 !important;
+			max-height: 100vh !important;
+			height: 100% !important;
+			border-radius: 0 !important;
+		}
+	}
+	.dialog__dialog__content__body {
+		padding: 0 24px 24px !important;
+		[name=heading] .heading {
+			margin-bottom: 24px;
+			@media screen and (max-width: 560px) {
+				text-align: left !important;
+			}
+		}
+		ul {
+			list-style: disc;
+			padding-left: 20px;
+			> li {
+				color: #2D2828;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+	.offer-content {
+		display: block;
+		padding: 0 24px;
+		@media screen and (max-width: 560px) {
+			padding: 0 0 0 20px;
+		}
+	}
+	.offer-button {
+		margin-top: 24px;
+	}
+	.offer-footer {
+		display: none;
+		@media screen and (max-width: 560px) {
+			display: flex;
+		}
+	}
+}
