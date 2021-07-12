@@ -257,9 +257,9 @@
 						el.id !== target.id && el.closest('.offer-option').classList.remove('active');
 					});
 					allBtns.forEach(el => {
-						if ( el.closest('.offer-dialog').id !== targetId ) {
+						if ( el.closest('.offer-dialog').id !== targetId ) {    
 							el.classList.remove('active');
-							//console.log(el.children[0].children[0].children[0].innerText);
+							console.log(el.children[0].children[0].children[0]);
 							el.children[0].children[0].children[0].innerText = 'Select this offer';
 						}
 					});
