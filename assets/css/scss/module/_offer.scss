@@ -109,6 +109,20 @@
 			font-size: 25px;
 		}
 	}
+	&__popular {
+		.badge.badge {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			color: $orange;
+			background: #FFFFFF;
+			border: 1px solid $orange;
+			margin-bottom: 24px;
+			padding: 11px 12px;
+			height: auto;
+			min-height: 42px;
+		}
+	}
 	.active-icon {
 		pointer-events: none;
 		display: none;

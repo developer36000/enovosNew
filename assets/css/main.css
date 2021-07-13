@@ -693,6 +693,17 @@ footer {
       line-height: 24px; }
     .offer-option__action > i {
       font-size: 25px; }
+  .offer-option__popular .badge.badge {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F76700;
+    background: #FFFFFF;
+    border: 1px solid #F76700;
+    margin-bottom: 24px;
+    padding: 11px 12px;
+    height: auto;
+    min-height: 42px; }
   .offer-option .active-icon {
     pointer-events: none;
     display: none; }
