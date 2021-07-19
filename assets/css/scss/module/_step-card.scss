@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: stretch;
 	margin: 0 auto;
+	position: relative;
 }
 .step-card {
 	background: $light-sky;
@@ -213,7 +214,19 @@
 		opacity: 1;
 		pointer-events: auto;
 		display: block;
-		
+	}
+	&.modal {
+		background: #ffffff;
+		border-radius: 0;
+		min-height: 100vh;
+		position: absolute;
+		z-index: 15;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0;
+		width: 100%;
+		max-width: 100%;
 	}
 	&.transparent {
 		background: transparent;
@@ -259,6 +272,8 @@
 	margin-top: 32px;
 }
 .step-card-previous,
+.step-card-action-back,
+.step-card-action-continue,
 .step-card-next {
 	 &.disable {
 		 pointer-events: none;

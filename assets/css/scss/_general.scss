@@ -28,6 +28,30 @@ strong, b {
 	@media screen and (max-width: 560px) {
 		max-width: 100%;
 	}
+	&.login-page {
+		.step-card-wrapper {
+		 	max-width: 326px;
+		}
+		.page-heading {
+			max-width: 326px;
+			margin: 0 auto;
+			margin-bottom: 24px;
+			min-height: 50vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.heading {
+				text-align: center;
+				@media screen and (max-width: 560px) {
+					text-align: center;
+				}
+				span {
+					color: $success;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
 }
 
 .page-heading {

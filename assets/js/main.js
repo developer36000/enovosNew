@@ -39,14 +39,21 @@
 	document.addEventListener("change", (e) => {
 		const {target, type } = e;
 		if (type === 'change' && target.parentNode.classList.contains('step-option__title')) {
-			const isClient = target.closest('.step-options').classList.contains('is-client');
-			if ( isClient ) {
-				const wrapper = document.querySelector(`.step-card-action`);
+			const isLogin = target.closest('.step-options').classList.contains('show-login-msg');
+			if ( isLogin ) {
+				const wrapper = document.querySelector(`.step-card-action`),
+					nextBtn = document.querySelector('.step-card-next'),
+					def_href = nextBtn.url;
 				if ( target.value === 'yes' ) {
-					wrapper.classList.add('show');
+					wrapper && wrapper.classList.add('show');
+					nextBtn.children[0].href = 'step_login.html';
+					nextBtn.classList.remove('disable');
 				} else if (  target.value === 'no' ) {
-					wrapper.classList.remove('show');
+					wrapper && wrapper.classList.remove('show');
+					nextBtn.children[0].href = def_href;
+					nextBtn.classList.remove('disable');
 				}
+				
 			}
 		}
 		
@@ -66,12 +73,15 @@
 				const isLogin = target.closest('.step-options').classList.contains('show-login-msg');
 				if ( isLogin ) {
 					const wrapper = document.querySelector(`.step-card-action`),
-						nextBtn = document.querySelector('.step-card-next');
+						nextBtn = document.querySelector('.step-card-next'),
+						def_href = nextBtn.url;
 					if ( target.value === 'Moving' || target.value === 'Other' ) {
-						wrapper.classList.add('show');
-						nextBtn.classList.add('disable');
+						wrapper && wrapper.classList.add('show');
+						nextBtn.children[0].href = 'step_login.html';
+						nextBtn.classList.remove('disable');
 					} else {
-						wrapper.classList.remove('show');
+						wrapper && wrapper.classList.remove('show');
+						nextBtn.children[0].href = def_href;
 						nextBtn.classList.remove('disable');
 					}
 				}
@@ -93,12 +103,15 @@
 				const isLogin = target.closest('.step-options').classList.contains('show-login-msg');
 				if ( isLogin ) {
 					const wrapper = document.querySelector(`.step-card-action`),
-						nextBtn = document.querySelector('.step-card-next');
+						nextBtn = document.querySelector('.step-card-next'),
+						def_href = nextBtn.url;
 					if ( target.value === 'Professional' ) {
-						wrapper.classList.add('show');
-						nextBtn.classList.add('disable');
+						wrapper && wrapper.classList.add('show');
+						nextBtn.children[0].href = 'step_login.html';
+						nextBtn.classList.remove('disable');
 					} else {
-						wrapper.classList.remove('show');
+						wrapper && wrapper.classList.remove('show');
+						nextBtn.children[0].href = def_href;
 						nextBtn.classList.remove('disable');
 					}
 				}
@@ -205,6 +218,29 @@
 	
 	//********
 	
+	/**
+	 * Date Picker
+	 * module: step-form
+	 */
+	const birthdayPicker = document.querySelector(".form-option.birthday-picker");
+	const textFieldBirthdayPicker = document.querySelector("#field-birthday-picker");
+	birthdayPicker && birthdayPicker.addEventListener("clickDatePicker", function(e) {
+		const nextBtn = document.querySelector('.step-card-next');
+		textFieldBirthdayPicker.dataValue = e.detail.formatted;
+		textFieldBirthdayPicker.clearButton = true;
+		textFieldBirthdayPicker.iconLeading = undefined;
+		nextBtn.classList.remove('disable');
+	}, false);
+	textFieldBirthdayPicker && textFieldBirthdayPicker.addEventListener("cleaningField", function(e) {
+		const nextBtn = document.querySelector('.step-card-next');
+		textFieldBirthdayPicker.clearButton = false;
+		textFieldBirthdayPicker.iconLeading = "calendar-alt";
+		birthdayPicker.reset();
+		nextBtn.classList.add('disable');
+	}, false);
+	
+	//********
+	
 	
 	/**
 	 * Add Action for Offer Dialog
@@ -289,6 +325,23 @@
 		
 	});
 	//********
+	
+	
+	/**
+	 * Add Action for Confirm Offer
+	 * module: step-form
+	 */
+	const confirmOfferAction = document.querySelectorAll(".confirm-offer-action");
+	confirmOfferAction.forEach((el, i) => {
+		
+		el.addEventListener("clickItem", function() {
+			const url = el.attributes.url && el.attributes.url.nodeValue;
+			url && (window.location.href = url);
+		});
+		
+	});
+	//********
+	
 	
 	function triggerEvent (element, eventName) {
 		let event = new Event(eventName);

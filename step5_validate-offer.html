@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step5 Validate Offer</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5 active" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="Confirm the offer"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
+			               content="Please, check and confirm the information below. Click on the field to modify your choice."></eds-paragraph>
+		</div>
+	
+		<div class="step-form-wrapper">
+			
+		    <div class="step-form">
+			    
+			    <div class="form-options confirmation">
+				    <eds-quick-action url="step1_who.html" styles="primary" main-title="Residential or professional"
+				                      subtitle="Residential" class="confirm-offer-action" >
+					    <div slot="after-titles" style="font-size: 24px;">
+						    <eds-icon slot="icon" icon="pen"></eds-icon>
+					    </div>
+				    </eds-quick-action>
+				
+				    <eds-quick-action url="step2_select-offer-choice.html" styles="primary" main-title="Product choice"
+				                      subtitle="Naturstrom € 68,79 / month" class="confirm-offer-action" >
+					    <div slot="after-titles" style="font-size: 24px;">
+						    <eds-icon slot="icon" icon="pen"></eds-icon>
+					    </div>
+				    </eds-quick-action>
+				    
+				    <eds-quick-action url="step3_billing-mode.html" styles="primary" main-title="Billing mode"
+				                      subtitle="Advanced payments" class="confirm-offer-action" >
+					    <div slot="after-titles" style="font-size: 24px;">
+						    <eds-icon slot="icon" icon="pen"></eds-icon>
+					    </div>
+				    </eds-quick-action>
+				
+				    <eds-quick-action url="step3_date-of-supply.html" styles="primary" main-title="Date of supply"
+				                      subtitle="15 September 2021" class="confirm-offer-action" >
+					    <div slot="after-titles" style="font-size: 24px;">
+						    <eds-icon slot="icon" icon="pen"></eds-icon>
+					    </div>
+				    </eds-quick-action>
+				    
+				    <eds-quick-action url="step3_billing-address-invoice.html" styles="primary" main-title="Invoice address"
+				                      subtitle="79 Rue des Cerisiers 1433 Luxembourg" class="confirm-offer-action address" >
+					    <div slot="after-titles" style="font-size: 24px;">
+						    <eds-icon slot="icon" icon="pen"></eds-icon>
+					    </div>
+				    </eds-quick-action>
+				    
+				    
+			    </div>
+			   
+		    </div>
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Confirm" icon-position="right" size="md" font-weight="bold"
+				          url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+		<!-- Modals -->
+			<eds-dialog id="dialog-civility" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Civility"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your title.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					Mr M.
+				</div>
+			</eds-dialog>
+		
+			
+		</div>
+		
+		
+	</div>
+	
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

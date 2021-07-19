@@ -79,6 +79,24 @@ strong, b {
   @media screen and (max-width: 560px) {
     .container {
       max-width: 100%; } }
+  .container.login-page .step-card-wrapper {
+    max-width: 326px; }
+  .container.login-page .page-heading {
+    max-width: 326px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .container.login-page .page-heading .heading {
+      text-align: center; }
+      @media screen and (max-width: 560px) {
+        .container.login-page .page-heading .heading {
+          text-align: center; } }
+      .container.login-page .page-heading .heading span {
+        color: #00856A;
+        margin-right: 5px; }
 
 .page-heading {
   margin-bottom: 24px;
@@ -145,7 +163,8 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 
 .step-card {
   background: #E5F2F0;
@@ -301,6 +320,18 @@ footer {
     opacity: 1;
     pointer-events: auto;
     display: block; }
+  .step-card-action.modal {
+    background: #ffffff;
+    border-radius: 0;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%; }
   .step-card-action.transparent {
     background: transparent; }
   .step-card-action.full-width {
@@ -335,6 +366,8 @@ footer {
   margin-top: 32px; }
 
 .step-card-previous.disable,
+.step-card-action-back.disable,
+.step-card-action-continue.disable,
 .step-card-next.disable {
   pointer-events: none;
   opacity: .3; }
@@ -370,6 +403,11 @@ footer {
   justify-content: flex-start;
   width: 100%; }
 
+[name=text-field] .text-field .text-field__info {
+  top: 0 !important; }
+  [name=text-field] .text-field .text-field__info [class^=icon-], [name=text-field] .text-field .text-field__info [class*=" icon-"] {
+    color: #5E5E5E !important; }
+
 .form-option {
   margin-bottom: 8px;
   width: 100%; }
@@ -377,6 +415,8 @@ footer {
     min-height: 61px;
     height: auto;
     border-radius: 12px; }
+    .form-option .text-field [name=text-field] .text-field--has-label-inside .text-field__info, .form-option .text-field [name=text-field] .text-field--no-label .text-field__info {
+      top: 0 !important; }
     .form-option .text-field.text-field--focus .text-field__field {
       border-color: #F76700; }
       .form-option .text-field.text-field--focus .text-field__field .label.label {
@@ -410,6 +450,53 @@ footer {
     .form-option.date-picker .date-picker--has-selector {
       position: relative !important;
       top: 12px !important; }
+  .form-option.birthday-picker {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    max-width: 100%; }
+    .form-option.birthday-picker .date-picker__selector__slot {
+      width: 100%; }
+    .form-option.birthday-picker [name=input-textarea] .input-textarea.input-textarea {
+      color: #5E5E5E;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px; }
+    .form-option.birthday-picker .text-field {
+      min-height: 61px; }
+      .form-option.birthday-picker .text-field .text-field__field {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: calc(24px + 16px + 16px); }
+      .form-option.birthday-picker .text-field .text-field__icon--leading {
+        right: 16px;
+        left: initial; }
+
+.confirm-offer-action {
+  /*	&.address {
+  		[name=paragraph].body-2 {
+  			max-width: 120px;
+  		}
+  	}*/ }
+  .confirm-offer-action + .confirm-offer-action {
+    margin-top: 8px; }
+  .confirm-offer-action [name=card] .card.card {
+    background: #E5F2F0;
+    border-radius: 12px;
+    border-color: #E5F2F0; }
+    .confirm-offer-action [name=card] .card.card .card__content {
+      padding: 13px 12px; }
+  .confirm-offer-action .quick-action__text {
+    padding-left: 13px; }
+  .confirm-offer-action [name=paragraph] .paragraph.paragraph--primary-500 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2D2828 !important; }
+  .confirm-offer-action [name=paragraph].body-2 .paragraph.paragraph--primary-500 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px; }
 
 .modal-button {
   margin-bottom: 8px;
@@ -767,5 +854,13 @@ footer {
     font-size: 16px;
     line-height: 20px;
     color: #5E5E5E; }
+
+.menu-dropdown-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+#menu-dropdown {
+  width: 300px; }
 
 /*# sourceMappingURL=main.css.map */

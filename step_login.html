@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step Login</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container login-page">
+		
+		<div class="page-heading">
+			<h2 class="heading heading--center heading--weight-700"><span>Awesome.</span>To make the simulation,
+				please log in to your account and click to continue.</h2>
+		</div>
+		
+		<div class="step-card-wrapper login-page">
+			
+			<div class="step-card-nav">
+				<eds-link content="Back" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Continue" icon-position="right" size="md" font-weight="bold" url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

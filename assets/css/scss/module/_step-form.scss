@@ -27,15 +27,29 @@
 	align-items: stretch;
 	justify-content: flex-start;
 	width: 100%;
+	&.confirmation {
+		
+	}
+}
+
+[name=text-field] .text-field .text-field__info {
+	top: 0 !important;
+	[class^=icon-], [class*=" icon-"] {
+		color: #5E5E5E !important;
+	}
 }
 
 .form-option {
 	margin-bottom: 8px;
 	width: 100%;
+
 	.text-field {
 		min-height: 61px;
 		height: auto;
 		border-radius: 12px;
+		[name=text-field] .text-field--has-label-inside .text-field__info, [name=text-field] .text-field--no-label .text-field__info {
+			top: 0 !important;
+		}
 		&.text-field--focus {
 			.text-field__field {
 				border-color: $orange;
@@ -84,4 +98,66 @@
 			top: 12px !important;
 		}
 	}
+	&.birthday-picker {
+		margin: 0 auto;
+		margin-bottom: 8px;
+		max-width: 100%;
+		.date-picker__selector__slot {
+			width: 100%;
+		}
+		[name=input-textarea] .input-textarea.input-textarea {
+			color: #5E5E5E;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.text-field {
+			min-height: 61px;
+			.text-field__field {
+				display: flex;
+				align-items: center;
+				padding-left: 16px;
+				padding-right: calc(24px + 16px + 16px);
+			}
+			.text-field__icon--leading {
+				right: 16px;
+				left: initial;
+			}
+		}
+	}
+}
+
+.confirm-offer-action {
+	+ .confirm-offer-action {
+		margin-top: 8px;
+	}
+	[name=card] .card.card {
+		background: #E5F2F0;
+		border-radius: 12px;
+		border-color: #E5F2F0;
+		.card__content {
+			padding: 13px 12px;
+		}
+	}
+	.quick-action__text {
+		padding-left: 13px;
+	}
+	[name=paragraph] .paragraph.paragraph--primary-500 {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+		color: #2D2828 !important;
+	}
+	[name=paragraph].body-2 {
+		.paragraph.paragraph--primary-500 {
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+/*	&.address {
+		[name=paragraph].body-2 {
+			max-width: 120px;
+		}
+	}*/
 }

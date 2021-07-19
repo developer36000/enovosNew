@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step4 Profile</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4 active" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="Please fill in your personal information to create your profile"></eds-heading>
+		</div>
+	
+		<div class="step-form-wrapper">
+			
+		    <div class="step-form">
+			    
+			    <div class="form-options">
+				    <eds-text-field class="form-option text-field" label-inside="First & Last name"
+				                    type="text" placeholder="First & Last name" info-styles="primary-500"></eds-text-field>
+				    
+				    <eds-button id="civility" class="modal-button" icon-position="right" styles="primary" outlined
+				                content="Civility">
+					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				    </eds-button>
+				    
+				    <eds-text-field class="form-option text-field" label-inside="Email address"
+				                    type="text" placeholder="Email address" info-styles="primary-500"></eds-text-field>
+				    <eds-text-field class="form-option text-field" label-inside="Phone number"
+				                    type="text" placeholder="Phone number" info-styles="primary-500"></eds-text-field>
+				  <!--  <eds-text-field class="form-option text-field tooltip-relative"
+				                    label-inside="Electricity meter number"
+				                    type="text" placeholder="Electricity meter number" info-styles="primary-500"  info-tooltip-text="tooltip content" info-tooltip-icon="question-circle-light" info-tooltip-size="3" info-tooltip-pointer
+				    ></eds-text-field>-->
+				   <!-- <eds-text-field class="form-option text-field tooltip-relative"
+				                    label-inside="Birthday"
+				                    type="text" placeholder="Birthday" icon-trailing="calendar-alt"
+				    ></eds-text-field>-->
+				
+				    <eds-date-picker id="date-picker" class="form-option birthday-picker">
+					    <div slot="selector">
+						    <eds-text-field
+								    id="field-birthday-picker"
+								    debounce="300"
+								    icon-leading="calendar-alt"
+								    label="" type="text"
+								    placeholder="Birthday">
+						    </eds-text-field>
+					    </div>
+				    </eds-date-picker>
+				    
+				    <eds-button id="language" class="modal-button" icon-position="right" styles="primary" outlined
+				                content="Language">
+					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				    </eds-button>
+				    
+			    </div>
+			   
+		    </div>
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+		<!-- Modals -->
+			<eds-dialog id="dialog-civility" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Civility"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your title.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					Mr M.
+				</div>
+			</eds-dialog>
+			
+			<eds-dialog id="dialog-language" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Language"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your language.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					Language list
+				</div>
+			</eds-dialog>
+		
+			
+		</div>
+		
+		
+	</div>
+	
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
