@@ -1,6 +1,9 @@
 (function () {
 	"use_strict";
 	
+	
+	
+	
 	/**
 	* Steps options 'checkboxes' and 'radios'
 	* module: step-card
@@ -347,6 +350,7 @@
 		let event = new Event(eventName);
 		element.dispatchEvent(event);
 	}
+	
 	
 	
 })();
