@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>OnBoarding</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<header class="main-header">
+	<eds-link content="Back to Home" icon-position="left" url="#" class="back-to-home-btn">
+		<eds-icon slot="icon" icon="arrow-left"></eds-icon>
+	</eds-link>
+	
+	<eds-image id="logo-header" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</header>
+
+<main class="onboarding-page-main">
+	<div class="container onboarding-page">
+		
+		<div class="page-heading">
+			<h1 class="heading heading-h1 heading--center heading--weight-700">Welcome. Find out which offer best suits you.</h1>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
+			               content="">Calculate your tariff fast and easily.<br/> Subscribe to your energy online.
+			</eds-paragraph>
+		</div>
+		
+		<div class="onboarding-wrapper" style="background-image: url('assets/images/fond1Enovos.png')">
+			    <div class="postcode-wrapper">
+				    <eds-text-field class="postcode-field text-field" label="Enter your postcode"
+				                    type="text" info-styles="primary-500"></eds-text-field>
+				    <eds-button type="submit" class="start-btn disabled" content="Start" styles="primary"></eds-button>
+			    </div>
+		
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

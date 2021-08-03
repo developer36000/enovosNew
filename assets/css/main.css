@@ -133,6 +133,35 @@ footer {
 #logo-footer {
   width: 77px; }
 
+header.main-header {
+  padding-top: 70px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto; }
+
+#logo-header {
+  width: 77px; }
+
+.back-to-home-btn {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5E5E5E;
+  position: absolute;
+  left: 0; }
+  @media screen and (max-width: 640px) {
+    .back-to-home-btn {
+      left: 15px;
+      top: 15px; } }
+  .back-to-home-btn .slot-icon {
+    font-size: 25px;
+    color: #5E5E5E; }
+
 .steps-navigation {
   display: flex;
   align-items: center;
@@ -862,5 +891,125 @@ footer {
 
 #menu-dropdown {
   width: 300px; }
+
+@media screen and (max-width: 560px) {
+  .onboarding-page-main {
+    padding-top: 50px; } }
+
+.container.onboarding-page {
+  max-width: 610px;
+  padding-left: 0;
+  padding-right: 0; }
+  .container.onboarding-page .page-heading {
+    max-width: 545px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media screen and (max-width: 560px) {
+      .container.onboarding-page .page-heading {
+        justify-content: flex-start;
+        margin-bottom: 0; } }
+    .container.onboarding-page .page-heading .heading {
+      text-align: center;
+      color: #2D2828; }
+      @media screen and (max-width: 560px) {
+        .container.onboarding-page .page-heading .heading {
+          text-align: left; } }
+      .container.onboarding-page .page-heading .heading.heading-h1 {
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 24px; }
+    .container.onboarding-page .page-heading .custom-paragraph {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0; }
+      .container.onboarding-page .page-heading .custom-paragraph .paragraph {
+        color: inherit !important; }
+        @media screen and (max-width: 560px) {
+          .container.onboarding-page .page-heading .custom-paragraph .paragraph {
+            text-align: left; } }
+
+.onboarding-wrapper {
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  min-height: 462px;
+  padding-top: 42px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (max-width: 560px) {
+    .onboarding-wrapper {
+      padding-top: 84px;
+      margin-top: -54px;
+      background-size: cover;
+      background-position: 30% 50%; } }
+
+.postcode-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 267px;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (max-width: 560px) {
+    .postcode-wrapper {
+      margin-left: 0;
+      max-width: 200px; } }
+  .postcode-wrapper .postcode-field {
+    max-width: 178px; }
+    @media screen and (max-width: 560px) {
+      .postcode-wrapper .postcode-field {
+        max-width: 110px; } }
+    .postcode-wrapper .postcode-field .text-field.text-field--has-label {
+      margin-top: 5px; }
+    .postcode-wrapper .postcode-field .text-field .text-field__field {
+      background: #FFFFFF;
+      border: 1px solid #D7D7D7;
+      border-radius: 0; }
+      .postcode-wrapper .postcode-field .text-field .text-field__field__container {
+        position: relative; }
+        .postcode-wrapper .postcode-field .text-field .text-field__field__container:before {
+          content: 'L -';
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          color: #3B3232;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: initial;
+          pointer-events: none; }
+      .postcode-wrapper .postcode-field .text-field .text-field__field .input-textarea {
+        padding-left: 27px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3B3232; }
+    .postcode-wrapper .postcode-field .text-field__label {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5E5E5E; }
+      .postcode-wrapper .postcode-field .text-field__label .label {
+        color: inherit !important; }
+  .postcode-wrapper .start-btn .btn .btn__content {
+    border-radius: 0 24px 24px 0; }
+    .postcode-wrapper .start-btn .btn .btn__content .text {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px; }
+  .postcode-wrapper .start-btn.disabled .btn .btn__content {
+    background: #D7D7D7 !important; }
 
 /*# sourceMappingURL=main.css.map */

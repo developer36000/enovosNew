@@ -352,5 +352,24 @@
 	}
 	
 	
+	/**
+	 * Check if OnBoarding postcode is empty in the step
+	 * template: OnBoarding
+	 */
+	const postcodeOption = document.querySelector(`.postcode-wrapper .postcode-field`);
+	postcodeOption.addEventListener("typingField", (e) => {
+		const target = e.target;
+	
+		if ( target.classList.contains('hydrated') ) {
+			const submitBtn = document.querySelector('.start-btn');
+			if ( e.detail.length > 0 ) {
+				submitBtn.classList.remove('disabled');
+			} else {
+				submitBtn.classList.add('disabled');
+			}
+		}
+	});
+	//********
+	
 	
 })();
