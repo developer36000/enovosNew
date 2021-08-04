@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Step1 Client</title>
+	<title>Step1 Electricity Meter Number</title>
 	
 	<!--load Design System styles -->
 	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<main>
+<main class="electricity-meter-page">
 	<div class="container">
 		
 		<div class="steps-navigation">
@@ -28,39 +28,29 @@
 		</div>
 		
 		<div class="page-heading">
-			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-			             content="Are you already a customer ?" />
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="What does your gas meter looks like ?"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph">
+				Enter the number of your gas meter number below.
+			</eds-paragraph>
 		</div>
 		
-		<div class="step-card-wrapper">
-			<div class="step-card">
-				<eds-image id="fruit-top-icon" alt="fruit-top-icon"
-				           src="assets/images/fruit-top-icon.svg"></eds-image>
-				
-				<div class="step-options show-login-msg">
-					<div class="step-option radio centered">
-						<label for="step2-option1" class="step-option__title">
-							<input type="radio" id="step2-option1" name="step2-option" value="no" />
-							No
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
-					<div class="step-option radio centered">
-						<label for="step2-option2" class="step-option__title">
-							<input type="radio" id="step2-option2" name="step2-option" value="yes" />
-							Yes
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
+		<div class="step-form-wrapper">
+			<div class="step-form">
+				<div class="form-options">
+					<eds-text-field class="form-option text-field" label-inside="Gas meter number"
+					                type="text" placeholder="Ex. 000000000" info-styles="primary-500"></eds-text-field>
 				</div>
 			
 			</div>
-		
+			
+		<!-- Navigation -->
+			
 			<div class="step-card-nav">
-				<eds-link content="Previous" size="md" url="step1_who.html"
+				<eds-link content="Previous" size="md" url="#"
 				          class="color-new-grey step-card-previous"></eds-link>
-				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step1_why.html"
-				          class="color-new-grey size-icon-23 step-card-next disable">
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>
 			</div>

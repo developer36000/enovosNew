@@ -160,10 +160,10 @@
 					const nextBtn = document.querySelector('.step-card-next');
 					if ( e.detail.length > 0 ) {
 						nextBtn.classList.remove('disable');
-						wrapper.classList.add('show');
+						wrapper && wrapper.classList.add('show');
 					} else {
 						nextBtn.classList.add('disable');
-						wrapper.classList.remove('show');
+						wrapper && wrapper.classList.remove('show');
 					}
 				}
 			}
@@ -232,14 +232,14 @@
 		textFieldBirthdayPicker.dataValue = e.detail.formatted;
 		textFieldBirthdayPicker.clearButton = true;
 		textFieldBirthdayPicker.iconLeading = undefined;
-		nextBtn.classList.remove('disable');
+		nextBtn && nextBtn.classList.remove('disable');
 	}, false);
 	textFieldBirthdayPicker && textFieldBirthdayPicker.addEventListener("cleaningField", function(e) {
 		const nextBtn = document.querySelector('.step-card-next');
 		textFieldBirthdayPicker.clearButton = false;
 		textFieldBirthdayPicker.iconLeading = "calendar-alt";
 		birthdayPicker.reset();
-		nextBtn.classList.add('disable');
+		nextBtn && nextBtn.classList.add('disable');
 	}, false);
 	
 	//********
@@ -318,14 +318,8 @@
 					dialogModal.close();
 				}
 				
-				
-				
-				
 			}, false);
-		
-			
 		});
-		
 	});
 	//********
 	
@@ -334,17 +328,14 @@
 	 * Add Action for Confirm Offer
 	 * module: step-form
 	 */
-	const confirmOfferAction = document.querySelectorAll(".confirm-offer-action");
-	confirmOfferAction.forEach((el, i) => {
-		
+	const confirmOfferAction = document.querySelectorAll(".confirm-action:not(.confirm-action-modal)");
+	confirmOfferAction && confirmOfferAction.forEach((el, i) => {
 		el.addEventListener("clickItem", function() {
 			const url = el.attributes.url && el.attributes.url.nodeValue;
 			url && (window.location.href = url);
 		});
-		
 	});
 	//********
-	
 	
 	function triggerEvent (element, eventName) {
 		let event = new Event(eventName);
@@ -357,19 +348,147 @@
 	 * template: OnBoarding
 	 */
 	const postcodeOption = document.querySelector(`.postcode-wrapper .postcode-field`);
-	postcodeOption.addEventListener("typingField", (e) => {
-		const target = e.target;
+	if (postcodeOption && postcodeOption.length > 0) {
+		postcodeOption.addEventListener("typingField", (e) => {
+			const target = e.target;
+			
+			if ( target.classList.contains('hydrated') ) {
+				const submitBtn = document.querySelector('.start-btn');
+				if ( e.detail.length > 0 ) {
+					submitBtn.classList.remove('disabled');
+				} else {
+					submitBtn.classList.add('disabled');
+				}
+			}
+		});
+	}
+	//********
 	
-		if ( target.classList.contains('hydrated') ) {
-			const submitBtn = document.querySelector('.start-btn');
-			if ( e.detail.length > 0 ) {
-				submitBtn.classList.remove('disabled');
-			} else {
-				submitBtn.classList.add('disabled');
+	/**
+	 * Check if meter is checked in the step1
+	 * template: electricity-meter
+	 */
+	document.addEventListener("change", (e) => {
+		const {target, type } = e;
+		if (type === 'change' && target.parentNode.classList.contains('step-option__title')) {
+			const isMeter = target.closest('.step-options').classList.contains('meter-options'),
+				allInput = target.closest('.step-options').querySelectorAll(`input[name="${target.name}"]`),
+				allInputChecked = Array.from(allInput).filter(el => el.checked);
+			if ( isMeter ) {
+				const nextBtn = document.querySelector('.step-card-next');
+				if ( allInputChecked.length > 0 ) {
+					nextBtn.classList.remove('disable');
+				} 
+				
 			}
 		}
+		
 	});
 	//********
 	
+	/**
+	 * Check GDPR consentement
+	 */
+	const consentement = document.querySelector(`[name="consentement-checkbox"]`);
+	consentement && consentement.addEventListener("change", (e) => {
+		const {target, type } = e,
+			checkboxWrap = target.closest('.checkbox'),
+			nextBtn = document.querySelector('.step-card-next');
+		if ( target.checked ) {
+			nextBtn.classList.remove('disable');
+			checkboxWrap.classList.add('active');
+		} else {
+			nextBtn.classList.add('disable');
+			checkboxWrap.classList.remove('active');
+		}
+		
+	});
+	//********
+	
+	/**
+	 * Custom Selects
+	 */
+	const customSelectCountry = document.querySelector(`.form-option.select-wrapper.country`);
+	const customSelectCivility = document.querySelector(`.form-option.select-wrapper.civility`);
+	const customSelectLanguage = document.querySelector(`.form-option.select-wrapper.language`);
+	customSelectCountry && initSelect(customSelectCountry);
+	customSelectCivility && initSelect(customSelectCivility);
+	customSelectLanguage && initSelect(customSelectLanguage);
+	
+	function initSelect(elem){
+		let selectHolder = elem.querySelector('.holder');
+		let selectOptions = elem.querySelectorAll('.dropdownOption li');
+		let dropHolder = elem.querySelector('.dropdown');
+		let selectValue = elem.querySelector('.select-wrapper-value');
+		let selectedOption = selectOptions[0];
+		  
+		selectedOption.classList.add('current');
+		
+		selectHolder.addEventListener('click', function () {
+			dropHolder.classList.toggle('active');
+		});
+		
+		selectOptions.forEach(function(currentElement) {
+			currentElement.addEventListener('click', function(){
+				selectedOption.classList.remove('current');
+				selectedOption = currentElement;
+				currentElement.classList.add('current');
+				selectHolder.innerText = currentElement.textContent;
+				dropHolder.classList.toggle('active');
+				selectValue.value = currentElement.innerText;
+			});
+		});
+	}
+	//********
+	
+	/**
+	 * Confirm client consent
+	 */
+	const confirmConsentAll = document.querySelectorAll(`[name="confirm-checkbox"]`);
+	confirmConsentAll && confirmConsentAll.forEach((el, i) => {
+		el.addEventListener("change", (e) => {
+			const {target, type } = e,
+				checkboxWrap = target.closest('.checkbox'),
+				nextBtn = document.querySelector('.step-card-next'),
+				allInput = target.closest('.step-card-wrapper').querySelectorAll(`input[name="${target.name}"]`),
+			allInputChecked = Array.from(allInput).filter(el => el.checked);
+			
+			target.checked ? checkboxWrap.classList.add('active') : checkboxWrap.classList.remove('active');
+			
+			if ( allInputChecked.length === allInput.length ) {
+				nextBtn.classList.remove('disable');
+			} else if (allInputChecked.length !== allInput.length) {
+				nextBtn.classList.add('disable');
+			}
+			
+		});
+	});
+	//********
+	
+	/**
+	 * Add Action for Confirm Profile with Modals
+	 * 
+	 */
+	const confirmModalAction = document.querySelectorAll(".confirm-action-modal");
+	confirmModalAction && confirmModalAction.forEach((el, i) => {
+		el.addEventListener("clickItem", function() {
+			const modal = el.attributes.modal && el.attributes.modal.nodeValue;
+			console.log(modal);
+			const dialogModal = document.querySelector(`#${modal}`),
+				dialogElClose = dialogModal && document.querySelector(`#${modal} .close-dialog`);
+			
+			dialogModal.open();
+			dialogModal.addEventListener("clickBackdropHandler", function(e) {
+				dialogModal.close();
+			}, false);
+			
+			dialogElClose.addEventListener("click", function(e) {
+				dialogModal.close();
+			}, false);
+			
+			
+		});
+	});
+	//********
 	
 })();

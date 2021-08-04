@@ -17,6 +17,7 @@
 		font-size: 16px;
 		line-height: 20px;
 		justify-content: space-between;
+		border-color: #D7D7D7 !important;
 		.slot-icon {
 			color: #5E5E5E;
 		}
@@ -26,6 +27,17 @@
 			font-size: 16px;
 			line-height: 20px;
 		}
+	}
+	.modal-input-text {
+		visibility: hidden;
+		height: 0;
+		width: 0;
+		min-width: 0;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+		opacity: 0;
+		pointer-events: none;
 	}
 }
 
@@ -39,13 +51,20 @@
 		pointer-events: none;
 		opacity: 0;
 	}
+	.btn:not([disabled]):hover {
+		background: transparent !important;
+		.btn__content {
+			background: transparent !important;
+		}
+	}
 	.btn__content {
 		padding: 0 !important;
 		height: auto !important;
 	}
 }
 
-.modal-dialog {
+.modal-dialog,
+.modal-validate {
 	background: $pink;
 	@media screen and (max-width: 560px) {
 		display: block !important;
@@ -113,7 +132,65 @@
 		max-width: max-content;
 		margin: 0 auto;
 	}
+	 .dialog__dialog__content__body {
+		 .form-options {
+			 max-width: 395px;
+			 width: 100%;
+			 margin: 0 auto;
+			 margin-bottom: 50px;
+			 @media screen and (max-width: 560px) {
+				 margin-bottom: 30px;
+			 }
+			 
+		 }
+		 .form-option {
+			 .text-field {
+				 .text-field__field {
+					 border-color: #D7D7D7 !important;
+					 .label.label {
+						 color: $success !important;
+					 }
+				 }
+				 &.text-field--focus {
+					 .text-field__field {
+						 border-color: $color-new-grey !important;
+						 .label.label {
+							 color: $color-new-grey !important;
+						 }
+					 }
+				 }
+			 }
+			 // date
+			 &.birthday-picker {
+				 width: 100%;
+				 > div {
+					 width: 100%;
+				 }
+				 .date-picker--has-selector {
+					 top: 100%;
+				 }
+				 [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
+				 [name=button] .btn--text.btn--primary.btn--text .btn__content {
+					 color: $success;
+				 }
+			 }
+		 }
+	 }
 	
+}
+
+.modal-validate {
+	background: $light-sky;
+	.close-dialog {
+		color: $success;
+		
+		.btn__content {
+			color: inherit !important;
+		}
+	}
+	.dialog__dialog__content {
+		background: $light-sky !important;
+	}
 }
 
 .offer-dialog {

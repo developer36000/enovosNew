@@ -101,16 +101,32 @@ strong, b {
 .page-heading {
   margin-bottom: 24px;
   display: block; }
+  .page-heading strong {
+    font-weight: 700; }
+  .page-heading span.orange {
+    color: #F76700 !important;
+    font-weight: 700; }
   @media screen and (max-width: 560px) {
     .page-heading .heading,
     .page-heading .paragraph {
       text-align: left !important; } }
+  .page-heading.offer .top {
+    margin-bottom: 50px; }
+  @media screen and (max-width: 560px) {
+    .page-heading.offer .top .heading,
+    .page-heading.offer .top .paragraph {
+      text-align: center !important; } }
+  .page-heading.offer .heading-h2 {
+    margin-bottom: 15px; }
 
 .size-icon-23 .icon {
   font-size: 23px; }
 
 .mb-15 {
   margin-bottom: 15px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
 
 .custom-paragraph {
   font-weight: 300;
@@ -122,6 +138,83 @@ strong, b {
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit; }
+
+.custom-paragraph-400 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D2828; }
+  .custom-paragraph-400 *, .custom-paragraph-400 .paragraph {
+    color: inherit !important;
+    font-weight: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important; }
+
+.sub-heading span {
+  color: #F76700 !important;
+  font-weight: 700; }
+.sub-heading strong {
+  font-weight: 700; }
+
+.consentement-checkbox {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start; }
+  .consentement-checkbox .checkbox {
+    position: relative;
+    min-width: 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #D7D7D7;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .consentement-checkbox .checkbox input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 15;
+      margin: 0;
+      cursor: pointer; }
+    .consentement-checkbox .checkbox .active-icon {
+      opacity: 0;
+      background: #F76700;
+      box-shadow: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      color: #fff;
+      font-size: 27px;
+      transition: opacity .3s ease-in-out;
+      pointer-events: none; }
+      .consentement-checkbox .checkbox .active-icon > .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: inherit !important; }
+    .consentement-checkbox .checkbox.active .active-icon {
+      opacity: 1; }
+  .consentement-checkbox .text {
+    color: #2D2828;
+    font-size: 16px;
+    line-height: 20px; }
 
 footer {
   padding-top: 70px;
@@ -161,6 +254,36 @@ header.main-header {
   .back-to-home-btn .slot-icon {
     font-size: 25px;
     color: #5E5E5E; }
+
+.contact-banner {
+  background: #EBF1F6;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-top: 32px; }
+  .contact-banner .heading {
+    color: #2D2828;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px; }
+  .contact-banner .custom-paragraph {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D2828; }
+  .contact-banner .bottom-banner {
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 230px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 24px;
+    margin-top: 35px; }
+    @media screen and (max-width: 560px) {
+      .contact-banner .bottom-banner {
+        margin-top: 30px; } }
 
 .steps-navigation {
   display: flex;
@@ -446,8 +569,10 @@ header.main-header {
     border-radius: 12px; }
     .form-option .text-field [name=text-field] .text-field--has-label-inside .text-field__info, .form-option .text-field [name=text-field] .text-field--no-label .text-field__info {
       top: 0 !important; }
+    .form-option .text-field .text-field__field {
+      border-color: #D7D7D7 !important; }
     .form-option .text-field.text-field--focus .text-field__field {
-      border-color: #F76700; }
+      border-color: #F76700 !important; }
       .form-option .text-field.text-field--focus .text-field__field .label.label {
         color: #2D2828 !important; }
     .form-option .text-field .text-field__field {
@@ -475,7 +600,10 @@ header.main-header {
       min-height: 48px; }
       .form-option.date-picker .text-field .text-field__field {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        border-color: #D7D7D7; }
+      .form-option.date-picker .text-field--focus .text-field__field {
+        border-color: #F76700; }
     .form-option.date-picker .date-picker--has-selector {
       position: relative !important;
       top: 12px !important; }
@@ -500,32 +628,133 @@ header.main-header {
       .form-option.birthday-picker .text-field .text-field__icon--leading {
         right: 16px;
         left: initial; }
+  .form-option.select-wrapper {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 8px; }
+    .form-option.select-wrapper .select-country-hidden {
+      visibility: hidden;
+      height: 0;
+      width: 0;
+      min-width: 0;
+      min-height: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      pointer-events: none; }
+    .form-option.select-wrapper .dropholder {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #D7D7D7;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #5E5E5E;
+      position: relative;
+      box-sizing: border-box; }
+    .form-option.select-wrapper .holder {
+      line-height: 60px;
+      font-size: 16px;
+      margin: 0;
+      padding-left: 20px;
+      padding-right: 40px; }
+    .form-option.select-wrapper .dropdown,
+    .form-option.select-wrapper .dropholder {
+      background: #fff; }
+    .form-option.select-wrapper .dropdown {
+      width: 100%;
+      border-radius: 10px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #5E5E5E;
+      cursor: pointer;
+      height: 60px;
+      position: relative;
+      box-sizing: border-box;
+      z-index: 20; }
+      .form-option.select-wrapper .dropdown .dropdown-icon {
+        font-size: 24px;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 16px;
+        top: 18px;
+        display: block;
+        color: #5E5E5E;
+        pointer-events: none;
+        transform: rotate(0); }
+      .form-option.select-wrapper .dropdown.active .dropdown-icon {
+        transform: rotate(180deg); }
+      .form-option.select-wrapper .dropdown.active + .dropdownOption {
+        display: block; }
+    .form-option.select-wrapper .dropdownOption {
+      padding: 0;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      right: 0;
+      margin: 0;
+      cursor: pointer;
+      display: none;
+      background: #fff;
+      border-radius: 12px;
+      border: 1px solid #D7D7D7;
+      z-index: 5;
+      overflow: hidden; }
+      .form-option.select-wrapper .dropdownOption li {
+        padding: 10px 15px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: #5E5E5E;
+        list-style: none; }
+        .form-option.select-wrapper .dropdownOption li:hover:not(.current) {
+          color: #2D2828; }
+        .form-option.select-wrapper .dropdownOption li.current {
+          background-color: #FFF1E5;
+          font-weight: 500; }
 
-.confirm-offer-action {
+.confirm-action,
+.confirm-action-modal {
   /*	&.address {
   		[name=paragraph].body-2 {
   			max-width: 120px;
   		}
   	}*/ }
-  .confirm-offer-action + .confirm-offer-action {
+  .confirm-action + .confirm-action,
+  .confirm-action + .confirm-action-modal,
+  .confirm-action-modal + .confirm-action,
+  .confirm-action-modal + .confirm-action-modal {
     margin-top: 8px; }
-  .confirm-offer-action [name=card] .card.card {
+  .confirm-action [name=card] .card.card,
+  .confirm-action-modal [name=card] .card.card {
     background: #E5F2F0;
     border-radius: 12px;
     border-color: #E5F2F0; }
-    .confirm-offer-action [name=card] .card.card .card__content {
+    .confirm-action [name=card] .card.card .card__content,
+    .confirm-action-modal [name=card] .card.card .card__content {
       padding: 13px 12px; }
-  .confirm-offer-action .quick-action__text {
+  .confirm-action .quick-action__text,
+  .confirm-action-modal .quick-action__text {
     padding-left: 13px; }
-  .confirm-offer-action [name=paragraph] .paragraph.paragraph--primary-500 {
+  .confirm-action .after-titles,
+  .confirm-action-modal .after-titles {
+    font-size: 24px; }
+  .confirm-action [name=paragraph] .paragraph.paragraph--primary-500,
+  .confirm-action-modal [name=paragraph] .paragraph.paragraph--primary-500 {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
     color: #2D2828 !important; }
-  .confirm-offer-action [name=paragraph].body-2 .paragraph.paragraph--primary-500 {
+  .confirm-action [name=paragraph] .paragraph.body-2,
+  .confirm-action-modal [name=paragraph] .paragraph.body-2 {
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px; }
+    line-height: 20px;
+    color: #2D2828 !important; }
 
 .modal-button {
   margin-bottom: 8px;
@@ -543,7 +772,8 @@ header.main-header {
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    border-color: #D7D7D7 !important; }
     .modal-button .btn__content .slot-icon {
       color: #5E5E5E; }
     .modal-button .btn__content .text {
@@ -551,6 +781,16 @@ header.main-header {
       font-weight: 300;
       font-size: 16px;
       line-height: 20px; }
+  .modal-button .modal-input-text {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    min-width: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none; }
 
 .close-dialog {
   margin-left: auto;
@@ -561,53 +801,70 @@ header.main-header {
   .close-dialog.disable {
     pointer-events: none;
     opacity: 0; }
+  .close-dialog .btn:not([disabled]):hover {
+    background: transparent !important; }
+    .close-dialog .btn:not([disabled]):hover .btn__content {
+      background: transparent !important; }
   .close-dialog .btn__content {
     padding: 0 !important;
     height: auto !important; }
 
-.modal-dialog {
+.modal-dialog,
+.modal-validate {
   background: #FFF1E5; }
   @media screen and (max-width: 560px) {
-    .modal-dialog {
+    .modal-dialog,
+    .modal-validate {
       display: block !important;
       pointer-events: none; }
-      .modal-dialog .dialog__dialog.dialog__dialog--centered {
+      .modal-dialog .dialog__dialog.dialog__dialog--centered,
+      .modal-validate .dialog__dialog.dialog__dialog--centered {
         transform: translateY(100%);
         transition: transform .4s ease-in-out;
         align-items: flex-end !important; }
-      .modal-dialog.fade-in {
+      .modal-dialog.fade-in,
+      .modal-validate.fade-in {
         pointer-events: auto; }
-        .modal-dialog.fade-in .dialog__dialog.dialog__dialog--centered {
+        .modal-dialog.fade-in .dialog__dialog.dialog__dialog--centered,
+        .modal-validate.fade-in .dialog__dialog.dialog__dialog--centered {
           transform: translateY(0); } }
-  .modal-dialog .dialog__dialog__content__header {
+  .modal-dialog .dialog__dialog__content__header,
+  .modal-validate .dialog__dialog__content__header {
     padding-bottom: 0; }
-    .modal-dialog .dialog__dialog__content__header [name=heading] {
+    .modal-dialog .dialog__dialog__content__header [name=heading],
+    .modal-validate .dialog__dialog__content__header [name=heading] {
       margin-bottom: 12px !important;
       line-height: 29px;
       color: #2D2828 !important; }
-      .modal-dialog .dialog__dialog__content__header [name=heading] * {
+      .modal-dialog .dialog__dialog__content__header [name=heading] *,
+      .modal-validate .dialog__dialog__content__header [name=heading] * {
         line-height: 29px;
         color: #2D2828 !important; }
-    .modal-dialog .dialog__dialog__content__header [name=paragraph] {
+    .modal-dialog .dialog__dialog__content__header [name=paragraph],
+    .modal-validate .dialog__dialog__content__header [name=paragraph] {
       font-weight: 300;
       font-size: 16px;
       line-height: 20px;
       color: #2D2828; }
-      .modal-dialog .dialog__dialog__content__header [name=paragraph] * {
+      .modal-dialog .dialog__dialog__content__header [name=paragraph] *,
+      .modal-validate .dialog__dialog__content__header [name=paragraph] * {
         font-weight: 300;
         font-size: 16px;
         line-height: 20px;
         color: #2D2828; }
-  .modal-dialog .dialog__dialog__content {
+  .modal-dialog .dialog__dialog__content,
+  .modal-validate .dialog__dialog__content {
     background: #FFF1E5 !important;
     width: 100% !important;
     max-width: 560px !important;
     border-radius: 30px !important; }
     @media screen and (max-width: 560px) {
-      .modal-dialog .dialog__dialog__content {
+      .modal-dialog .dialog__dialog__content,
+      .modal-validate .dialog__dialog__content {
         margin: 0 !important;
         border-radius: 30px 30px 0 0 !important; }
-        .modal-dialog .dialog__dialog__content:before {
+        .modal-dialog .dialog__dialog__content:before,
+        .modal-validate .dialog__dialog__content:before {
           content: '';
           background: #FFFFFF;
           border-radius: 5.5px;
@@ -617,9 +874,55 @@ header.main-header {
           margin: 0 auto;
           position: relative;
           top: -17px; } }
-  .modal-dialog .step-card {
+  .modal-dialog .step-card,
+  .modal-validate .step-card {
     max-width: max-content;
     margin: 0 auto; }
+  .modal-dialog .dialog__dialog__content__body .form-options,
+  .modal-validate .dialog__dialog__content__body .form-options {
+    max-width: 395px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 560px) {
+      .modal-dialog .dialog__dialog__content__body .form-options,
+      .modal-validate .dialog__dialog__content__body .form-options {
+        margin-bottom: 30px; } }
+  .modal-dialog .dialog__dialog__content__body .form-option .text-field .text-field__field,
+  .modal-validate .dialog__dialog__content__body .form-option .text-field .text-field__field {
+    border-color: #D7D7D7 !important; }
+    .modal-dialog .dialog__dialog__content__body .form-option .text-field .text-field__field .label.label,
+    .modal-validate .dialog__dialog__content__body .form-option .text-field .text-field__field .label.label {
+      color: #00856A !important; }
+  .modal-dialog .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field,
+  .modal-validate .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field {
+    border-color: #2D2828 !important; }
+    .modal-dialog .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field .label.label,
+    .modal-validate .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field .label.label {
+      color: #2D2828 !important; }
+  .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker,
+  .modal-validate .dialog__dialog__content__body .form-option.birthday-picker {
+    width: 100%; }
+    .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker > div,
+    .modal-validate .dialog__dialog__content__body .form-option.birthday-picker > div {
+      width: 100%; }
+    .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker .date-picker--has-selector,
+    .modal-validate .dialog__dialog__content__body .form-option.birthday-picker .date-picker--has-selector {
+      top: 100%; }
+    .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
+    .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content,
+    .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
+    .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content {
+      color: #00856A; }
+
+.modal-validate {
+  background: #E5F2F0; }
+  .modal-validate .close-dialog {
+    color: #00856A; }
+    .modal-validate .close-dialog .btn__content {
+      color: inherit !important; }
+  .modal-validate .dialog__dialog__content {
+    background: #E5F2F0 !important; }
 
 .offer-dialog {
   background: #ffffff; }
@@ -1011,5 +1314,78 @@ header.main-header {
       line-height: 24px; }
   .postcode-wrapper .start-btn.disabled .btn .btn__content {
     background: #D7D7D7 !important; }
+
+.electricity-meter-page .step-card-wrapper #top-electricity-meter {
+  margin-top: 32px; }
+.electricity-meter-page .step-option {
+  padding: 10px;
+  justify-content: center; }
+  .electricity-meter-page .step-option__image {
+    margin-bottom: 8px; }
+.electricity-meter-page .form-option .text-field .text-field__field {
+  border-color: #5E5E5E; }
+.electricity-meter-page .form-option .text-field--focus .text-field__field {
+  border-color: #F76700; }
+.electricity-meter-page .container.electricity-meter-view {
+  max-width: 943px; }
+  .electricity-meter-page .container.electricity-meter-view .page-heading {
+    max-width: 504px;
+    width: 100%;
+    margin: 0 auto; }
+.electricity-meter-page .meter-card-wrapper {
+  max-width: 100%; }
+  .electricity-meter-page .meter-card-wrapper .step-card {
+    background: transparent; }
+.electricity-meter-page .step-options.meter-options {
+  width: calc(100% + 28px);
+  margin-left: -14px;
+  margin-top: 70px;
+  flex-wrap: nowrap; }
+  @media screen and (max-width: 640px) {
+    .electricity-meter-page .step-options.meter-options {
+      margin-top: 30px;
+      flex-wrap: wrap; } }
+  .electricity-meter-page .step-options.meter-options .step-option {
+    padding: 10px;
+    justify-content: center;
+    min-height: 274px;
+    min-width: 119px;
+    max-width: 283px;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.150149);
+    border-color: transparent;
+    position: relative; }
+    @media screen and (max-width: 980px) {
+      .electricity-meter-page .step-options.meter-options .step-option {
+        min-height: 200px;
+        max-width: 200px; } }
+    @media screen and (max-width: 640px) {
+      .electricity-meter-page .step-options.meter-options .step-option {
+        min-height: 274px;
+        max-width: 283px;
+        margin: 0 auto 28px; } }
+    .electricity-meter-page .step-options.meter-options .step-option__image {
+      margin-bottom: 8px;
+      max-width: 100%; }
+      .electricity-meter-page .step-options.meter-options .step-option__image .image {
+        width: 100%;
+        max-height: 100%; }
+    .electricity-meter-page .step-options.meter-options .step-option__title .meter-lable {
+      background: #000000;
+      border-radius: 8px 0 0 0;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px 15px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px; }
+    .electricity-meter-page .step-options.meter-options .step-option.active {
+      color: #2D2828;
+      background: #FFFFFF;
+      border-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */

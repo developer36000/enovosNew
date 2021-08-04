@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step1 Electricity Meter Choice</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main class="electricity-meter-page">
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1 active" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="What is your electricity meter number ?"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph">
+				You will find your electricity meter number in the front left of the electricity meter starting
+				with SAG (see the red area on the image). If you don’t have a smart meter, click on « I have another
+				meter ». Your meter number is compulsory to go on with the flow. If you don`t hesitate to contact our
+				serviceLine.
+			</eds-paragraph>
+		</div>
+		
+		<div class="step-card-wrapper">
+			<div class="step-card">
+				<eds-image id="top-electricity-meter" alt="top-electricity-meter1"
+				           src="assets/images/meter1.png"></eds-image>
+				
+				<div class="step-options">
+					<div class="step-option radio">
+						<div class="step-option__image">
+							<span class="custom-icon"><i class="far fa-check"></i></span>
+						</div>
+						<label for="step4-option1" class="step-option__title">
+							<input type="radio" id="step4-option1" name="step4-option" value="Gas" />
+							Yes, I have this counter
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+					<div class="step-option radio">
+						<div class="step-option__image">
+							<span class="custom-icon"><i class="far fa-times"></i></span>
+						</div>
+						<label for="step4-option2" class="step-option__title">
+							<input type="radio" id="step4-option2" name="step4-option" value="Electricity" />
+							No, I have not this counter
+						</label>
+						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					</div>
+				</div>
+			
+			</div>
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

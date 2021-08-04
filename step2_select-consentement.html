@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Step1 Client</title>
+	<title>Step2 Selected Consentement</title>
 	
 	<!--load Design System styles -->
 	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
@@ -20,46 +20,39 @@
 	<div class="container">
 		
 		<div class="steps-navigation">
-			<span class="step step-1 active" data-step="1"></span>
-			<span class="step step-2" data-step="2"></span>
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2 active" data-step="2"></span>
 			<span class="step step-3" data-step="3"></span>
 			<span class="step step-4" data-step="4"></span>
 			<span class="step step-5" data-step="5"></span>
 		</div>
 		
 		<div class="page-heading">
-			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-			             content="Are you already a customer ?" />
+			<eds-heading type="h2" font-weight="bold" styles="left" class="color-new-grey"
+			             content="GDPR consentement" />
 		</div>
 		
 		<div class="step-card-wrapper">
-			<div class="step-card">
-				<eds-image id="fruit-top-icon" alt="fruit-top-icon"
-				           src="assets/images/fruit-top-icon.svg"></eds-image>
-				
-				<div class="step-options show-login-msg">
-					<div class="step-option radio centered">
-						<label for="step2-option1" class="step-option__title">
-							<input type="radio" id="step2-option1" name="step2-option" value="no" />
-							No
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
-					<div class="step-option radio centered">
-						<label for="step2-option2" class="step-option__title">
-							<input type="radio" id="step2-option2" name="step2-option" value="yes" />
-							Yes
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
-				</div>
 			
-			</div>
-		
+			<label class="consentement-checkbox" style="margin-bottom: 50px;">
+				<span class="checkbox">
+					<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+					<input type="checkbox" id="consentement-checkbox" name="consentement-checkbox">
+				</span>
+				<span class="text">J`accepte le traitement de mes donnees personnelles relatives a l`amenagement de
+					mon habitation afin de recevoir une estiomation personnalisee de ma consommation.</span>
+			</label>
+			
+			<eds-paragraph styles="left" font-weight="thin" class="color-new-grey custom-paragraph sub-heading" >
+				Note: sans votre consentement, nous ne serons pas en mesure de traiter les donnees suivantes pour
+				vous fournir une estimation precise.
+			</eds-paragraph>
+			
 			<div class="step-card-nav">
-				<eds-link content="Previous" size="md" url="step1_who.html"
+				<eds-link content="Previous" size="md" url="#"
 				          class="color-new-grey step-card-previous"></eds-link>
-				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step1_why.html"
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
+				          url="#"
 				          class="color-new-grey size-icon-23 step-card-next disable">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>

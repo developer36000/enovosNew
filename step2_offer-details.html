@@ -37,29 +37,34 @@
 			<div class="step-form">
 				<div class="form-options">
 					<eds-text-field class="form-option text-field"
-					                label-inside="Number of people living in your home"
+					                label-inside="Number of inhabitants"
 					                type="text" placeholder="4 people" info-styles="primary-500"></eds-text-field>
-					<eds-text-field class="form-option text-field" label-inside="Living area"
+					<eds-text-field class="form-option text-field" label-inside="Surface"
 					                type="text" placeholder="150 m2" info-styles="primary-500"></eds-text-field>
 				</div>
 			
 			</div>
 			<div id="refine-results" class="step-card-action transparent full-width">
 				<eds-heading type="h6" font-weight="bold" class="color-new-grey"
-				             content="Refine the results by completing this information (optional)"></eds-heading>
+				             content="Refine the results by answering these few questions (optional)"></eds-heading>
 				
 				<eds-button id="home_type" class="modal-button" icon-position="right" styles="primary" outlined content="Home type">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
 				<eds-button id="date_construction" class="modal-button" icon-position="right" styles="primary" outlined
-				            content="Date of construction">
+				            content="Year of construction">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
-				<eds-button id="heating_type" class="modal-button" icon-position="right" styles="primary" outlined content="Heating type">
+				<eds-button id="heating_type" class="modal-button" icon-position="right" styles="primary" outlined
+				            content="Home heating type">
+					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
+				</eds-button>
+				<eds-button id="heating_type" class="modal-button" icon-position="right" styles="primary" outlined
+				            content="Water heating type">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
 				<eds-button id="particular_installations" class="modal-button" icon-position="right" styles="primary" outlined
-				            content="Particular installations">
+				            content="Your additional equipment">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
 			</div>
@@ -82,7 +87,7 @@
 					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
 					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Home type"></eds-heading>
-					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the type of your home.</eds-paragraph>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please select your housing type.</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
 					<div class="step-card orange">
@@ -92,19 +97,9 @@
 								<div class="step-option__image">
 									<span class="custom-icon"><i class="fal fa-home"></i></span>
 								</div>
-								<label for="step2-option2" class="step-option__title">
-									<input type="radio" id="step2-option2" name="step4-option" value="Gas" />
-									New
-								</label>
-								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-							</div>
-							<div class="step-option radio bottom orange">
-								<div class="step-option__image">
-									<span class="custom-icon"><i class="fal fa-home"></i></span>
-								</div>
 								<label for="step2-option3" class="step-option__title">
-									<input type="radio" id="step2-option3" name="step4-option" value="Gas" />
-									Old home
+									<input type="radio" id="step2-option3" name="step4-option" value="Appartment" />
+									Appartment
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
@@ -113,8 +108,8 @@
 									<span class="custom-icon"><i class="fal fa-building"></i></span>
 								</div>
 								<label for="step2-option4" class="step-option__title">
-									<input type="radio" id="step2-option4" name="step4-option" value="Gas" />
-									Building
+									<input type="radio" id="step2-option4" name="step4-option" value="House" />
+									House
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
@@ -129,8 +124,8 @@
 					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
 					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-					             content="Date of construction"></eds-heading>
-					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the date of construction of your building.</eds-paragraph>
+					             content="Year of construction"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">When was your home built? / When was your building constructed?</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
 					<eds-dropdown id="menu-dropdown">
@@ -289,7 +284,8 @@
 				<div slot="dialog-header">
 					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
-					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Heating type"></eds-heading>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Home heating type"></eds-heading>
 					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your heating system. You can select more than one.</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
@@ -336,7 +332,7 @@
 				<div slot="dialog-header">
 					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
-					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Particular installations"></eds-heading>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey" content="Your additional equipment"></eds-heading>
 					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the particluar installation you have.</eds-paragraph>
 				</div>
 				<div slot="dialog-body">

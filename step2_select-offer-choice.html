@@ -28,13 +28,20 @@
 		</div>
 		
 		<div class="page-heading offer">
-			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-			             content="Select your electricity offer" style="margin-bottom: 50px;"></eds-heading>
+			<div class="top">
+				<eds-heading type="h2" font-weight="bold" styles="center" class="heading-h2 color-new-grey"
+				             content="Select your electricity offer"></eds-heading>
+				<eds-paragraph styles="center" font-weight="thin" class="color-new-grey custom-paragraph sub-heading" >
+					Based on the information you entered, your estimated consumption is <span>3.266 kWh.</span> We
+					recommend you to choose <strong>Naturstroum pack</strong>.
+				</eds-paragraph>
+			</div>
+			
+			
 			<eds-heading type="h5" font-weight="thin" styles="center" class="color-new-grey"
-			             content="3 offers" style="margin-bottom: 8px;"></eds-heading>
+			             content="3 offers" style="margin-bottom: 4px !important;"></eds-heading>
 			<eds-paragraph styles="center" font-weight="thin" class="color-new-grey custom-paragraph"
-			               content="Select an offer to see the details.
-Choose your prefered one."></eds-paragraph>
+			               content="Select an offer to see the details."></eds-paragraph>
 		</div>
 		
 		
@@ -45,8 +52,8 @@ Choose your prefered one."></eds-paragraph>
 					<div class="offer-option checkbox orange">
 						<label for="step2_select_offer-choice1" class="offer-option__title">
 							<input type="checkbox" id="step2_select_offer-choice1" name="step2_select_offer-choice" value="naturstroum_dialog" />
-							<eds-badge class="offer-option__popular" text="Most popular" size="lg"></eds-badge>
-							<span class="offer-option__sub-title">Naturstroum</span>
+							<eds-badge class="offer-option__popular" text="Recommanded" size="lg"></eds-badge>
+							<span class="offer-option__sub-title">naturstroum</span>
 							<span class="offer-option__description">100% green electricity with flexible price.</span>
 							<span class="offer-option__action">
 								<span class="price">68,79 € / month</span>
@@ -58,8 +65,9 @@ Choose your prefered one."></eds-paragraph>
 					<div class="offer-option checkbox orange">
 						<label for="step2_select_offer-choice2" class="offer-option__title">
 							<input type="checkbox" id="step2_select_offer-choice2" name="step2_select_offer-choice" value="nova_naturstroum_doalog" />
-							<span class="offer-option__sub-title">Nova naturstroum</span>
-							<span class="offer-option__description">100% green electricity from Luxembourg.</span>
+							<span class="offer-option__sub-title">nova naturstroum</span>
+							<span class="offer-option__description">100% premium green electricity from Luxembourg or
+								the greater region.</span>
 							<span class="offer-option__action">
 								<span class="price">70,05 € / month</span>
 								<i class="fal fa-long-arrow-right"></i>
@@ -71,7 +79,7 @@ Choose your prefered one."></eds-paragraph>
 						<label for="step2_select_offer-choice3" class="offer-option__title">
 							<input type="checkbox" id="step2_select_offer-choice3" name="step2_select_offer-choice" value="fix_naturstroum_dialog" />
 							<span class="offer-option__sub-title">FIX naturstroum</span>
-							<span class="offer-option__description">100% green electricity with stable price.</span>
+							<span class="offer-option__description">100% green electricity with fixed contract.</span>
 							<span class="offer-option__action">
 								<span class="price">64,58 € / month</span>
 								<i class="fal fa-long-arrow-right"></i>

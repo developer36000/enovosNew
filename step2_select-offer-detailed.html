@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>Step2 Select Offer</title>
+	<title>Step2 Selected Offer Detailed</title>
 	
 	<!--load Design System styles -->
 	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<main>
+<main class="offer-detailed-page">
 	<div class="container">
 		
 		<div class="steps-navigation">
@@ -27,42 +27,34 @@
 			<span class="step step-5" data-step="5"></span>
 		</div>
 		
-		<div class="page-heading">
-			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-			             content="Would you like to estimate your costs based on your lifestyle" />
+		<div class="page-heading offer">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="heading-h2 color-new-grey"
+			             content="Your detailed offer"></eds-heading>
+			<eds-paragraph styles="center" font-weight="thin" class="color-new-grey custom-paragraph sub-heading" >
+				The price of energy is divided in <strong>3 main parts</strong>: energy consumption and energy
+				distribution.
+			</eds-paragraph>
+			
 		</div>
 		
-		<div class="step-card-wrapper">
-			<div class="step-card orange">
-				<eds-image id="lamp-top-icon" alt="lamp-top-icon"
-				           src="assets/images/lamp.svg"></eds-image>
+		
+		<div class="offer-detailed-wrapper">
+			<div class="offer-detailed">
 				
-				<div class="step-options">
-					<div class="step-option radio centered orange">
-						<label for="step2-option1" class="step-option__title">
-							<input type="radio" id="step2-option1" name="step2-option" value="Yes" />
-							Yes
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
-					<div class="step-option radio centered orange">
-						<label for="step2-option2" class="step-option__title">
-							<input type="radio" id="step2-option2" name="step2-option" value="No" />
-							No
-						</label>
-						<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					</div>
-				</div>
+				    info
 			</div>
+			
+		<!-- Navigation -->
+			
 			<div class="step-card-nav">
 				<eds-link content="Previous" size="md" url="#"
 				          class="color-new-grey step-card-previous"></eds-link>
 				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
-				          url="#"
-				          class="color-new-grey size-icon-23 step-card-next ">
+				          url="#" class="color-new-grey size-icon-23 step-card-next">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>
 			</div>
+			
 		</div>
 	
 	

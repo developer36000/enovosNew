@@ -50,9 +50,12 @@
 		[name=text-field] .text-field--has-label-inside .text-field__info, [name=text-field] .text-field--no-label .text-field__info {
 			top: 0 !important;
 		}
+		.text-field__field {
+			border-color: #D7D7D7 !important;
+		}
 		&.text-field--focus {
 			.text-field__field {
-				border-color: $orange;
+				border-color: $orange !important;
 				.label.label {
 					color: $color-new-grey !important;
 				}
@@ -91,7 +94,14 @@
 			.text-field__field {
 				display: flex;
 				align-items: center;
+				border-color: #D7D7D7;
 			}
+			&--focus {
+				.text-field__field {
+					border-color: $orange;
+				}
+			}
+		
 		}
 		.date-picker--has-selector {
 			position: relative !important;
@@ -125,10 +135,118 @@
 			}
 		}
 	}
+	// select
+	&.select-wrapper {
+		display: block;
+		width: 100%;
+		height: 60px;
+		margin-bottom: 8px;
+		.select-country-hidden {
+			visibility: hidden;
+			height: 0;
+			width: 0;
+			min-width: 0;
+			min-height: 0;
+			margin: 0;
+			padding: 0;
+			opacity: 0;
+			pointer-events: none;
+		}
+		.dropholder {
+			width: 100%;
+			height: auto;
+			border-radius: 12px;
+			border: 1px solid #D7D7D7;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+			color: #5E5E5E;
+			position: relative;
+			box-sizing: border-box;
+		}
+		.holder {
+			line-height: 60px;
+			font-size: 16px;
+			margin: 0;
+			padding-left: 20px;
+			padding-right: 40px;
+		}
+		.dropdown,
+		.dropholder {
+			background: #fff;
+		}
+		.dropdown {
+			width: 100%;
+			border-radius: 10px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+			color: #5E5E5E;
+			cursor: pointer;
+			height: 60px;
+			position: relative;
+			box-sizing: border-box;
+			z-index: 20;
+			.dropdown-icon {
+				font-size: 24px;
+				position: absolute;
+				width: 24px;
+				height: 24px;
+				right: 16px;
+				top: 18px;
+				display: block;
+				color: #5E5E5E;
+				pointer-events: none;
+				transform: rotate(0);
+			}
+			&.active {
+				.dropdown-icon {
+					transform: rotate(180deg);
+				}
+				+ .dropdownOption {
+					display: block;
+				}
+			}
+		}
+		
+		.dropdownOption {
+			padding: 0;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			right: 0;
+			margin: 0;
+			cursor: pointer;
+			display: none;
+			background: #fff;
+			border-radius: 12px;
+			border: 1px solid #D7D7D7;
+			z-index: 5;
+			overflow: hidden;
+			li {
+				padding: 10px 15px;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 20px;
+				color: #5E5E5E;
+				list-style: none;
+				&:hover:not(.current) {
+					color: $color-new-grey;
+				}
+				&.current {
+					background-color: $pink;
+					font-weight: 500;
+				}
+			}
+		}
+		
+	}
 }
 
-.confirm-offer-action {
-	+ .confirm-offer-action {
+.confirm-action,
+.confirm-action-modal {
+	+ .confirm-action,
+	+ .confirm-action-modal {
 		margin-top: 8px;
 	}
 	[name=card] .card.card {
@@ -142,18 +260,20 @@
 	.quick-action__text {
 		padding-left: 13px;
 	}
+	.after-titles {
+		font-size: 24px;
+	}
 	[name=paragraph] .paragraph.paragraph--primary-500 {
 		font-weight: 600;
 		font-size: 14px;
 		line-height: 16px;
 		color: #2D2828 !important;
 	}
-	[name=paragraph].body-2 {
-		.paragraph.paragraph--primary-500 {
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 20px;
-		}
+	[name=paragraph] .paragraph.body-2 {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 20px;
+		color: #2D2828 !important;
 	}
 /*	&.address {
 		[name=paragraph].body-2 {

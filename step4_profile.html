@@ -37,27 +37,24 @@
 		    <div class="step-form">
 			    
 			    <div class="form-options">
-				    <eds-text-field class="form-option text-field" label-inside="First & Last name"
-				                    type="text" placeholder="First & Last name" info-styles="primary-500"></eds-text-field>
+				    <eds-text-field class="form-option text-field" label-inside="First name"
+				                    type="text" placeholder="First name" info-styles="primary-500"></eds-text-field>
+				
+				    <eds-text-field class="form-option text-field" label-inside="Last name"
+				                    type="text" placeholder="Last name" info-styles="primary-500"></eds-text-field>
 				    
-				    <eds-button id="civility" class="modal-button" icon-position="right" styles="primary" outlined
-				                content="Civility">
+				    <eds-button id="civility" class="modal-button modal-input" icon-position="right" styles="primary"
+				                outlined  content="Civility">
 					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
+					    <input type="text" class="modal-input-text" id="civility-input" name="civility-input" />
 				    </eds-button>
 				    
 				    <eds-text-field class="form-option text-field" label-inside="Email address"
 				                    type="text" placeholder="Email address" info-styles="primary-500"></eds-text-field>
+				    
 				    <eds-text-field class="form-option text-field" label-inside="Phone number"
 				                    type="text" placeholder="Phone number" info-styles="primary-500"></eds-text-field>
-				  <!--  <eds-text-field class="form-option text-field tooltip-relative"
-				                    label-inside="Electricity meter number"
-				                    type="text" placeholder="Electricity meter number" info-styles="primary-500"  info-tooltip-text="tooltip content" info-tooltip-icon="question-circle-light" info-tooltip-size="3" info-tooltip-pointer
-				    ></eds-text-field>-->
-				   <!-- <eds-text-field class="form-option text-field tooltip-relative"
-				                    label-inside="Birthday"
-				                    type="text" placeholder="Birthday" icon-trailing="calendar-alt"
-				    ></eds-text-field>-->
-				
+				    
 				    <eds-date-picker id="date-picker" class="form-option birthday-picker">
 					    <div slot="selector">
 						    <eds-text-field
@@ -70,9 +67,10 @@
 					    </div>
 				    </eds-date-picker>
 				    
-				    <eds-button id="language" class="modal-button" icon-position="right" styles="primary" outlined
-				                content="Language">
+				    <eds-button id="language" class="modal-button modal-input" icon-position="right" styles="primary" outlined
+				                content="Language for communication">
 					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
+					    <input type="text" class="modal-input-text" id="language-input" name="language-input" />
 				    </eds-button>
 				    
 			    </div>
@@ -101,7 +99,22 @@
 					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your title.</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
-					Mr M.
+					<div class="form-options">
+						<div class="form-option select-wrapper civility">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-civility" name="select-civility" value="Mrs." />
+							<div class="dropholder">
+								<div class="dropdown">
+									<p class="holder">Mrs.</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<li>Mr</li>
+									<li>Mrs.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 			</eds-dialog>
 			
@@ -114,7 +127,23 @@
 					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your language.</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
-					Language list
+					<div class="form-options">
+						<div class="form-option select-wrapper language">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-language" name="select-language" value="Mrs." />
+							<div class="dropholder">
+								<div class="dropdown">
+									<p class="holder">Language</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<li>English</li>
+									<li>French</li>
+									<li>German</li>
+									<li>Italian</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</eds-dialog>
 		

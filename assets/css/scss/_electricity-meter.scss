@@ -1,0 +1,101 @@
+.electricity-meter-page {
+	.step-card-wrapper {
+		#top-electricity-meter {
+			margin-top: 32px;
+		}
+	}
+	// option step
+	.step-option {
+		padding: 10px;
+		justify-content: center;
+		&__image  {
+			margin-bottom: 8px;
+		}
+	}
+	// form step
+	.form-option .text-field {
+		.text-field__field {
+			border-color: #5E5E5E;
+		}
+		&--focus {
+			.text-field__field {
+				border-color: $orange;
+			}
+		}
+	}
+	
+	// meter options
+	.container.electricity-meter-view {
+		max-width: 943px;
+		.page-heading {
+			max-width: 504px;
+			width: 100%;
+			margin: 0 auto;
+		}
+	}
+	.meter-card-wrapper {
+		max-width: 100%;
+		.step-card {
+			background: transparent;
+		}
+	}
+	.step-options.meter-options {
+		width: calc(100% + 28px);
+		margin-left: -14px;
+		margin-top: 70px;
+		flex-wrap: nowrap;
+		@media screen and (max-width: 640px) {
+			margin-top: 30px;
+			flex-wrap: wrap;
+		}
+		.step-option {
+			padding: 10px;
+			justify-content: center;
+			min-height: 274px;
+			min-width: 119px;
+			max-width: 283px;
+			margin-right: 14px;
+			margin-left: 14px;
+			margin-bottom: 28px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.150149);
+			border-color: transparent;
+			position: relative;
+			@media screen and (max-width: 980px) {
+				min-height: 200px;
+				max-width: 200px;
+			}
+			@media screen and (max-width: 640px) {
+				min-height: 274px;
+				max-width: 283px;
+				margin: 0 auto 28px;
+			}
+			&__image  {
+				margin-bottom: 8px;
+				max-width: 100%;
+				.image {
+					width: 100%;
+					max-height: 100%;
+				}
+			}
+			&__title {
+				.meter-lable {
+					background: #000000;
+					border-radius: 8px 0 0 0;
+					color: #ffffff;
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 10px 15px;
+					font-weight: 300;
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			&.active {
+				color: #2D2828;
+				background: #FFFFFF;
+				border-color: transparent;
+			}
+		}
+	}
+}
