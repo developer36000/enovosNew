@@ -1075,6 +1075,18 @@ header.main-header {
     .modal-dialog .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field .label.label,
     .modal-validate .dialog__dialog__content__body .form-option .text-field.text-field--focus .text-field__field .label.label {
       color: #2D2828 !important; }
+  .modal-dialog .dialog__dialog__content__body .form-option.text-field-orange .text-field .text-field__field,
+  .modal-validate .dialog__dialog__content__body .form-option.text-field-orange .text-field .text-field__field {
+    border-color: #D7D7D7 !important; }
+    .modal-dialog .dialog__dialog__content__body .form-option.text-field-orange .text-field .text-field__field .label.label,
+    .modal-validate .dialog__dialog__content__body .form-option.text-field-orange .text-field .text-field__field .label.label {
+      color: #F76700 !important; }
+  .modal-dialog .dialog__dialog__content__body .form-option.text-field-orange .text-field.text-field--focus .text-field__field,
+  .modal-validate .dialog__dialog__content__body .form-option.text-field-orange .text-field.text-field--focus .text-field__field {
+    border-color: #2D2828 !important; }
+    .modal-dialog .dialog__dialog__content__body .form-option.text-field-orange .text-field.text-field--focus .text-field__field .label.label,
+    .modal-validate .dialog__dialog__content__body .form-option.text-field-orange .text-field.text-field--focus .text-field__field .label.label {
+      color: #2D2828 !important; }
   .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker,
   .modal-validate .dialog__dialog__content__body .form-option.birthday-picker {
     width: 100%; }

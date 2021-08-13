@@ -160,6 +160,24 @@
 					 }
 				 }
 			 }
+			 &.text-field-orange {
+				 .text-field {
+					 .text-field__field {
+						 border-color: #D7D7D7 !important;
+						 .label.label {
+							 color: $orange !important;
+						 }
+					 }
+					 &.text-field--focus {
+						 .text-field__field {
+							 border-color: $color-new-grey !important;
+							 .label.label {
+								 color: $color-new-grey !important;
+							 }
+						 }
+					 }
+				 }
+			 }
 			 // date
 			 &.birthday-picker {
 				 width: 100%;
