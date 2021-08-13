@@ -2,7 +2,17 @@
 	"use_strict";
 	
 	
-	
+	window.addEventListener("load", () => {
+		let preloaderGroup = document.getElementById("preloaderGroup");
+		console.log(preloaderGroup)
+		if ( preloaderGroup ) {
+			preloaderGroup.classList.add("vanish");
+			setTimeout(() => {
+				preloaderGroup.style.display = "none";
+			}, 2000);
+		}
+		
+	});
 	
 	/**
 	* Steps options 'checkboxes' and 'radios'
