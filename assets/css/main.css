@@ -1520,8 +1520,13 @@ header.main-header {
   .electricity-meter-page .meter-card-wrapper .step-card {
     background: transparent;
     max-width: 100%;
-    overflow-x: auto;
     padding: 0 6px; }
+    @media screen and (max-width: 900px) {
+      .electricity-meter-page .meter-card-wrapper .step-card {
+        overflow-x: auto; } }
+    @media screen and (max-width: 640px) {
+      .electricity-meter-page .meter-card-wrapper .step-card {
+        margin-top: 30px; } }
     .electricity-meter-page .meter-card-wrapper .step-card::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0);
       border-radius: 10px;

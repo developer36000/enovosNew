@@ -38,8 +38,14 @@
 		.step-card {
 			background: transparent;
 			max-width: 100%;
-			overflow-x: auto;
+			
 			padding: 0 6px;
+			@media screen and (max-width: 900px) {
+				overflow-x: auto;
+			}
+			@media screen and (max-width: 640px) {
+				margin-top: 30px;
+			}
 			&::-webkit-scrollbar-track {
 				-webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0);
 				border-radius: 10px;
