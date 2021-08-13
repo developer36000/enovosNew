@@ -544,4 +544,11 @@
 		
 	});
 	
+	
+	/*
+	* Custom Slider
+	* */
+	const dsSlider = document.querySelectorAll(`.ds-slider`);
+	console.log()
+	//********
 })();
