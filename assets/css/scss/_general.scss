@@ -52,6 +52,45 @@ strong, b {
 			}
 		}
 	}
+	&.confirmation-page {
+		.page-heading {
+			max-width: 326px;
+			margin: 0 auto;
+			margin-bottom: 24px;
+			min-height: 50vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.heading {
+				text-align: center;
+				color: $orange;
+				font-size: 32px;
+				line-height: 39px;
+				@media screen and (max-width: 560px) {
+					text-align: center !important;
+				}
+				span {
+					color: $orange;
+					margin-right: 5px;
+				}
+			}
+			.custom-paragraph {
+				margin-top: 24px;
+				color: #2D2828 !important;
+				@media screen and (max-width: 560px) {
+					text-align: center !important;
+				}
+				* {
+					color: inherit !important;
+					text-align: inherit !important;
+				}
+			}
+		}
+		.step-card-wrapper {
+			max-width: 100%;
+		}
+	}
 }
 
 .helper-row {

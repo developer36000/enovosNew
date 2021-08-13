@@ -97,6 +97,37 @@ strong, b {
       .container.login-page .page-heading .heading span {
         color: #00856A;
         margin-right: 5px; }
+  .container.confirmation-page .page-heading {
+    max-width: 326px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .container.confirmation-page .page-heading .heading {
+      text-align: center;
+      color: #F76700;
+      font-size: 32px;
+      line-height: 39px; }
+      @media screen and (max-width: 560px) {
+        .container.confirmation-page .page-heading .heading {
+          text-align: center !important; } }
+      .container.confirmation-page .page-heading .heading span {
+        color: #F76700;
+        margin-right: 5px; }
+    .container.confirmation-page .page-heading .custom-paragraph {
+      margin-top: 24px;
+      color: #2D2828 !important; }
+      @media screen and (max-width: 560px) {
+        .container.confirmation-page .page-heading .custom-paragraph {
+          text-align: center !important; } }
+      .container.confirmation-page .page-heading .custom-paragraph * {
+        color: inherit !important;
+        text-align: inherit !important; }
+  .container.confirmation-page .step-card-wrapper {
+    max-width: 100%; }
 
 .helper-row {
   display: flex;

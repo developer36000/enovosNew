@@ -149,12 +149,13 @@
 	 * Check if all inputs is empty in the step
 	 * module: step-form
 	 */
-	const formOptions = document.querySelectorAll(`.form-options .form-option`);
+	const formOptions = document.querySelectorAll(`.step-form .form-options .form-option.text-field`);
 	formOptions.forEach((el, i) => {
 		el.addEventListener("typingField", (e) => {
 			const target = e.target;
 			if ( target.classList.contains('hydrated') ) {
-				const isFormOption = target.nextSibling.parentNode.classList.contains('.form-options');
+				const FormOption = target.closest('.step-form');
+				const isFormOption = FormOption.querySelector('.form-options');
 				const wrapper = document.querySelector(`.step-card-action`);
 				if (  isFormOption !== null && formOptions.length-1 === i ) {
 					const nextBtn = document.querySelector('.step-card-next');
@@ -548,7 +549,7 @@
 	/*
 	* Custom Slider
 	* */
-	const dsSlider = document.querySelectorAll(`.ds-slider`);
-	console.log()
+	/*const dsSlider = document.querySelectorAll(`.ds-slider`);
+	console.log()*/
 	//********
 })();

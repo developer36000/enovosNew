@@ -54,25 +54,9 @@
 						</div>
 					</div>
 					<!-- // -->
-					<div class="form-option select-wrapper surface">
-						<input type="hidden" class="select-wrapper-value form-option" id="select-surface" name="select-surface" value="" />
-						<div class="dropholder">
-							<div class="dropdown">
-								<p class="holder" data-placeholder="Surface">Surface</p>
-								<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
-							</div>
-							<ul class="dropdownOption">
-								<li>1</li>
-								<li>2</li>
-								<li>3</li>
-								<li>4</li>
-								<li>5</li>
-								<li>6+</li>
-							</ul>
-						</div>
-					</div>
+					<eds-text-field class="form-option text-field" label-inside="Surface"
+					                type="text" placeholder="150 m2" info-styles="primary-500"></eds-text-field>
 					<!-- // -->
-					
 				</div>
 			
 			</div>
@@ -405,30 +389,16 @@
 			<!-- || -->
 			<eds-dialog id="dialog-kilometrage" size="md" class="modal-dialog">
 				<div slot="dialog-header">
-					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
 					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
 					             content="On average, how many kilometres do you drive per year? "></eds-heading>
 				</div>
 				<div slot="dialog-body">
-					<div class="form-options">
+					<div class="form-options not-check">
 						<!-- // -->
-						<div class="form-option select-wrapper kilometrage">
-							<input type="hidden" class="select-wrapper-value form-option" id="select-kilometrage"
-							       name="select-kilometrage" value="" />
-							<div class="dropholder">
-								<div class="dropdown">
-									<p class="holder" data-placeholder="Kilometrage">Kilometrage</p>
-									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
-								</div>
-								<ul class="dropdownOption">
-									<li>< 500 km</li>
-									<li>500 - 1000 km</li>
-									<li>1000 - 2000 km</li>
-									<li>> 2000 km</li>
-								</ul>
-							</div>
-						</div>
+						<eds-text-field class="form-option text-field" label-inside="Kilometrage"
+						                type="text" placeholder="500 km" info-styles="primary-500"></eds-text-field>
 						<!-- // -->
 					</div>
 				</div>
