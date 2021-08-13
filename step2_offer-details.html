@@ -36,11 +36,43 @@
 		<div class="step-form-wrapper">
 			<div class="step-form">
 				<div class="form-options">
-					<eds-text-field class="form-option text-field"
-					                label-inside="Number of inhabitants"
-					                type="text" placeholder="4 people" info-styles="primary-500"></eds-text-field>
-					<eds-text-field class="form-option text-field" label-inside="Surface"
-					                type="text" placeholder="150 m2" info-styles="primary-500"></eds-text-field>
+					<!-- // -->
+					<div class="form-option select-wrapper inhabitants">
+						<input type="hidden" class="select-wrapper-value form-option" id="select-inhabitants" name="select-inhabitants" value="" />
+						<div class="dropholder">
+							<div class="dropdown">
+								<p class="holder" data-placeholder="Number of inhabitants">Number of inhabitants</p>
+								<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+							</div>
+							<ul class="dropdownOption">
+								<li>< 50 m2</li>
+								<li>< 50 - 70 m2</li>
+								<li>< 70 - 90 m2</li>
+								<li>< 90 - 120 m2</li>
+								<li>> 120 m2</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // -->
+					<div class="form-option select-wrapper surface">
+						<input type="hidden" class="select-wrapper-value form-option" id="select-surface" name="select-surface" value="" />
+						<div class="dropholder">
+							<div class="dropdown">
+								<p class="holder" data-placeholder="Surface">Surface</p>
+								<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+							</div>
+							<ul class="dropdownOption">
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6+</li>
+							</ul>
+						</div>
+					</div>
+					<!-- // -->
+					
 				</div>
 			
 			</div>
@@ -59,11 +91,12 @@
 				            content="Home heating type">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
-				<eds-button id="heating_type" class="modal-button" icon-position="right" styles="primary" outlined
+				<eds-button id="water_heating_type" class="modal-button" icon-position="right" styles="primary" outlined
 				            content="Water heating type">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
-				<eds-button id="particular_installations" class="modal-button" icon-position="right" styles="primary" outlined
+				<eds-button id="additional_equipment" class="modal-button" icon-position="right" styles="primary"
+				            outlined
 				            content="Your additional equipment">
 					<eds-icon slot="icon" icon="chevron-down"></eds-icon>
 				</eds-button>
@@ -72,9 +105,9 @@
 		<!-- Navigation -->
 			
 			<div class="step-card-nav">
-				<eds-link content="Previous" size="md" url="step2_select-offer.html"
+				<eds-link content="Previous" size="md" url="step2_select-consentement.html"
 				          class="color-new-grey step-card-previous"></eds-link>
-				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="#"
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="step2_select-offer-choice.html"
 				          class="color-new-grey size-icon-23 step-card-next disable">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>
@@ -128,155 +161,26 @@
 					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">When was your home built? / When was your building constructed?</eds-paragraph>
 				</div>
 				<div slot="dialog-body">
-					<eds-dropdown id="menu-dropdown">
-						<div slot="selector">
-							<div class="menu-dropdown-value">
-								<eds-heading id="menu-dropdown-heading" type="h2" content="Item level 1"></eds-heading>
-								<eds-icon id="icon-dropdown-heading" slot="icon" size="4" icon="chevron-down" styles="primary-500"></eds-icon>
+					<div class="form-options">
+						<!-- // -->
+						<div class="form-option select-wrapper year-construction">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-year-construction"
+							       name="select-year-construction" value="" />
+							<div class="dropholder">
+								<div class="dropdown">
+									<p class="holder" data-placeholder="Year of construction">Year of construction</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<li>1960 or before</li>
+									<li>1961 to 1999</li>
+									<li>2000 to 2015</li>
+									<li>2015 and after</li>
+								</ul>
 							</div>
 						</div>
-					</eds-dropdown>
-					<script>
-						(function(){
-							const menuDropdown = document.querySelector("#menu-dropdown");
-							menuDropdown.setData([
-								{
-									"id": "4f321aba-6436-11ea-bc55-0242ac130003",
-									"leading": {
-										"type": "icon",
-										"value": "landmark",
-									},
-									"trailing": {
-										"type": "icon",
-										"value": "chevron-right",
-									},
-									"label": "Item level 1",
-									"children": [
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130004",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130005",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130006",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130007",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-									]
-								},
-								{
-									"id": "4f321aba-6436-11ea-bc55-0242ac130008",
-									"leading": {
-										"type": "icon",
-										"value": "landmark",
-									},
-									"trailing": {
-										"type": "icon",
-										"value": "chevron-right",
-									},
-									"label": "Item level 1",
-									"children": [
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130009",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130010",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130011",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-										{
-											"id": "4f321aba-6436-11ea-bc55-0242ac130012",
-											"leading": {
-												"type": "icon",
-												"value": "landmark",
-											},
-											"trailing": {
-												"type": "icon",
-												"value": "chevron-right",
-											},
-											"label": "Item level 2",
-										},
-									]
-								}
-							]);
-							menuDropdown.addEventListener("clickDropdownItem", function(e) {
-								const menuDropdownHeading = document.querySelector("#menu-dropdown-heading");
-								menuDropdownHeading.content = e.detail.label;
-								const iconDropdownHeading = document.querySelector("#icon-dropdown-heading");
-								iconDropdownHeading.icon = "chevron-down";
-							}, false);
-							menuDropdown.addEventListener("activeSelectorItem", function(e) {
-								const iconDropdownHeading = document.querySelector("#icon-dropdown-heading");
-								iconDropdownHeading.icon = (e.detail === true) ? "chevron-up" : "chevron-down";
-							}, false);
-						})();
-					</script>
+						<!-- // -->
+					</div>
 				</div>
 			</eds-dialog>
 			<!-- || -->
@@ -296,29 +200,42 @@
 								<div class="step-option__image">
 									<span class="custom-icon"><i class="fal fa-burn"></i></span>
 								</div>
-								<label for="step2-option5" class="step-option__title">
-									<input type="checkbox" id="step2-option5" name="step4-option" value="Gas" />
+								<label for="step2-option15" class="step-option__title">
+									<input type="checkbox" id="step2-option15" name="step4-option" value="Gas" />
 									Gas
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
 							<div class="step-option checkbox bottom orange">
 								<div class="step-option__image">
-									<span class="custom-icon"><i class="fal fa-solar-panel"></i></span>
+									<span class="custom-icon"><i class="fal fa-tint"></i></span>
 								</div>
-								<label for="step2-option6" class="step-option__title">
-									<input type="checkbox" id="step2-option6" name="step4-option" value="Gas" />
-									Solar
+								<label for="step2-option16" class="step-option__title">
+									<input type="checkbox" id="step2-option16" name="step4-option"
+									       value="Heating oil" />
+									Heating oil
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
 							<div class="step-option checkbox bottom orange">
 								<div class="step-option__image">
-									<span class="custom-icon"><i class="fal fa-bolt"></i></span>
+									<span class="custom-icon"><i class="fal fa-heat"></i></span>
 								</div>
-								<label for="step2-option7" class="step-option__title">
-									<input type="checkbox" id="step2-option7" name="step4-option" value="Gas" />
-									Electricity
+								<label for="step2-option17" class="step-option__title">
+									<input type="checkbox" id="step2-option17" name="step4-option" value="Heat pump" />
+									Heat pump
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox centered orange">
+								<!--<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-heat"></i></span>
+								</div>-->
+								<label for="step2-option28" class="step-option__title">
+									<input type="checkbox" id="step2-option28" name="step4-option"
+									       value="I am not sure, I dont know" />
+									I am not sure,
+									I dont know
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
@@ -328,7 +245,67 @@
 				</div>
 			</eds-dialog>
 			<!-- || -->
-			<eds-dialog id="dialog-particular_installations" size="md" class="modal-dialog">
+			<eds-dialog id="dialog-water_heating_type" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Water Heating Type"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select the water heating system you have.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="step-card orange">
+						
+						<div class="step-options">
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-burn"></i></span>
+								</div>
+								<label for="step2-option5" class="step-option__title">
+									<input type="checkbox" id="step2-option5" name="step4-option" value="Gas" />
+									Gas
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-tint"></i></span>
+								</div>
+								<label for="step2-option6" class="step-option__title">
+									<input type="checkbox" id="step2-option6" name="step4-option" value="Heating oil" />
+									Heating oil
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-heat"></i></span>
+								</div>
+								<label for="step2-option7" class="step-option__title">
+									<input type="checkbox" id="step2-option7" name="step4-option" value="Heat pump" />
+									Heat pump
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							<div class="step-option checkbox centered orange">
+								<!--<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-heat"></i></span>
+								</div>-->
+								<label for="step2-option18" class="step-option__title">
+									<input type="checkbox" id="step2-option18" name="step4-option"
+									       value="I am not sure, I dont know" />
+									I am not sure,
+									I dont know
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="dialog-additional_equipment" size="md" class="modal-dialog">
 				<div slot="dialog-header">
 					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
 					            styles="right"></eds-button>
@@ -344,27 +321,119 @@
 									<span class="custom-icon"><i class="fal fa-swimmer"></i></span>
 								</div>
 								<label for="step2-option8" class="step-option__title">
-									<input type="checkbox" id="step2-option8" name="step4-option" value="Gas" />
+									<input type="checkbox" id="step2-option8" name="step4-option" value="Pool" />
 									Pool
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
+							
 							<div class="step-option checkbox bottom orange">
 								<div class="step-option__image">
-									<span class="custom-icon"><i class="fal fa-hot-tub"></i></span>
+									<span class="custom-icon"><i class="fal fa-air-conditioner"></i></span>
 								</div>
 								<label for="step2-option9" class="step-option__title">
-									<input type="checkbox" id="step2-option9" name="step4-option" value="Gas" />
-									Jaccuzi
+									<input type="checkbox" id="step2-option9" name="step4-option" value="A / C" />
+									A / C
 								</label>
 								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 							</div>
+							
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-fan"></i></span>
+								</div>
+								<label for="step2-option10" class="step-option__title">
+									<input type="checkbox" id="step2-option10" name="step4-option" value="Controlled mechanic ventilation" />
+									Controlled mechanic ventilation
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-sun"></i></span>
+								</div>
+								<label for="step2-option11" class="step-option__title">
+									<input type="checkbox" id="step2-option11" name="step4-option"
+									       value="Solar boiler" />
+									Solar boiler
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-solar-panel"></i></span>
+								</div>
+								<label for="step2-option12" class="step-option__title">
+									<input type="checkbox" id="step2-option12" name="step4-option"
+									       value="Photovoltaic pannels" />
+									Photovoltaic pannels
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-battery-bolt"></i></span>
+								</div>
+								<label for="step2-option13" class="step-option__title">
+									<input type="checkbox" id="step2-option13" name="step4-option"
+									       value="Plug in hybrid car" />
+									Plug in hybrid car
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							
+							<div class="step-option checkbox bottom orange">
+								<div class="step-option__image">
+									<span class="custom-icon"><i class="fal fa-car"></i></span>
+								</div>
+								<label for="option-electric-car" class="step-option__title">
+									<input type="checkbox" id="option-electric-car" name="step4-option"
+									       value="Electric car" data-modal="kilometrage" />
+									Electric car
+								</label>
+								<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+							</div>
+							
 						</div>
 					
 					</div>
 				</div>
 			</eds-dialog>
-			
+			<!-- || -->
+			<eds-dialog id="dialog-kilometrage" size="md" class="modal-dialog">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog disable" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="On average, how many kilometres do you drive per year? "></eds-heading>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<!-- // -->
+						<div class="form-option select-wrapper kilometrage">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-kilometrage"
+							       name="select-kilometrage" value="" />
+							<div class="dropholder">
+								<div class="dropdown">
+									<p class="holder" data-placeholder="Kilometrage">Kilometrage</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<li>< 500 km</li>
+									<li>500 - 1000 km</li>
+									<li>1000 - 2000 km</li>
+									<li>> 2000 km</li>
+								</ul>
+							</div>
+						</div>
+						<!-- // -->
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
 			
 		</div>
 	

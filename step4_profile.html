@@ -42,12 +42,21 @@
 				
 				    <eds-text-field class="form-option text-field" label-inside="Last name"
 				                    type="text" placeholder="Last name" info-styles="primary-500"></eds-text-field>
-				    
-				    <eds-button id="civility" class="modal-button modal-input" icon-position="right" styles="primary"
-				                outlined  content="Civility">
-					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
-					    <input type="text" class="modal-input-text" id="civility-input" name="civility-input" />
-				    </eds-button>
+				
+				    <div class="form-option select-wrapper civility">
+					    <input type="hidden" class="select-wrapper-value form-option" id="select-civility" name="select-civility" value="" />
+					    <div class="dropholder">
+						    <div class="dropdown">
+							    <p class="holder" data-placeholder="Сivility">Сivility</p>
+							    <eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+						    </div>
+						    <ul class="dropdownOption">
+							    <!--<li class="disable">Сivility</li>-->
+							    <li>Mr</li>
+							    <li>Mrs.</li>
+						    </ul>
+					    </div>
+				    </div>
 				    
 				    <eds-text-field class="form-option text-field" label-inside="Email address"
 				                    type="text" placeholder="Email address" info-styles="primary-500"></eds-text-field>
@@ -66,12 +75,22 @@
 						    </eds-text-field>
 					    </div>
 				    </eds-date-picker>
-				    
-				    <eds-button id="language" class="modal-button modal-input" icon-position="right" styles="primary" outlined
-				                content="Language for communication">
-					    <eds-icon slot="icon" icon="chevron-down"></eds-icon>
-					    <input type="text" class="modal-input-text" id="language-input" name="language-input" />
-				    </eds-button>
+				
+				    <div class="form-option select-wrapper language">
+					    <input type="hidden" class="select-wrapper-value form-option" id="select-language" name="select-language" value="" />
+					    <div class="dropholder">
+						    <div class="dropdown">
+							    <p class="holder" data-placeholder="Preferred communication language">Preferred communication language</p>
+							    <eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+						    </div>
+						    <ul class="dropdownOption">
+							    <li>English</li>
+							    <li>French</li>
+							    <li>German</li>
+							    <li>Italian</li>
+						    </ul>
+					    </div>
+				    </div>
 				    
 			    </div>
 			   
@@ -89,71 +108,10 @@
 				</eds-link>
 			</div>
 			
-		<!-- Modals -->
-			<eds-dialog id="dialog-civility" size="md" class="modal-dialog">
-				<div slot="dialog-header">
-					<eds-button class="close-dialog" content="Done" styles="primary" text-only
-					            styles="right"></eds-button>
-					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-					             content="Civility"></eds-heading>
-					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your title.</eds-paragraph>
-				</div>
-				<div slot="dialog-body">
-					<div class="form-options">
-						<div class="form-option select-wrapper civility">
-							<input type="hidden" class="select-wrapper-value form-option" id="select-civility" name="select-civility" value="Mrs." />
-							<div class="dropholder">
-								<div class="dropdown">
-									<p class="holder">Mrs.</p>
-									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
-								</div>
-								<ul class="dropdownOption">
-									<li>Mr</li>
-									<li>Mrs.</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</eds-dialog>
-			
-			<eds-dialog id="dialog-language" size="md" class="modal-dialog">
-				<div slot="dialog-header">
-					<eds-button class="close-dialog" content="Done" styles="primary" text-only
-					            styles="right"></eds-button>
-					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
-					             content="Language"></eds-heading>
-					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your language.</eds-paragraph>
-				</div>
-				<div slot="dialog-body">
-					<div class="form-options">
-						<div class="form-option select-wrapper language">
-							<input type="hidden" class="select-wrapper-value form-option" id="select-language" name="select-language" value="Mrs." />
-							<div class="dropholder">
-								<div class="dropdown">
-									<p class="holder">Language</p>
-									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
-								</div>
-								<ul class="dropdownOption">
-									<li>English</li>
-									<li>French</li>
-									<li>German</li>
-									<li>Italian</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</eds-dialog>
-		
-			
 		</div>
-		
 		
 	</div>
 	
-
 </main>
 
 <footer>

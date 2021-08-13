@@ -262,17 +262,7 @@
 				dialogModal = dialogId && document.querySelector(`#${dialogId}`),
 				dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`),
 				dialogElSelect = dialogModal && document.querySelector(`#${dialogId} .offer-button`);
-			
-		/*	if ( offerOption.contains('offer-option') && offerOption.contains('checkbox')  ) {
-				target.checked ? offerOption.add('active') : offerOption.remove('active');
-				allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
-			} else if (offerOption.contains('offer-option') && offerOption.contains('radio') ) {
-				target.checked && offerOption.add('active');
-				allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
-				allInput.forEach(el => {
-					el.id !== target.id && el.closest('.offer-option').classList.remove('active')
-				});
-			}*/
+			const nextBtn = document.querySelector('.step-card-next');
 			
 			dialogModal.open();
 			dialogModal.addEventListener("clickBackdropHandler", function(e) {
@@ -298,10 +288,12 @@
 					allBtns.forEach(el => {
 						if ( el.closest('.offer-dialog').id !== targetId ) {    
 							el.classList.remove('active');
-							console.log(el.children[0].children[0].children[0]);
 							el.children[0].children[0].children[0].innerText = 'Select this offer';
 						}
 					});
+					nextBtn && nextBtn.classList.remove('disable');
+				} else {
+					nextBtn && nextBtn.classList.add('disable');
 				}
 				
 				if ( btn.classList.contains('active') ) {
@@ -347,21 +339,19 @@
 	 * Check if OnBoarding postcode is empty in the step
 	 * template: OnBoarding
 	 */
-	const postcodeOption = document.querySelector(`.postcode-wrapper .postcode-field`);
-	if (postcodeOption && postcodeOption.length > 0) {
-		postcodeOption.addEventListener("typingField", (e) => {
-			const target = e.target;
-			
-			if ( target.classList.contains('hydrated') ) {
-				const submitBtn = document.querySelector('.start-btn');
-				if ( e.detail.length > 0 ) {
-					submitBtn.classList.remove('disabled');
-				} else {
-					submitBtn.classList.add('disabled');
-				}
-			}
-		});
-	}
+	const postcodeOption = document.querySelector(`#postcode-field`);
+	postcodeOption && postcodeOption.addEventListener("typingField", (e) => {
+		const submitBtn = document.querySelector('.start-btn');
+		const max_chars = 4;
+		
+		if ( e.detail.length >= max_chars ) {
+			e.detail = e.detail.substr(0, max_chars);
+			submitBtn.classList.remove('disabled');
+		} else {
+			submitBtn.classList.add('disabled');
+		}
+	});
+	
 	//********
 	
 	/**
@@ -388,20 +378,16 @@
 	
 	/**
 	 * Check GDPR consentement
+	 * clickCheckbox
 	 */
-	const consentement = document.querySelector(`[name="consentement-checkbox"]`);
-	consentement && consentement.addEventListener("change", (e) => {
-		const {target, type } = e,
-			checkboxWrap = target.closest('.checkbox'),
-			nextBtn = document.querySelector('.step-card-next');
-		if ( target.checked ) {
+	const consentement = document.querySelector(`.consentement-checkbox`);
+	consentement && consentement.addEventListener("clickCheckbox", (e) => {
+		const nextBtn = document.querySelector('.step-card-next');
+		if ( e.detail.selected ) {
 			nextBtn.classList.remove('disable');
-			checkboxWrap.classList.add('active');
 		} else {
 			nextBtn.classList.add('disable');
-			checkboxWrap.classList.remove('active');
 		}
-		
 	});
 	//********
 	
@@ -411,17 +397,31 @@
 	const customSelectCountry = document.querySelector(`.form-option.select-wrapper.country`);
 	const customSelectCivility = document.querySelector(`.form-option.select-wrapper.civility`);
 	const customSelectLanguage = document.querySelector(`.form-option.select-wrapper.language`);
+	const customSelectInhabitants = document.querySelector(`.form-option.select-wrapper.inhabitants`);
+	const customSelectSurface = document.querySelector(`.form-option.select-wrapper.surface`);
+	const customSelectConstruction = document.querySelector(`.form-option.select-wrapper.year-construction`);
+	const customSelectKilometrage = document.querySelector(`.form-option.select-wrapper.kilometrage`);
 	customSelectCountry && initSelect(customSelectCountry);
 	customSelectCivility && initSelect(customSelectCivility);
 	customSelectLanguage && initSelect(customSelectLanguage);
+	// ---
+	customSelectInhabitants && initSelect(customSelectInhabitants);
+	customSelectSurface && initSelect(customSelectSurface);
+	customSelectConstruction && initSelect(customSelectConstruction);
+	customSelectKilometrage && initSelect(customSelectKilometrage);
+	customSelectSurface && initSelectActiveNextBtn(customSelectSurface);
 	
 	function initSelect(elem){
-		let selectHolder = elem.querySelector('.holder');
-		let selectOptions = elem.querySelectorAll('.dropdownOption li');
-		let dropHolder = elem.querySelector('.dropdown');
-		let selectValue = elem.querySelector('.select-wrapper-value');
-		let selectedOption = selectOptions[0];
-		  
+		let selectHolder = elem.querySelector('.holder'),
+			selectOptions = elem.querySelectorAll('.dropdownOption li'),
+			selectValue = elem.querySelector('.select-wrapper-value'),
+			selectedOption = selectOptions[0],
+			dropHolder = elem.querySelector('.dropdown'),
+			selectPlaceholderAttr = selectHolder.attributes['data-placeholder'],
+			dialogModal = elem.closest('.modal-dialog') !== null && elem.closest('.modal-dialog'),
+			dialogId = dialogModal && dialogModal.nextSibling.previousElementSibling.attributes[0].nodeValue,
+			dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`);
+		
 		selectedOption.classList.add('current');
 		
 		selectHolder.addEventListener('click', function () {
@@ -435,25 +435,55 @@
 				currentElement.classList.add('current');
 				selectHolder.innerText = currentElement.textContent;
 				dropHolder.classList.toggle('active');
-				selectValue.value = currentElement.innerText;
+				if ( currentElement.innerText !== selectPlaceholderAttr.value ) {
+					selectHolder.classList.add('has-value');
+					selectValue.value = currentElement.innerText;
+					dialogModal && dialogElClose.classList.remove('disable')
+				} else {
+					selectHolder.classList.remove('has-value');
+					selectHolder.innerText = selectPlaceholderAttr.value;
+					selectValue.value = "";
+					dialogModal && dialogElClose.classList.add('disable');
+				}
 			});
 		});
 	}
+	function initSelectActiveNextBtn(elem) {
+		if ( elem.classList.contains('select-wrapper') ) {
+			const selectOptions = elem.querySelectorAll('.dropdownOption li'),
+				selectHolder = elem.querySelector('.holder'),
+				selectPlaceholderAttr = selectHolder.attributes['data-placeholder'];
+			
+			const wrapper = document.querySelector(`.step-card-action`),
+				nextBtn = document.querySelector('.step-card-next');
+			
+			selectOptions.forEach(function(currentElement) {
+				currentElement.addEventListener('click', function(){
+					if ( currentElement.innerText !== selectPlaceholderAttr.value ) {
+						wrapper && wrapper.classList.add('show');
+						nextBtn.classList.remove('disable');
+					} else {
+						wrapper && wrapper.classList.remove('show');
+						nextBtn.classList.remove('disable');
+					}
+				});
+			});
+			
+		}
+	}
 	//********
+	
 	
 	/**
 	 * Confirm client consent
 	 */
-	const confirmConsentAll = document.querySelectorAll(`[name="confirm-checkbox"]`);
+	const confirmConsentAll = document.querySelectorAll(`.consentement-checkbox.confirm`);
 	confirmConsentAll && confirmConsentAll.forEach((el, i) => {
-		el.addEventListener("change", (e) => {
+		el.addEventListener("clickCheckbox", (e) => {
 			const {target, type } = e,
-				checkboxWrap = target.closest('.checkbox'),
 				nextBtn = document.querySelector('.step-card-next'),
-				allInput = target.closest('.step-card-wrapper').querySelectorAll(`input[name="${target.name}"]`),
-			allInputChecked = Array.from(allInput).filter(el => el.checked);
-			
-			target.checked ? checkboxWrap.classList.add('active') : checkboxWrap.classList.remove('active');
+				allInput = target.closest('.step-card-wrapper').querySelectorAll(`.consentement-checkbox.confirm`),
+			allInputChecked = Array.from(allInput).filter(el => el.querySelector('[type="checkbox"]').checked);
 			
 			if ( allInputChecked.length === allInput.length ) {
 				nextBtn.classList.remove('disable');
@@ -473,7 +503,7 @@
 	confirmModalAction && confirmModalAction.forEach((el, i) => {
 		el.addEventListener("clickItem", function() {
 			const modal = el.attributes.modal && el.attributes.modal.nodeValue;
-			console.log(modal);
+		
 			const dialogModal = document.querySelector(`#${modal}`),
 				dialogElClose = dialogModal && document.querySelector(`#${modal} .close-dialog`);
 			
@@ -490,5 +520,28 @@
 		});
 	});
 	//********
+	
+	const checkElectricCar = document.querySelector('#option-electric-car');
+	checkElectricCar && checkElectricCar.addEventListener('change', (e) => {
+		const {target} = e;
+		
+		if ( target.checked ) {
+			let modal = target.attributes['data-modal'],
+				dialogEl = document.querySelector(`#dialog-${modal.value}`),
+				dialogElClose = document.querySelector(`#dialog-${modal.value} .close-dialog`);
+			
+			dialogEl.open();
+			
+			dialogEl.addEventListener("clickBackdropHandler", function(e) {
+				dialogEl.close();
+			}, false);
+			
+			dialogElClose.addEventListener("click", function(e) {
+				dialogEl.close();
+			}, false);
+			
+		}
+		
+	});
 	
 })();

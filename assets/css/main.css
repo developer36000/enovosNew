@@ -70,7 +70,7 @@ strong, b {
 * Other
 */
 .container {
-  max-width: 552px;
+  max-width: 570px;
   width: 100%;
   display: block;
   margin: 0 auto;
@@ -97,6 +97,16 @@ strong, b {
       .container.login-page .page-heading .heading span {
         color: #00856A;
         margin-right: 5px; }
+
+.helper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative; }
+  @media screen and (max-width: 1140px) {
+    .helper-row {
+      flex-wrap: wrap; } }
 
 .page-heading {
   margin-bottom: 24px;
@@ -161,60 +171,33 @@ strong, b {
   display: flex;
   flex-wrap: nowrap;
   align-items: flex-start; }
-  .consentement-checkbox .checkbox {
-    position: relative;
-    min-width: 28px;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 1px solid #D7D7D7;
-    margin-right: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .consentement-checkbox .checkbox input {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      z-index: 15;
-      margin: 0;
-      cursor: pointer; }
-    .consentement-checkbox .checkbox .active-icon {
-      opacity: 0;
-      background: #F76700;
-      box-shadow: none;
+  .consentement-checkbox .checkbox.checkbox {
+    align-items: flex-start; }
+    .consentement-checkbox .checkbox.checkbox .checkbox__shape {
+      position: relative;
+      min-width: 28px;
       width: 28px;
       height: 28px;
       border-radius: 50%;
+      margin-right: 12px;
       display: flex;
       align-items: center;
-      justify-content: center;
-      position: absolute;
-      right: 0;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 5;
-      color: #fff;
-      font-size: 27px;
-      transition: opacity .3s ease-in-out;
-      pointer-events: none; }
-      .consentement-checkbox .checkbox .active-icon > .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: inherit !important; }
-    .consentement-checkbox .checkbox.active .active-icon {
-      opacity: 1; }
-  .consentement-checkbox .text {
-    color: #2D2828;
-    font-size: 16px;
-    line-height: 20px; }
+      justify-content: center; }
+      .consentement-checkbox .checkbox.checkbox .checkbox__shape__inner {
+        border: 1px solid #D7D7D7;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.15151));
+        width: 28px !important;
+        height: 28px !important;
+        border-radius: 50% !important;
+        font-size: 27px; }
+      .consentement-checkbox .checkbox.checkbox .checkbox__shape.active .active-icon {
+        opacity: 1; }
+    .consentement-checkbox .checkbox.checkbox label {
+      margin-left: 0;
+      color: #2D2828;
+      font-size: 16px;
+      line-height: 20px; }
 
 footer {
   padding-top: 70px;
@@ -259,7 +242,19 @@ header.main-header {
   background: #EBF1F6;
   border-radius: 8px;
   margin-top: 20px;
-  padding-top: 32px; }
+  padding-top: 32px;
+  max-width: 395px;
+  width: 100%;
+  position: fixed;
+  right: 20px; }
+  @media screen and (max-width: 1360px) {
+    .contact-banner {
+      max-width: 300px; } }
+  @media screen and (max-width: 1140px) {
+    .contact-banner {
+      max-width: 395px;
+      right: 0;
+      position: relative; } }
   .contact-banner .heading {
     color: #2D2828;
     font-weight: bold;
@@ -353,7 +348,7 @@ header.main-header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 15px;
+  padding: 15px 7px;
   background: #FFFFFF;
   border: 1px solid #D7D7D7;
   color: #2D2828;
@@ -659,7 +654,10 @@ header.main-header {
       font-size: 16px;
       margin: 0;
       padding-left: 20px;
-      padding-right: 40px; }
+      padding-right: 40px;
+      color: #A7A7A7; }
+      .form-option.select-wrapper .holder.has-value {
+        color: #000; }
     .form-option.select-wrapper .dropdown,
     .form-option.select-wrapper .dropholder {
       background: #fff; }
@@ -702,7 +700,7 @@ header.main-header {
       background: #fff;
       border-radius: 12px;
       border: 1px solid #D7D7D7;
-      z-index: 5;
+      z-index: 25;
       overflow: hidden; }
       .form-option.select-wrapper .dropdownOption li {
         padding: 10px 15px;
@@ -710,12 +708,16 @@ header.main-header {
         font-size: 16px;
         line-height: 20px;
         color: #5E5E5E;
-        list-style: none; }
-        .form-option.select-wrapper .dropdownOption li:hover:not(.current) {
-          color: #2D2828; }
+        list-style: none;
+        transition: all .3s;
+        background-color: #fff; }
+        .form-option.select-wrapper .dropdownOption li:hover {
+          color: #2D2828;
+          background-color: #F8F8F8; }
         .form-option.select-wrapper .dropdownOption li.current {
-          background-color: #FFF1E5;
-          font-weight: 500; }
+          color: #000; }
+        .form-option.select-wrapper .dropdownOption li.disable {
+          color: #A7A7A7 !important; }
 
 .confirm-action,
 .confirm-action-modal {

@@ -34,25 +34,19 @@
 		
 		<div class="step-card-wrapper">
 			
-			<label class="consentement-checkbox" style="margin-bottom: 50px;">
-				<span class="checkbox">
-					<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
-					<input type="checkbox" id="consentement-checkbox" name="consentement-checkbox">
-				</span>
-				<span class="text">J`accepte le traitement de mes donnees personnelles relatives a l`amenagement de
-					mon habitation afin de recevoir une estiomation personnalisee de ma consommation.</span>
-			</label>
+			<eds-checkbox id="consentement-checkbox" input-name="consentement-checkbox" value="1"
+			              class="consentement-checkbox" icon="check-circle"
+			              style="margin-bottom: 50px;" label="J’accepte le traitement de mes données personnelles relatives à l’aménagement de mon habitation afin de recevoir une estimation personnalisée de ma consommation."></eds-checkbox>
 			
 			<eds-paragraph styles="left" font-weight="thin" class="color-new-grey custom-paragraph sub-heading" >
-				Note: sans votre consentement, nous ne serons pas en mesure de traiter les donnees suivantes pour
-				vous fournir une estimation precise.
+				Note : sans votre consentement, nous ne serons pas en mesure de traiter les données suivantes pour vous fournir une estimation précise
 			</eds-paragraph>
 			
 			<div class="step-card-nav">
-				<eds-link content="Previous" size="md" url="#"
+				<eds-link content="Previous" size="md" url="step2_select-offer.html"
 				          class="color-new-grey step-card-previous"></eds-link>
 				<eds-link content="Next" icon-position="right" size="md" font-weight="bold"
-				          url="#"
+				          url="step2_offer-details.html"
 				          class="color-new-grey size-icon-23 step-card-next disable">
 					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
 				</eds-link>

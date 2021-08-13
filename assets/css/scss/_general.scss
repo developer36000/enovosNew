@@ -19,7 +19,7 @@ strong, b {
 * Other
 */
 .container {
-	max-width: 552px;
+	max-width: 570px;
 	width: 100%;
 	display: block;
 	margin: 0 auto;
@@ -51,6 +51,17 @@ strong, b {
 				}
 			}
 		}
+	}
+}
+
+.helper-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	position: relative;
+	@media screen and (max-width: 1140px) {
+		flex-wrap: wrap;
 	}
 }
 
@@ -141,67 +152,40 @@ strong, b {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: flex-start;
-	.checkbox {
-		position: relative;
-		min-width: 28px;
-		width: 28px;
-		height: 28px;
-		border-radius: 50%;
-		border: 1px solid #D7D7D7;
-		margin-right: 15px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		input {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			width: 100%;
-			height: 100%;
-			opacity: 0;
-			z-index: 15;
-			margin: 0;
-			cursor: pointer;
-		}
-		.active-icon {
-			opacity: 0;
-			background: $orange;
-			box-shadow: none;
+	.checkbox.checkbox {
+		align-items: flex-start;
+		.checkbox__shape {
+			position: relative;
+			min-width: 28px;
 			width: 28px;
 			height: 28px;
 			border-radius: 50%;
+			margin-right: 12px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			position: absolute;
-			right: 0;
-			left: 0;
-			top: 0;
-			bottom: 0;
-			z-index: 5;
-			color: #fff;
-			font-size: 27px;
-			transition: opacity .3s ease-in-out;
-			pointer-events: none;
-			> .icon {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: inherit !important;
+			&__inner {
+				border: 1px solid #D7D7D7;
+				box-sizing: border-box;
+				filter: drop-shadow(0px 2px 12px rgba(0, 0, 0, 0.15151));
+				width: 28px !important;
+				height: 28px !important;
+				border-radius: 50% !important;
+				font-size: 27px;
+			}
+			&.active {
+				.active-icon {
+					opacity: 1;
+				}
 			}
 		}
-		&.active {
-			.active-icon {
-				opacity: 1;
-			}
+		label {
+			margin-left: 0;
+			color: $color-new-grey;
+			font-size: 16px;
+			line-height: 20px;
 		}
 	}
-	.text {
-		color: $color-new-grey;
-		font-size: 16px;
-		line-height: 20px;
-	}
+
 	
 }
