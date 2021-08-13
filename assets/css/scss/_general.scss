@@ -94,6 +94,17 @@ strong, b {
 		.heading-h2 {
 			margin-bottom: 15px;
 		}
+		.heading-h3 {
+			margin-bottom: 8px;
+			font-size: 20px;
+			line-height: 1.2;
+			min-height: initial;
+			* {
+				font-size: inherit;
+				line-height: inherit;
+				min-height: initial;
+			}
+		}
 		
 	}
 }
