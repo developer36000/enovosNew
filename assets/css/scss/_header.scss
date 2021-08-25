@@ -3,11 +3,18 @@ header.main-header {
 	padding-bottom: 0;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	position: relative;
 	max-width: 1100px;
 	width: 100%;
 	margin: 0 auto;
+	.form-options {
+		max-width: max-content;
+	}
+	@media screen and (max-width: 1140px) {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
 }
 
 #logo-header {
@@ -19,9 +26,10 @@ header.main-header {
 	font-size: 16px;
 	line-height: 20px;
 	color: #5E5E5E;
-	position: absolute;
+	position: relative;
 	left: 0;
 	@media screen and (max-width: 640px) {
+		position: absolute;
 		left: 15px;
 		top: 15px;
 	}

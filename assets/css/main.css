@@ -57,6 +57,28 @@
 body {
   font-family: "Montserrat", sans-serif;
   height: 100%; }
+  body.confirmation-page {
+    background: url("../images/confirm-bg.png") no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    display: block; }
+    @media screen and (max-width: 640px) {
+      body.confirmation-page {
+        background: url("../images/confirm-bg-mobile.png") no-repeat;
+        background-position: 100% 50%;
+        background-size: cover; } }
+    body.confirmation-page main {
+      padding-top: 100px; }
+      @media screen and (max-width: 640px) {
+        body.confirmation-page main {
+          padding-top: 70px;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column; } }
 
 main {
   padding-top: 70px;
@@ -119,7 +141,8 @@ strong, b {
         margin-right: 5px; }
     .container.confirmation-page .page-heading .custom-paragraph {
       margin-top: 24px;
-      color: #2D2828 !important; }
+      color: #2D2828 !important;
+      text-align: center !important; }
       @media screen and (max-width: 560px) {
         .container.confirmation-page .page-heading .custom-paragraph {
           text-align: center !important; } }
@@ -128,6 +151,8 @@ strong, b {
         text-align: inherit !important; }
   .container.confirmation-page .step-card-wrapper {
     max-width: 100%; }
+  .container.confirmation-page .back-button {
+    margin-top: 21px; }
 
 .helper-row {
   display: flex;
@@ -377,7 +402,27 @@ footer {
   padding-bottom: 52px;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column; }
+  footer .footer-text {
+    max-width: 570px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E5E5E; }
+    footer .footer-text:last-of-type {
+      margin-bottom: 75px; }
+    footer .footer-text .paragraph {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: left !important;
+      color: #5E5E5E; }
 
 #logo-footer {
   width: 77px; }
@@ -387,11 +432,17 @@ header.main-header {
   padding-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   max-width: 1100px;
   width: 100%;
   margin: 0 auto; }
+  header.main-header .form-options {
+    max-width: max-content; }
+  @media screen and (max-width: 1140px) {
+    header.main-header {
+      padding-left: 24px;
+      padding-right: 24px; } }
 
 #logo-header {
   width: 77px; }
@@ -401,10 +452,11 @@ header.main-header {
   font-size: 16px;
   line-height: 20px;
   color: #5E5E5E;
-  position: absolute;
+  position: relative;
   left: 0; }
   @media screen and (max-width: 640px) {
     .back-to-home-btn {
+      position: absolute;
       left: 15px;
       top: 15px; } }
   .back-to-home-btn .slot-icon {
@@ -826,11 +878,33 @@ header.main-header {
       line-height: 60px;
       font-size: 16px;
       margin: 0;
-      padding-left: 20px;
+      padding-left: 16px;
       padding-right: 40px;
       color: #A7A7A7; }
       .form-option.select-wrapper .holder.has-value {
-        color: #000; }
+        color: #000;
+        padding-top: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; }
+    .form-option.select-wrapper .placeholder-label {
+      white-space: pre-line;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0;
+      transition: color .3s ease-in-out;
+      color: #F76700 !important;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      width: 100%;
+      left: 16px;
+      top: 8px; }
+      .form-option.select-wrapper .placeholder-label.show {
+        opacity: 1; }
+      .form-option.select-wrapper .placeholder-label.validate {
+        color: #00856A !important; }
     .form-option.select-wrapper .dropdown,
     .form-option.select-wrapper .dropholder {
       background: #fff; }
@@ -888,7 +962,7 @@ header.main-header {
           color: #2D2828;
           background-color: #F8F8F8; }
         .form-option.select-wrapper .dropdownOption li.current {
-          color: #000; }
+          color: #5E5E5E; }
         .form-option.select-wrapper .dropdownOption li.disable {
           color: #A7A7A7 !important; }
 
@@ -1673,6 +1747,54 @@ header.main-header {
       line-height: 24px; }
   .postcode-wrapper .start-btn.disabled .btn .btn__content {
     background: #D7D7D7 !important; }
+
+.form-option.select-wrapper.site-lang {
+  height: 51px;
+  min-width: 88px; }
+  .form-option.select-wrapper.site-lang .dropholder {
+    border: none; }
+  .form-option.select-wrapper.site-lang .dropdown {
+    border: 1px solid #F76700;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #5E5E5E;
+    height: 51px; }
+  .form-option.select-wrapper.site-lang .holder {
+    line-height: 1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 16px 16px; }
+    .form-option.select-wrapper.site-lang .holder img {
+      width: 24px;
+      height: 16px;
+      margin-right: 8px; }
+  .form-option.select-wrapper.site-lang .dropdown-icon {
+    display: none !important; }
+  .form-option.select-wrapper.site-lang .dropdownOption li {
+    line-height: 1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #5E5E5E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 16px 16px; }
+    .form-option.select-wrapper.site-lang .dropdownOption li img {
+      width: 24px;
+      height: 16px;
+      margin-right: 8px; }
 
 .electricity-meter-page .step-card-wrapper #top-electricity-meter {
   margin-top: 32px; }

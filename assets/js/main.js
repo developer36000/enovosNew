@@ -412,9 +412,11 @@
 	const customSelectSurface = document.querySelector(`.form-option.select-wrapper.surface`);
 	const customSelectConstruction = document.querySelector(`.form-option.select-wrapper.year-construction`);
 	const customSelectKilometrage = document.querySelector(`.form-option.select-wrapper.kilometrage`);
+	const customSelectSiteLang = document.querySelector(`.form-option.select-wrapper.site-lang`);
 	customSelectCountry && initSelect(customSelectCountry);
 	customSelectCivility && initSelect(customSelectCivility);
 	customSelectLanguage && initSelect(customSelectLanguage);
+	customSelectSiteLang && initSelect(customSelectSiteLang);
 	// ---
 	customSelectInhabitants && initSelect(customSelectInhabitants);
 	customSelectSurface && initSelect(customSelectSurface);
@@ -424,6 +426,7 @@
 	
 	function initSelect(elem){
 		let selectHolder = elem.querySelector('.holder'),
+		    selectLabel = elem.querySelector('.placeholder-label'),
 			selectOptions = elem.querySelectorAll('.dropdownOption li'),
 			selectValue = elem.querySelector('.select-wrapper-value'),
 			selectedOption = selectOptions[0],
@@ -439,20 +442,26 @@
 			dropHolder.classList.toggle('active');
 		});
 		
+		selectLabel && (selectLabel.innerHTML = selectPlaceholderAttr.value);
+		
 		selectOptions.forEach(function(currentElement) {
 			currentElement.addEventListener('click', function(){
 				selectedOption.classList.remove('current');
 				selectedOption = currentElement;
 				currentElement.classList.add('current');
-				selectHolder.innerText = currentElement.textContent;
+				selectHolder.innerHTML = currentElement.innerHTML;
 				dropHolder.classList.toggle('active');
-				if ( currentElement.innerText !== selectPlaceholderAttr.value ) {
+				//console.log({currentElement})
+				//console.log(currentElement.innerHTML)
+				if ( currentElement.innerHTML !== selectPlaceholderAttr.value ) {
+					selectLabel && selectLabel.classList.add('show');
 					selectHolder.classList.add('has-value');
-					selectValue.value = currentElement.innerText;
+					selectValue.value = currentElement.innerHTML; // innerText
 					dialogModal && dialogElClose.classList.remove('disable')
 				} else {
+					selectLabel && selectLabel.classList.remove('show');
 					selectHolder.classList.remove('has-value');
-					selectHolder.innerText = selectPlaceholderAttr.value;
+					selectHolder.innerHTML = selectPlaceholderAttr.value;
 					selectValue.value = "";
 					dialogModal && dialogElClose.classList.add('disable');
 				}
