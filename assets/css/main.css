@@ -1272,10 +1272,29 @@ header.main-header {
   .offer-dialog .offer-button {
     margin-top: 24px; }
   .offer-dialog .offer-footer {
-    display: none; }
-    @media screen and (max-width: 560px) {
-      .offer-dialog .offer-footer {
-        display: flex; } }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .offer-dialog .offer-footer .footer-text {
+      max-width: 570px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding-left: 24px;
+      padding-right: 24px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5E5E5E; }
+      .offer-dialog .offer-footer .footer-text:last-of-type {
+        margin-bottom: 50px; }
+      .offer-dialog .offer-footer .footer-text .paragraph {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left !important;
+        color: #5E5E5E; }
 
 .step-offer-wrapper {
   max-width: 327px;
