@@ -16,6 +16,44 @@
 </head>
 <body>
 
+<!-- Preloader START -->
+<div id="preloaderGroup" class="preloader-group">
+	<div class="main-loader">
+		<span class="loader1"></span>
+		<span class="loader2"></span>
+		<span class="loader3"></span>
+	</div>
+</div>
+<!-- Preloader END -->
+
+<header class="main-header">
+	<eds-link content="Back to Home" icon-position="left" url="#" class="back-to-home-btn">
+		<eds-icon slot="icon" icon="arrow-left"></eds-icon>
+	</eds-link>
+	
+	<eds-image id="logo-header" alt="envos-logo" src="assets/images/envos-logo.svg"></eds-image>
+	
+	<div class="form-options">
+		<div class="form-option select-wrapper site-lang">
+			<input type="hidden" class="select-wrapper-value" id="site-lang" name="site-lang" />
+			<div class="dropholder">
+				<div class="dropdown">
+					<p class="holder" data-placeholder="EN">
+						<img id="en-flag" alt="en-flag" src="assets/images/en.jpg" /> EN
+					</p>
+					<!--<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>-->
+				</div>
+				<ul class="dropdownOption">
+					<li><img id="en-flag" alt="en-flag" src="assets/images/en.jpg" /> EN</li>
+					<li><img id="fr-flag" alt="fr-flag" src="assets/images/fr.png" /> FR</li>
+					<li><img id="gb-flag" alt="gb-flag" src="assets/images/gb.png" /> GR</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</header>
+
 <main>
 	<div class="container">
 		
@@ -55,6 +93,16 @@
 					    <label for="step1_who-option2" class="step-option__title">
 						    <input type="radio" id="step1_who-option2" name="step1_who-option" value="Professional" />
 						    Professional
+					    </label>
+					    <eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+				    </div>
+				    <div class="step-option radio">
+					    <div class="step-option__image">
+						    <span class="custom-icon"><i class="fal fa-business-time"></i></span>
+					    </div>
+					    <label for="step1_who-option2" class="step-option__title">
+						    <input type="radio" id="step1_who-option3" name="step1_who-option" value="Self-employed" />
+						    Self employed
 					    </label>
 					    <eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
 				    </div>
