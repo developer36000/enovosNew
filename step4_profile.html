@@ -62,8 +62,27 @@
 				    <eds-text-field class="form-option text-field" label-inside="Email address"
 				                    type="text" placeholder="Email address" info-styles="primary-500"></eds-text-field>
 				    
-				    <eds-text-field class="form-option text-field" label-inside="Phone number"
-				                    type="text" placeholder="Phone number" info-styles="primary-500"></eds-text-field>
+				    <div class="phone-wrapper">
+					    <div class="form-option select-wrapper country-code">
+						    <input type="hidden" class="select-wrapper-value form-option" id="select-country-code"
+						           name="select-country-code" value="" />
+						    <div class="dropholder">
+							    <div class="dropdown">
+								    <span class="placeholder-label">Country code</span>
+								    <p class="holder" data-placeholder="Country code">+35</p>
+								    <eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+							    </div>
+							    <ul class="dropdownOption">
+								    <li>+35</li>
+								    <li>+34</li>
+								    <li>+38</li>
+							    </ul>
+						    </div>
+					    </div>
+					    <eds-text-field class="form-option text-field phone-number" label-inside="Phone number"
+					                    type="text" placeholder="Phone number"
+					                    info-styles="primary-500"></eds-text-field>
+				    </div>
 				    
 				    <eds-date-picker id="date-picker" class="form-option birthday-picker">
 					    <div slot="selector">

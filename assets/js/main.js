@@ -413,10 +413,12 @@
 	const customSelectConstruction = document.querySelector(`.form-option.select-wrapper.year-construction`);
 	const customSelectKilometrage = document.querySelector(`.form-option.select-wrapper.kilometrage`);
 	const customSelectSiteLang = document.querySelector(`.form-option.select-wrapper.site-lang`);
+	const customSelectСountryСode = document.querySelector(`.form-option.select-wrapper.country-code`);
 	customSelectCountry && initSelect(customSelectCountry);
 	customSelectCivility && initSelect(customSelectCivility);
 	customSelectLanguage && initSelect(customSelectLanguage);
 	customSelectSiteLang && initSelect(customSelectSiteLang);
+	customSelectСountryСode && initSelect(customSelectСountryСode);
 	// ---
 	customSelectInhabitants && initSelect(customSelectInhabitants);
 	customSelectSurface && initSelect(customSelectSurface);

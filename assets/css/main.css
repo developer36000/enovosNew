@@ -966,6 +966,36 @@ header.main-header {
         .form-option.select-wrapper .dropdownOption li.disable {
           color: #A7A7A7 !important; }
 
+.phone-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (max-width: 440px) {
+    .phone-wrapper {
+      flex-wrap: wrap; } }
+  .phone-wrapper .country-code {
+    width: calc(36% - 8px);
+    margin-right: 8px; }
+    @media screen and (max-width: 440px) {
+      .phone-wrapper .country-code {
+        width: 100%;
+        margin-right: 0; } }
+    .phone-wrapper .country-code .placeholder-label {
+      opacity: 1; }
+    .phone-wrapper .country-code .holder {
+      color: #000;
+      padding-top: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px; }
+    .phone-wrapper .country-code .dropdown .dropdown-icon {
+      top: 28px; }
+  .phone-wrapper .phone-number {
+    width: 64%; }
+    @media screen and (max-width: 440px) {
+      .phone-wrapper .phone-number {
+        width: 100%; } }
+
 .confirm-action,
 .confirm-action-modal {
   /*	&.address {
@@ -1175,6 +1205,9 @@ header.main-header {
     .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
     .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content {
       color: #00856A; }
+  .modal-dialog .dialog__dialog__content__body .form-option.select-wrapper .placeholder-label,
+  .modal-validate .dialog__dialog__content__body .form-option.select-wrapper .placeholder-label {
+    color: #00856A !important; }
 
 .modal-validate {
   background: #E5F2F0; }

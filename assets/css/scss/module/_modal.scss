@@ -192,6 +192,9 @@
 					 color: $success;
 				 }
 			 }
+			 &.select-wrapper .placeholder-label {
+				 color: $success !important;
+			 }
 		 }
 	 }
 	

@@ -276,6 +276,43 @@
 		}
 		
 	}
+
+}
+
+.phone-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@media screen and (max-width: 440px) {
+		flex-wrap: wrap;
+	}
+	.country-code {
+		width: calc(36% - 8px);
+		margin-right: 8px;
+		@media screen and (max-width: 440px) {
+			width: 100%;
+			margin-right: 0;
+		}
+		.placeholder-label {
+			opacity: 1;
+		}
+		.holder {
+			color: #000;
+			padding-top: 30px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+		.dropdown .dropdown-icon {
+			top: 28px;
+		}
+	}
+	.phone-number {
+		width: 64%;
+		@media screen and (max-width: 440px) {
+			width: 100%;
+		}
+	}
 }
 
 .confirm-action,
