@@ -1,0 +1,44 @@
+// Product Layout
+// > .sp-panel = 100%;
+// > .sp-panel-set = 100% * # of products
+
+// # of slide
+$products: 3;
+
+$bg: rgba(0,0,0,0.5);
+
+$window-w: 600px;
+$window-h: 400px;
+
+* {
+	box-sizing:border-box;
+}
+
+.ds-slider {
+	width: 100%;
+	height: auto;
+	min-height: 274px;
+	overflow: hidden;
+	position: relative;
+	&__slide {
+		
+		width: 100%;
+		height: inherit;
+		min-height: inherit;
+		@media screen and (max-width: 560px) {
+			float: left;
+		}
+	}
+}
+
+.ds-panel-set {
+	@media screen and (max-width: 560px) {
+		width: $products * 100%;
+		height:100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		top: 0;
+		transition: 0.4s;
+	}
+}

@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step2 Selected Consentement</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5 active" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="left" class="color-new-grey mb-15"
+			             content="Confirm your consent"></eds-heading>
+			
+			<eds-paragraph styles="left" font-weight="normal"
+			               class="color-new-grey custom-paragraph-400 sub-heading mb-25" >
+				En cochant les cases ci-après, vous acceptez le traitement de vos données personnelles par Enovos Luxembourg S.A. (ci-après désignée « ENOVOS ») responsable de traitement, aux fins mentionnées ci-dessous :
+			</eds-paragraph>
+			
+		</div>
+		
+		<div class="step-card-wrapper">
+			
+			<eds-checkbox id="confirm-checkbox1" input-name="confirm-checkbox1" value="1"
+			              class="consentement-checkbox confirm" icon="check-circle"
+			              label="J’accepte de recevoir par voie électronique les bulletins d’information (newsletters) et/ou les invitations à des évènements dont ENOVOS est partenaire."></eds-checkbox>
+			
+			<eds-checkbox id="confirm-checkbox2" input-name="confirm-checkbox2" value="1"
+			              class="consentement-checkbox confirm" icon="check-circle"
+			              label="J’accepte de recevoir des informations commerciales sur des nouveaux produits et/ou services proposés par ENOVOS (ou le Groupe Encevo)."></eds-checkbox>
+			
+			<eds-checkbox id="confirm-checkbox3" input-name="confirm-checkbox3" value="1"
+			              class="consentement-checkbox confirm" icon="check-circle"
+			              label="J’accepte de recevoir par voie électronique les offres proposées par les d’ENOVOS (ou du Groupe Encevo) (artisans, installateurs, assureurs, banques, et loueurs de véhicules électriques)."></eds-checkbox>
+			
+			<eds-checkbox id="confirm-checkbox4" input-name="confirm-checkbox4" value="1"
+			              class="consentement-checkbox confirm mb-25" icon="check-circle"
+			              label="J’autorise ENOVOS à analyser mes consommations d'énergie pour me proposer des produits et/ou solutions adaptées à mes besoins pour les finalités suivantes : m’aider à comprendre ma consommation et à réaliser des économies d’énergie."></eds-checkbox>
+			
+			
+			<eds-paragraph styles="left" font-weight="normal" class="color-new-grey custom-paragraph-400 mb-15" >
+				Vous pouvez à tout moment retirer votre consentement au traitement de vos données personnelles à des
+				fins de prospection commerciale et/ou modifier vos préférences en contactant <a href="mailto:dpo@enovos.eu">dpo@enovos.eu</a>.
+			</eds-paragraph>
+			
+			<eds-paragraph styles="left" font-weight="normal" class="color-new-grey custom-paragraph-400 mb-15" >
+				Sans votre consentement, ENOVOS ne sera pas en mesure de vous proposer des services ou offres promotionnelles personnalisés.
+			</eds-paragraph>
+			
+			<eds-paragraph styles="left" font-weight="normal" class="color-new-grey custom-paragraph-400" >
+				Pour plus d’information sur le traitement de vos données personnelles, vous pouvez consulter notre politique de confidentialité ainsi que les conditions générales d'utilisation disponible sur notre site internet.
+			</eds-paragraph>
+			
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Confirm" icon-position="right" size="md" font-weight="bold"
+				          url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step5 Validate Profile</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main>
+	<div class="container">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5 active" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="Confirm your profile information"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
+			               content="Please, check and confirm the information below. Click on the field to modify your choice."></eds-paragraph>
+		</div>
+	
+		<div class="step-form-wrapper">
+			  <div class="helper-row">
+				  <div class="step-form">
+					
+					  <div class="form-options confirmation">
+						  
+						  <eds-quick-action modal="validate_civility" styles="primary" main-title="Civility"
+						                    subtitle="Miss" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_first_name" styles="primary" main-title="First name"
+						                    subtitle="Laura" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_last_name" styles="primary" main-title="Last name"
+						                    subtitle="Klein" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_birth_day" styles="primary" main-title="Date of birth"
+						                    subtitle="15 September 1980" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_email" styles="primary" main-title="Email"
+						                    subtitle="l.klein@gmail.com" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_language" styles="primary"
+						                    main-title="Preferred communication language"
+						                    subtitle="English" class="confirm-action-modal address" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						
+						  <eds-quick-action modal="validate_phone" styles="primary" main-title="Phone number"
+						                    subtitle="+35 564 45 43 11" class="confirm-action-modal" >
+							  <div class="after-titles" slot="after-titles">
+								  <eds-icon slot="icon" icon="pen"></eds-icon>
+							  </div>
+						  </eds-quick-action>
+						  
+					  </div>
+				
+				  </div>
+				
+				  <div class="contact-banner">
+					  <eds-heading type="h3" font-weight="bold" styles="center" class="color-new-grey" content="CONTACT"></eds-heading>
+					  <eds-paragraph styles="center" font-weight="thin" class="color-new-grey custom-paragraph" >
+						  Any questions ? <br/> Contact us now.
+					  </eds-paragraph>
+					  <div class="bottom-banner" style="background-image: url('assets/images/bg-oval-persone.png')">
+						  <eds-button content="Contact us" styles="primary" class="contact-button"></eds-button>
+					  </div>
+				  </div>
+			  </div>
+			
+		<!-- Navigation -->
+			
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Confirm" icon-position="right" size="md" font-weight="bold"
+				          url="#"
+				          class="color-new-grey size-icon-23 step-card-next">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+			
+		<!-- Modals -->
+			
+			<eds-dialog id="validate_civility" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Civility"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your title.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<div class="form-option select-wrapper civility">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-civility" name="select-civility" value="" />
+							<div class="dropholder">
+								<div class="dropdown">
+									<span class="placeholder-label validate">Сivility</span>
+									<p class="holder" data-placeholder="Сivility">Сivility</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<!--<li class="disable">Сivility</li>-->
+									<li>Mr</li>
+									<li>Mrs.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_first_name" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="First name"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your first name.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<eds-text-field class="form-option text-field" label-inside="First name"
+						                type="text" placeholder="First name" info-styles="primary-500"></eds-text-field>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_last_name" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Last name"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your last
+						name.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<eds-text-field class="form-option text-field" label-inside="Last name"
+						                type="text" placeholder="Last name" info-styles="primary-500"></eds-text-field>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_email" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Email"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your email.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<eds-text-field class="form-option text-field" label-inside="Email address"
+						                type="text" placeholder="Email address" info-styles="primary-500"></eds-text-field>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_phone" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Phone number"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your phone
+						number.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<div class="phone-wrapper">
+							<div class="form-option select-wrapper country-code">
+								<input type="hidden" class="select-wrapper-value form-option" id="select-country-code"
+								       name="select-country-code" value="" />
+								<div class="dropholder">
+									<div class="dropdown">
+										<span class="placeholder-label">Country code</span>
+										<p class="holder" data-placeholder="Country code">+35</p>
+										<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+									</div>
+									<ul class="dropdownOption">
+										<li>+35</li>
+										<li>+34</li>
+										<li>+38</li>
+									</ul>
+								</div>
+							</div>
+							<eds-text-field class="form-option text-field phone-number" label-inside="Phone number"
+							                type="text" placeholder="Phone number"
+							                info-styles="primary-500"></eds-text-field>
+						</div>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_birth_day" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Date of birth"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your date
+						of birth.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<eds-date-picker id="date-picker" class="form-option birthday-picker">
+							<div slot="selector">
+								<eds-text-field
+										id="field-birthday-picker"
+										debounce="300"
+										icon-leading="calendar-alt"
+										label="" type="text"
+										placeholder="Birthday">
+								</eds-text-field>
+							</div>
+						</eds-date-picker>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			<eds-dialog id="validate_language" size="md" class="modal-validate">
+				<div slot="dialog-header">
+					<eds-button class="close-dialog" content="Done" styles="primary" text-only
+					            styles="right"></eds-button>
+					<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey"
+					             content="Preferred communication language"></eds-heading>
+					<eds-paragraph styles="center" class="color-new-grey custom-paragraph">Please, select your
+						preferred language.</eds-paragraph>
+				</div>
+				<div slot="dialog-body">
+					<div class="form-options">
+						<div class="form-option select-wrapper language">
+							<input type="hidden" class="select-wrapper-value form-option" id="select-language" name="select-language" value="" />
+							<div class="dropholder">
+								<div class="dropdown">
+									<span class="placeholder-label validate">Language</span>
+									<p class="holder" data-placeholder="Language">Language</p>
+									<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>
+								</div>
+								<ul class="dropdownOption">
+									<!--<li class="disable">Language</li>-->
+									<li>English</li>
+									<li>French</li>
+									<li>German</li>
+									<li>Italian</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</eds-dialog>
+			<!-- || -->
+			
+		</div>
+		
+		
+	</div>
+	
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+
+</body>
+</html>

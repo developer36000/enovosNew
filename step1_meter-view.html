@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Step1 Electricity Meter View</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
+
+<main class="electricity-meter-page">
+	<div class="container electricity-meter-view">
+		
+		<div class="steps-navigation">
+			<span class="step step-1" data-step="1"></span>
+			<span class="step step-2 active" data-step="2"></span>
+			<span class="step step-3" data-step="3"></span>
+			<span class="step step-4" data-step="4"></span>
+			<span class="step step-5" data-step="5"></span>
+		</div>
+		
+		<div class="page-heading">
+			<eds-heading type="h2" font-weight="bold" styles="center" class="color-new-grey mb-15"
+			             content="What does your gas meter look like?"></eds-heading>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph">
+				Please, select how your gas meter looks like. Your meter number is compulsory to go on with the flow.
+				If you don`t have it don`t hesitate to contact uor serviceLine.
+			</eds-paragraph>
+		</div>
+		
+		<div class="step-card-wrapper meter-card-wrapper">
+			<div class="step-card">
+				
+				<div class="step-options meter-options ds-slider">
+					<!--<div class="ds-panel-set">-->
+						<div class="step-option radio ds-slider__slide">
+							<div class="step-option__image">
+							<span class="custom-icon">
+							   <eds-image id="flo-meter" alt="FLO meter"
+							              src="assets/images/flo-meter.jpg"></eds-image>
+							</span>
+							</div>
+							<label for="meter-option1" class="step-option__title">
+								<input type="radio" id="meter-option1" name="meter-option" value="FLO" />
+								<span class="meter-lable">«FLO» meter</span>
+							</label>
+							<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+						</div>
+						<div class="step-option radio ds-slider__slide">
+							<div class="step-option__image">
+							<span class="custom-icon">
+								<eds-image id="els-meter" alt="ELS meter"
+								           src="assets/images/els-meter.jpg"></eds-image>
+							</span>
+							</div>
+							<label for="meter-option2" class="step-option__title">
+								<input type="radio" id="meter-option2" name="meter-option" value="ELS" />
+								<span class="meter-lable">«ELS» meter</span>
+							</label>
+							<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+						</div>
+						<div class="step-option radio ds-slider__slide">
+							<div class="step-option__image">
+								<span class="custom-icon" style="font-size: 56px;"><i class="far fa-tachometer-average"></i></span>
+							</div>
+							<label for="meter-option3" class="step-option__title">
+								<input type="radio" id="meter-option3" name="meter-option" value="Another" />
+								I have another meter
+							</label>
+							<eds-icon icon="check" size="13px" class="active-icon"></eds-icon>
+						</div>
+					<!--</div>-->
+				</div>
+			
+			</div>
+			<div class="step-card-nav">
+				<eds-link content="Previous" size="md" url="#"
+				          class="color-new-grey step-card-previous"></eds-link>
+				<eds-link content="Next" icon-position="right" size="md" font-weight="bold" url="#"
+				          class="color-new-grey size-icon-23 step-card-next disable">
+					<eds-icon slot="icon" icon="arrow-right"></eds-icon>
+				</eds-link>
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+<footer>
+	<eds-image id="logo-footer" alt="envos-logo" src="assets/images/envos-logo.svg" />
+</footer>
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -6,6 +6,7 @@
 	align-items: center;
 	justify-content: stretch;
 	margin: 0 auto;
+	position: relative;
 }
 .step-card {
 	background: $light-sky;
@@ -24,6 +25,12 @@
 		max-height: 120px;
 		object-fit: contain;
 	}
+	&.mandarin {
+		background: $pink2;
+	}
+	&.red {
+		background: $pink2;
+	}
 }
 .step-options {
 	display: flex;
@@ -40,7 +47,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 15px;
+	padding: 15px 7px;
 	background: #FFFFFF;
 	border: 1px solid #D7D7D7;
 	color: $color-new-grey;
@@ -54,8 +61,15 @@
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-bottom: 20px;
+	@media screen and (max-width: 360px) {
+		margin: 0 auto 20px auto;
+	}
 	&.centered {
 		justify-content: center;
+		padding: 10px;
+		.step-option__image {
+			margin-bottom: 8px;
+		}
 	}
 	&.bottom {
 		justify-content: flex-end;
@@ -110,20 +124,20 @@
 			pointer-events: auto;
 			background: #FFFFFF;
 			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
-			width: 20px;
-			height: 20px;
+			width: 32px;
+			height: 32px;
 			border-radius: 50%;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			position: absolute;
-			right: -10px;
+			right: -16px;
 			left: initial;
 			top: initial;
-			bottom: -10px;
+			bottom: -16px;
 			color: $success;
 			padding: 4px;
-			font-size: 18px;
+			font-size: 27px;
 			transition: opacity .3s ease-in-out;
 			> .icon {
 				display: flex;
@@ -154,6 +168,37 @@
 			}
 		}
 	}
+	
+	// red type
+	&.red {
+		&.active {
+			background: $red;
+			border-color: $red;
+			color: #FFFFFF;
+		}
+		&.checkbox,
+		&.radio {
+			.active-icon {
+				color: $red;
+			}
+		}
+	}
+	
+	// mandarin type
+	&.mandarin {
+		&.active {
+			background: $mandarin;
+			border-color: $mandarin;
+			color: #FFFFFF;
+		}
+		&.checkbox,
+		&.radio {
+			.active-icon {
+				color: $mandarin;
+			}
+		}
+	}
+	
 }
 
 .step-card-action {
@@ -172,7 +217,19 @@
 		opacity: 1;
 		pointer-events: auto;
 		display: block;
-		
+	}
+	&.modal {
+		background: #ffffff;
+		border-radius: 0;
+		min-height: 100vh;
+		position: absolute;
+		z-index: 15;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0;
+		width: 100%;
+		max-width: 100%;
 	}
 	&.transparent {
 		background: transparent;
@@ -218,6 +275,8 @@
 	margin-top: 32px;
 }
 .step-card-previous,
+.step-card-action-back,
+.step-card-action-continue,
 .step-card-next {
 	 &.disable {
 		 pointer-events: none;

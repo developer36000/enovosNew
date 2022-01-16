@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>OnBoarding</title>
+	
+	<!--load Design System styles -->
+	<link rel="stylesheet" href="dist/nwcl/nwcl.css">
+	<!--load all Font Awesome styles -->
+	<link href="assets/css/fontawesome.min.css" rel="stylesheet">
+	<!--load main custom styles -->
+	<link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+
+<!-- Preloader START -->
+<div id="preloaderGroup" class="preloader-group">
+	<div class="main-loader">
+		<span class="loader1"></span>
+		<span class="loader2"></span>
+		<span class="loader3"></span>
+	</div>
+</div>
+<!-- Preloader END -->
+
+<header class="main-header">
+	<eds-link content="Back to Home" icon-position="left" url="#" class="back-to-home-btn">
+		<eds-icon slot="icon" icon="arrow-left"></eds-icon>
+	</eds-link>
+	
+	<eds-image id="logo-header" alt="envos-logo" src="assets/images/envos-logo.svg"></eds-image>
+	
+	<div class="form-options">
+		<div class="form-option select-wrapper site-lang">
+			<input type="hidden" class="select-wrapper-value" id="site-lang" name="site-lang" />
+			<div class="dropholder">
+				<div class="dropdown">
+					<p class="holder" data-placeholder="EN">
+						<img id="en-flag" alt="en-flag" src="assets/images/en.jpg" /> EN
+					</p>
+					<!--<eds-icon class="dropdown-icon" slot="icon" icon="chevron-down"></eds-icon>-->
+				</div>
+				<ul class="dropdownOption">
+					<li><img id="en-flag" alt="en-flag" src="assets/images/en.jpg" /> EN</li>
+					<li><img id="fr-flag" alt="fr-flag" src="assets/images/fr.png" /> FR</li>
+					<li><img id="gb-flag" alt="gb-flag" src="assets/images/gb.png" /> GR</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</header>
+
+<main class="onboarding-page-main">
+	<div class="container onboarding-page">
+		
+		<div class="page-heading">
+			<h1 class="heading heading-h1 heading--center heading--weight-700">Welcome. Find out which offer best suits you.</h1>
+			<eds-paragraph styles="center" class="color-new-grey custom-paragraph"
+			               content="">Calculate your tariff fast and easily.<br/> Subscribe to your energy online.
+			</eds-paragraph>
+		</div>
+		
+		<div class="onboarding-wrapper" style="background-image: url('assets/images/fond1Enovos.png')">
+			    <div class="postcode-wrapper">
+				    <eds-text-field id="postcode-field" class="postcode-field text-field" label="Enter your postcode"
+				                    type="text" info-styles="primary-500"></eds-text-field>
+				    <eds-button type="submit" class="start-btn disabled" content="Start" styles="primary"></eds-button>
+			    </div>
+		
+		</div>
+	
+	
+	</div>
+
+
+</main>
+
+
+
+<script type="module" src="dist/nwcl/nwcl.esm.js"></script>
+<script nomodule="" src="dist/nwcl/nwcl.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
