@@ -61,6 +61,9 @@
 	margin-right: 10px;
 	margin-left: 10px;
 	margin-bottom: 20px;
+	@media screen and (max-width: 360px) {
+		margin: 0 auto 20px auto;
+	}
 	&.centered {
 		justify-content: center;
 		padding: 10px;

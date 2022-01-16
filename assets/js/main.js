@@ -4,7 +4,7 @@
 	
 	window.addEventListener("load", () => {
 		let preloaderGroup = document.getElementById("preloaderGroup");
-		console.log(preloaderGroup)
+		//console.log(preloaderGroup)
 		if ( preloaderGroup ) {
 			preloaderGroup.classList.add("vanish");
 			setTimeout(() => {
@@ -27,17 +27,40 @@
 				 allInputChecked = Array.from(allInput).filter(el => el.checked),
 				 dialogModal = target.closest('.modal-dialog') !== null && target.closest('.modal-dialog'),
 				 dialogId = dialogModal && dialogModal.nextSibling.previousElementSibling.attributes[0].nodeValue,
+				 dialogEl = dialogModal && document.querySelector(`#${dialogId}`),
 				 dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`);
 			 
 			 if ( stepOption.contains('step-option') && stepOption.contains('checkbox')  ) {
 				 target.checked ? stepOption.add('active') : stepOption.remove('active');
-				 allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
+				 if ( allInputChecked.length > 0 ) {
+				 	 if ( dialogModal ) {
+					     dialogElClose.classList.remove('disable')
+				     }
+				 } else {
+					 if ( dialogModal ) {
+						 dialogElClose.classList.add('disable')
+					 }
+				 }
 			 } else if (stepOption.contains('step-option') && stepOption.contains('radio') ) {
+			 	
 				 target.checked && stepOption.add('active');
-				 allInputChecked.length > 0 ? dialogModal && dialogElClose.classList.remove('disable') : dialogModal && dialogElClose.classList.add('disable');
+				
 				 allInput.forEach(el => {
 					 el.id !== target.id && el.closest('.step-option').classList.remove('active')
 				 });
+				     
+				 if ( allInputChecked.length > 0 ) {
+					 if ( dialogModal ) {
+						dialogElClose.classList.remove('disable');
+						 dialogEl && dialogEl.close();
+					 }
+				 } else {
+					 if ( dialogModal ) {
+						 dialogElClose.classList.add('disable')
+					 }
+				 }
+				
+				 
 			 }
 			 
 		 }
@@ -435,14 +458,18 @@
 			dropHolder = elem.querySelector('.dropdown'),
 			selectPlaceholderAttr = selectHolder.attributes['data-placeholder'],
 			dialogModal = elem.closest('.modal-dialog') !== null && elem.closest('.modal-dialog'),
-			dialogId = dialogModal && dialogModal.nextSibling.previousElementSibling.attributes[0].nodeValue,
-			dialogElClose = dialogModal && document.querySelector(`#${dialogId} .close-dialog`);
+			dialogValidate = elem.closest('.modal-validate') !== null && elem.closest('.modal-validate'),
+			dialogId = dialogModal ? dialogModal.nextSibling.previousElementSibling.attributes[0].nodeValue : (dialogValidate && dialogValidate.nextSibling.previousElementSibling.attributes[0].nodeValue),
+			dialogEl = (dialogModal || dialogValidate) && document.querySelector(`#${dialogId}`),
+			dialogElClose = (dialogModal || dialogValidate) && document.querySelector(`#${dialogId} .close-dialog`);
 		
 		selectedOption.classList.add('current');
 		
 		selectHolder.addEventListener('click', function () {
 			dropHolder.classList.toggle('active');
 		});
+		
+		
 		
 		selectLabel && (selectLabel.innerHTML = selectPlaceholderAttr.value);
 		
@@ -455,11 +482,14 @@
 				dropHolder.classList.toggle('active');
 				//console.log({currentElement})
 				//console.log(currentElement.innerHTML)
+				
 				if ( currentElement.innerHTML !== selectPlaceholderAttr.value ) {
 					selectLabel && selectLabel.classList.add('show');
 					selectHolder.classList.add('has-value');
 					selectValue.value = currentElement.innerHTML; // innerText
-					dialogModal && dialogElClose.classList.remove('disable')
+					dialogModal && dialogElClose.classList.remove('disable');
+				
+					dialogEl && dialogEl.close();
 				} else {
 					selectLabel && selectLabel.classList.remove('show');
 					selectHolder.classList.remove('has-value');
@@ -529,15 +559,16 @@
 			const dialogModal = document.querySelector(`#${modal}`),
 				dialogElClose = dialogModal && document.querySelector(`#${modal} .close-dialog`);
 			
-			dialogModal.open();
-			dialogModal.addEventListener("clickBackdropHandler", function(e) {
-				dialogModal.close();
-			}, false);
-			
-			dialogElClose.addEventListener("click", function(e) {
-				dialogModal.close();
-			}, false);
-			
+			if ( dialogModal ) {
+				dialogModal.open();
+				dialogModal.addEventListener("clickBackdropHandler", function(e) {
+					dialogModal.close();
+				}, false);
+				
+				dialogElClose.addEventListener("click", function(e) {
+					dialogModal.close();
+				}, false);
+			}
 			
 		});
 	});

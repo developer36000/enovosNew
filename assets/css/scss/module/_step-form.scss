@@ -74,6 +74,9 @@
 				line-height: 16px;
 				padding: 0;
 				transition: color .3s ease-in-out;
+				@media screen and (max-width: 360px) {
+					font-size: 12px;
+				}
 			}
 		}
 		&.text-field--has-label-inside {

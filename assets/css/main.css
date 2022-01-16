@@ -587,6 +587,9 @@ header.main-header {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px; }
+  @media screen and (max-width: 360px) {
+    .step-option {
+      margin: 0 auto 20px auto; } }
   .step-option.centered {
     justify-content: center;
     padding: 10px; }
@@ -808,6 +811,9 @@ header.main-header {
         line-height: 16px;
         padding: 0;
         transition: color .3s ease-in-out; }
+        @media screen and (max-width: 360px) {
+          .form-option .text-field .text-field__field .label.label {
+            font-size: 12px; } }
     .form-option .text-field.text-field--has-label-inside .text-field__field__component {
       padding-top: 30px; }
   .form-option.date-picker {
@@ -1141,7 +1147,8 @@ header.main-header {
       .modal-dialog .dialog__dialog__content,
       .modal-validate .dialog__dialog__content {
         margin: 0 !important;
-        border-radius: 30px 30px 0 0 !important; }
+        border-radius: 30px 30px 0 0 !important;
+        overflow: auto; }
         .modal-dialog .dialog__dialog__content:before,
         .modal-validate .dialog__dialog__content:before {
           content: '';
@@ -1204,10 +1211,10 @@ header.main-header {
     .modal-dialog .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content,
     .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
     .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content {
-      color: #00856A; }
+      color: #F76700; }
   .modal-dialog .dialog__dialog__content__body .form-option.select-wrapper .placeholder-label,
   .modal-validate .dialog__dialog__content__body .form-option.select-wrapper .placeholder-label {
-    color: #00856A !important; }
+    color: #F76700 !important; }
 
 .modal-validate {
   background: #E5F2F0; }
@@ -1217,6 +1224,11 @@ header.main-header {
       color: inherit !important; }
   .modal-validate .dialog__dialog__content {
     background: #E5F2F0 !important; }
+  .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--outlined .btn__content,
+  .modal-validate .dialog__dialog__content__body .form-option.birthday-picker [name=button] .btn--text.btn--primary.btn--text .btn__content {
+    color: #00856A; }
+  .modal-validate .dialog__dialog__content__body .form-option.select-wrapper .placeholder-label {
+    color: #00856A !important; }
 
 .offer-dialog {
   background: #ffffff; }
@@ -1713,6 +1725,10 @@ header.main-header {
         line-height: 42px;
         font-weight: bold;
         margin-bottom: 24px; }
+        @media screen and (max-width: 360px) {
+          .container.onboarding-page .page-heading .heading.heading-h1 {
+            font-size: 28px;
+            line-height: 32px; } }
     .container.onboarding-page .page-heading .custom-paragraph {
       font-weight: 600;
       font-size: 16px;
@@ -1803,6 +1819,9 @@ header.main-header {
 .form-option.select-wrapper.site-lang {
   height: 51px;
   min-width: 88px; }
+  @media screen and (max-width: 360px) {
+    .form-option.select-wrapper.site-lang {
+      height: 40px; } }
   .form-option.select-wrapper.site-lang .dropholder {
     border: none; }
   .form-option.select-wrapper.site-lang .dropdown {
@@ -1815,6 +1834,9 @@ header.main-header {
     line-height: 20px;
     color: #5E5E5E;
     height: 51px; }
+    @media screen and (max-width: 360px) {
+      .form-option.select-wrapper.site-lang .dropdown {
+        height: 40px; } }
   .form-option.select-wrapper.site-lang .holder {
     line-height: 1;
     font-style: normal;
@@ -1826,6 +1848,9 @@ header.main-header {
     justify-content: center;
     flex-wrap: nowrap;
     padding: 16px 16px; }
+    @media screen and (max-width: 360px) {
+      .form-option.select-wrapper.site-lang .holder {
+        padding: 10px 16px; } }
     .form-option.select-wrapper.site-lang .holder img {
       width: 24px;
       height: 16px;
