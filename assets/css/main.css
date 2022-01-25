@@ -82,7 +82,6 @@ body {
 
 main {
   padding-top: 70px;
-  min-height: calc(100vh - 154px);
   display: block; }
 
 strong, b {
@@ -399,7 +398,7 @@ strong, b {
 
 footer {
   padding-top: 70px;
-  padding-bottom: 52px;
+  padding-bottom: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,9 +586,16 @@ header.main-header {
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .step-option {
+      max-width: 100%; } }
   @media screen and (max-width: 360px) {
     .step-option {
       margin: 0 auto 20px auto; } }
+  .step-option.disabled {
+    pointer-events: none; }
+    .step-option.disabled * {
+      opacity: .65; }
   .step-option.centered {
     justify-content: center;
     padding: 10px; }
@@ -738,7 +744,31 @@ header.main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 32px; }
+  margin-top: 32px;
+  position: fixed;
+  bottom: 0;
+  background: #f8f8f8;
+  padding: 25px 50px;
+  z-index: 25;
+  /*	&:before {
+  		content: '';
+  		display: block;
+  		position: absolute;
+  		left: 0;
+  		right: 0;
+  		z-index: 0;
+  		bottom: 0;
+  		top: 0;
+  		width: 100%;
+  		height: 100%;
+  		background: #f8f8f8;
+  	}*/ }
+  @media screen and (max-width: 480px) {
+    .step-card-nav {
+      padding: 15px 24px; } }
+  @media screen and (max-width: 360px) {
+    .step-card-nav {
+      padding: 10px 15px; } }
 
 .step-card-previous.disable,
 .step-card-action-back.disable,
@@ -1877,9 +1907,13 @@ header.main-header {
   margin-top: 32px; }
 .electricity-meter-page .step-option {
   padding: 10px;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 117px; }
   .electricity-meter-page .step-option__image {
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    max-width: 24px; }
+    .electricity-meter-page .step-option__image .custom-icon {
+      font-size: 24px; }
 .electricity-meter-page .form-option .text-field .text-field__field {
   border-color: #5E5E5E; }
 .electricity-meter-page .form-option .text-field--focus .text-field__field {
