@@ -789,6 +789,8 @@ header.main-header {
   margin-top: 32px;
   position: fixed;
   bottom: 0;
+  left: 0;
+  right: 0;
   background: #f8f8f8;
   padding: 25px 50px;
   max-width: 570px;
@@ -816,7 +818,7 @@ header.main-header {
     right: 0;
     bottom: 0;
     top: 0;
-    width: 100vw;
+    width: calc(100vw + 50%);
     height: 100%;
     transform: translateX(-50%);
     background: #f8f8f8;
