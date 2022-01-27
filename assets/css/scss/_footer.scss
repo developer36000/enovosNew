@@ -1,10 +1,13 @@
 footer {
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 105px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	@media screen and (max-width: 480px) {
+		padding-bottom: 75px;
+	}
 	.footer-text {
 		max-width: 570px;
 		width: 100%;
