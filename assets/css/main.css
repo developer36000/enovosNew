@@ -653,6 +653,13 @@ header.main-header {
       color: inherit; }
       .step-option__image .custom-icon * {
         font-size: inherit; }
+    .step-option__image .plus {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0 3px; }
+    .step-option__image.image_big {
+      max-width: max-content; }
   .step-option__title {
     font-weight: 300;
     font-size: 14px;
