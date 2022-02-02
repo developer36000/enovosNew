@@ -634,7 +634,7 @@ header.main-header {
     .step-option {
       margin: 0 auto 20px auto; } }
   .step-option.disabled {
-    pointer-events: none; }
+    pointer-events: auto; }
     .step-option.disabled * {
       opacity: .65; }
   .step-option.centered {

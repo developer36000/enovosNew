@@ -68,7 +68,7 @@
 		margin: 0 auto 20px auto;
 	}
 	&.disabled {
-		pointer-events: none;
+		pointer-events: auto;
 		* {
 			opacity: .65;
 		}
